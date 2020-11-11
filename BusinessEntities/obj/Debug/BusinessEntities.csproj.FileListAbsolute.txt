@@ -1,0 +1,6 @@
+D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BusinessEntities\bin\Debug\BusinessEntities.dll
+D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BusinessEntities\bin\Debug\BusinessEntities.pdb
+D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
+D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BusinessEntities\obj\Debug\BusinessEntities.dll
+D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BusinessEntities\obj\Debug\BusinessEntities.pdb

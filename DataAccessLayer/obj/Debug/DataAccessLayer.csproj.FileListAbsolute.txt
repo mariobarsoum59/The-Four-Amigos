@@ -1,0 +1,9 @@
+D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache
+D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\DataAccessLayer\bin\Debug\BusinessEntities.dll
+D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\DataAccessLayer\bin\Debug\BusinessEntities.pdb
+D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
