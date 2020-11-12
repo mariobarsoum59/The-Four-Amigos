@@ -31,3 +31,14 @@ D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BusinessLayer\
 D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
 D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.dll
 D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessEntities.dll
+C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessEntities.pdb
+C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.pdb

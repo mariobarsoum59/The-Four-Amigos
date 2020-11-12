@@ -10,3 +10,9 @@ C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessEntities\obj\Debug
 C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
 C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessEntities\obj\Debug\BusinessEntities.dll
 C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessEntities\obj\Debug\BusinessEntities.pdb
+C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
+C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.pdb
