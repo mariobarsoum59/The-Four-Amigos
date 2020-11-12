@@ -101,6 +101,8 @@ namespace BusinessLayer
             {
                 int maxId = 0;
                 // need some code to avoid dulicate usernames
+
+                
                 // maybe add some logic (busiess rules) about password policy
                 //      IUser user = new User(name, password, userType); // Construct a User Object
                 foreach (User u in UserList)

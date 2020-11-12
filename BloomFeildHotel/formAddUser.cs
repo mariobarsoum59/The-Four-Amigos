@@ -32,50 +32,42 @@ namespace BloomFeildHotel
 
         private void BtnCommit_Click(object sender, EventArgs e)
         {
-            //search to see if username already exsits
+            
             bool usernameExists = false;
-
-            //foreach(User u in Model.UserList)
-            //{
-            //    if(u.UName==txtUsername.Text)
-            //    {
-            //        usernameExists = true;
-            //        MessageBox.Show("Username already exists");
-            //        txtUsername.Clear();
-            //    }
-                
-            //}
+            bool ValidPassword = false;
 
 
-            //if it does not exist creat user object and add to db and update userlist
-            if (usernameExists == false && listBoxUserTypes.SelectedIndex !=-1)
+
+
+            string password = txtPassword.Text;
+
+            if (password.Length > 8 && // Must be above 8 characters
+                password.Any(char.IsUpper) && //At least one uppercase
+                password.Any(char.IsLower) //At least one lowercase
+                )
             {
-                
-                if(Model.addNewUser(txtFirstName.Text, txtSurname.Text, txtUsername.Text, txtPassword.Text, listBoxUserTypes.SelectedItem.ToString()))
+                ValidPassword = true;
+
+                if (usernameExists == false && listBoxUserTypes.SelectedIndex != -1)
                 {
-                    MessageBox.Show("User created");
-                }
-                
 
-               
-            }
+                    if (Model.addNewUser(txtFirstName.Text, txtSurname.Text, txtUsername.Text, txtPassword.Text, listBoxUserTypes.SelectedItem.ToString()))
+                    {
+                        MessageBox.Show("User created");
+                    }
 
-            ////check to see if added
-            //foreach (User u in Model.UserList)
-            //{
-            //    if (u.UName == txtUsername.Text)
-            //    {
-            //        usernameExists = true;
-            //        MessageBox.Show("User Added");
                     txtFirstName.Clear();
                     txtSurname.Clear();
                     txtUsername.Clear();
                     txtPassword.Clear();
-                //}
 
-            //}
-
-
+                }
+            }
+            else
+            {
+                MessageBox.Show("Password Must Contain \nAtleast 8 Characters \nOne Upper Case Character \nOne Lower Case Character");
+                txtPassword.Clear();
+            }
 
 
 

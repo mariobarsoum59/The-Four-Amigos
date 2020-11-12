@@ -38,22 +38,26 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblManagerMenuTag = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblManagerMenu
             // 
             this.lblManagerMenu.AutoSize = true;
             this.lblManagerMenu.Font = new System.Drawing.Font("Opus Chords Sans Std", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblManagerMenu.Location = new System.Drawing.Point(519, 80);
+            this.lblManagerMenu.ForeColor = System.Drawing.Color.White;
+            this.lblManagerMenu.Location = new System.Drawing.Point(16, 21);
             this.lblManagerMenu.Name = "lblManagerMenu";
-            this.lblManagerMenu.Size = new System.Drawing.Size(235, 47);
+            this.lblManagerMenu.Size = new System.Drawing.Size(56, 47);
             this.lblManagerMenu.TabIndex = 0;
-            this.lblManagerMenu.Text = "Manager Menu";
+            this.lblManagerMenu.Text = "Hi ";
             // 
             // btnAddUsers
             // 
             this.btnAddUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddUsers.Location = new System.Drawing.Point(413, 130);
+            this.btnAddUsers.Location = new System.Drawing.Point(415, 172);
             this.btnAddUsers.Name = "btnAddUsers";
             this.btnAddUsers.Size = new System.Drawing.Size(161, 104);
             this.btnAddUsers.TabIndex = 1;
@@ -64,7 +68,7 @@
             // btnDeleteUsers
             // 
             this.btnDeleteUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteUsers.Location = new System.Drawing.Point(413, 240);
+            this.btnDeleteUsers.Location = new System.Drawing.Point(415, 282);
             this.btnDeleteUsers.Name = "btnDeleteUsers";
             this.btnDeleteUsers.Size = new System.Drawing.Size(161, 104);
             this.btnDeleteUsers.TabIndex = 2;
@@ -75,7 +79,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(413, 350);
+            this.button3.Location = new System.Drawing.Point(415, 392);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(161, 104);
             this.button3.TabIndex = 3;
@@ -85,7 +89,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(580, 130);
+            this.button4.Location = new System.Drawing.Point(582, 172);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(161, 104);
             this.button4.TabIndex = 4;
@@ -95,7 +99,7 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(580, 240);
+            this.button5.Location = new System.Drawing.Point(582, 282);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(161, 104);
             this.button5.TabIndex = 5;
@@ -105,7 +109,7 @@
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(580, 350);
+            this.button6.Location = new System.Drawing.Point(582, 392);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(161, 104);
             this.button6.TabIndex = 6;
@@ -115,7 +119,7 @@
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(747, 130);
+            this.button7.Location = new System.Drawing.Point(749, 172);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(161, 104);
             this.button7.TabIndex = 7;
@@ -125,7 +129,7 @@
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(747, 240);
+            this.button8.Location = new System.Drawing.Point(749, 282);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(161, 104);
             this.button8.TabIndex = 8;
@@ -134,7 +138,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(796, 478);
+            this.btnExit.Location = new System.Drawing.Point(794, 445);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(112, 57);
             this.btnExit.TabIndex = 9;
@@ -142,12 +146,35 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(94)))), ((int)(((byte)(84)))));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.lblManagerMenu);
+            this.panel1.Location = new System.Drawing.Point(-4, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1283, 68);
+            this.panel1.TabIndex = 10;
+            // 
+            // lblManagerMenuTag
+            // 
+            this.lblManagerMenuTag.AutoSize = true;
+            this.lblManagerMenuTag.Font = new System.Drawing.Font("Opus Chords Sans Std", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManagerMenuTag.Location = new System.Drawing.Point(520, 107);
+            this.lblManagerMenuTag.Name = "lblManagerMenuTag";
+            this.lblManagerMenuTag.Size = new System.Drawing.Size(235, 47);
+            this.lblManagerMenuTag.TabIndex = 11;
+            this.lblManagerMenuTag.Text = "Manager Menu";
+            // 
             // formManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1277, 633);
             this.ControlBox = false;
+            this.Controls.Add(this.lblManagerMenuTag);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -157,11 +184,13 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnDeleteUsers);
             this.Controls.Add(this.btnAddUsers);
-            this.Controls.Add(this.lblManagerMenu);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formManager";
             this.Text = "Manager";
+            this.Load += new System.EventHandler(this.FormManager_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,5 +208,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblManagerMenuTag;
     }
 }

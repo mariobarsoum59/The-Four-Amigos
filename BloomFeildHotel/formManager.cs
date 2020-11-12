@@ -45,5 +45,10 @@ namespace BloomFeildHotel
 
             f2.Show();
         }
+
+        private void FormManager_Load(object sender, EventArgs e)
+        {
+            lblManagerMenu.Text = "Hi "+Model.CurrentUser.FirstName;
+        }
     }
 }
