@@ -15,6 +15,7 @@ namespace BusinessEntities
         private string username;
         private string password;
         private string userType;
+        private int userID;
         #endregion
 
         public string FirstName
@@ -80,18 +81,32 @@ namespace BusinessEntities
         }
 
 
+        public int UserID
+        {
+            get
+            {
+                return userID;
+            }
+            set
+            {
+                userID = value;
+            }
+        }
+
+
         public User()
         {
             throw new System.NotImplementedException();
         }
 
-        public User(string FirstName, string Surname, string Username, string Password, string userType)
+        public User(string FirstName, string Surname, string Username, string Password, string userType, int userID)
         {
             this.firstName = FirstName;
             this.surname = Surname;
             this.username = Username;
             this.password = Password;
             this.userType = userType;
+            this.userID = userID;
         }
 
     }

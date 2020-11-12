@@ -13,5 +13,6 @@ namespace BusinessEntities
         string Username { get; set; }
         string Password { get; set; }
         string UserType { get; set; }
+        int UserID { get; set; }
     }
 }

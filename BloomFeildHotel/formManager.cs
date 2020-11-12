@@ -37,5 +37,13 @@ namespace BloomFeildHotel
 
             form.Show();
         }
+
+        private void BtnDeleteUsers_Click(object sender, EventArgs e)
+        {
+            formDeleteUser f2 = new formDeleteUser(fc, Model);
+            f2.Dock=DockStyle.Fill;
+
+            f2.Show();
+        }
     }
 }

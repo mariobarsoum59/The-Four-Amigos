@@ -9,3 +9,14 @@ D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BusinessLa
 D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
 D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BusinessLayer\obj\Debug\BusinessLayer.dll
 D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessLayer\bin\Debug\BusinessEntities.dll
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessLayer\bin\Debug\BusinessEntities.pdb
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete

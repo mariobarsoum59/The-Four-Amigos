@@ -8,12 +8,12 @@ namespace DataAccessLayer
 {
     public interface IDataLayer
     {
-        void addNewUserToDB(string FirstName, string Surname, string Username, string Password, string userType);
+        void addNewUserToDB(BusinessEntities.IUser theUser);
         void closeConnection();
         System.Collections.ArrayList GetAllUsers();
         System.Data.SqlClient.SqlConnection getConnection();
         void openConnection();
-
+        bool deleteUserFromDB(BusinessEntities.IUser user);
 
 
     }

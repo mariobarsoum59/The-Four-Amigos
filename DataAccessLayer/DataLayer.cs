@@ -99,7 +99,8 @@ namespace DataAccessLayer
                                                         dRow.ItemArray.GetValue(1).ToString(),
                                                         dRow.ItemArray.GetValue(2).ToString(),
                                                         dRow.ItemArray.GetValue(3).ToString(),
-                                                        dRow.ItemArray.GetValue(4).ToString());
+                                                        dRow.ItemArray.GetValue(4).ToString(),
+                                                       Convert.ToInt16((dRow.ItemArray.GetValue(5))));
                     UserList.Add(user);
                     //MessageBox.Show(user.Username + user.Password);
 
@@ -122,7 +123,7 @@ namespace DataAccessLayer
 
         }
 
-        public void addNewUserToDB(string FirstName, string Surname, string Username, string Password, string userType)
+        public void addNewUserToDB(IUser theUser)
         {
             try
             {
@@ -133,13 +134,14 @@ namespace DataAccessLayer
                 da.Fill(ds, "UsersData");
                 maxRows = ds.Tables["UsersData"].Rows.Count;
                 DataRow dRow = ds.Tables["UsersData"].NewRow();
-                dRow[0] = FirstName;
-                dRow[1] = Surname;
-                dRow[2] = Username;
-                dRow[3] = Password;
-                dRow[4] = userType;
+                dRow[0] = theUser.FirstName;
+                dRow[1] = theUser.Surname;
+                dRow[2] = theUser.Username;
+                dRow[3] = theUser.Password;
+                dRow[4] = theUser.UserType;
+                dRow[5] = theUser.UserID;
 
-               
+
 
                 ds.Tables["UsersData"].Rows.Add(dRow);
                 da.Update(ds, "UsersData");
@@ -152,6 +154,39 @@ namespace DataAccessLayer
                 //Environment.Exit(0); //Force the application to close
             }
         }
+
+
+
+        public bool deleteUserFromDB(BusinessEntities.IUser user)
+        {
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Users";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "UsersData");
+                DataRow findRow = ds.Tables["UsersData"].Rows.Find(user.UserID);
+                if (findRow != null)
+                {
+                    findRow.Delete(); //mark row as deleted
+                }
+                da.Update(ds, "UsersData"); //remove row from database table
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
+                Application.Exit();
+            }
+            return true;
+        }
+
+
+
+
 
 
     }

@@ -99,13 +99,18 @@ namespace BusinessLayer
         {
             try
             {
-
+                int maxId = 0;
                 // need some code to avoid dulicate usernames
                 // maybe add some logic (busiess rules) about password policy
                 //      IUser user = new User(name, password, userType); // Construct a User Object
-                IUser user = UserHotel.GetUser(FirstName,Surname,Username,Password,userType);   // Using a Factory to create the user entity object. ie seperating object creation from business logic
-                UserList.Add(user);                             // Add a reference to the newly created object to the Models UserList
-                DataLayer.addNewUserToDB(FirstName, Surname, Username, Password, userType); //Gets the DataLayer to add the new user to the DB. 
+                foreach (User u in UserList)
+                {
+                    if (u.UserID > maxId)
+                        maxId = u.UserID;
+                }
+                IUser theUser = UserHotel.GetUser(FirstName,Surname,Username,Password,userType, maxId + 1);   // Using a Factory to create the user entity object. ie seperating object creation from business logic
+                UserList.Add(theUser);                             // Add a reference to the newly created object to the Models UserList
+                DataLayer.addNewUserToDB(theUser); //Gets the DataLayer to add the new user to the DB. 
                 return true;
             }
             catch (System.Exception excep)
@@ -128,6 +133,18 @@ namespace BusinessLayer
         public void tearDown()
         {
             DataLayer.closeConnection();
+        }
+
+
+
+
+        public bool deleteUser(IUser user)
+        {
+
+            DataLayer.deleteUserFromDB(user);
+            UserList.Remove(user); //remove object from collection
+            return true;
+
         }
 
 

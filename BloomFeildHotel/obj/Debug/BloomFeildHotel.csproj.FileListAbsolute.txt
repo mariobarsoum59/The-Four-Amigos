@@ -19,3 +19,25 @@ D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BloomFeild
 D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BloomFeildHotel\bin\Debug\DataAccessLayer.pdb
 D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BloomFeildHotel\bin\Debug\BusinessEntities.pdb
 D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BloomFeildHotel\obj\Debug\BloomFeildHotel.csproj.CopyComplete
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\bin\Debug\BloomFeildHotel.exe.config
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\bin\Debug\BloomFeildHotel.exe
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\bin\Debug\BloomFeildHotel.pdb
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\bin\Debug\BusinessLayer.dll
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\bin\Debug\DataAccessLayer.dll
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\bin\Debug\BusinessEntities.dll
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\bin\Debug\BusinessLayer.pdb
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\bin\Debug\DataAccessLayer.pdb
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\bin\Debug\BusinessEntities.pdb
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\obj\Debug\BloomFeildHotel.csprojAssemblyReference.cache
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\obj\Debug\BloomFeildHotel.FormContainer.resources
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddUser.resources
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\obj\Debug\BloomFeildHotel.formDeleteUser.resources
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\obj\Debug\BloomFeildHotel.formLogin.resources
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\obj\Debug\BloomFeildHotel.formManager.resources
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\obj\Debug\BloomFeildHotel.formReception.resources
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\obj\Debug\BloomFeildHotel.Properties.Resources.resources
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\obj\Debug\BloomFeildHotel.csproj.GenerateResource.cache
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\obj\Debug\BloomFeildHotel.csproj.CoreCompileInputs.cache
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\obj\Debug\BloomFeildHotel.csproj.CopyComplete
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\obj\Debug\BloomFeildHotel.exe
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BloomFeildHotel\obj\Debug\BloomFeildHotel.pdb

@@ -70,6 +70,12 @@
     <Compile Include="formCleaner.Designer.cs">
       <DependentUpon>formCleaner.cs</DependentUpon>
     </Compile>
+    <Compile Include="formDeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDeleteUser.Designer.cs">
+      <DependentUpon>formDeleteUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="formLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,12 +102,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formAddUser.resx">
       <DependentUpon>formAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDeleteUser.resx">
+      <DependentUpon>formDeleteUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
@@ -135,6 +143,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BusinessEntities\BusinessEntities.csproj">
+      <Project>{C8432BDE-3AFA-4C37-B4D8-94E8AADF8E73}</Project>
+      <Name>BusinessEntities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
       <Project>{c1acea24-1bec-4064-9173-cace91a4b77a}</Project>
       <Name>BusinessLayer</Name>

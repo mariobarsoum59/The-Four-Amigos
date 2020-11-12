@@ -30,7 +30,7 @@
         {
             this.lblManagerMenu = new System.Windows.Forms.Label();
             this.btnAddUsers = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnDeleteUsers = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -61,15 +61,16 @@
             this.btnAddUsers.UseVisualStyleBackColor = true;
             this.btnAddUsers.Click += new System.EventHandler(this.BtnAddUsers_Click);
             // 
-            // button2
+            // btnDeleteUsers
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(413, 240);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(161, 104);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDeleteUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteUsers.Location = new System.Drawing.Point(413, 240);
+            this.btnDeleteUsers.Name = "btnDeleteUsers";
+            this.btnDeleteUsers.Size = new System.Drawing.Size(161, 104);
+            this.btnDeleteUsers.TabIndex = 2;
+            this.btnDeleteUsers.Text = "Delete Users";
+            this.btnDeleteUsers.UseVisualStyleBackColor = true;
+            this.btnDeleteUsers.Click += new System.EventHandler(this.BtnDeleteUsers_Click);
             // 
             // button3
             // 
@@ -154,7 +155,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnDeleteUsers);
             this.Controls.Add(this.btnAddUsers);
             this.Controls.Add(this.lblManagerMenu);
             this.DoubleBuffered = true;
@@ -170,7 +171,7 @@
 
         private System.Windows.Forms.Label lblManagerMenu;
         private System.Windows.Forms.Button btnAddUsers;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDeleteUsers;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;

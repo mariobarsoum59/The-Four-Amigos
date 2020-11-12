@@ -4,3 +4,9 @@ D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BusinessEn
 D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
 D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BusinessEntities\obj\Debug\BusinessEntities.dll
 D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BusinessEntities\obj\Debug\BusinessEntities.pdb
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessEntities\obj\Debug\BusinessEntities.pdb

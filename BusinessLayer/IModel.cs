@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BusinessEntities;
 
 namespace BusinessLayer
 {
@@ -14,11 +15,12 @@ namespace BusinessLayer
         DataAccessLayer.IDataLayer DataLayer { get; set; }
         string getUserTypeForCurrentuser();
         bool login(string username, string password);
+
+        bool deleteUser(IUser user);
+
         void tearDown();
         System.Collections.ArrayList UserList { get; }
 
-
-
-
+        
     }
 }
