@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -76,6 +77,12 @@
     <Compile Include="formCreateReservation.Designer.cs">
       <DependentUpon>formCreateReservation.cs</DependentUpon>
     </Compile>
+    <Compile Include="formDeleteReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDeleteReservation.Designer.cs">
+      <DependentUpon>formDeleteReservation.cs</DependentUpon>
+    </Compile>
     <Compile Include="formDeleteUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +106,12 @@
     </Compile>
     <Compile Include="formReception.Designer.cs">
       <DependentUpon>formReception.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formRequestIngredients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formRequestIngredients.Designer.cs">
+      <DependentUpon>formRequestIngredients.cs</DependentUpon>
     </Compile>
     <Compile Include="formSales.cs">
       <SubType>Form</SubType>
@@ -132,6 +145,9 @@
     <EmbeddedResource Include="formCreateReservation.resx">
       <DependentUpon>formCreateReservation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formDeleteReservation.resx">
+      <DependentUpon>formDeleteReservation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formDeleteUser.resx">
       <DependentUpon>formDeleteUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formReception.resx">
       <DependentUpon>formReception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formRequestIngredients.resx">
+      <DependentUpon>formRequestIngredients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formSales.resx">
       <DependentUpon>formSales.cs</DependentUpon>
@@ -210,6 +229,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Webp.net-resizeimage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-shredder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ingredients.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

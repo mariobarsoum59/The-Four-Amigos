@@ -93,6 +93,16 @@ namespace BloomFeildHotel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap diet {
+            get {
+                object obj = ResourceManager.GetObject("diet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Iconshock_Real_Vista_Jobs_Chef {
             get {
                 object obj = ResourceManager.GetObject("Iconshock-Real-Vista-Jobs-Chef", resourceCulture);
@@ -126,6 +136,46 @@ namespace BloomFeildHotel.Properties {
         internal static System.Drawing.Bitmap Iconsmind_Outline_Chef_Hat {
             get {
                 object obj = ResourceManager.GetObject("Iconsmind-Outline-Chef-Hat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ingredients {
+            get {
+                object obj = ResourceManager.GetObject("Ingredients", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap paper_shredder {
+            get {
+                object obj = ResourceManager.GetObject("paper-shredder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap paper_shredder1 {
+            get {
+                object obj = ResourceManager.GetObject("paper-shredder1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap paper_shredder2 {
+            get {
+                object obj = ResourceManager.GetObject("paper-shredder2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

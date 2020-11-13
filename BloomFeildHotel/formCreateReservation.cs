@@ -16,5 +16,10 @@ namespace BloomFeildHotel
         {
             InitializeComponent();
         }
+
+        private void btnSubmitReservation_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

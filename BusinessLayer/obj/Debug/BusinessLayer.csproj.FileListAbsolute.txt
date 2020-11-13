@@ -42,3 +42,13 @@ C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLaye
 C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
 C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\Saoir\source\repos\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\Saoir\source\repos\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Saoir\source\repos\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessEntities.dll
+C:\Users\Saoir\source\repos\The-Four-Amigos\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Saoir\source\repos\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessEntities.pdb
+C:\Users\Saoir\source\repos\The-Four-Amigos\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Saoir\source\repos\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\Saoir\source\repos\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\Saoir\source\repos\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\Saoir\source\repos\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.pdb
