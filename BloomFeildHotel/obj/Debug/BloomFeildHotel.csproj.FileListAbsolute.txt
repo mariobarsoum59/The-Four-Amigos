@@ -87,3 +87,5 @@ C:\Users\jackk\source\repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeild
 C:\Users\jackk\source\repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.pdb
 C:\Users\jackk\source\repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formChef.resources
 C:\Users\jackk\source\repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewOrders.resources
+C:\Users\jackk\source\repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formCreateReservation.resources
+C:\Users\jackk\source\repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formSales.resources
