@@ -9,3 +9,14 @@ D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BusinessLa
 D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
 D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BusinessLayer\obj\Debug\BusinessLayer.dll
 D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessEntities.dll
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessEntities.pdb
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.pdb

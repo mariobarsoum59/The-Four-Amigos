@@ -7,3 +7,12 @@ D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\DataAccess
 D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
 D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 D:\College\MARIO\Year 3\Group project\BloomFeildHotel\BloomFeildHotel\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\DataAccessLayer\bin\Debug\BusinessEntities.dll
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\DataAccessLayer\bin\Debug\BusinessEntities.pdb
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\rebec\OneDrive\Desktop\The-Four-Amigos\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
