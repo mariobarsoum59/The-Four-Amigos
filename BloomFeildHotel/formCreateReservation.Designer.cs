@@ -35,41 +35,50 @@
             this.DTPCheckInDate = new System.Windows.Forms.DateTimePicker();
             this.DTPCheckOutDate = new System.Windows.Forms.DateTimePicker();
             this.groupBoxRoomType = new System.Windows.Forms.GroupBox();
-            this.radioButtonSingleNonSmoking = new System.Windows.Forms.RadioButton();
-            this.radioButtonSingleSmoking = new System.Windows.Forms.RadioButton();
-            this.radioButtonDoubleNonSmoking = new System.Windows.Forms.RadioButton();
-            this.radioButtonDoubleSmoking = new System.Windows.Forms.RadioButton();
-            this.radioButtonTwinNonSmoking = new System.Windows.Forms.RadioButton();
             this.radioButtonTwinSmoking = new System.Windows.Forms.RadioButton();
+            this.radioButtonTwinNonSmoking = new System.Windows.Forms.RadioButton();
+            this.radioButtonDoubleSmoking = new System.Windows.Forms.RadioButton();
+            this.radioButtonDoubleNonSmoking = new System.Windows.Forms.RadioButton();
+            this.radioButtonSingleSmoking = new System.Windows.Forms.RadioButton();
+            this.radioButtonSingleNonSmoking = new System.Windows.Forms.RadioButton();
             this.groupBoxSearchForAvailability = new System.Windows.Forms.GroupBox();
-            this.lblNumOfNights = new System.Windows.Forms.Label();
-            this.textBoxNumOfNights = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.textBoxNumOfNights = new System.Windows.Forms.TextBox();
+            this.lblNumOfNights = new System.Windows.Forms.Label();
             this.groupBoxGuestDetails = new System.Windows.Forms.GroupBox();
+            this.groupBoxSendMarketingInfo = new System.Windows.Forms.GroupBox();
+            this.radioButtonMINo = new System.Windows.Forms.RadioButton();
+            this.radioButtonMIYes = new System.Windows.Forms.RadioButton();
+            this.groupBoxDepositPayed = new System.Windows.Forms.GroupBox();
+            this.radioButtonDPNo = new System.Windows.Forms.RadioButton();
+            this.radioButtonDPYes = new System.Windows.Forms.RadioButton();
+            this.textBoxAddress = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBoxContact = new System.Windows.Forms.TextBox();
+            this.lblContact = new System.Windows.Forms.Label();
+            this.textBoxSurname = new System.Windows.Forms.TextBox();
+            this.textBoxFirstName = new System.Windows.Forms.TextBox();
             this.btnSubmitReservation = new System.Windows.Forms.Button();
             this.textBoxNumberOfGuests = new System.Windows.Forms.TextBox();
             this.lblNumberOfGuests = new System.Windows.Forms.Label();
             this.lblFirstName = new System.Windows.Forms.Label();
             this.lblSurname = new System.Windows.Forms.Label();
-            this.textBoxFirstName = new System.Windows.Forms.TextBox();
-            this.textBoxSurname = new System.Windows.Forms.TextBox();
-            this.textBoxContact = new System.Windows.Forms.TextBox();
-            this.lblContact = new System.Windows.Forms.Label();
-            this.textBoxAddress = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBoxDepositPayed = new System.Windows.Forms.GroupBox();
-            this.radioButtonDPNo = new System.Windows.Forms.RadioButton();
-            this.radioButtonDPYes = new System.Windows.Forms.RadioButton();
-            this.groupBoxSendMarketingInfo = new System.Windows.Forms.GroupBox();
-            this.radioButtonMINo = new System.Windows.Forms.RadioButton();
-            this.radioButtonMIYes = new System.Windows.Forms.RadioButton();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.groupBoxRoomDetails = new System.Windows.Forms.GroupBox();
+            this.lbl = new System.Windows.Forms.Label();
+            this.lblBasePrice = new System.Windows.Forms.Label();
+            this.lblVariablePrice = new System.Windows.Forms.Label();
+            this.textBoxRoomNumber = new System.Windows.Forms.TextBox();
+            this.textBoxBasePrice = new System.Windows.Forms.TextBox();
+            this.textBoxVariablePrice = new System.Windows.Forms.TextBox();
+            this.listBoxSelectedRoom = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.groupBoxRoomType.SuspendLayout();
             this.groupBoxSearchForAvailability.SuspendLayout();
             this.groupBoxGuestDetails.SuspendLayout();
-            this.groupBoxDepositPayed.SuspendLayout();
             this.groupBoxSendMarketingInfo.SuspendLayout();
+            this.groupBoxDepositPayed.SuspendLayout();
+            this.groupBoxRoomDetails.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCreateReservation
@@ -113,14 +122,14 @@
             // 
             // DTPCheckInDate
             // 
-            this.DTPCheckInDate.Location = new System.Drawing.Point(144, 64);
+            this.DTPCheckInDate.Location = new System.Drawing.Point(144, 59);
             this.DTPCheckInDate.Name = "DTPCheckInDate";
             this.DTPCheckInDate.Size = new System.Drawing.Size(291, 26);
             this.DTPCheckInDate.TabIndex = 16;
             // 
             // DTPCheckOutDate
             // 
-            this.DTPCheckOutDate.Location = new System.Drawing.Point(144, 96);
+            this.DTPCheckOutDate.Location = new System.Drawing.Point(144, 100);
             this.DTPCheckOutDate.Name = "DTPCheckOutDate";
             this.DTPCheckOutDate.Size = new System.Drawing.Size(291, 26);
             this.DTPCheckOutDate.TabIndex = 17;
@@ -140,49 +149,16 @@
             this.groupBoxRoomType.TabStop = false;
             this.groupBoxRoomType.Text = "Room Type";
             // 
-            // radioButtonSingleNonSmoking
+            // radioButtonTwinSmoking
             // 
-            this.radioButtonSingleNonSmoking.AutoSize = true;
-            this.radioButtonSingleNonSmoking.Location = new System.Drawing.Point(19, 25);
-            this.radioButtonSingleNonSmoking.Name = "radioButtonSingleNonSmoking";
-            this.radioButtonSingleNonSmoking.Size = new System.Drawing.Size(171, 24);
-            this.radioButtonSingleNonSmoking.TabIndex = 0;
-            this.radioButtonSingleNonSmoking.TabStop = true;
-            this.radioButtonSingleNonSmoking.Text = "Single Non-Smoking";
-            this.radioButtonSingleNonSmoking.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonSingleSmoking
-            // 
-            this.radioButtonSingleSmoking.AutoSize = true;
-            this.radioButtonSingleSmoking.Location = new System.Drawing.Point(210, 25);
-            this.radioButtonSingleSmoking.Name = "radioButtonSingleSmoking";
-            this.radioButtonSingleSmoking.Size = new System.Drawing.Size(137, 24);
-            this.radioButtonSingleSmoking.TabIndex = 1;
-            this.radioButtonSingleSmoking.TabStop = true;
-            this.radioButtonSingleSmoking.Text = "Single Smoking";
-            this.radioButtonSingleSmoking.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDoubleNonSmoking
-            // 
-            this.radioButtonDoubleNonSmoking.AutoSize = true;
-            this.radioButtonDoubleNonSmoking.Location = new System.Drawing.Point(19, 55);
-            this.radioButtonDoubleNonSmoking.Name = "radioButtonDoubleNonSmoking";
-            this.radioButtonDoubleNonSmoking.Size = new System.Drawing.Size(178, 24);
-            this.radioButtonDoubleNonSmoking.TabIndex = 2;
-            this.radioButtonDoubleNonSmoking.TabStop = true;
-            this.radioButtonDoubleNonSmoking.Text = "Double Non-Smoking";
-            this.radioButtonDoubleNonSmoking.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDoubleSmoking
-            // 
-            this.radioButtonDoubleSmoking.AutoSize = true;
-            this.radioButtonDoubleSmoking.Location = new System.Drawing.Point(210, 55);
-            this.radioButtonDoubleSmoking.Name = "radioButtonDoubleSmoking";
-            this.radioButtonDoubleSmoking.Size = new System.Drawing.Size(144, 24);
-            this.radioButtonDoubleSmoking.TabIndex = 3;
-            this.radioButtonDoubleSmoking.TabStop = true;
-            this.radioButtonDoubleSmoking.Text = "Double Smoking";
-            this.radioButtonDoubleSmoking.UseVisualStyleBackColor = true;
+            this.radioButtonTwinSmoking.AutoSize = true;
+            this.radioButtonTwinSmoking.Location = new System.Drawing.Point(210, 85);
+            this.radioButtonTwinSmoking.Name = "radioButtonTwinSmoking";
+            this.radioButtonTwinSmoking.Size = new System.Drawing.Size(125, 24);
+            this.radioButtonTwinSmoking.TabIndex = 5;
+            this.radioButtonTwinSmoking.TabStop = true;
+            this.radioButtonTwinSmoking.Text = "Twin Smoking";
+            this.radioButtonTwinSmoking.UseVisualStyleBackColor = true;
             // 
             // radioButtonTwinNonSmoking
             // 
@@ -195,16 +171,49 @@
             this.radioButtonTwinNonSmoking.Text = "Twin Non-Smoking";
             this.radioButtonTwinNonSmoking.UseVisualStyleBackColor = true;
             // 
-            // radioButtonTwinSmoking
+            // radioButtonDoubleSmoking
             // 
-            this.radioButtonTwinSmoking.AutoSize = true;
-            this.radioButtonTwinSmoking.Location = new System.Drawing.Point(210, 85);
-            this.radioButtonTwinSmoking.Name = "radioButtonTwinSmoking";
-            this.radioButtonTwinSmoking.Size = new System.Drawing.Size(125, 24);
-            this.radioButtonTwinSmoking.TabIndex = 5;
-            this.radioButtonTwinSmoking.TabStop = true;
-            this.radioButtonTwinSmoking.Text = "Twin Smoking";
-            this.radioButtonTwinSmoking.UseVisualStyleBackColor = true;
+            this.radioButtonDoubleSmoking.AutoSize = true;
+            this.radioButtonDoubleSmoking.Location = new System.Drawing.Point(210, 55);
+            this.radioButtonDoubleSmoking.Name = "radioButtonDoubleSmoking";
+            this.radioButtonDoubleSmoking.Size = new System.Drawing.Size(144, 24);
+            this.radioButtonDoubleSmoking.TabIndex = 3;
+            this.radioButtonDoubleSmoking.TabStop = true;
+            this.radioButtonDoubleSmoking.Text = "Double Smoking";
+            this.radioButtonDoubleSmoking.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDoubleNonSmoking
+            // 
+            this.radioButtonDoubleNonSmoking.AutoSize = true;
+            this.radioButtonDoubleNonSmoking.Location = new System.Drawing.Point(19, 55);
+            this.radioButtonDoubleNonSmoking.Name = "radioButtonDoubleNonSmoking";
+            this.radioButtonDoubleNonSmoking.Size = new System.Drawing.Size(178, 24);
+            this.radioButtonDoubleNonSmoking.TabIndex = 2;
+            this.radioButtonDoubleNonSmoking.TabStop = true;
+            this.radioButtonDoubleNonSmoking.Text = "Double Non-Smoking";
+            this.radioButtonDoubleNonSmoking.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSingleSmoking
+            // 
+            this.radioButtonSingleSmoking.AutoSize = true;
+            this.radioButtonSingleSmoking.Location = new System.Drawing.Point(210, 25);
+            this.radioButtonSingleSmoking.Name = "radioButtonSingleSmoking";
+            this.radioButtonSingleSmoking.Size = new System.Drawing.Size(137, 24);
+            this.radioButtonSingleSmoking.TabIndex = 1;
+            this.radioButtonSingleSmoking.TabStop = true;
+            this.radioButtonSingleSmoking.Text = "Single Smoking";
+            this.radioButtonSingleSmoking.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSingleNonSmoking
+            // 
+            this.radioButtonSingleNonSmoking.AutoSize = true;
+            this.radioButtonSingleNonSmoking.Location = new System.Drawing.Point(19, 25);
+            this.radioButtonSingleNonSmoking.Name = "radioButtonSingleNonSmoking";
+            this.radioButtonSingleNonSmoking.Size = new System.Drawing.Size(171, 24);
+            this.radioButtonSingleNonSmoking.TabIndex = 0;
+            this.radioButtonSingleNonSmoking.TabStop = true;
+            this.radioButtonSingleNonSmoking.Text = "Single Non-Smoking";
+            this.radioButtonSingleNonSmoking.UseVisualStyleBackColor = true;
             // 
             // groupBoxSearchForAvailability
             // 
@@ -217,29 +226,12 @@
             this.groupBoxSearchForAvailability.Controls.Add(this.DTPCheckOutDate);
             this.groupBoxSearchForAvailability.Controls.Add(this.DTPCheckInDate);
             this.groupBoxSearchForAvailability.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxSearchForAvailability.Location = new System.Drawing.Point(95, 113);
+            this.groupBoxSearchForAvailability.Location = new System.Drawing.Point(12, 74);
             this.groupBoxSearchForAvailability.Name = "groupBoxSearchForAvailability";
-            this.groupBoxSearchForAvailability.Size = new System.Drawing.Size(449, 469);
+            this.groupBoxSearchForAvailability.Size = new System.Drawing.Size(449, 508);
             this.groupBoxSearchForAvailability.TabIndex = 19;
             this.groupBoxSearchForAvailability.TabStop = false;
             this.groupBoxSearchForAvailability.Text = "Search For Availability";
-            // 
-            // lblNumOfNights
-            // 
-            this.lblNumOfNights.AutoSize = true;
-            this.lblNumOfNights.Location = new System.Drawing.Point(15, 324);
-            this.lblNumOfNights.Name = "lblNumOfNights";
-            this.lblNumOfNights.Size = new System.Drawing.Size(135, 20);
-            this.lblNumOfNights.TabIndex = 19;
-            this.lblNumOfNights.Text = "Number Of Nights";
-            // 
-            // textBoxNumOfNights
-            // 
-            this.textBoxNumOfNights.Location = new System.Drawing.Point(157, 323);
-            this.textBoxNumOfNights.Name = "textBoxNumOfNights";
-            this.textBoxNumOfNights.ReadOnly = true;
-            this.textBoxNumOfNights.Size = new System.Drawing.Size(52, 26);
-            this.textBoxNumOfNights.TabIndex = 20;
             // 
             // btnSearch
             // 
@@ -251,6 +243,23 @@
             this.btnSearch.TabIndex = 21;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            // 
+            // textBoxNumOfNights
+            // 
+            this.textBoxNumOfNights.Location = new System.Drawing.Point(157, 323);
+            this.textBoxNumOfNights.Name = "textBoxNumOfNights";
+            this.textBoxNumOfNights.ReadOnly = true;
+            this.textBoxNumOfNights.Size = new System.Drawing.Size(52, 26);
+            this.textBoxNumOfNights.TabIndex = 20;
+            // 
+            // lblNumOfNights
+            // 
+            this.lblNumOfNights.AutoSize = true;
+            this.lblNumOfNights.Location = new System.Drawing.Point(15, 324);
+            this.lblNumOfNights.Name = "lblNumOfNights";
+            this.lblNumOfNights.Size = new System.Drawing.Size(135, 20);
+            this.lblNumOfNights.TabIndex = 19;
+            this.lblNumOfNights.Text = "Number Of Nights";
             // 
             // groupBoxGuestDetails
             // 
@@ -268,12 +277,124 @@
             this.groupBoxGuestDetails.Controls.Add(this.lblFirstName);
             this.groupBoxGuestDetails.Controls.Add(this.lblSurname);
             this.groupBoxGuestDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxGuestDetails.Location = new System.Drawing.Point(615, 113);
+            this.groupBoxGuestDetails.Location = new System.Drawing.Point(800, 74);
             this.groupBoxGuestDetails.Name = "groupBoxGuestDetails";
-            this.groupBoxGuestDetails.Size = new System.Drawing.Size(449, 469);
+            this.groupBoxGuestDetails.Size = new System.Drawing.Size(449, 457);
             this.groupBoxGuestDetails.TabIndex = 22;
             this.groupBoxGuestDetails.TabStop = false;
             this.groupBoxGuestDetails.Text = "Guest Details";
+            // 
+            // groupBoxSendMarketingInfo
+            // 
+            this.groupBoxSendMarketingInfo.Controls.Add(this.radioButtonMINo);
+            this.groupBoxSendMarketingInfo.Controls.Add(this.radioButtonMIYes);
+            this.groupBoxSendMarketingInfo.Location = new System.Drawing.Point(19, 298);
+            this.groupBoxSendMarketingInfo.Name = "groupBoxSendMarketingInfo";
+            this.groupBoxSendMarketingInfo.Size = new System.Drawing.Size(416, 67);
+            this.groupBoxSendMarketingInfo.TabIndex = 29;
+            this.groupBoxSendMarketingInfo.TabStop = false;
+            this.groupBoxSendMarketingInfo.Text = "Send Marketing Information";
+            // 
+            // radioButtonMINo
+            // 
+            this.radioButtonMINo.AutoSize = true;
+            this.radioButtonMINo.Location = new System.Drawing.Point(117, 25);
+            this.radioButtonMINo.Name = "radioButtonMINo";
+            this.radioButtonMINo.Size = new System.Drawing.Size(47, 24);
+            this.radioButtonMINo.TabIndex = 1;
+            this.radioButtonMINo.TabStop = true;
+            this.radioButtonMINo.Text = "No";
+            this.radioButtonMINo.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonMIYes
+            // 
+            this.radioButtonMIYes.AutoSize = true;
+            this.radioButtonMIYes.Location = new System.Drawing.Point(19, 25);
+            this.radioButtonMIYes.Name = "radioButtonMIYes";
+            this.radioButtonMIYes.Size = new System.Drawing.Size(55, 24);
+            this.radioButtonMIYes.TabIndex = 0;
+            this.radioButtonMIYes.TabStop = true;
+            this.radioButtonMIYes.Text = "Yes";
+            this.radioButtonMIYes.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxDepositPayed
+            // 
+            this.groupBoxDepositPayed.Controls.Add(this.radioButtonDPNo);
+            this.groupBoxDepositPayed.Controls.Add(this.radioButtonDPYes);
+            this.groupBoxDepositPayed.Location = new System.Drawing.Point(19, 214);
+            this.groupBoxDepositPayed.Name = "groupBoxDepositPayed";
+            this.groupBoxDepositPayed.Size = new System.Drawing.Size(416, 67);
+            this.groupBoxDepositPayed.TabIndex = 28;
+            this.groupBoxDepositPayed.TabStop = false;
+            this.groupBoxDepositPayed.Text = "Deposit Payed";
+            // 
+            // radioButtonDPNo
+            // 
+            this.radioButtonDPNo.AutoSize = true;
+            this.radioButtonDPNo.Location = new System.Drawing.Point(117, 25);
+            this.radioButtonDPNo.Name = "radioButtonDPNo";
+            this.radioButtonDPNo.Size = new System.Drawing.Size(47, 24);
+            this.radioButtonDPNo.TabIndex = 1;
+            this.radioButtonDPNo.TabStop = true;
+            this.radioButtonDPNo.Text = "No";
+            this.radioButtonDPNo.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDPYes
+            // 
+            this.radioButtonDPYes.AutoSize = true;
+            this.radioButtonDPYes.Location = new System.Drawing.Point(19, 25);
+            this.radioButtonDPYes.Name = "radioButtonDPYes";
+            this.radioButtonDPYes.Size = new System.Drawing.Size(55, 24);
+            this.radioButtonDPYes.TabIndex = 0;
+            this.radioButtonDPYes.TabStop = true;
+            this.radioButtonDPYes.Text = "Yes";
+            this.radioButtonDPYes.UseVisualStyleBackColor = true;
+            // 
+            // textBoxAddress
+            // 
+            this.textBoxAddress.Location = new System.Drawing.Point(108, 134);
+            this.textBoxAddress.Name = "textBoxAddress";
+            this.textBoxAddress.Size = new System.Drawing.Size(327, 26);
+            this.textBoxAddress.TabIndex = 27;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(15, 140);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 20);
+            this.label2.TabIndex = 26;
+            this.label2.Text = "Address";
+            // 
+            // textBoxContact
+            // 
+            this.textBoxContact.Location = new System.Drawing.Point(108, 102);
+            this.textBoxContact.Name = "textBoxContact";
+            this.textBoxContact.Size = new System.Drawing.Size(327, 26);
+            this.textBoxContact.TabIndex = 25;
+            // 
+            // lblContact
+            // 
+            this.lblContact.AutoSize = true;
+            this.lblContact.Location = new System.Drawing.Point(15, 108);
+            this.lblContact.Name = "lblContact";
+            this.lblContact.Size = new System.Drawing.Size(65, 20);
+            this.lblContact.TabIndex = 24;
+            this.lblContact.Text = "Contact";
+            // 
+            // textBoxSurname
+            // 
+            this.textBoxSurname.Location = new System.Drawing.Point(108, 70);
+            this.textBoxSurname.Name = "textBoxSurname";
+            this.textBoxSurname.Size = new System.Drawing.Size(327, 26);
+            this.textBoxSurname.TabIndex = 23;
+            // 
+            // textBoxFirstName
+            // 
+            this.textBoxFirstName.Location = new System.Drawing.Point(108, 37);
+            this.textBoxFirstName.Name = "textBoxFirstName";
+            this.textBoxFirstName.Size = new System.Drawing.Size(327, 26);
+            this.textBoxFirstName.TabIndex = 22;
             // 
             // btnSubmitReservation
             // 
@@ -320,129 +441,91 @@
             this.lblSurname.TabIndex = 14;
             this.lblSurname.Text = "Surname";
             // 
-            // textBoxFirstName
-            // 
-            this.textBoxFirstName.Location = new System.Drawing.Point(108, 37);
-            this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(327, 26);
-            this.textBoxFirstName.TabIndex = 22;
-            // 
-            // textBoxSurname
-            // 
-            this.textBoxSurname.Location = new System.Drawing.Point(108, 70);
-            this.textBoxSurname.Name = "textBoxSurname";
-            this.textBoxSurname.Size = new System.Drawing.Size(327, 26);
-            this.textBoxSurname.TabIndex = 23;
-            // 
-            // textBoxContact
-            // 
-            this.textBoxContact.Location = new System.Drawing.Point(108, 102);
-            this.textBoxContact.Name = "textBoxContact";
-            this.textBoxContact.Size = new System.Drawing.Size(327, 26);
-            this.textBoxContact.TabIndex = 25;
-            // 
-            // lblContact
-            // 
-            this.lblContact.AutoSize = true;
-            this.lblContact.Location = new System.Drawing.Point(15, 108);
-            this.lblContact.Name = "lblContact";
-            this.lblContact.Size = new System.Drawing.Size(65, 20);
-            this.lblContact.TabIndex = 24;
-            this.lblContact.Text = "Contact";
-            // 
-            // textBoxAddress
-            // 
-            this.textBoxAddress.Location = new System.Drawing.Point(108, 134);
-            this.textBoxAddress.Name = "textBoxAddress";
-            this.textBoxAddress.Size = new System.Drawing.Size(327, 26);
-            this.textBoxAddress.TabIndex = 27;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 140);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 20);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "Address";
-            // 
-            // groupBoxDepositPayed
-            // 
-            this.groupBoxDepositPayed.Controls.Add(this.radioButtonDPNo);
-            this.groupBoxDepositPayed.Controls.Add(this.radioButtonDPYes);
-            this.groupBoxDepositPayed.Location = new System.Drawing.Point(19, 214);
-            this.groupBoxDepositPayed.Name = "groupBoxDepositPayed";
-            this.groupBoxDepositPayed.Size = new System.Drawing.Size(416, 67);
-            this.groupBoxDepositPayed.TabIndex = 28;
-            this.groupBoxDepositPayed.TabStop = false;
-            this.groupBoxDepositPayed.Text = "Deposit Payed";
-            // 
-            // radioButtonDPNo
-            // 
-            this.radioButtonDPNo.AutoSize = true;
-            this.radioButtonDPNo.Location = new System.Drawing.Point(117, 25);
-            this.radioButtonDPNo.Name = "radioButtonDPNo";
-            this.radioButtonDPNo.Size = new System.Drawing.Size(47, 24);
-            this.radioButtonDPNo.TabIndex = 1;
-            this.radioButtonDPNo.TabStop = true;
-            this.radioButtonDPNo.Text = "No";
-            this.radioButtonDPNo.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDPYes
-            // 
-            this.radioButtonDPYes.AutoSize = true;
-            this.radioButtonDPYes.Location = new System.Drawing.Point(19, 25);
-            this.radioButtonDPYes.Name = "radioButtonDPYes";
-            this.radioButtonDPYes.Size = new System.Drawing.Size(55, 24);
-            this.radioButtonDPYes.TabIndex = 0;
-            this.radioButtonDPYes.TabStop = true;
-            this.radioButtonDPYes.Text = "Yes";
-            this.radioButtonDPYes.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxSendMarketingInfo
-            // 
-            this.groupBoxSendMarketingInfo.Controls.Add(this.radioButtonMINo);
-            this.groupBoxSendMarketingInfo.Controls.Add(this.radioButtonMIYes);
-            this.groupBoxSendMarketingInfo.Location = new System.Drawing.Point(19, 298);
-            this.groupBoxSendMarketingInfo.Name = "groupBoxSendMarketingInfo";
-            this.groupBoxSendMarketingInfo.Size = new System.Drawing.Size(416, 67);
-            this.groupBoxSendMarketingInfo.TabIndex = 29;
-            this.groupBoxSendMarketingInfo.TabStop = false;
-            this.groupBoxSendMarketingInfo.Text = "Send Marketing Information";
-            // 
-            // radioButtonMINo
-            // 
-            this.radioButtonMINo.AutoSize = true;
-            this.radioButtonMINo.Location = new System.Drawing.Point(117, 25);
-            this.radioButtonMINo.Name = "radioButtonMINo";
-            this.radioButtonMINo.Size = new System.Drawing.Size(47, 24);
-            this.radioButtonMINo.TabIndex = 1;
-            this.radioButtonMINo.TabStop = true;
-            this.radioButtonMINo.Text = "No";
-            this.radioButtonMINo.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonMIYes
-            // 
-            this.radioButtonMIYes.AutoSize = true;
-            this.radioButtonMIYes.Location = new System.Drawing.Point(19, 25);
-            this.radioButtonMIYes.Name = "radioButtonMIYes";
-            this.radioButtonMIYes.Size = new System.Drawing.Size(55, 24);
-            this.radioButtonMIYes.TabIndex = 0;
-            this.radioButtonMIYes.TabStop = true;
-            this.radioButtonMIYes.Text = "Yes";
-            this.radioButtonMIYes.UseVisualStyleBackColor = true;
-            // 
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(211)))), ((int)(((byte)(102)))));
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCancel.Location = new System.Drawing.Point(1096, 531);
+            this.btnCancel.Location = new System.Drawing.Point(1096, 537);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(153, 51);
             this.btnCancel.TabIndex = 23;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
+            // 
+            // groupBoxRoomDetails
+            // 
+            this.groupBoxRoomDetails.Controls.Add(this.listBoxSelectedRoom);
+            this.groupBoxRoomDetails.Controls.Add(this.textBoxVariablePrice);
+            this.groupBoxRoomDetails.Controls.Add(this.textBoxBasePrice);
+            this.groupBoxRoomDetails.Controls.Add(this.textBoxRoomNumber);
+            this.groupBoxRoomDetails.Controls.Add(this.lblVariablePrice);
+            this.groupBoxRoomDetails.Controls.Add(this.lblBasePrice);
+            this.groupBoxRoomDetails.Controls.Add(this.lbl);
+            this.groupBoxRoomDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxRoomDetails.Location = new System.Drawing.Point(477, 74);
+            this.groupBoxRoomDetails.Name = "groupBoxRoomDetails";
+            this.groupBoxRoomDetails.Size = new System.Drawing.Size(305, 508);
+            this.groupBoxRoomDetails.TabIndex = 24;
+            this.groupBoxRoomDetails.TabStop = false;
+            this.groupBoxRoomDetails.Text = "Room Details";
+            // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Location = new System.Drawing.Point(6, 287);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(112, 20);
+            this.lbl.TabIndex = 0;
+            this.lbl.Text = "Room Number";
+            // 
+            // lblBasePrice
+            // 
+            this.lblBasePrice.AutoSize = true;
+            this.lblBasePrice.Location = new System.Drawing.Point(5, 344);
+            this.lblBasePrice.Name = "lblBasePrice";
+            this.lblBasePrice.Size = new System.Drawing.Size(85, 20);
+            this.lblBasePrice.TabIndex = 1;
+            this.lblBasePrice.Text = "Base Price";
+            // 
+            // lblVariablePrice
+            // 
+            this.lblVariablePrice.AutoSize = true;
+            this.lblVariablePrice.Location = new System.Drawing.Point(5, 413);
+            this.lblVariablePrice.Name = "lblVariablePrice";
+            this.lblVariablePrice.Size = new System.Drawing.Size(110, 20);
+            this.lblVariablePrice.TabIndex = 2;
+            this.lblVariablePrice.Text = "Variable Price ";
+            // 
+            // textBoxRoomNumber
+            // 
+            this.textBoxRoomNumber.Location = new System.Drawing.Point(10, 308);
+            this.textBoxRoomNumber.Name = "textBoxRoomNumber";
+            this.textBoxRoomNumber.Size = new System.Drawing.Size(288, 26);
+            this.textBoxRoomNumber.TabIndex = 3;
+            // 
+            // textBoxBasePrice
+            // 
+            this.textBoxBasePrice.Location = new System.Drawing.Point(9, 373);
+            this.textBoxBasePrice.Name = "textBoxBasePrice";
+            this.textBoxBasePrice.Size = new System.Drawing.Size(288, 26);
+            this.textBoxBasePrice.TabIndex = 4;
+            // 
+            // textBoxVariablePrice
+            // 
+            this.textBoxVariablePrice.Location = new System.Drawing.Point(10, 437);
+            this.textBoxVariablePrice.Name = "textBoxVariablePrice";
+            this.textBoxVariablePrice.Size = new System.Drawing.Size(288, 26);
+            this.textBoxVariablePrice.TabIndex = 5;
+            // 
+            // listBoxSelectedRoom
+            // 
+            this.listBoxSelectedRoom.FormattingEnabled = true;
+            this.listBoxSelectedRoom.ItemHeight = 20;
+            this.listBoxSelectedRoom.Location = new System.Drawing.Point(10, 33);
+            this.listBoxSelectedRoom.Name = "listBoxSelectedRoom";
+            this.listBoxSelectedRoom.Size = new System.Drawing.Size(287, 244);
+            this.listBoxSelectedRoom.TabIndex = 6;
             // 
             // formCreateReservation
             // 
@@ -450,6 +533,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(1261, 594);
+            this.Controls.Add(this.groupBoxRoomDetails);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.groupBoxGuestDetails);
             this.Controls.Add(this.groupBoxSearchForAvailability);
@@ -465,10 +549,12 @@
             this.groupBoxSearchForAvailability.PerformLayout();
             this.groupBoxGuestDetails.ResumeLayout(false);
             this.groupBoxGuestDetails.PerformLayout();
-            this.groupBoxDepositPayed.ResumeLayout(false);
-            this.groupBoxDepositPayed.PerformLayout();
             this.groupBoxSendMarketingInfo.ResumeLayout(false);
             this.groupBoxSendMarketingInfo.PerformLayout();
+            this.groupBoxDepositPayed.ResumeLayout(false);
+            this.groupBoxDepositPayed.PerformLayout();
+            this.groupBoxRoomDetails.ResumeLayout(false);
+            this.groupBoxRoomDetails.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -511,5 +597,13 @@
         private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.Label lblSurname;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.GroupBox groupBoxRoomDetails;
+        private System.Windows.Forms.ListBox listBoxSelectedRoom;
+        private System.Windows.Forms.TextBox textBoxVariablePrice;
+        private System.Windows.Forms.TextBox textBoxBasePrice;
+        private System.Windows.Forms.TextBox textBoxRoomNumber;
+        private System.Windows.Forms.Label lblVariablePrice;
+        private System.Windows.Forms.Label lblBasePrice;
+        private System.Windows.Forms.Label lbl;
     }
 }

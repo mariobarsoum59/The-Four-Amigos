@@ -72,5 +72,12 @@ namespace BloomFeildHotel
 
 
         }
+
+        private void FormAddUser_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'bloomFeildHotelDataSetUsers.Users' table. You can move, or remove it, as needed.
+            this.usersTableAdapter.Fill(this.bloomFeildHotelDataSetUsers.Users);
+
+        }
     }
 }

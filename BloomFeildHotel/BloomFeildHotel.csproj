@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BloomFeildHotelDataSetUsers.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BloomFeildHotelDataSetUsers.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +99,12 @@
     <Compile Include="formManager.Designer.cs">
       <DependentUpon>formManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="formMarkRoomCleaned.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMarkRoomCleaned.Designer.cs">
+      <DependentUpon>formMarkRoomCleaned.cs</DependentUpon>
+    </Compile>
     <Compile Include="formReception.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +152,9 @@
     <EmbeddedResource Include="formManager.resx">
       <DependentUpon>formManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formMarkRoomCleaned.resx">
+      <DependentUpon>formMarkRoomCleaned.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formReception.resx">
       <DependentUpon>formReception.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,6 +174,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="BloomFeildHotelDataSetUsers.xsc">
+      <DependentUpon>BloomFeildHotelDataSetUsers.xsd</DependentUpon>
+    </None>
+    <None Include="BloomFeildHotelDataSetUsers.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BloomFeildHotelDataSetUsers.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BloomFeildHotelDataSetUsers.xss">
+      <DependentUpon>BloomFeildHotelDataSetUsers.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -210,6 +235,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Webp.net-resizeimage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
