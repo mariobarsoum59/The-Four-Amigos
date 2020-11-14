@@ -31,7 +31,7 @@
             this.lblManagerMenu = new System.Windows.Forms.Label();
             this.btnAddUsers = new System.Windows.Forms.Button();
             this.btnDeleteUsers = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnCreateReservation = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -76,15 +76,16 @@
             this.btnDeleteUsers.UseVisualStyleBackColor = true;
             this.btnDeleteUsers.Click += new System.EventHandler(this.BtnDeleteUsers_Click);
             // 
-            // button3
+            // btnCreateReservation
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(415, 392);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(161, 104);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnCreateReservation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreateReservation.Location = new System.Drawing.Point(415, 392);
+            this.btnCreateReservation.Name = "btnCreateReservation";
+            this.btnCreateReservation.Size = new System.Drawing.Size(161, 104);
+            this.btnCreateReservation.TabIndex = 3;
+            this.btnCreateReservation.Text = "Create Reservation";
+            this.btnCreateReservation.UseVisualStyleBackColor = true;
+            this.btnCreateReservation.Click += new System.EventHandler(this.BtnCreateReservation_Click);
             // 
             // button4
             // 
@@ -93,8 +94,9 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(161, 104);
             this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
+            this.button4.Text = "Room Cleaning Service";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // button5
             // 
@@ -181,7 +183,7 @@
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnCreateReservation);
             this.Controls.Add(this.btnDeleteUsers);
             this.Controls.Add(this.btnAddUsers);
             this.DoubleBuffered = true;
@@ -201,7 +203,7 @@
         private System.Windows.Forms.Label lblManagerMenu;
         private System.Windows.Forms.Button btnAddUsers;
         private System.Windows.Forms.Button btnDeleteUsers;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnCreateReservation;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;

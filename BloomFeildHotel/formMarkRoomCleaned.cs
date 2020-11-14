@@ -7,14 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessLayer;
+
 
 namespace BloomFeildHotel
 {
     public partial class formMarkRoomCleaned : Form
     {
-        public formMarkRoomCleaned()
+        private FormContainer fc;
+        private IModel Model;
+        public formMarkRoomCleaned(FormContainer parent, IModel Model)
         {
             InitializeComponent();
+
+            MdiParent = parent;
+            fc = parent;
+            this.Model = Model;
+        }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

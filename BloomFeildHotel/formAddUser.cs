@@ -60,6 +60,8 @@ namespace BloomFeildHotel
                     txtSurname.Clear();
                     txtUsername.Clear();
                     txtPassword.Clear();
+                    this.usersTableAdapter.Fill(this.bloomFeildHotelDataSetUsers.Users);
+                    
 
                 }
             }

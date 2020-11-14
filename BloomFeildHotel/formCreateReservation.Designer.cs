@@ -65,13 +65,13 @@
             this.lblSurname = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.groupBoxRoomDetails = new System.Windows.Forms.GroupBox();
-            this.lbl = new System.Windows.Forms.Label();
-            this.lblBasePrice = new System.Windows.Forms.Label();
-            this.lblVariablePrice = new System.Windows.Forms.Label();
-            this.textBoxRoomNumber = new System.Windows.Forms.TextBox();
-            this.textBoxBasePrice = new System.Windows.Forms.TextBox();
-            this.textBoxVariablePrice = new System.Windows.Forms.TextBox();
             this.listBoxSelectedRoom = new System.Windows.Forms.ListBox();
+            this.textBoxVariablePrice = new System.Windows.Forms.TextBox();
+            this.textBoxBasePrice = new System.Windows.Forms.TextBox();
+            this.textBoxRoomNumber = new System.Windows.Forms.TextBox();
+            this.lblVariablePrice = new System.Windows.Forms.Label();
+            this.lblBasePrice = new System.Windows.Forms.Label();
+            this.lbl = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBoxRoomType.SuspendLayout();
             this.groupBoxSearchForAvailability.SuspendLayout();
@@ -450,8 +450,9 @@
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(153, 51);
             this.btnCancel.TabIndex = 23;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "Back";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // groupBoxRoomDetails
             // 
@@ -470,23 +471,35 @@
             this.groupBoxRoomDetails.TabStop = false;
             this.groupBoxRoomDetails.Text = "Room Details";
             // 
-            // lbl
+            // listBoxSelectedRoom
             // 
-            this.lbl.AutoSize = true;
-            this.lbl.Location = new System.Drawing.Point(6, 287);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(112, 20);
-            this.lbl.TabIndex = 0;
-            this.lbl.Text = "Room Number";
+            this.listBoxSelectedRoom.FormattingEnabled = true;
+            this.listBoxSelectedRoom.ItemHeight = 20;
+            this.listBoxSelectedRoom.Location = new System.Drawing.Point(10, 33);
+            this.listBoxSelectedRoom.Name = "listBoxSelectedRoom";
+            this.listBoxSelectedRoom.Size = new System.Drawing.Size(287, 244);
+            this.listBoxSelectedRoom.TabIndex = 6;
             // 
-            // lblBasePrice
+            // textBoxVariablePrice
             // 
-            this.lblBasePrice.AutoSize = true;
-            this.lblBasePrice.Location = new System.Drawing.Point(5, 344);
-            this.lblBasePrice.Name = "lblBasePrice";
-            this.lblBasePrice.Size = new System.Drawing.Size(85, 20);
-            this.lblBasePrice.TabIndex = 1;
-            this.lblBasePrice.Text = "Base Price";
+            this.textBoxVariablePrice.Location = new System.Drawing.Point(10, 437);
+            this.textBoxVariablePrice.Name = "textBoxVariablePrice";
+            this.textBoxVariablePrice.Size = new System.Drawing.Size(288, 26);
+            this.textBoxVariablePrice.TabIndex = 5;
+            // 
+            // textBoxBasePrice
+            // 
+            this.textBoxBasePrice.Location = new System.Drawing.Point(9, 373);
+            this.textBoxBasePrice.Name = "textBoxBasePrice";
+            this.textBoxBasePrice.Size = new System.Drawing.Size(288, 26);
+            this.textBoxBasePrice.TabIndex = 4;
+            // 
+            // textBoxRoomNumber
+            // 
+            this.textBoxRoomNumber.Location = new System.Drawing.Point(10, 308);
+            this.textBoxRoomNumber.Name = "textBoxRoomNumber";
+            this.textBoxRoomNumber.Size = new System.Drawing.Size(288, 26);
+            this.textBoxRoomNumber.TabIndex = 3;
             // 
             // lblVariablePrice
             // 
@@ -497,35 +510,23 @@
             this.lblVariablePrice.TabIndex = 2;
             this.lblVariablePrice.Text = "Variable Price ";
             // 
-            // textBoxRoomNumber
+            // lblBasePrice
             // 
-            this.textBoxRoomNumber.Location = new System.Drawing.Point(10, 308);
-            this.textBoxRoomNumber.Name = "textBoxRoomNumber";
-            this.textBoxRoomNumber.Size = new System.Drawing.Size(288, 26);
-            this.textBoxRoomNumber.TabIndex = 3;
+            this.lblBasePrice.AutoSize = true;
+            this.lblBasePrice.Location = new System.Drawing.Point(5, 344);
+            this.lblBasePrice.Name = "lblBasePrice";
+            this.lblBasePrice.Size = new System.Drawing.Size(85, 20);
+            this.lblBasePrice.TabIndex = 1;
+            this.lblBasePrice.Text = "Base Price";
             // 
-            // textBoxBasePrice
+            // lbl
             // 
-            this.textBoxBasePrice.Location = new System.Drawing.Point(9, 373);
-            this.textBoxBasePrice.Name = "textBoxBasePrice";
-            this.textBoxBasePrice.Size = new System.Drawing.Size(288, 26);
-            this.textBoxBasePrice.TabIndex = 4;
-            // 
-            // textBoxVariablePrice
-            // 
-            this.textBoxVariablePrice.Location = new System.Drawing.Point(10, 437);
-            this.textBoxVariablePrice.Name = "textBoxVariablePrice";
-            this.textBoxVariablePrice.Size = new System.Drawing.Size(288, 26);
-            this.textBoxVariablePrice.TabIndex = 5;
-            // 
-            // listBoxSelectedRoom
-            // 
-            this.listBoxSelectedRoom.FormattingEnabled = true;
-            this.listBoxSelectedRoom.ItemHeight = 20;
-            this.listBoxSelectedRoom.Location = new System.Drawing.Point(10, 33);
-            this.listBoxSelectedRoom.Name = "listBoxSelectedRoom";
-            this.listBoxSelectedRoom.Size = new System.Drawing.Size(287, 244);
-            this.listBoxSelectedRoom.TabIndex = 6;
+            this.lbl.AutoSize = true;
+            this.lbl.Location = new System.Drawing.Point(6, 287);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(112, 20);
+            this.lbl.TabIndex = 0;
+            this.lbl.Text = "Room Number";
             // 
             // formCreateReservation
             // 

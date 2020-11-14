@@ -31,18 +31,18 @@
             this.lblRoomCleaningService = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBoxFilter = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.lblFloor = new System.Windows.Forms.Label();
-            this.lblType = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.lblSmokingNonSmoking = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.lblAvailability = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.lblSmokingNonSmoking = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.lblType = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.lblFloor = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.lblLastCleanDate = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxNoteArea = new System.Windows.Forms.TextBox();
             this.lblLeaveANote = new System.Windows.Forms.Label();
@@ -89,39 +89,22 @@
             this.groupBoxFilter.TabStop = false;
             this.groupBoxFilter.Text = "Filter Rooms";
             // 
-            // comboBox1
+            // lblAvailability
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(95, 27);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(155, 28);
-            this.comboBox1.TabIndex = 0;
+            this.lblAvailability.AutoSize = true;
+            this.lblAvailability.Location = new System.Drawing.Point(939, 30);
+            this.lblAvailability.Name = "lblAvailability";
+            this.lblAvailability.Size = new System.Drawing.Size(81, 20);
+            this.lblAvailability.TabIndex = 7;
+            this.lblAvailability.Text = "Availability";
             // 
-            // lblFloor
+            // comboBox4
             // 
-            this.lblFloor.AutoSize = true;
-            this.lblFloor.Location = new System.Drawing.Point(44, 30);
-            this.lblFloor.Name = "lblFloor";
-            this.lblFloor.Size = new System.Drawing.Size(45, 20);
-            this.lblFloor.TabIndex = 1;
-            this.lblFloor.Text = "Floor";
-            // 
-            // lblType
-            // 
-            this.lblType.AutoSize = true;
-            this.lblType.Location = new System.Drawing.Point(280, 30);
-            this.lblType.Name = "lblType";
-            this.lblType.Size = new System.Drawing.Size(90, 20);
-            this.lblType.TabIndex = 3;
-            this.lblType.Text = "Room Type";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(376, 27);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(163, 28);
-            this.comboBox2.TabIndex = 2;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(1026, 27);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(157, 28);
+            this.comboBox4.TabIndex = 6;
             // 
             // lblSmokingNonSmoking
             // 
@@ -140,22 +123,39 @@
             this.comboBox3.Size = new System.Drawing.Size(156, 28);
             this.comboBox3.TabIndex = 4;
             // 
-            // lblAvailability
+            // lblType
             // 
-            this.lblAvailability.AutoSize = true;
-            this.lblAvailability.Location = new System.Drawing.Point(939, 30);
-            this.lblAvailability.Name = "lblAvailability";
-            this.lblAvailability.Size = new System.Drawing.Size(81, 20);
-            this.lblAvailability.TabIndex = 7;
-            this.lblAvailability.Text = "Availability";
+            this.lblType.AutoSize = true;
+            this.lblType.Location = new System.Drawing.Point(280, 30);
+            this.lblType.Name = "lblType";
+            this.lblType.Size = new System.Drawing.Size(90, 20);
+            this.lblType.TabIndex = 3;
+            this.lblType.Text = "Room Type";
             // 
-            // comboBox4
+            // comboBox2
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(1026, 27);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(157, 28);
-            this.comboBox4.TabIndex = 6;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(376, 27);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(163, 28);
+            this.comboBox2.TabIndex = 2;
+            // 
+            // lblFloor
+            // 
+            this.lblFloor.AutoSize = true;
+            this.lblFloor.Location = new System.Drawing.Point(44, 30);
+            this.lblFloor.Name = "lblFloor";
+            this.lblFloor.Size = new System.Drawing.Size(45, 20);
+            this.lblFloor.TabIndex = 1;
+            this.lblFloor.Text = "Floor";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(95, 27);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(155, 28);
+            this.comboBox1.TabIndex = 0;
             // 
             // listBox1
             // 
@@ -184,17 +184,18 @@
             this.textBox1.Size = new System.Drawing.Size(190, 26);
             this.textBox1.TabIndex = 17;
             // 
-            // btnCancel
+            // btnBack
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(211)))), ((int)(((byte)(102)))));
-            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCancel.Location = new System.Drawing.Point(1080, 492);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(153, 51);
-            this.btnCancel.TabIndex = 24;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(211)))), ((int)(((byte)(102)))));
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnBack.Location = new System.Drawing.Point(1080, 492);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(153, 51);
+            this.btnBack.TabIndex = 24;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.BtnBack_Click);
             // 
             // button1
             // 
@@ -235,7 +236,7 @@
             this.Controls.Add(this.lblLeaveANote);
             this.Controls.Add(this.textBoxNoteArea);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblLastCleanDate);
             this.Controls.Add(this.listBox1);
@@ -269,7 +270,7 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label lblLastCleanDate;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBoxNoteArea;
         private System.Windows.Forms.Label lblLeaveANote;

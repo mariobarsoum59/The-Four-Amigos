@@ -50,5 +50,21 @@ namespace BloomFeildHotel
         {
             lblManagerMenu.Text = "Hi "+Model.CurrentUser.FirstName;
         }
+
+        private void BtnCreateReservation_Click(object sender, EventArgs e)
+        {
+            formCreateReservation f3 = new formCreateReservation(fc, Model);
+            f3.Dock = DockStyle.Fill;
+
+            f3.Show();
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            formMarkRoomCleaned f4 = new formMarkRoomCleaned(fc, Model);
+            f4.Dock = DockStyle.Fill;
+
+            f4.Show();
+        }
     }
 }
