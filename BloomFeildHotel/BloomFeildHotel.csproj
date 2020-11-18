@@ -70,6 +70,12 @@
     <Compile Include="formCleaner.Designer.cs">
       <DependentUpon>formCleaner.cs</DependentUpon>
     </Compile>
+    <Compile Include="formConfirmPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formConfirmPass.Designer.cs">
+      <DependentUpon>formConfirmPass.cs</DependentUpon>
+    </Compile>
     <Compile Include="formCreateReservation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,12 @@
     </Compile>
     <Compile Include="formDeleteUser.Designer.cs">
       <DependentUpon>formDeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formEditReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEditReservation.Designer.cs">
+      <DependentUpon>formEditReservation.cs</DependentUpon>
     </Compile>
     <Compile Include="formLogin.cs">
       <SubType>Form</SubType>
@@ -129,11 +141,17 @@
     <EmbeddedResource Include="formChef.resx">
       <DependentUpon>formChef.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formConfirmPass.resx">
+      <DependentUpon>formConfirmPass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formCreateReservation.resx">
       <DependentUpon>formCreateReservation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formDeleteUser.resx">
       <DependentUpon>formDeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formEditReservation.resx">
+      <DependentUpon>formEditReservation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
