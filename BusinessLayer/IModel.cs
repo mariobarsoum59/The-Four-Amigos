@@ -20,7 +20,8 @@ namespace BusinessLayer
 
         void tearDown();
         System.Collections.ArrayList UserList { get; }
+        bool PasswordCheck(string password);
 
-        
+
     }
 }

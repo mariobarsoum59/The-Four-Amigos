@@ -54,6 +54,8 @@
             this.lblAddUser = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblConfirmPass = new System.Windows.Forms.Label();
+            this.textBoxConfirmPass = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bloomFeildHotelDataSetUsers)).BeginInit();
@@ -65,7 +67,7 @@
             // 
             this.lxlFirstName.AutoSize = true;
             this.lxlFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lxlFirstName.Location = new System.Drawing.Point(24, 60);
+            this.lxlFirstName.Location = new System.Drawing.Point(46, 63);
             this.lxlFirstName.Name = "lxlFirstName";
             this.lxlFirstName.Size = new System.Drawing.Size(86, 20);
             this.lxlFirstName.TabIndex = 0;
@@ -74,7 +76,7 @@
             // txtFirstName
             // 
             this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstName.Location = new System.Drawing.Point(116, 60);
+            this.txtFirstName.Location = new System.Drawing.Point(138, 60);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(423, 26);
             this.txtFirstName.TabIndex = 1;
@@ -82,7 +84,7 @@
             // txtSurname
             // 
             this.txtSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSurname.Location = new System.Drawing.Point(114, 111);
+            this.txtSurname.Location = new System.Drawing.Point(136, 111);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(425, 26);
             this.txtSurname.TabIndex = 3;
@@ -91,7 +93,7 @@
             // 
             this.lblSurname.AutoSize = true;
             this.lblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSurname.Location = new System.Drawing.Point(34, 111);
+            this.lblSurname.Location = new System.Drawing.Point(56, 114);
             this.lblSurname.Name = "lblSurname";
             this.lblSurname.Size = new System.Drawing.Size(74, 20);
             this.lblSurname.TabIndex = 2;
@@ -100,7 +102,7 @@
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(116, 176);
+            this.txtUsername.Location = new System.Drawing.Point(138, 158);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(423, 26);
             this.txtUsername.TabIndex = 5;
@@ -109,7 +111,7 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(27, 176);
+            this.lblUsername.Location = new System.Drawing.Point(49, 161);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(83, 20);
             this.lblUsername.TabIndex = 4;
@@ -118,16 +120,16 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(114, 234);
+            this.txtPassword.Location = new System.Drawing.Point(138, 204);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(425, 26);
+            this.txtPassword.Size = new System.Drawing.Size(423, 26);
             this.txtPassword.TabIndex = 7;
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(30, 234);
+            this.lblPassword.Location = new System.Drawing.Point(52, 207);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(78, 20);
             this.lblPassword.TabIndex = 6;
@@ -282,6 +284,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblConfirmPass);
+            this.groupBox1.Controls.Add(this.textBoxConfirmPass);
             this.groupBox1.Controls.Add(this.lxlFirstName);
             this.groupBox1.Controls.Add(this.txtFirstName);
             this.groupBox1.Controls.Add(this.lblSurname);
@@ -295,10 +299,28 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 93);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(545, 485);
+            this.groupBox1.Size = new System.Drawing.Size(567, 485);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add New User";
+            // 
+            // lblConfirmPass
+            // 
+            this.lblConfirmPass.AutoSize = true;
+            this.lblConfirmPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirmPass.Location = new System.Drawing.Point(-4, 248);
+            this.lblConfirmPass.Name = "lblConfirmPass";
+            this.lblConfirmPass.Size = new System.Drawing.Size(137, 20);
+            this.lblConfirmPass.TabIndex = 10;
+            this.lblConfirmPass.Text = "Confirm Password";
+            // 
+            // textBoxConfirmPass
+            // 
+            this.textBoxConfirmPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxConfirmPass.Location = new System.Drawing.Point(139, 245);
+            this.textBoxConfirmPass.Name = "textBoxConfirmPass";
+            this.textBoxConfirmPass.Size = new System.Drawing.Size(422, 26);
+            this.textBoxConfirmPass.TabIndex = 11;
             // 
             // formAddUser
             // 
@@ -354,5 +376,7 @@
         private System.Windows.Forms.Label lblAddUser;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblConfirmPass;
+        private System.Windows.Forms.TextBox textBoxConfirmPass;
     }
 }

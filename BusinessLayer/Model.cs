@@ -9,7 +9,7 @@ using System.Collections;
 
 namespace BusinessLayer
 {
-    public class Model:IModel
+    public class Model : IModel
     {
         #region Static Attributes
         private static IModel modelSingletonInstance;  // Model object is a singleton so only one instance allowed
@@ -102,7 +102,7 @@ namespace BusinessLayer
                 int maxId = 0;
                 // need some code to avoid dulicate usernames
 
-                
+
                 // maybe add some logic (busiess rules) about password policy
                 //      IUser user = new User(name, password, userType); // Construct a User Object
                 foreach (User u in UserList)
@@ -110,7 +110,7 @@ namespace BusinessLayer
                     if (u.UserID > maxId)
                         maxId = u.UserID;
                 }
-                IUser theUser = UserHotel.GetUser(FirstName,Surname,Username,Password,userType, maxId + 1);   // Using a Factory to create the user entity object. ie seperating object creation from business logic
+                IUser theUser = UserHotel.GetUser(FirstName, Surname, Username, Password, userType, maxId + 1);   // Using a Factory to create the user entity object. ie seperating object creation from business logic
                 UserList.Add(theUser);                             // Add a reference to the newly created object to the Models UserList
                 DataLayer.addNewUserToDB(theUser); //Gets the DataLayer to add the new user to the DB. 
                 return true;
@@ -150,5 +150,14 @@ namespace BusinessLayer
         }
 
 
+
+        public bool PasswordCheck(string password)
+        {
+            if (password.Length >= 8 && password.Any(char.IsUpper) && password.Any(char.IsLower))
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
