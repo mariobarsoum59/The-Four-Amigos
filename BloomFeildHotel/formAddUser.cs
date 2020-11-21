@@ -33,22 +33,24 @@ namespace BloomFeildHotel
         private void BtnCommit_Click(object sender, EventArgs e)
         {
             
-            bool usernameExists = false;
-            bool ValidPassword = false;
-
-
 
 
             string password = txtPassword.Text;
+            bool PassOk = false;
 
-            if (password.Length > 8 && // Must be above 8 characters
-                password.Any(char.IsUpper) && //At least one uppercase
-                password.Any(char.IsLower) //At least one lowercase
-                )
+            if (Model.PasswordCheck(password) && txtPassword.Text==textBoxConfirmPass.Text)
             {
-                ValidPassword = true;
+                PassOk = true;
+            }
+            else
+            {
+                MessageBox.Show("Password Must Contain \nAtleast 8 Characters \nOne Upper Case Character \nOne Lower Case Character");
+                txtPassword.Clear();
+            }
 
-                if (usernameExists == false && listBoxUserTypes.SelectedIndex != -1)
+
+
+            if (listBoxUserTypes.SelectedIndex != -1 && PassOk==true )
                 {
 
                     if (Model.addNewUser(txtFirstName.Text, txtSurname.Text, txtUsername.Text, txtPassword.Text, listBoxUserTypes.SelectedItem.ToString()))
@@ -65,15 +67,7 @@ namespace BloomFeildHotel
 
                 }
             }
-            else
-            {
-                MessageBox.Show("Password Must Contain \nAtleast 8 Characters \nOne Upper Case Character \nOne Lower Case Character");
-                txtPassword.Clear();
-            }
-
-
-
-        }
+            
 
         private void FormAddUser_Load(object sender, EventArgs e)
         {
