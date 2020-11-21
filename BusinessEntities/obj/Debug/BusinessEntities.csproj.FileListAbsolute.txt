@@ -16,3 +16,9 @@ C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessE
 C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
 C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.dll
 C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.pdb
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.pdb
