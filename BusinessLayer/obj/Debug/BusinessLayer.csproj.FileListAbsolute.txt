@@ -42,3 +42,14 @@ C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLaye
 C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
 C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\jackk\source\repos\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessEntities.dll
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessEntities.pdb
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.pdb

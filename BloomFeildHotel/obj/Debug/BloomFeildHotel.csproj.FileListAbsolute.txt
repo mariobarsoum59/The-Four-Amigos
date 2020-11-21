@@ -94,4 +94,40 @@ D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHote
 D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formSales.resources
 D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewOrders.resources
 D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formMarkRoomCleaned.resources
+<<<<<<< HEAD
 C:\Users\jackk\source\repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formMarkRoomCleaned.resources
+=======
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\bin\Debug\BloomFeildHotel.exe.config
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\bin\Debug\BloomFeildHotel.exe
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\bin\Debug\BloomFeildHotel.pdb
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\bin\Debug\BusinessEntities.dll
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\bin\Debug\BusinessLayer.dll
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\bin\Debug\DataAccessLayer.dll
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\bin\Debug\BusinessEntities.pdb
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\bin\Debug\BusinessLayer.pdb
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\bin\Debug\DataAccessLayer.pdb
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.csprojAssemblyReference.cache
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.FormContainer.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddUser.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formChangeRoomPrice.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formCheckGuestIn.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formChef.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formCreateReservation.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formCurrentGuests.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formDeleteUser.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formEditCurrentStock.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formLogin.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formManager.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formMarkRoomCleaned.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formReception.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formSales.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewFutureGuests.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewOrders.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.Properties.Resources.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.Reservation.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.csproj.GenerateResource.cache
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.csproj.CoreCompileInputs.cache
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.csproj.CopyComplete
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.exe
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.pdb
+>>>>>>> 3dd71bba06a0dad00f80e2548224782671e6dc59
