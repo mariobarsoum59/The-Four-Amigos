@@ -1,6 +1,6 @@
 ﻿namespace BloomFeildHotel
 {
-    partial class ViewSales
+    partial class formViewSales
     {
         /// <summary>
         /// Required designer variable.

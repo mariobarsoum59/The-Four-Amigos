@@ -51,17 +51,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BloomFeildHotelDataSetUsers.xsd</DependentUpon>
     </Compile>
-    <Compile Include="CheckOut.cs">
+    <Compile Include="formCheckOut.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CheckOut.Designer.cs">
-      <DependentUpon>CheckOut.cs</DependentUpon>
+    <Compile Include="formCheckOut.Designer.cs">
+      <DependentUpon>formCheckOut.cs</DependentUpon>
     </Compile>
-    <Compile Include="currentGuestDetails.cs">
+    <Compile Include="formCurrentGuestDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="currentGuestDetails.Designer.cs">
-      <DependentUpon>currentGuestDetails.cs</DependentUpon>
+    <Compile Include="formCurrentGuestDetails.Designer.cs">
+      <DependentUpon>formCurrentGuestDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -173,29 +173,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reservation.cs">
+    <Compile Include="formReservation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reservation.Designer.cs">
-      <DependentUpon>Reservation.cs</DependentUpon>
+    <Compile Include="formReservation.Designer.cs">
+      <DependentUpon>formReservation.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewSales.cs">
+    <Compile Include="formViewSales.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewSales.Designer.cs">
-      <DependentUpon>ViewSales.cs</DependentUpon>
+    <Compile Include="formViewSales.Designer.cs">
+      <DependentUpon>formViewSales.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewWaste.cs">
+    <Compile Include="formViewWaste.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewWaste.Designer.cs">
-      <DependentUpon>ViewWaste.cs</DependentUpon>
+    <Compile Include="formViewWaste.Designer.cs">
+      <DependentUpon>formViewWaste.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CheckOut.resx">
-      <DependentUpon>CheckOut.cs</DependentUpon>
+    <EmbeddedResource Include="formCheckOut.resx">
+      <DependentUpon>formCheckOut.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="currentGuestDetails.resx">
-      <DependentUpon>currentGuestDetails.cs</DependentUpon>
+    <EmbeddedResource Include="formCurrentGuestDetails.resx">
+      <DependentUpon>formCurrentGuestDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -255,14 +255,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Reservation.resx">
-      <DependentUpon>Reservation.cs</DependentUpon>
+    <EmbeddedResource Include="formReservation.resx">
+      <DependentUpon>formReservation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewSales.resx">
-      <DependentUpon>ViewSales.cs</DependentUpon>
+    <EmbeddedResource Include="formViewSales.resx">
+      <DependentUpon>formViewSales.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewWaste.resx">
-      <DependentUpon>ViewWaste.cs</DependentUpon>
+    <EmbeddedResource Include="formViewWaste.resx">
+      <DependentUpon>formViewWaste.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="BloomFeildHotelDataSetUsers.xsc">
       <DependentUpon>BloomFeildHotelDataSetUsers.xsd</DependentUpon>

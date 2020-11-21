@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace BloomFeildHotel
 {
-    public partial class Reservation : Form
+    public partial class formCurrentGuestDetails : Form
     {
-        public Reservation()
+        public formCurrentGuestDetails()
         {
             InitializeComponent();
         }
 
-        private void Reservation_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

@@ -1,6 +1,6 @@
 ﻿namespace BloomFeildHotel
 {
-    partial class CheckOut
+    partial class formCheckOut
     {
         /// <summary>
         /// Required designer variable.

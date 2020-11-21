@@ -127,13 +127,13 @@ C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debu
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.csproj.CopyComplete
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.exe
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.pdb
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.CheckOut.resources
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.currentGuestDetails.resources
 D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formChangeRoomPrice.resources
 D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formCheckGuestIn.resources
 D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formCurrentGuests.resources
 D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formEditCurrentStock.resources
 D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewFutureGuests.resources
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.Reservation.resources
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.ViewSales.resources
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.ViewWaste.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formCheckOut.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formCurrentGuestDetails.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formReservation.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewSales.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewWaste.resources
