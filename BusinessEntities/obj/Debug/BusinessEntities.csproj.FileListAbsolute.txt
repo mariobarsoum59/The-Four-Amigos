@@ -32,3 +32,4 @@ C:\Users\rebec\OneDrive\Desktop\Project - Copy\The-Four-Amigos\BusinessEntities\
 C:\Users\rebec\OneDrive\Desktop\Project - Copy\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
 C:\Users\rebec\OneDrive\Desktop\Project - Copy\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.dll
 C:\Users\rebec\OneDrive\Desktop\Project - Copy\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.pdb
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
