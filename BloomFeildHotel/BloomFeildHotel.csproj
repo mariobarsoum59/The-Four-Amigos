@@ -51,18 +51,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BloomFeildHotelDataSetUsers.xsd</DependentUpon>
     </Compile>
-    <Compile Include="formCheckOut.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formCheckOut.Designer.cs">
-      <DependentUpon>formCheckOut.cs</DependentUpon>
-    </Compile>
-    <Compile Include="formCurrentGuestDetails.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formCurrentGuestDetails.Designer.cs">
-      <DependentUpon>formCurrentGuestDetails.cs</DependentUpon>
-    </Compile>
     <Compile Include="Editres1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +62,18 @@
     </Compile>
     <Compile Include="editRes2.Designer.cs">
       <DependentUpon>editRes2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formCheckOut.Designer.cs">
+      <DependentUpon>formCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formCurrentGuestDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formCurrentGuestDetails.Designer.cs">
+      <DependentUpon>formCurrentGuestDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -110,12 +110,6 @@
     </Compile>
     <Compile Include="formCleaner.Designer.cs">
       <DependentUpon>formCleaner.cs</DependentUpon>
-    </Compile>
-    <Compile Include="formConfPass.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formConfPass.Designer.cs">
-      <DependentUpon>formConfPass.cs</DependentUpon>
     </Compile>
     <Compile Include="formCreateReservation.cs">
       <SubType>Form</SubType>
@@ -159,23 +153,29 @@
     <Compile Include="formMarkRoomCleaned.Designer.cs">
       <DependentUpon>formMarkRoomCleaned.cs</DependentUpon>
     </Compile>
-    <Compile Include="formOrderStatusChange.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formOrderStatusChange.Designer.cs">
-      <DependentUpon>formOrderStatusChange.cs</DependentUpon>
-    </Compile>
     <Compile Include="formReception.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formReception.Designer.cs">
       <DependentUpon>formReception.cs</DependentUpon>
     </Compile>
+    <Compile Include="formRequestCleaningSupplies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formRequestCleaningSupplies.Designer.cs">
+      <DependentUpon>formRequestCleaningSupplies.cs</DependentUpon>
+    </Compile>
     <Compile Include="formSales.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formSales.Designer.cs">
       <DependentUpon>formSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSearchReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSearchReservation.Designer.cs">
+      <DependentUpon>formSearchReservation.cs</DependentUpon>
     </Compile>
     <Compile Include="formStockManager.cs">
       <SubType>Form</SubType>
@@ -194,6 +194,12 @@
     </Compile>
     <Compile Include="formViewOrders.Designer.cs">
       <DependentUpon>formViewOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fromDeleteOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fromDeleteOrders.Designer.cs">
+      <DependentUpon>fromDeleteOrders.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -215,17 +221,17 @@
     <Compile Include="formViewWaste.Designer.cs">
       <DependentUpon>formViewWaste.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="formCheckOut.resx">
-      <DependentUpon>formCheckOut.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formCurrentGuestDetails.resx">
-      <DependentUpon>formCurrentGuestDetails.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Editres1.resx">
       <DependentUpon>Editres1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="editRes2.resx">
       <DependentUpon>editRes2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formCheckOut.resx">
+      <DependentUpon>formCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formCurrentGuestDetails.resx">
+      <DependentUpon>formCurrentGuestDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -241,9 +247,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formChef.resx">
       <DependentUpon>formChef.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formConfPass.resx">
-      <DependentUpon>formConfPass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formCreateReservation.resx">
       <DependentUpon>formCreateReservation.cs</DependentUpon>
@@ -266,20 +269,26 @@
     <EmbeddedResource Include="formMarkRoomCleaned.resx">
       <DependentUpon>formMarkRoomCleaned.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formOrderStatusChange.resx">
-      <DependentUpon>formOrderStatusChange.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="formReception.resx">
       <DependentUpon>formReception.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formRequestCleaningSupplies.resx">
+      <DependentUpon>formRequestCleaningSupplies.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formSales.resx">
       <DependentUpon>formSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSearchReservation.resx">
+      <DependentUpon>formSearchReservation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formViewFutureGuests.resx">
       <DependentUpon>formViewFutureGuests.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formViewOrders.resx">
       <DependentUpon>formViewOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fromDeleteOrders.resx">
+      <DependentUpon>fromDeleteOrders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
