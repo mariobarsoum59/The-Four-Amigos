@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BloomFeildHotel
 {
-    public partial class ViewWaste : Form
+    public partial class formViewWaste : Form
     {
-        public ViewWaste()
+        public formViewWaste()
         {
             InitializeComponent();
         }

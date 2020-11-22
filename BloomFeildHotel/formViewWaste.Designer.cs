@@ -1,6 +1,6 @@
 ﻿namespace BloomFeildHotel
 {
-    partial class ViewWaste
+    partial class formViewWaste
     {
         /// <summary>
         /// Required designer variable.

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace BloomFeildHotel
 {
-    public partial class ViewSales : Form
+    public partial class formReservation : Form
     {
-        public ViewSales()
+        public formReservation()
         {
             InitializeComponent();
+        }
+
+        private void Reservation_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
