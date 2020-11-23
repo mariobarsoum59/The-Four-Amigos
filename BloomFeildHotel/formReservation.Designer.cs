@@ -79,21 +79,19 @@
             // textBoxNumOfNights
             // 
             this.textBoxNumOfNights.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNumOfNights.Location = new System.Drawing.Point(222, 518);
-            this.textBoxNumOfNights.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxNumOfNights.Location = new System.Drawing.Point(148, 337);
             this.textBoxNumOfNights.Name = "textBoxNumOfNights";
             this.textBoxNumOfNights.ReadOnly = true;
-            this.textBoxNumOfNights.Size = new System.Drawing.Size(76, 28);
+            this.textBoxNumOfNights.Size = new System.Drawing.Size(52, 21);
             this.textBoxNumOfNights.TabIndex = 20;
             // 
             // lblNumOfNights
             // 
             this.lblNumOfNights.AutoSize = true;
             this.lblNumOfNights.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumOfNights.Location = new System.Drawing.Point(56, 518);
-            this.lblNumOfNights.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNumOfNights.Location = new System.Drawing.Point(37, 337);
             this.lblNumOfNights.Name = "lblNumOfNights";
-            this.lblNumOfNights.Size = new System.Drawing.Size(153, 22);
+            this.lblNumOfNights.Size = new System.Drawing.Size(105, 15);
             this.lblNumOfNights.TabIndex = 19;
             this.lblNumOfNights.Text = "Number Of Nights";
             // 
@@ -101,10 +99,9 @@
             // 
             this.lblCheckInDate.AutoSize = true;
             this.lblCheckInDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCheckInDate.Location = new System.Drawing.Point(56, 157);
-            this.lblCheckInDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCheckInDate.Location = new System.Drawing.Point(37, 102);
             this.lblCheckInDate.Name = "lblCheckInDate";
-            this.lblCheckInDate.Size = new System.Drawing.Size(123, 22);
+            this.lblCheckInDate.Size = new System.Drawing.Size(83, 15);
             this.lblCheckInDate.TabIndex = 13;
             this.lblCheckInDate.Text = "Check In Date";
             // 
@@ -116,11 +113,9 @@
             this.groupBoxRoomType.Controls.Add(this.radioButtonDoubleNonSmoking);
             this.groupBoxRoomType.Controls.Add(this.radioButtonSingleSmoking);
             this.groupBoxRoomType.Controls.Add(this.radioButtonSingleNonSmoking);
-            this.groupBoxRoomType.Location = new System.Drawing.Point(60, 268);
-            this.groupBoxRoomType.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxRoomType.Location = new System.Drawing.Point(40, 174);
             this.groupBoxRoomType.Name = "groupBoxRoomType";
-            this.groupBoxRoomType.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBoxRoomType.Size = new System.Drawing.Size(495, 223);
+            this.groupBoxRoomType.Size = new System.Drawing.Size(330, 145);
             this.groupBoxRoomType.TabIndex = 18;
             this.groupBoxRoomType.TabStop = false;
             this.groupBoxRoomType.Text = "Room Type";
@@ -129,10 +124,9 @@
             // 
             this.radioButtonTwinSmoking.AutoSize = true;
             this.radioButtonTwinSmoking.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonTwinSmoking.Location = new System.Drawing.Point(315, 131);
-            this.radioButtonTwinSmoking.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonTwinSmoking.Location = new System.Drawing.Point(210, 85);
             this.radioButtonTwinSmoking.Name = "radioButtonTwinSmoking";
-            this.radioButtonTwinSmoking.Size = new System.Drawing.Size(148, 26);
+            this.radioButtonTwinSmoking.Size = new System.Drawing.Size(103, 19);
             this.radioButtonTwinSmoking.TabIndex = 5;
             this.radioButtonTwinSmoking.TabStop = true;
             this.radioButtonTwinSmoking.Text = "Twin Smoking";
@@ -142,10 +136,9 @@
             // 
             this.radioButtonTwinNonSmoking.AutoSize = true;
             this.radioButtonTwinNonSmoking.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonTwinNonSmoking.Location = new System.Drawing.Point(28, 131);
-            this.radioButtonTwinNonSmoking.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonTwinNonSmoking.Location = new System.Drawing.Point(19, 85);
             this.radioButtonTwinNonSmoking.Name = "radioButtonTwinNonSmoking";
-            this.radioButtonTwinNonSmoking.Size = new System.Drawing.Size(187, 26);
+            this.radioButtonTwinNonSmoking.Size = new System.Drawing.Size(130, 19);
             this.radioButtonTwinNonSmoking.TabIndex = 4;
             this.radioButtonTwinNonSmoking.TabStop = true;
             this.radioButtonTwinNonSmoking.Text = "Twin Non-Smoking";
@@ -155,10 +148,9 @@
             // 
             this.radioButtonDoubleSmoking.AutoSize = true;
             this.radioButtonDoubleSmoking.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDoubleSmoking.Location = new System.Drawing.Point(315, 85);
-            this.radioButtonDoubleSmoking.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonDoubleSmoking.Location = new System.Drawing.Point(210, 55);
             this.radioButtonDoubleSmoking.Name = "radioButtonDoubleSmoking";
-            this.radioButtonDoubleSmoking.Size = new System.Drawing.Size(166, 26);
+            this.radioButtonDoubleSmoking.Size = new System.Drawing.Size(117, 19);
             this.radioButtonDoubleSmoking.TabIndex = 3;
             this.radioButtonDoubleSmoking.TabStop = true;
             this.radioButtonDoubleSmoking.Text = "Double Smoking";
@@ -168,10 +160,9 @@
             // 
             this.radioButtonDoubleNonSmoking.AutoSize = true;
             this.radioButtonDoubleNonSmoking.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonDoubleNonSmoking.Location = new System.Drawing.Point(28, 85);
-            this.radioButtonDoubleNonSmoking.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonDoubleNonSmoking.Location = new System.Drawing.Point(19, 55);
             this.radioButtonDoubleNonSmoking.Name = "radioButtonDoubleNonSmoking";
-            this.radioButtonDoubleNonSmoking.Size = new System.Drawing.Size(205, 26);
+            this.radioButtonDoubleNonSmoking.Size = new System.Drawing.Size(144, 19);
             this.radioButtonDoubleNonSmoking.TabIndex = 2;
             this.radioButtonDoubleNonSmoking.TabStop = true;
             this.radioButtonDoubleNonSmoking.Text = "Double Non-Smoking";
@@ -181,10 +172,9 @@
             // 
             this.radioButtonSingleSmoking.AutoSize = true;
             this.radioButtonSingleSmoking.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonSingleSmoking.Location = new System.Drawing.Point(315, 38);
-            this.radioButtonSingleSmoking.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonSingleSmoking.Location = new System.Drawing.Point(210, 25);
             this.radioButtonSingleSmoking.Name = "radioButtonSingleSmoking";
-            this.radioButtonSingleSmoking.Size = new System.Drawing.Size(159, 26);
+            this.radioButtonSingleSmoking.Size = new System.Drawing.Size(112, 19);
             this.radioButtonSingleSmoking.TabIndex = 1;
             this.radioButtonSingleSmoking.TabStop = true;
             this.radioButtonSingleSmoking.Text = "Single Smoking";
@@ -194,10 +184,9 @@
             // 
             this.radioButtonSingleNonSmoking.AutoSize = true;
             this.radioButtonSingleNonSmoking.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonSingleNonSmoking.Location = new System.Drawing.Point(28, 38);
-            this.radioButtonSingleNonSmoking.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonSingleNonSmoking.Location = new System.Drawing.Point(19, 25);
             this.radioButtonSingleNonSmoking.Name = "radioButtonSingleNonSmoking";
-            this.radioButtonSingleNonSmoking.Size = new System.Drawing.Size(198, 26);
+            this.radioButtonSingleNonSmoking.Size = new System.Drawing.Size(139, 19);
             this.radioButtonSingleNonSmoking.TabIndex = 0;
             this.radioButtonSingleNonSmoking.TabStop = true;
             this.radioButtonSingleNonSmoking.Text = "Single Non-Smoking";
@@ -207,29 +196,26 @@
             // 
             this.lblCheckOutDate.AutoSize = true;
             this.lblCheckOutDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCheckOutDate.Location = new System.Drawing.Point(56, 191);
-            this.lblCheckOutDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCheckOutDate.Location = new System.Drawing.Point(37, 124);
             this.lblCheckOutDate.Name = "lblCheckOutDate";
-            this.lblCheckOutDate.Size = new System.Drawing.Size(138, 22);
+            this.lblCheckOutDate.Size = new System.Drawing.Size(92, 15);
             this.lblCheckOutDate.TabIndex = 14;
             this.lblCheckOutDate.Text = "Check Out Date";
             // 
             // DTPCheckOutDate
             // 
             this.DTPCheckOutDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DTPCheckOutDate.Location = new System.Drawing.Point(221, 191);
-            this.DTPCheckOutDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DTPCheckOutDate.Location = new System.Drawing.Point(147, 124);
             this.DTPCheckOutDate.Name = "DTPCheckOutDate";
-            this.DTPCheckOutDate.Size = new System.Drawing.Size(319, 28);
+            this.DTPCheckOutDate.Size = new System.Drawing.Size(214, 21);
             this.DTPCheckOutDate.TabIndex = 17;
             // 
             // DTPCheckInDate
             // 
             this.DTPCheckInDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DTPCheckInDate.Location = new System.Drawing.Point(222, 151);
-            this.DTPCheckInDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DTPCheckInDate.Location = new System.Drawing.Point(148, 98);
             this.DTPCheckInDate.Name = "DTPCheckInDate";
-            this.DTPCheckInDate.Size = new System.Drawing.Size(319, 28);
+            this.DTPCheckInDate.Size = new System.Drawing.Size(214, 21);
             this.DTPCheckInDate.TabIndex = 16;
             // 
             // panel1
@@ -238,8 +224,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblReservation);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1450, 102);
+            this.panel1.Size = new System.Drawing.Size(967, 66);
             this.panel1.TabIndex = 21;
             // 
             // label1
@@ -247,10 +234,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(416, 20);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(277, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 61);
+            this.label1.Size = new System.Drawing.Size(110, 39);
             this.label1.TabIndex = 2;
             this.label1.Text = "Name";
             // 
@@ -259,10 +245,9 @@
             this.lblReservation.AutoSize = true;
             this.lblReservation.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReservation.ForeColor = System.Drawing.Color.White;
-            this.lblReservation.Location = new System.Drawing.Point(25, 20);
-            this.lblReservation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblReservation.Location = new System.Drawing.Point(17, 13);
             this.lblReservation.Name = "lblReservation";
-            this.lblReservation.Size = new System.Drawing.Size(401, 61);
+            this.lblReservation.Size = new System.Drawing.Size(263, 39);
             this.lblReservation.TabIndex = 1;
             this.lblReservation.Text = "Reservation for:";
             // 
@@ -270,48 +255,43 @@
             // 
             this.listBoxSelectedRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxSelectedRoom.FormattingEnabled = true;
-            this.listBoxSelectedRoom.ItemHeight = 22;
-            this.listBoxSelectedRoom.Location = new System.Drawing.Point(606, 157);
-            this.listBoxSelectedRoom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.listBoxSelectedRoom.ItemHeight = 15;
+            this.listBoxSelectedRoom.Location = new System.Drawing.Point(404, 102);
             this.listBoxSelectedRoom.Name = "listBoxSelectedRoom";
-            this.listBoxSelectedRoom.Size = new System.Drawing.Size(183, 136);
+            this.listBoxSelectedRoom.Size = new System.Drawing.Size(123, 79);
             this.listBoxSelectedRoom.TabIndex = 6;
             // 
             // textBoxVariablePrice
             // 
             this.textBoxVariablePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxVariablePrice.Location = new System.Drawing.Point(606, 480);
-            this.textBoxVariablePrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxVariablePrice.Location = new System.Drawing.Point(404, 312);
             this.textBoxVariablePrice.Name = "textBoxVariablePrice";
-            this.textBoxVariablePrice.Size = new System.Drawing.Size(183, 28);
+            this.textBoxVariablePrice.Size = new System.Drawing.Size(123, 21);
             this.textBoxVariablePrice.TabIndex = 5;
             // 
             // textBoxBasePrice
             // 
             this.textBoxBasePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBasePrice.Location = new System.Drawing.Point(606, 409);
-            this.textBoxBasePrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxBasePrice.Location = new System.Drawing.Point(404, 266);
             this.textBoxBasePrice.Name = "textBoxBasePrice";
-            this.textBoxBasePrice.Size = new System.Drawing.Size(183, 28);
+            this.textBoxBasePrice.Size = new System.Drawing.Size(123, 21);
             this.textBoxBasePrice.TabIndex = 4;
             // 
             // textBoxRoomNumber
             // 
             this.textBoxRoomNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxRoomNumber.Location = new System.Drawing.Point(606, 342);
-            this.textBoxRoomNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxRoomNumber.Location = new System.Drawing.Point(404, 222);
             this.textBoxRoomNumber.Name = "textBoxRoomNumber";
-            this.textBoxRoomNumber.Size = new System.Drawing.Size(183, 28);
+            this.textBoxRoomNumber.Size = new System.Drawing.Size(123, 21);
             this.textBoxRoomNumber.TabIndex = 3;
             // 
             // lblVariablePrice
             // 
             this.lblVariablePrice.AutoSize = true;
             this.lblVariablePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVariablePrice.Location = new System.Drawing.Point(645, 455);
-            this.lblVariablePrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblVariablePrice.Location = new System.Drawing.Point(430, 296);
             this.lblVariablePrice.Name = "lblVariablePrice";
-            this.lblVariablePrice.Size = new System.Drawing.Size(127, 22);
+            this.lblVariablePrice.Size = new System.Drawing.Size(86, 15);
             this.lblVariablePrice.TabIndex = 2;
             this.lblVariablePrice.Text = "Variable Price ";
             // 
@@ -319,10 +299,9 @@
             // 
             this.lblBasePrice.AutoSize = true;
             this.lblBasePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBasePrice.Location = new System.Drawing.Point(658, 384);
-            this.lblBasePrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBasePrice.Location = new System.Drawing.Point(439, 250);
             this.lblBasePrice.Name = "lblBasePrice";
-            this.lblBasePrice.Size = new System.Drawing.Size(97, 22);
+            this.lblBasePrice.Size = new System.Drawing.Size(66, 15);
             this.lblBasePrice.TabIndex = 1;
             this.lblBasePrice.Text = "Base Price";
             // 
@@ -330,10 +309,9 @@
             // 
             this.lbl.AutoSize = true;
             this.lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl.Location = new System.Drawing.Point(645, 317);
-            this.lbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl.Location = new System.Drawing.Point(430, 206);
             this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(125, 22);
+            this.lbl.Size = new System.Drawing.Size(89, 15);
             this.lbl.TabIndex = 0;
             this.lbl.Text = "Room Number";
             // 
@@ -341,10 +319,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(631, 132);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(421, 86);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 22);
+            this.label2.Size = new System.Drawing.Size(64, 15);
             this.label2.TabIndex = 22;
             this.label2.Text = "Room Info";
             // 
@@ -353,11 +330,9 @@
             this.groupBoxSendMarketingInfo.Controls.Add(this.radioButtonMINo);
             this.groupBoxSendMarketingInfo.Controls.Add(this.radioButtonMIYes);
             this.groupBoxSendMarketingInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxSendMarketingInfo.Location = new System.Drawing.Point(851, 525);
-            this.groupBoxSendMarketingInfo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxSendMarketingInfo.Location = new System.Drawing.Point(567, 341);
             this.groupBoxSendMarketingInfo.Name = "groupBoxSendMarketingInfo";
-            this.groupBoxSendMarketingInfo.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBoxSendMarketingInfo.Size = new System.Drawing.Size(271, 103);
+            this.groupBoxSendMarketingInfo.Size = new System.Drawing.Size(181, 67);
             this.groupBoxSendMarketingInfo.TabIndex = 29;
             this.groupBoxSendMarketingInfo.TabStop = false;
             this.groupBoxSendMarketingInfo.Text = "Send Marketing Information";
@@ -365,10 +340,9 @@
             // radioButtonMINo
             // 
             this.radioButtonMINo.AutoSize = true;
-            this.radioButtonMINo.Location = new System.Drawing.Point(176, 38);
-            this.radioButtonMINo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonMINo.Location = new System.Drawing.Point(117, 25);
             this.radioButtonMINo.Name = "radioButtonMINo";
-            this.radioButtonMINo.Size = new System.Drawing.Size(58, 26);
+            this.radioButtonMINo.Size = new System.Drawing.Size(41, 19);
             this.radioButtonMINo.TabIndex = 1;
             this.radioButtonMINo.TabStop = true;
             this.radioButtonMINo.Text = "No";
@@ -377,10 +351,9 @@
             // radioButtonMIYes
             // 
             this.radioButtonMIYes.AutoSize = true;
-            this.radioButtonMIYes.Location = new System.Drawing.Point(28, 38);
-            this.radioButtonMIYes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonMIYes.Location = new System.Drawing.Point(19, 25);
             this.radioButtonMIYes.Name = "radioButtonMIYes";
-            this.radioButtonMIYes.Size = new System.Drawing.Size(66, 26);
+            this.radioButtonMIYes.Size = new System.Drawing.Size(45, 19);
             this.radioButtonMIYes.TabIndex = 0;
             this.radioButtonMIYes.TabStop = true;
             this.radioButtonMIYes.Text = "Yes";
@@ -391,22 +364,19 @@
             this.groupBoxDepositPayed.Controls.Add(this.radioButtonDPNo);
             this.groupBoxDepositPayed.Controls.Add(this.radioButtonDPYes);
             this.groupBoxDepositPayed.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxDepositPayed.Location = new System.Drawing.Point(851, 396);
-            this.groupBoxDepositPayed.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxDepositPayed.Location = new System.Drawing.Point(567, 257);
             this.groupBoxDepositPayed.Name = "groupBoxDepositPayed";
-            this.groupBoxDepositPayed.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBoxDepositPayed.Size = new System.Drawing.Size(271, 103);
+            this.groupBoxDepositPayed.Size = new System.Drawing.Size(181, 67);
             this.groupBoxDepositPayed.TabIndex = 28;
             this.groupBoxDepositPayed.TabStop = false;
-            this.groupBoxDepositPayed.Text = "Deposit Payed";
+            this.groupBoxDepositPayed.Text = "Deposit Paid";
             // 
             // radioButtonDPNo
             // 
             this.radioButtonDPNo.AutoSize = true;
-            this.radioButtonDPNo.Location = new System.Drawing.Point(176, 38);
-            this.radioButtonDPNo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonDPNo.Location = new System.Drawing.Point(117, 25);
             this.radioButtonDPNo.Name = "radioButtonDPNo";
-            this.radioButtonDPNo.Size = new System.Drawing.Size(58, 26);
+            this.radioButtonDPNo.Size = new System.Drawing.Size(41, 19);
             this.radioButtonDPNo.TabIndex = 1;
             this.radioButtonDPNo.TabStop = true;
             this.radioButtonDPNo.Text = "No";
@@ -415,10 +385,9 @@
             // radioButtonDPYes
             // 
             this.radioButtonDPYes.AutoSize = true;
-            this.radioButtonDPYes.Location = new System.Drawing.Point(28, 38);
-            this.radioButtonDPYes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonDPYes.Location = new System.Drawing.Point(19, 25);
             this.radioButtonDPYes.Name = "radioButtonDPYes";
-            this.radioButtonDPYes.Size = new System.Drawing.Size(66, 26);
+            this.radioButtonDPYes.Size = new System.Drawing.Size(45, 19);
             this.radioButtonDPYes.TabIndex = 0;
             this.radioButtonDPYes.TabStop = true;
             this.radioButtonDPYes.Text = "Yes";
@@ -427,78 +396,70 @@
             // textBoxAddress
             // 
             this.textBoxAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxAddress.Location = new System.Drawing.Point(944, 291);
-            this.textBoxAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxAddress.Location = new System.Drawing.Point(629, 189);
             this.textBoxAddress.Name = "textBoxAddress";
-            this.textBoxAddress.Size = new System.Drawing.Size(178, 28);
+            this.textBoxAddress.Size = new System.Drawing.Size(120, 21);
             this.textBoxAddress.TabIndex = 27;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(845, 300);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(563, 195);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 22);
+            this.label3.Size = new System.Drawing.Size(51, 15);
             this.label3.TabIndex = 26;
             this.label3.Text = "Address";
             // 
             // textBoxContact
             // 
             this.textBoxContact.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxContact.Location = new System.Drawing.Point(944, 242);
-            this.textBoxContact.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxContact.Location = new System.Drawing.Point(629, 157);
             this.textBoxContact.Name = "textBoxContact";
-            this.textBoxContact.Size = new System.Drawing.Size(178, 28);
+            this.textBoxContact.Size = new System.Drawing.Size(120, 21);
             this.textBoxContact.TabIndex = 25;
             // 
             // lblContact
             // 
             this.lblContact.AutoSize = true;
             this.lblContact.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContact.Location = new System.Drawing.Point(845, 251);
-            this.lblContact.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblContact.Location = new System.Drawing.Point(563, 163);
             this.lblContact.Name = "lblContact";
-            this.lblContact.Size = new System.Drawing.Size(72, 22);
+            this.lblContact.Size = new System.Drawing.Size(48, 15);
             this.lblContact.TabIndex = 24;
             this.lblContact.Text = "Contact";
             // 
             // textBoxSurname
             // 
             this.textBoxSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSurname.Location = new System.Drawing.Point(944, 193);
-            this.textBoxSurname.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxSurname.Location = new System.Drawing.Point(629, 125);
             this.textBoxSurname.Name = "textBoxSurname";
-            this.textBoxSurname.Size = new System.Drawing.Size(178, 28);
+            this.textBoxSurname.Size = new System.Drawing.Size(120, 21);
             this.textBoxSurname.TabIndex = 23;
             // 
             // textBoxFirstName
             // 
             this.textBoxFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFirstName.Location = new System.Drawing.Point(944, 145);
-            this.textBoxFirstName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxFirstName.Location = new System.Drawing.Point(629, 94);
             this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(178, 28);
+            this.textBoxFirstName.Size = new System.Drawing.Size(120, 21);
             this.textBoxFirstName.TabIndex = 22;
             // 
             // textBoxNumberOfGuests
             // 
             this.textBoxNumberOfGuests.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNumberOfGuests.Location = new System.Drawing.Point(1030, 336);
-            this.textBoxNumberOfGuests.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxNumberOfGuests.Location = new System.Drawing.Point(687, 218);
             this.textBoxNumberOfGuests.Name = "textBoxNumberOfGuests";
-            this.textBoxNumberOfGuests.Size = new System.Drawing.Size(92, 28);
+            this.textBoxNumberOfGuests.Size = new System.Drawing.Size(63, 21);
             this.textBoxNumberOfGuests.TabIndex = 20;
             // 
             // lblNumberOfGuests
             // 
             this.lblNumberOfGuests.AutoSize = true;
             this.lblNumberOfGuests.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumberOfGuests.Location = new System.Drawing.Point(845, 342);
-            this.lblNumberOfGuests.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNumberOfGuests.Location = new System.Drawing.Point(563, 222);
             this.lblNumberOfGuests.Name = "lblNumberOfGuests";
-            this.lblNumberOfGuests.Size = new System.Drawing.Size(159, 22);
+            this.lblNumberOfGuests.Size = new System.Drawing.Size(108, 15);
             this.lblNumberOfGuests.TabIndex = 19;
             this.lblNumberOfGuests.Text = "Number Of Guests";
             // 
@@ -506,10 +467,9 @@
             // 
             this.lblFirstName.AutoSize = true;
             this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirstName.Location = new System.Drawing.Point(845, 151);
-            this.lblFirstName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFirstName.Location = new System.Drawing.Point(563, 98);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(97, 22);
+            this.lblFirstName.Size = new System.Drawing.Size(67, 15);
             this.lblFirstName.TabIndex = 13;
             this.lblFirstName.Text = "First Name";
             // 
@@ -517,10 +477,9 @@
             // 
             this.lblSurname.AutoSize = true;
             this.lblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSurname.Location = new System.Drawing.Point(845, 202);
-            this.lblSurname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSurname.Location = new System.Drawing.Point(563, 131);
             this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(82, 22);
+            this.lblSurname.Size = new System.Drawing.Size(58, 15);
             this.lblSurname.TabIndex = 14;
             this.lblSurname.Text = "Surname";
             // 
@@ -529,9 +488,10 @@
             this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEdit.Location = new System.Drawing.Point(329, 548);
+            this.btnEdit.Location = new System.Drawing.Point(219, 356);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(97, 54);
+            this.btnEdit.Size = new System.Drawing.Size(65, 35);
             this.btnEdit.TabIndex = 30;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -541,19 +501,20 @@
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExit.Location = new System.Drawing.Point(458, 548);
+            this.btnExit.Location = new System.Drawing.Point(305, 356);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(97, 54);
+            this.btnExit.Size = new System.Drawing.Size(65, 35);
             this.btnExit.TabIndex = 31;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
             // 
-            // Reservation
+            // formReservation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(1165, 647);
+            this.ClientSize = new System.Drawing.Size(777, 421);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.groupBoxSendMarketingInfo);
@@ -584,7 +545,8 @@
             this.Controls.Add(this.groupBoxRoomType);
             this.Controls.Add(this.lblCheckOutDate);
             this.Controls.Add(this.DTPCheckOutDate);
-            this.Name = "Reservation";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "formReservation";
             this.Text = "Reservation";
             this.Load += new System.EventHandler(this.Reservation_Load);
             this.groupBoxRoomType.ResumeLayout(false);

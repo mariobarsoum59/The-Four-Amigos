@@ -63,6 +63,26 @@ namespace BloomFeildHotel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bed {
+            get {
+                object obj = ResourceManager.GetObject("bed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap boxes {
+            get {
+                object obj = ResourceManager.GetObject("boxes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap chef_hat {
             get {
                 object obj = ResourceManager.GetObject("chef hat", resourceCulture);
@@ -86,6 +106,26 @@ namespace BloomFeildHotel.Properties {
         internal static System.Drawing.Bitmap chef_icon {
             get {
                 object obj = ResourceManager.GetObject("chef-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap diet {
+            get {
+                object obj = ResourceManager.GetObject("diet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grocery {
+            get {
+                object obj = ResourceManager.GetObject("grocery", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,6 +166,26 @@ namespace BloomFeildHotel.Properties {
         internal static System.Drawing.Bitmap Iconsmind_Outline_Chef_Hat {
             get {
                 object obj = ResourceManager.GetObject("Iconsmind-Outline-Chef-Hat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap paper_shredder__2_ {
+            get {
+                object obj = ResourceManager.GetObject("paper-shredder (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap system_update {
+            get {
+                object obj = ResourceManager.GetObject("system-update", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

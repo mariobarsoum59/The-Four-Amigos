@@ -135,11 +135,23 @@
     <Compile Include="formEditCurrentStock.Designer.cs">
       <DependentUpon>formEditCurrentStock.cs</DependentUpon>
     </Compile>
+    <Compile Include="formIngredientOrderConfirmed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formIngredientOrderConfirmed.Designer.cs">
+      <DependentUpon>formIngredientOrderConfirmed.cs</DependentUpon>
+    </Compile>
     <Compile Include="formLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formLogin.Designer.cs">
       <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formManageOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formManageOrder.Designer.cs">
+      <DependentUpon>formManageOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="formManager.cs">
       <SubType>Form</SubType>
@@ -147,11 +159,29 @@
     <Compile Include="formManager.Designer.cs">
       <DependentUpon>formManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="formManageReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formManageReservation.Designer.cs">
+      <DependentUpon>formManageReservation.cs</DependentUpon>
+    </Compile>
     <Compile Include="formMarkRoomCleaned.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formMarkRoomCleaned.Designer.cs">
       <DependentUpon>formMarkRoomCleaned.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formOrderDeleteConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formOrderDeleteConfirm.Designer.cs">
+      <DependentUpon>formOrderDeleteConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formOrderUpdateConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formOrderUpdateConfirm.Designer.cs">
+      <DependentUpon>formOrderUpdateConfirm.cs</DependentUpon>
     </Compile>
     <Compile Include="formReception.cs">
       <SubType>Form</SubType>
@@ -164,6 +194,24 @@
     </Compile>
     <Compile Include="formRequestCleaningSupplies.Designer.cs">
       <DependentUpon>formRequestCleaningSupplies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formRequestIngredients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formRequestIngredients.Designer.cs">
+      <DependentUpon>formRequestIngredients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formReservationDeleteConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formReservationDeleteConfirm.Designer.cs">
+      <DependentUpon>formReservationDeleteConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formReservationUpdateConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formReservationUpdateConfirm.Designer.cs">
+      <DependentUpon>formReservationUpdateConfirm.cs</DependentUpon>
     </Compile>
     <Compile Include="formSales.cs">
       <SubType>Form</SubType>
@@ -189,11 +237,23 @@
     <Compile Include="formViewFutureGuests.Designer.cs">
       <DependentUpon>formViewFutureGuests.cs</DependentUpon>
     </Compile>
+    <Compile Include="formViewMonthlyReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formViewMonthlyReports.Designer.cs">
+      <DependentUpon>formViewMonthlyReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="formViewOrders.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formViewOrders.Designer.cs">
       <DependentUpon>formViewOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formViewStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formViewStock.Designer.cs">
+      <DependentUpon>formViewStock.cs</DependentUpon>
     </Compile>
     <Compile Include="fromDeleteOrders.cs">
       <SubType>Form</SubType>
@@ -260,20 +320,44 @@
     <EmbeddedResource Include="formEditCurrentStock.resx">
       <DependentUpon>formEditCurrentStock.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formIngredientOrderConfirmed.resx">
+      <DependentUpon>formIngredientOrderConfirmed.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formManageOrder.resx">
+      <DependentUpon>formManageOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formManager.resx">
       <DependentUpon>formManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formManageReservation.resx">
+      <DependentUpon>formManageReservation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formMarkRoomCleaned.resx">
       <DependentUpon>formMarkRoomCleaned.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formOrderDeleteConfirm.resx">
+      <DependentUpon>formOrderDeleteConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formOrderUpdateConfirm.resx">
+      <DependentUpon>formOrderUpdateConfirm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formReception.resx">
       <DependentUpon>formReception.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formRequestCleaningSupplies.resx">
       <DependentUpon>formRequestCleaningSupplies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formRequestIngredients.resx">
+      <DependentUpon>formRequestIngredients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formReservationDeleteConfirm.resx">
+      <DependentUpon>formReservationDeleteConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formReservationUpdateConfirm.resx">
+      <DependentUpon>formReservationUpdateConfirm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formSales.resx">
       <DependentUpon>formSales.cs</DependentUpon>
@@ -284,8 +368,14 @@
     <EmbeddedResource Include="formViewFutureGuests.resx">
       <DependentUpon>formViewFutureGuests.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formViewMonthlyReports.resx">
+      <DependentUpon>formViewMonthlyReports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formViewOrders.resx">
       <DependentUpon>formViewOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formViewStock.resx">
+      <DependentUpon>formViewStock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fromDeleteOrders.resx">
       <DependentUpon>fromDeleteOrders.cs</DependentUpon>
@@ -373,6 +463,24 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grocery.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-shredder %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\system-update.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boxes.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

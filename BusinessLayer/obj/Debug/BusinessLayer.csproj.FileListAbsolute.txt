@@ -64,3 +64,13 @@ C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-09ddd585ab57c59ae20c48f21610eb059
 C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-09ddd585ab57c59ae20c48f21610eb059f87f6e8\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
 C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-09ddd585ab57c59ae20c48f21610eb059f87f6e8\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-09ddd585ab57c59ae20c48f21610eb059f87f6e8\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessEntities.dll
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BusinessLayer\bin\Debug\BusinessEntities.pdb
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BusinessLayer\obj\Debug\BusinessLayer.pdb
