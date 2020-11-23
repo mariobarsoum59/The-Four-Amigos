@@ -27,5 +27,10 @@ namespace BloomFeildHotel
         {
             Close();
         }
+
+        private void FormCreateReservation_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLayer;
-
+using BusinessEntities;
 
 namespace BloomFeildHotel
 {
@@ -23,11 +23,22 @@ namespace BloomFeildHotel
             MdiParent = parent;
             fc = parent;
             this.Model = Model;
+            
         }
 
         private void BtnBack_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void FormMarkRoomCleaned_Load(object sender, EventArgs e)
+        {
+            Model.GetAllRooms();
+            foreach(Room room in Model.RoomsList)
+            {
+                listBox1.Items.Add(room.RoomNumber);
+            }
+
         }
     }
 }

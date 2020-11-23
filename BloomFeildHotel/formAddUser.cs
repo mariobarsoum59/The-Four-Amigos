@@ -32,13 +32,13 @@ namespace BloomFeildHotel
 
         private void BtnCommit_Click(object sender, EventArgs e)
         {
-            
+
 
 
             string password = txtPassword.Text;
             bool PassOk = false;
 
-            if (Model.PasswordCheck(password) && txtPassword.Text==textBoxConfirmPass.Text)
+            if (Model.PasswordCheck(password) && txtPassword.Text == textBoxConfirmPass.Text)
             {
                 PassOk = true;
             }
@@ -50,24 +50,25 @@ namespace BloomFeildHotel
 
 
 
-            if (listBoxUserTypes.SelectedIndex != -1 && PassOk==true )
+            if (listBoxUserTypes.SelectedIndex != -1 && PassOk == true)
+            {
+
+                if (Model.addNewUser(txtFirstName.Text, txtSurname.Text, txtUsername.Text, txtPassword.Text, listBoxUserTypes.SelectedItem.ToString()))
                 {
-
-                    if (Model.addNewUser(txtFirstName.Text, txtSurname.Text, txtUsername.Text, txtPassword.Text, listBoxUserTypes.SelectedItem.ToString()))
-                    {
-                        MessageBox.Show("User created");
-                    }
-
-                    txtFirstName.Clear();
-                    txtSurname.Clear();
-                    txtUsername.Clear();
-                    txtPassword.Clear();
-                    this.usersTableAdapter.Fill(this.bloomFeildHotelDataSetUsers.Users);
-                    
-
+                    MessageBox.Show("User created");
                 }
+
+                txtFirstName.Clear();
+                txtSurname.Clear();
+                txtUsername.Clear();
+                txtPassword.Clear();
+                textBoxConfirmPass.Clear();
+                this.usersTableAdapter.Fill(this.bloomFeildHotelDataSetUsers.Users);
+
+
             }
-            
+        }
+
 
         private void FormAddUser_Load(object sender, EventArgs e)
         {

@@ -20,6 +20,7 @@ namespace DataAccessLayer
         DataSet ds;                 //Declare the DataSet object
         SqlDataAdapter da;          //Declare the DataAdapter object
         int maxRows;
+      
         SqlCommandBuilder cb;
         #endregion
 
@@ -184,9 +185,93 @@ namespace DataAccessLayer
             return true;
         }
 
+        public virtual List<IRoom>getAllRooms()
+        {
+            List<IRoom> RoomsList = new List<IRoom>();
+            DataSet ds;                 //Declare the DataSet object
+            SqlDataAdapter da;   //Declare the DataAdapter object
+            SqlCommandBuilder cb;
+
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Rooms";
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "RoomsData");
+                int totNumsRooms = ds.Tables["RoomsData"].Rows.Count;
+                for (int i = 0; i < totNumsRooms; i++)
+                {
+                    DataRow dRow = ds.Tables["RoomsData"].Rows[i];
+
+                    IRoom room = RoomHotel.GetRoom(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),  // Using a Hotel to create the Room entity object. ie seperating object creation from business logic
+                                                       Convert.ToDouble(dRow.ItemArray.GetValue(1).ToString()),
+                                                        Convert.ToBoolean(dRow.ItemArray.GetValue(2).ToString()),
+                                                        dRow.ItemArray.GetValue(3).ToString(),
+                                                       Convert.ToBoolean((dRow.ItemArray.GetValue(4))));
+
+                    
+                    RoomsList.Add(room);
+                }
+            }
+            catch(System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
 
 
+            return RoomsList;
 
+        }
+
+        public virtual List<IGuest> getAllGuests()
+        {
+            List<IGuest> GuestsList = new List<IGuest>();
+            DataSet ds;                 //Declare the DataSet object
+            SqlDataAdapter da;   //Declare the DataAdapter object
+            SqlCommandBuilder cb;
+
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Guests";
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "GuestsData");
+                int totNumsGuest = ds.Tables["GuestsData"].Rows.Count;
+                for (int i = 0; i < totNumsGuest; i++)
+                {
+                    DataRow dRow = ds.Tables["GuestsData"].Rows[i];
+
+                    IGuest guest = GuestHotel.GetGuest(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),  // Using a Hotel to create the Room entity object. ie seperating object creation from business logic
+                                                       dRow.ItemArray.GetValue(1).ToString(),
+                                                        dRow.ItemArray.GetValue(2).ToString(),
+                                                        dRow.ItemArray.GetValue(3).ToString(),
+                                                        dRow.ItemArray.GetValue(4).ToString(),
+                                                        dRow.ItemArray.GetValue(5).ToString(),
+                                                       Convert.ToBoolean((dRow.ItemArray.GetValue(6))));
+
+
+                    GuestsList.Add(guest);
+                }
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+
+
+            return GuestsList;
+
+        }
 
 
     }

@@ -245,6 +245,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formMarkRoomCleaned";
             this.Text = "formMarkRoomCleaned";
+            this.Load += new System.EventHandler(this.FormMarkRoomCleaned_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBoxFilter.ResumeLayout(false);

@@ -20,6 +20,8 @@ namespace BusinessLayer
         private IDataLayer dataLayer;
         private User currentUser;
         private ArrayList userList;
+        private List<IRoom> roomsList;
+        private List<IGuest> guestsList;
         #endregion
 
         #region Instance Properties
@@ -51,6 +53,33 @@ namespace BusinessLayer
             //{
             //}
         }
+
+
+        public List<IRoom> RoomsList
+        {
+            get
+            {
+                return roomsList;
+            }
+            set
+            {
+                roomsList = value;
+            }
+        }
+
+        public List<IGuest> GuestsList
+        {
+            get
+            {
+                return guestsList;
+            }
+            set
+            {
+                guestsList = value;
+            }
+        }
+
+
         #endregion
 
 
@@ -159,5 +188,28 @@ namespace BusinessLayer
             }
             return false;
         }
+
+        public void GetAllRooms()
+        {
+            RoomsList = dataLayer.getAllRooms();
+
+        }
+
+        public void GetAllGuests()
+        {
+            GuestsList = dataLayer.getAllGuests();
+
+        }
+
+
+
+
+
+
+
+
+
+
+
     }
 }

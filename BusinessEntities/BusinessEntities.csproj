@@ -41,6 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Guest.cs" />
+    <Compile Include="GuestHotel.cs" />
+    <Compile Include="IGuest.cs" />
+    <Compile Include="IReservation.cs" />
+    <Compile Include="IRoom.cs" />
+    <Compile Include="Reservation.cs" />
+    <Compile Include="Room.cs" />
+    <Compile Include="RoomHotel.cs" />
     <Compile Include="User.cs" />
     <Compile Include="IUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -131,3 +131,13 @@ C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\D
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formReservationUpdateConfirm.resources
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewMonthlyReports.resources
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewStock.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formIngredientOrderConfirmed.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formManageOrder.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formManageReservation.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formOrderDeleteConfirm.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formOrderUpdateConfirm.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formRequestIngredients.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formReservationDeleteConfirm.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formReservationUpdateConfirm.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewMonthlyReports.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewStock.resources

@@ -28,5 +28,19 @@ namespace BloomFeildHotel
             
             Application.Exit();
         }
+
+        private void FormReception_Load(object sender, EventArgs e)
+        {
+            lblHiReceptionMenu.Text = "Hi " + Model.CurrentUser.FirstName;
+        }
+
+        private void BtnCreateReservation_Click(object sender, EventArgs e)
+        {
+            formCreateReservation form = new formCreateReservation(fc, Model);
+            //form.Show();
+            form.Dock = DockStyle.Fill;
+
+            form.Show();
+        }
     }
 }

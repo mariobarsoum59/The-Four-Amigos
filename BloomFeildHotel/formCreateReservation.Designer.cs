@@ -542,6 +542,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formCreateReservation";
             this.Text = "formCreateReservation";
+            this.Load += new System.EventHandler(this.FormCreateReservation_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBoxRoomType.ResumeLayout(false);

@@ -22,6 +22,11 @@ namespace BusinessLayer
         System.Collections.ArrayList UserList { get; }
         bool PasswordCheck(string password);
 
+        List<IRoom> RoomsList { get; set; }
+        void GetAllRooms();
+
+        List<IGuest> GuestsList { get; set; }
+        void GetAllGuests();
 
     }
 }

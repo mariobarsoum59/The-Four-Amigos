@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessEntities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,9 @@ namespace DataAccessLayer
         void openConnection();
         bool deleteUserFromDB(BusinessEntities.IUser user);
 
+        List<IRoom> getAllRooms();
+
+        List<IGuest> getAllGuests();
 
     }
 }
