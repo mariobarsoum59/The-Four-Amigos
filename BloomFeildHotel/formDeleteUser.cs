@@ -50,6 +50,9 @@ namespace BloomFeildHotel
                     {
                         Model.deleteUser(user);
                         listBoxUsers.Items.Remove(listBoxUsers.SelectedItem); //remove name from listbox
+                        textBoxFname.Clear();
+                        textBoxSname.Clear();
+                        textBoxType.Clear();
                         break;
                     }
                 }
@@ -61,6 +64,33 @@ namespace BloomFeildHotel
         private void BtnBack_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void ListBoxUsers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+                if (listBoxUsers.SelectedIndex < 0)
+                {
+                    textBoxFname.Clear();
+                    textBoxSname.Clear();
+                    textBoxType.Clear();
+
+                }
+                else
+                    {
+                        foreach (User user in Model.UserList)
+                        {
+                            if (user.Username == listBoxUsers.SelectedItem.ToString())
+                            {
+                                textBoxFname.Text = user.FirstName;
+                                textBoxSname.Text = user.Surname;
+                                textBoxType.Text = user.UserType;
+                            }
+                        }
+                     }
+            
+
+
         }
     }
 }

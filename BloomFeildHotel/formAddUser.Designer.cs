@@ -163,8 +163,9 @@
             // 
             // btnBack
             // 
-            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(211)))), ((int)(((byte)(102)))));
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.White;
             this.btnBack.Location = new System.Drawing.Point(952, 498);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(144, 80);
@@ -175,8 +176,9 @@
             // 
             // btnCommit
             // 
-            this.btnCommit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(211)))), ((int)(((byte)(102)))));
+            this.btnCommit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnCommit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCommit.ForeColor = System.Drawing.Color.White;
             this.btnCommit.Location = new System.Drawing.Point(1102, 498);
             this.btnCommit.Name = "btnCommit";
             this.btnCommit.Size = new System.Drawing.Size(144, 80);
@@ -274,7 +276,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(94)))), ((int)(((byte)(84)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.lblAddUser);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -320,7 +322,7 @@
             this.textBoxConfirmPass.Location = new System.Drawing.Point(139, 245);
             this.textBoxConfirmPass.Name = "textBoxConfirmPass";
             this.textBoxConfirmPass.Size = new System.Drawing.Size(422, 26);
-            this.textBoxConfirmPass.TabIndex = 11;
+            this.textBoxConfirmPass.TabIndex = 8;
             // 
             // formAddUser
             // 

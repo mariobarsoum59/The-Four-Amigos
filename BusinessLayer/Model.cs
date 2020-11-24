@@ -22,6 +22,7 @@ namespace BusinessLayer
         private ArrayList userList;
         private List<IRoom> roomsList;
         private List<IGuest> guestsList;
+        private List<IReservation> reservationsList;
         #endregion
 
         #region Instance Properties
@@ -79,6 +80,18 @@ namespace BusinessLayer
             }
         }
 
+
+        public List<IReservation> ReservationsList
+        {
+            get
+            {
+                return reservationsList;
+            }
+            set
+            {
+                reservationsList = value;
+            }
+        }
 
         #endregion
 
@@ -149,10 +162,57 @@ namespace BusinessLayer
                 return false;
             }
 
+        }
 
 
+        public Boolean addNewGuest(string FirstName, string Surname, string ContactNumber, string Address, string Email, bool SendMarketingInfo)
+        {
+            try
+            {
+                int maxId = 0;
+
+                foreach (Guest u in GuestsList)
+                {
+                    if (u.GuestID > maxId)
+                        maxId = u.GuestID;
+                }
+                IGuest theguest = GuestHotel.GetGuest(maxId + 1,FirstName, Surname, ContactNumber, Address, Email, SendMarketingInfo);   // Using a Factory to create the user entity object. ie seperating object creation from business logic
+                GuestsList.Add(theguest);                             // Add a reference to the newly created object to the Models UserList
+                DataLayer.addNewGuestToDB(theguest); //Gets the DataLayer to add the new user to the DB. 
+                return true;
+            }
+            catch (System.Exception excep)
+            {
+                return false;
+            }
 
         }
+
+
+        public Boolean addNewReservation(DateTime CheckInDate, DateTime CheckOutDate, int Adults, int Children, double ReservationPrice, bool PayedDeposit, bool PayedInFull, int GuestID, int RoomNumber)
+        {
+            try
+            {
+                int maxId = 0;
+
+                foreach (Reservation u in ReservationsList)
+                {
+                    if (u.ReservationID > maxId)
+                        maxId = u.ReservationID;
+                }
+                IReservation theReservation = ReservationHotel.GetReservation(maxId + 1, CheckInDate, CheckOutDate, Adults, Children, ReservationPrice, PayedDeposit, PayedInFull, GuestID, RoomNumber);   // Using a Factory to create the user entity object. ie seperating object creation from business logic
+                ReservationsList.Add(theReservation);                             // Add a reference to the newly created object to the Models UserList
+                DataLayer.addNewReservationToDB(theReservation); //Gets the DataLayer to add the new user to the DB. 
+                return true;
+            }
+            catch (System.Exception excep)
+            {
+                return false;
+            }
+
+        }
+
+
 
         public String getUserTypeForCurrentuser()
         {
@@ -201,7 +261,10 @@ namespace BusinessLayer
 
         }
 
-
+        public void GetAllReservations()
+        {
+            ReservationsList = dataLayer.getAllReservations();
+        }
 
 
 

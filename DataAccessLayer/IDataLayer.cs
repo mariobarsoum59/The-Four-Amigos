@@ -20,5 +20,10 @@ namespace DataAccessLayer
 
         List<IGuest> getAllGuests();
 
+        List<IReservation> getAllReservations();
+
+        void addNewGuestToDB(BusinessEntities.IGuest theGuest);
+        void addNewReservationToDB(BusinessEntities.IReservation theReservation);
+
     }
 }

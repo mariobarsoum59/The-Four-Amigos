@@ -156,6 +156,87 @@ namespace DataAccessLayer
             }
         }
 
+        public void addNewGuestToDB(IGuest theGuest)
+        {
+            try
+            {
+                DataSet ds = new DataSet();
+                string sql = "SELECT * From Guests";
+                SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                SqlCommandBuilder cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "GuestData");
+                maxRows = ds.Tables["GuestData"].Rows.Count;
+                DataRow dRow = ds.Tables["GuestData"].NewRow();
+                dRow[0] = theGuest.GuestID;
+                dRow[1] = theGuest.FirstName;
+                dRow[2] = theGuest.Surname;
+                dRow[3] = theGuest.ContactNumber;
+                dRow[4] = theGuest.Address;
+                dRow[5] = theGuest.Email;
+                dRow[6] = theGuest.SendMarketingInfo;
+
+
+
+                ds.Tables["GuestData"].Rows.Add(dRow);
+                da.Update(ds, "GuestData");
+            }
+            catch (System.Exception excep)
+            {
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+        }
+
+
+
+        public void addNewReservationToDB(IReservation theReservation)
+        {
+            try
+            {
+                DataSet ds = new DataSet();
+                string sql = "SELECT * From Reservations";
+                SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                SqlCommandBuilder cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "reservationData");
+                maxRows = ds.Tables["reservationData"].Rows.Count;
+                DataRow dRow = ds.Tables["reservationData"].NewRow();
+                dRow[0] = theReservation.ReservationID;
+                dRow[1] = theReservation.CheckInDate;
+                dRow[2] = theReservation.CheckOutDate;
+                dRow[3] = theReservation.Adults;
+                dRow[4] = theReservation.Children;
+                dRow[5] = theReservation.ReservationPrice;
+                dRow[6] = theReservation.PayedDeposit;
+                dRow[7] = theReservation.PayedInFull;
+                dRow[8] = theReservation.GuestID;
+                dRow[9] = theReservation.RoomNumber;
+
+
+
+
+                ds.Tables["reservationData"].Rows.Add(dRow);
+                da.Update(ds, "reservationData");
+            }
+            catch (System.Exception excep)
+            {
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+        }
+
+
+
+
+
+
+
+
+
+
 
 
         public bool deleteUserFromDB(BusinessEntities.IUser user)
@@ -270,6 +351,59 @@ namespace DataAccessLayer
 
 
             return GuestsList;
+
+        }
+
+
+        public virtual List<IReservation> getAllReservations()
+        {
+            List<IReservation> ReservationsList = new List<IReservation>();
+            DataSet ds;                 //Declare the DataSet object
+            SqlDataAdapter da;   //Declare the DataAdapter object
+            SqlCommandBuilder cb;
+
+            
+
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Reservations";
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "GuestsData");
+                int totNumsGuest = ds.Tables["GuestsData"].Rows.Count;
+                for (int i = 0; i < totNumsGuest; i++)
+                {
+                    DataRow dRow = ds.Tables["GuestsData"].Rows[i];
+
+
+                    IReservation reservation = ReservationHotel.GetReservation      // Using factory to create the reservation entity object. ie seperating object creation from business logic
+                        (Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),  //reservationID
+                                                       Convert.ToDateTime(dRow.ItemArray.GetValue(1).ToString()), //in
+                                                        Convert.ToDateTime(dRow.ItemArray.GetValue(2).ToString()), //out
+                                                        Convert.ToInt16(dRow.ItemArray.GetValue(3).ToString()), //Adults
+                                                        Convert.ToInt16(dRow.ItemArray.GetValue(4).ToString()), //Children
+                                                        Convert.ToDouble(dRow.ItemArray.GetValue(5).ToString()), //Price
+                                                        Convert.ToBoolean(dRow.ItemArray.GetValue(6).ToString()), //deposit
+                                                        Convert.ToBoolean(dRow.ItemArray.GetValue(7).ToString()), //Payedfull
+                                                        Convert.ToInt16(dRow.ItemArray.GetValue(8).ToString()), //guestID
+                                                       Convert.ToInt16((dRow.ItemArray.GetValue(9)))); //RoomNum
+
+
+                    ReservationsList.Add(reservation);
+                }
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+
+
+            return ReservationsList;
 
         }
 
