@@ -39,18 +39,20 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.lblManagerMenuTag = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(94)))), ((int)(((byte)(84)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.lblCreateReservation);
-            this.panel1.Location = new System.Drawing.Point(-3, -14);
+            this.panel1.Location = new System.Drawing.Point(-3, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1273, 68);
+            this.panel1.Size = new System.Drawing.Size(997, 81);
             this.panel1.TabIndex = 24;
             // 
             // lblCreateReservation
@@ -68,97 +70,120 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(377, 105);
+            this.dataGridView1.Location = new System.Drawing.Point(377, 160);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(579, 377);
+            this.dataGridView1.Size = new System.Drawing.Size(579, 433);
             this.dataGridView1.TabIndex = 37;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnPayment
             // 
+            this.btnPayment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPayment.Location = new System.Drawing.Point(568, 512);
+            this.btnPayment.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnPayment.Location = new System.Drawing.Point(561, 599);
             this.btnPayment.Name = "btnPayment";
             this.btnPayment.Size = new System.Drawing.Size(177, 88);
             this.btnPayment.TabIndex = 36;
             this.btnPayment.Text = "Select Payment Type";
-            this.btnPayment.UseVisualStyleBackColor = true;
+            this.btnPayment.UseVisualStyleBackColor = false;
             this.btnPayment.Click += new System.EventHandler(this.btnCommit_Click);
             // 
             // btnSubtotal
             // 
+            this.btnSubtotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnSubtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubtotal.Location = new System.Drawing.Point(377, 512);
+            this.btnSubtotal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSubtotal.Location = new System.Drawing.Point(377, 599);
             this.btnSubtotal.Name = "btnSubtotal";
-            this.btnSubtotal.Size = new System.Drawing.Size(144, 80);
+            this.btnSubtotal.Size = new System.Drawing.Size(144, 88);
             this.btnSubtotal.TabIndex = 35;
             this.btnSubtotal.Text = "Calculate Subtotal";
-            this.btnSubtotal.UseVisualStyleBackColor = true;
+            this.btnSubtotal.UseVisualStyleBackColor = false;
             this.btnSubtotal.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // lblAddDrink
             // 
             this.lblAddDrink.AutoSize = true;
             this.lblAddDrink.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddDrink.Location = new System.Drawing.Point(42, 229);
+            this.lblAddDrink.Location = new System.Drawing.Point(35, 310);
             this.lblAddDrink.Name = "lblAddDrink";
-            this.lblAddDrink.Size = new System.Drawing.Size(79, 20);
+            this.lblAddDrink.Size = new System.Drawing.Size(83, 20);
             this.lblAddDrink.TabIndex = 29;
-            this.lblAddDrink.Text = "Add Drink";
+            this.lblAddDrink.Text = "Add Drink:";
             this.lblAddDrink.Click += new System.EventHandler(this.lblUsername_Click);
             // 
             // AddFood
             // 
             this.AddFood.AutoSize = true;
             this.AddFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddFood.Location = new System.Drawing.Point(42, 105);
+            this.AddFood.Location = new System.Drawing.Point(35, 160);
             this.AddFood.Name = "AddFood";
-            this.AddFood.Size = new System.Drawing.Size(79, 20);
+            this.AddFood.Size = new System.Drawing.Size(83, 20);
             this.AddFood.TabIndex = 25;
-            this.AddFood.Text = "Add Food";
+            this.AddFood.Text = "Add Food:";
             this.AddFood.Click += new System.EventHandler(this.lxlFirstName_Click);
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(138, 105);
+            this.listBox1.Items.AddRange(new object[] {
+            "Fish & Chips €15",
+            "Chicken Burger €13"});
+            this.listBox1.Location = new System.Drawing.Point(120, 160);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(183, 108);
+            this.listBox1.Size = new System.Drawing.Size(221, 108);
             this.listBox1.TabIndex = 38;
             // 
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(138, 229);
+            this.listBox2.Items.AddRange(new object[] {
+            "Pint of Heinken €5.50",
+            "Coca Cola €3.00"});
+            this.listBox2.Location = new System.Drawing.Point(120, 310);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(183, 108);
+            this.listBox2.Size = new System.Drawing.Size(221, 108);
             this.listBox2.TabIndex = 39;
             // 
             // btnBack
             // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(812, 512);
+            this.btnBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack.Location = new System.Drawing.Point(812, 599);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(144, 88);
             this.btnBack.TabIndex = 40;
             this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.UseVisualStyleBackColor = false;
             // 
             // lblManagerMenuTag
             // 
             this.lblManagerMenuTag.AutoSize = true;
             this.lblManagerMenuTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblManagerMenuTag.Location = new System.Drawing.Point(598, 57);
+            this.lblManagerMenuTag.Location = new System.Drawing.Point(599, 105);
             this.lblManagerMenuTag.Name = "lblManagerMenuTag";
             this.lblManagerMenuTag.Size = new System.Drawing.Size(124, 39);
             this.lblManagerMenuTag.TabIndex = 41;
             this.lblManagerMenuTag.Text = "Orders";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BloomFeildHotel.Properties.Resources.grocery;
+            this.pictureBox1.Location = new System.Drawing.Point(39, 424);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(302, 265);
+            this.pictureBox1.TabIndex = 42;
+            this.pictureBox1.TabStop = false;
+            // 
             // formSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1270, 659);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
+            this.ClientSize = new System.Drawing.Size(994, 699);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblManagerMenuTag);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.listBox2);
@@ -175,6 +200,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +218,6 @@
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label lblManagerMenuTag;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -34,20 +34,22 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblSupplies = new System.Windows.Forms.Label();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.ListBox2 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 116);
+            this.label2.Location = new System.Drawing.Point(4, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(72, 20);
             this.label2.TabIndex = 10;
@@ -56,16 +58,17 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(82, 116);
+            this.textBox2.Location = new System.Drawing.Point(82, 94);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(134, 26);
+            this.textBox2.Size = new System.Drawing.Size(210, 26);
             this.textBox2.TabIndex = 11;
             // 
             // btnCommit
             // 
-            this.btnCommit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(211)))), ((int)(((byte)(102)))));
+            this.btnCommit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnCommit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCommit.Location = new System.Drawing.Point(8, 399);
+            this.btnCommit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCommit.Location = new System.Drawing.Point(8, 409);
             this.btnCommit.Name = "btnCommit";
             this.btnCommit.Size = new System.Drawing.Size(212, 50);
             this.btnCommit.TabIndex = 23;
@@ -74,9 +77,10 @@
             // 
             // btnBack
             // 
-            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(211)))), ((int)(((byte)(102)))));
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(231, 399);
+            this.btnBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack.Location = new System.Drawing.Point(656, 409);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(212, 50);
             this.btnBack.TabIndex = 22;
@@ -85,12 +89,12 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(94)))), ((int)(((byte)(84)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.lblSupplies);
             this.panel1.Location = new System.Drawing.Point(-2, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(554, 70);
+            this.panel1.Size = new System.Drawing.Size(884, 70);
             this.panel1.TabIndex = 24;
             // 
             // lblSupplies
@@ -104,19 +108,22 @@
             this.lblSupplies.TabIndex = 0;
             this.lblSupplies.Text = "Request Cleaning Supplies ";
             // 
-            // listBox2
+            // ListBox2
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(8, 157);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(212, 225);
-            this.listBox2.TabIndex = 27;
+            this.ListBox2.FormattingEnabled = true;
+            this.ListBox2.Items.AddRange(new object[] {
+            "Disinfectant spray-Dettol",
+            "Hand sanitizer-Amazon"});
+            this.ListBox2.Location = new System.Drawing.Point(8, 151);
+            this.ListBox2.Name = "ListBox2";
+            this.ListBox2.Size = new System.Drawing.Size(284, 251);
+            this.ListBox2.TabIndex = 27;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 82);
+            this.label1.Location = new System.Drawing.Point(4, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 20);
             this.label1.TabIndex = 26;
@@ -125,16 +132,18 @@
             // listBox3
             // 
             this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(231, 157);
+            this.listBox3.Items.AddRange(new object[] {
+            "30 Disinfectant spray-Dettol"});
+            this.listBox3.Location = new System.Drawing.Point(584, 152);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(212, 225);
+            this.listBox3.Size = new System.Drawing.Size(284, 251);
             this.listBox3.TabIndex = 29;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(227, 116);
+            this.label3.Location = new System.Drawing.Point(584, 123);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(111, 20);
             this.label3.TabIndex = 28;
@@ -142,9 +151,10 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(211)))), ((int)(((byte)(102)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(231, 455);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(656, 465);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 50);
             this.button1.TabIndex = 30;
@@ -153,27 +163,39 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(211)))), ((int)(((byte)(102)))));
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(8, 455);
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(8, 465);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(212, 50);
             this.button2.TabIndex = 31;
             this.button2.Text = "Submit";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BloomFeildHotel.Properties.Resources.boxes;
+            this.pictureBox1.Location = new System.Drawing.Point(294, 151);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(284, 252);
+            this.pictureBox1.TabIndex = 32;
+            this.pictureBox1.TabStop = false;
+            // 
             // formRequestCleaning_Supplies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(454, 523);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
+            this.ClientSize = new System.Drawing.Size(880, 523);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBox3);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.ListBox2);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCommit);
@@ -182,6 +204,7 @@
             this.Text = "formRequestCleaningSupplies";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -194,11 +217,12 @@
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox ListBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

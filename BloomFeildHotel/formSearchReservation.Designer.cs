@@ -36,17 +36,20 @@
             this.lblSurname = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.GuestList = new System.Windows.Forms.ListBox();
+            this.EnterSearch = new System.Windows.Forms.Label();
+            this.ReservationInfo = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(94)))), ((int)(((byte)(84)))));
             this.panel1.Controls.Add(this.lbISearch);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(406, 66);
+            this.panel1.Size = new System.Drawing.Size(754, 66);
             this.panel1.TabIndex = 22;
             // 
             // lbISearch
@@ -63,7 +66,7 @@
             // textBoxSurname
             // 
             this.textBoxSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSurname.Location = new System.Drawing.Point(87, 113);
+            this.textBoxSurname.Location = new System.Drawing.Point(87, 150);
             this.textBoxSurname.Name = "textBoxSurname";
             this.textBoxSurname.Size = new System.Drawing.Size(295, 21);
             this.textBoxSurname.TabIndex = 27;
@@ -71,7 +74,7 @@
             // textBoxFirstName
             // 
             this.textBoxFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFirstName.Location = new System.Drawing.Point(87, 82);
+            this.textBoxFirstName.Location = new System.Drawing.Point(87, 113);
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(295, 21);
             this.textBoxFirstName.TabIndex = 26;
@@ -80,7 +83,7 @@
             // 
             this.lblFirstName.AutoSize = true;
             this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirstName.Location = new System.Drawing.Point(21, 86);
+            this.lblFirstName.Location = new System.Drawing.Point(14, 116);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(67, 15);
             this.lblFirstName.TabIndex = 24;
@@ -90,7 +93,7 @@
             // 
             this.lblSurname.AutoSize = true;
             this.lblSurname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSurname.Location = new System.Drawing.Point(21, 119);
+            this.lblSurname.Location = new System.Drawing.Point(14, 150);
             this.lblSurname.Name = "lblSurname";
             this.lblSurname.Size = new System.Drawing.Size(58, 15);
             this.lblSurname.TabIndex = 25;
@@ -98,36 +101,71 @@
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExit.Location = new System.Drawing.Point(179, 164);
+            this.btnExit.Location = new System.Drawing.Point(87, 219);
             this.btnExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(78, 32);
+            this.btnExit.Size = new System.Drawing.Size(102, 54);
             this.btnExit.TabIndex = 29;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
             // 
             // btnSearch
             // 
-            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSearch.Location = new System.Drawing.Point(85, 164);
+            this.btnSearch.Location = new System.Drawing.Point(280, 219);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(78, 32);
+            this.btnSearch.Size = new System.Drawing.Size(102, 54);
             this.btnSearch.TabIndex = 28;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            // 
+            // GuestList
+            // 
+            this.GuestList.FormattingEnabled = true;
+            this.GuestList.Items.AddRange(new object[] {
+            "FirstName Last Name",
+            "FirstName LastName"});
+            this.GuestList.Location = new System.Drawing.Point(401, 113);
+            this.GuestList.Margin = new System.Windows.Forms.Padding(2);
+            this.GuestList.Name = "GuestList";
+            this.GuestList.Size = new System.Drawing.Size(342, 160);
+            this.GuestList.TabIndex = 30;
+            // 
+            // EnterSearch
+            // 
+            this.EnterSearch.AutoSize = true;
+            this.EnterSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.EnterSearch.Location = new System.Drawing.Point(14, 82);
+            this.EnterSearch.Name = "EnterSearch";
+            this.EnterSearch.Size = new System.Drawing.Size(149, 15);
+            this.EnterSearch.TabIndex = 31;
+            this.EnterSearch.Text = "Please Enter Guest Name";
+            // 
+            // ReservationInfo
+            // 
+            this.ReservationInfo.AutoSize = true;
+            this.ReservationInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.ReservationInfo.Location = new System.Drawing.Point(523, 82);
+            this.ReservationInfo.Name = "ReservationInfo";
+            this.ReservationInfo.Size = new System.Drawing.Size(95, 15);
+            this.ReservationInfo.TabIndex = 32;
+            this.ReservationInfo.Text = "Reservation Info";
             // 
             // formSearchReservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(405, 223);
+            this.ClientSize = new System.Drawing.Size(754, 297);
+            this.Controls.Add(this.ReservationInfo);
+            this.Controls.Add(this.EnterSearch);
+            this.Controls.Add(this.GuestList);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.textBoxSurname);
@@ -155,5 +193,8 @@
         private System.Windows.Forms.Label lblSurname;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.ListBox GuestList;
+        private System.Windows.Forms.Label EnterSearch;
+        private System.Windows.Forms.Label ReservationInfo;
     }
 }
