@@ -36,24 +36,25 @@ namespace BloomFeildHotel
             Model.GetAllRooms();
             Model.GetAllReservations();
             Model.GetAllGuests();
+            DTPCheckOutDate.MinDate = DTPCheckInDate.Value.AddDays(1);
         }
 
         private void BtnSearch_Click(object sender, EventArgs e)
         {
 
 
-            //List<Room> availableRooms = new List<Room>();
+            List<Room> availableRooms = new List<Room>();
 
             //Rooms available in selected period
 
-            //foreach(Reservation r in Model.ReservationsList)
+            //foreach (Reservation r in Model.ReservationsList)
             //{
-            //    foreach(Room rm in Model.RoomsList)
+            //    foreach (Room rm in Model.RoomsList)
             //    {
-            //        if (DTPCheckInDate.Value.Date <= r.CheckInDate.Date && DTPCheckOutDate.Value.Date >= r.CheckOutDate.Date) 
+            //        if (DTPCheckInDate.Value.Date<=r.CheckInDate.Date && DTPCheckOutDate.Value.Date>=r.CheckOutDate.Date)
             //        {
-                        
-            //            MessageBox.Show(r.CheckInDate.Date+ " -------" + DTPCheckInDate.Value.Date);
+
+            //            //MessageBox.Show(r.CheckInDate.Date + " -------" + DTPCheckInDate.Value.Date);
             //        }
             //        else
             //        {
@@ -140,8 +141,8 @@ namespace BloomFeildHotel
 
             int numnights = Convert.ToInt32(numofnights.Days.ToString());
             double BPrice = Convert.ToDouble(textBoxBasePrice.Text);
-            double PricePerNight = 20.00;
-            double vPrice = BPrice + (PricePerNight * numnights);
+
+            double vPrice = BPrice * numnights;
 
             textBoxVariablePrice.Text = vPrice.ToString();
 
@@ -152,10 +153,11 @@ namespace BloomFeildHotel
             bool sendMInfo = false;
             int guestID = 0;
             int numofchildren= Convert.ToInt32(textBoxNumOfChildren.Text);
-            int numofAdults= Convert.ToInt32(textBoxNumOfAdults.Text); ;
-            double Price= Convert.ToDouble(textBoxVariablePrice.Text); ;
+            int numofAdults= Convert.ToInt32(textBoxNumOfAdults.Text); 
+            double Price= Convert.ToDouble(textBoxVariablePrice.Text); 
             bool DepositPayed = false;
             bool PayedInFull = false;
+            int roomnum = Convert.ToInt32(textBoxRoomNumber.Text);
             if (radioButtonDPYes.Checked)
             {
                 DepositPayed = true;
@@ -169,7 +171,7 @@ namespace BloomFeildHotel
             {
                 sendMInfo = true;
             }
-            if (Model.addNewGuest(textBoxFirstName.Text, textBoxSurname.Text, textBoxContact.Text, textBoxAddress.Text, textBoxEmail.Text, sendMInfo));
+            if (Model.addNewGuest(textBoxFirstName.Text, textBoxSurname.Text, textBoxContact.Text, textBoxAddress.Text, textBoxEmail.Text, sendMInfo))
             {
                 MessageBox.Show("Guest Added");
             }
@@ -184,10 +186,15 @@ namespace BloomFeildHotel
             }
 
 
-            if(Model.addNewReservation(DTPCheckInDate.Value.Date,DTPCheckOutDate.Value.Date,numofAdults,numofchildren,Price,DepositPayed,PayedInFull,guestID,1))
+            if(Model.addNewReservation(DTPCheckInDate.Value.Date,DTPCheckOutDate.Value.Date,numofAdults,numofchildren,Price,DepositPayed,PayedInFull,guestID,roomnum))
             {
                 MessageBox.Show("Reservation Added");
             }
+        }
+
+        private void DTPCheckInDate_ValueChanged(object sender, EventArgs e)
+        {
+            DTPCheckOutDate.MinDate = DTPCheckInDate.Value.AddDays(1);
         }
     }
 }

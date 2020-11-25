@@ -46,6 +46,11 @@
             this.textBoxNumOfNights = new System.Windows.Forms.TextBox();
             this.lblNumOfNights = new System.Windows.Forms.Label();
             this.groupBoxGuestDetails = new System.Windows.Forms.GroupBox();
+            this.textBoxNumOfChildren = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButtonPIFNo = new System.Windows.Forms.RadioButton();
+            this.radioButtonPIFYes = new System.Windows.Forms.RadioButton();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBoxSendMarketingInfo = new System.Windows.Forms.GroupBox();
@@ -74,20 +79,15 @@
             this.lblVariablePrice = new System.Windows.Forms.Label();
             this.lblBasePrice = new System.Windows.Forms.Label();
             this.lbl = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButtonPIFNo = new System.Windows.Forms.RadioButton();
-            this.radioButtonPIFYes = new System.Windows.Forms.RadioButton();
-            this.textBoxNumOfChildren = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBoxRoomType.SuspendLayout();
             this.groupBoxSearchForAvailability.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBoxGuestDetails.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.groupBoxSendMarketingInfo.SuspendLayout();
             this.groupBoxDepositPayed.SuspendLayout();
             this.groupBoxRoomDetails.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCreateReservation
@@ -135,6 +135,7 @@
             this.DTPCheckInDate.Name = "DTPCheckInDate";
             this.DTPCheckInDate.Size = new System.Drawing.Size(291, 26);
             this.DTPCheckInDate.TabIndex = 16;
+            this.DTPCheckInDate.ValueChanged += new System.EventHandler(this.DTPCheckInDate_ValueChanged);
             // 
             // DTPCheckOutDate
             // 
@@ -296,6 +297,55 @@
             this.groupBoxGuestDetails.TabIndex = 22;
             this.groupBoxGuestDetails.TabStop = false;
             this.groupBoxGuestDetails.Text = "Guest Details";
+            // 
+            // textBoxNumOfChildren
+            // 
+            this.textBoxNumOfChildren.Location = new System.Drawing.Point(373, 180);
+            this.textBoxNumOfChildren.Name = "textBoxNumOfChildren";
+            this.textBoxNumOfChildren.Size = new System.Drawing.Size(45, 26);
+            this.textBoxNumOfChildren.TabIndex = 33;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(225, 183);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(148, 20);
+            this.label3.TabIndex = 32;
+            this.label3.Text = "Number Of Children";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.radioButtonPIFNo);
+            this.groupBox2.Controls.Add(this.radioButtonPIFYes);
+            this.groupBox2.Location = new System.Drawing.Point(19, 337);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(416, 51);
+            this.groupBox2.TabIndex = 30;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Payed In Full";
+            // 
+            // radioButtonPIFNo
+            // 
+            this.radioButtonPIFNo.AutoSize = true;
+            this.radioButtonPIFNo.Location = new System.Drawing.Point(117, 25);
+            this.radioButtonPIFNo.Name = "radioButtonPIFNo";
+            this.radioButtonPIFNo.Size = new System.Drawing.Size(47, 24);
+            this.radioButtonPIFNo.TabIndex = 1;
+            this.radioButtonPIFNo.TabStop = true;
+            this.radioButtonPIFNo.Text = "No";
+            this.radioButtonPIFNo.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonPIFYes
+            // 
+            this.radioButtonPIFYes.AutoSize = true;
+            this.radioButtonPIFYes.Location = new System.Drawing.Point(19, 25);
+            this.radioButtonPIFYes.Name = "radioButtonPIFYes";
+            this.radioButtonPIFYes.Size = new System.Drawing.Size(55, 24);
+            this.radioButtonPIFYes.TabIndex = 0;
+            this.radioButtonPIFYes.TabStop = true;
+            this.radioButtonPIFYes.Text = "Yes";
+            this.radioButtonPIFYes.UseVisualStyleBackColor = true;
             // 
             // textBoxEmail
             // 
@@ -561,55 +611,6 @@
             this.lbl.TabIndex = 0;
             this.lbl.Text = "Room Number";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.radioButtonPIFNo);
-            this.groupBox2.Controls.Add(this.radioButtonPIFYes);
-            this.groupBox2.Location = new System.Drawing.Point(19, 337);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(416, 51);
-            this.groupBox2.TabIndex = 30;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Payed In Full";
-            // 
-            // radioButtonPIFNo
-            // 
-            this.radioButtonPIFNo.AutoSize = true;
-            this.radioButtonPIFNo.Location = new System.Drawing.Point(117, 25);
-            this.radioButtonPIFNo.Name = "radioButtonPIFNo";
-            this.radioButtonPIFNo.Size = new System.Drawing.Size(47, 24);
-            this.radioButtonPIFNo.TabIndex = 1;
-            this.radioButtonPIFNo.TabStop = true;
-            this.radioButtonPIFNo.Text = "No";
-            this.radioButtonPIFNo.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonPIFYes
-            // 
-            this.radioButtonPIFYes.AutoSize = true;
-            this.radioButtonPIFYes.Location = new System.Drawing.Point(19, 25);
-            this.radioButtonPIFYes.Name = "radioButtonPIFYes";
-            this.radioButtonPIFYes.Size = new System.Drawing.Size(55, 24);
-            this.radioButtonPIFYes.TabIndex = 0;
-            this.radioButtonPIFYes.TabStop = true;
-            this.radioButtonPIFYes.Text = "Yes";
-            this.radioButtonPIFYes.UseVisualStyleBackColor = true;
-            // 
-            // textBoxNumOfChildren
-            // 
-            this.textBoxNumOfChildren.Location = new System.Drawing.Point(373, 180);
-            this.textBoxNumOfChildren.Name = "textBoxNumOfChildren";
-            this.textBoxNumOfChildren.Size = new System.Drawing.Size(45, 26);
-            this.textBoxNumOfChildren.TabIndex = 33;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(225, 183);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 20);
-            this.label3.TabIndex = 32;
-            this.label3.Text = "Number Of Children";
-            // 
             // formCreateReservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -635,14 +636,14 @@
             this.groupBox1.PerformLayout();
             this.groupBoxGuestDetails.ResumeLayout(false);
             this.groupBoxGuestDetails.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBoxSendMarketingInfo.ResumeLayout(false);
             this.groupBoxSendMarketingInfo.PerformLayout();
             this.groupBoxDepositPayed.ResumeLayout(false);
             this.groupBoxDepositPayed.PerformLayout();
             this.groupBoxRoomDetails.ResumeLayout(false);
             this.groupBoxRoomDetails.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
