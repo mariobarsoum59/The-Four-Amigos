@@ -63,6 +63,12 @@
     <Compile Include="editRes2.Designer.cs">
       <DependentUpon>editRes2.cs</DependentUpon>
     </Compile>
+    <Compile Include="formBarStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBarStaff.Designer.cs">
+      <DependentUpon>formBarStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="formCheckOut.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -287,6 +293,9 @@
     <EmbeddedResource Include="editRes2.resx">
       <DependentUpon>editRes2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formBarStaff.resx">
+      <DependentUpon>formBarStaff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formCheckOut.resx">
       <DependentUpon>formCheckOut.cs</DependentUpon>
     </EmbeddedResource>
@@ -365,6 +374,9 @@
     <EmbeddedResource Include="formSearchReservation.resx">
       <DependentUpon>formSearchReservation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formStockManager.resx">
+      <DependentUpon>formStockManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formViewFutureGuests.resx">
       <DependentUpon>formViewFutureGuests.cs</DependentUpon>
     </EmbeddedResource>
@@ -441,15 +453,6 @@
     <None Include="Resources\Iconsmind-Outline-Chef-Hat.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Iconshock-Real-Vista-Jobs-Chef.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Iconshock-Real-Vista-Jobs-Chef %281%29.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Iconshock-Real-Vista-Jobs-Chef %281%29 %281%29.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\chef-icon.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -481,6 +484,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\boxes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\foodanddrink .jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

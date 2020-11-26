@@ -80,6 +80,7 @@
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(239, 29);
             this.textBoxName.TabIndex = 0;
+            
             // 
             // textBoxPassword
             // 

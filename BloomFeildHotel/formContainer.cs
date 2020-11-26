@@ -36,19 +36,12 @@ namespace BloomFeildHotel
                     form1.Dock = DockStyle.Fill;
                     form1.Show();
                     break;
-                case "Receptionist":
+                case "Reception":
                     formReception form2 = new formReception(this, Model);
                     //formAddUser form1 = new formAddUser(this, model);
                     this.Text = this.Text + "-Reception";
                     form2.Dock = DockStyle.Fill;
                     form2.Show();
-                    break;
-                case "BarStaff":
-                    formBarStaff form3 = new formBarStaff(this, Model);
-                    //formAddUser form1 = new formAddUser(this, model);
-                    this.Text = this.Text + "-BarStaff";
-                    form3.Dock = DockStyle.Fill;
-                    form3.Show();
                     break;
 
 

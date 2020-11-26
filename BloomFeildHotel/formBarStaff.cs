@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace BloomFeildHotel
 {
-    public partial class formSales : Form
+    public partial class formBarStaff : Form
     {
         private FormContainer fc;
         private IModel Model;
-        public formSales(FormContainer parent, IModel Model)
+        public  formBarStaff(FormContainer parent, IModel Model)
         {
             InitializeComponent();
             MdiParent = parent;
@@ -23,16 +23,20 @@ namespace BloomFeildHotel
             this.Model = Model;
         }
 
-
-
-        private void formSales_Load(object sender, EventArgs e)
+        private void formBarStaff_Load(object sender, EventArgs e)
         {
+            lblBarStaffMenu.Text = "Hi " + Model.CurrentUser.FirstName;
+        }
+        
 
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void btnSales_Click(object sender, EventArgs e)
         {
-            formBarStaff form = new formBarStaff(fc, Model);
+            formSales form = new formSales(fc, Model);
             //form.Show();
             form.Dock = DockStyle.Fill;
 

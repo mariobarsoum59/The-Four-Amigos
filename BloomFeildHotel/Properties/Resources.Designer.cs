@@ -83,6 +83,16 @@ namespace BloomFeildHotel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cash {
+            get {
+                object obj = ResourceManager.GetObject("cash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap chef_hat {
             get {
                 object obj = ResourceManager.GetObject("chef hat", resourceCulture);
@@ -116,6 +126,16 @@ namespace BloomFeildHotel.Properties {
         internal static System.Drawing.Bitmap diet {
             get {
                 object obj = ResourceManager.GetObject("diet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap foodanddrink_ {
+            get {
+                object obj = ResourceManager.GetObject("foodanddrink ", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
