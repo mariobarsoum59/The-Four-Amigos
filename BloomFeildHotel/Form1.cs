@@ -38,7 +38,7 @@ namespace BloomFeildHotel
                     break;
                 case "Receptionist":
                     formReception form2 = new formReception(this, Model);
-                    //formAddUser form1 = new formAddUser(this, model);
+                    
                     this.Text = this.Text + "-Reception";
                     form2.Dock = DockStyle.Fill;
                     form2.Show();

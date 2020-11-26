@@ -33,10 +33,13 @@ namespace BloomFeildHotel
 
         private void FormCreateReservation_Load(object sender, EventArgs e)
         {
+            
             Model.GetAllRooms();
             Model.GetAllReservations();
             Model.GetAllGuests();
             DTPCheckOutDate.MinDate = DTPCheckInDate.Value.AddDays(1);
+
+
         }
 
         private void BtnSearch_Click(object sender, EventArgs e)
@@ -44,31 +47,14 @@ namespace BloomFeildHotel
 
 
             List<Room> availableRooms = new List<Room>();
+            Model.GetRoomsForDates(DTPCheckInDate.Value.Date.ToString("yyyy-MM-dd"), DTPCheckOutDate.Value.Date.ToString("yyyy-MM-dd"));
 
-            //Rooms available in selected period
-
-            //foreach (Reservation r in Model.ReservationsList)
-            //{
-            //    foreach (Room rm in Model.RoomsList)
-            //    {
-            //        if (DTPCheckInDate.Value.Date<=r.CheckInDate.Date && DTPCheckOutDate.Value.Date>=r.CheckOutDate.Date)
-            //        {
-
-            //            //MessageBox.Show(r.CheckInDate.Date + " -------" + DTPCheckInDate.Value.Date);
-            //        }
-            //        else
-            //        {
-            //            availableRooms.Add(rm);
-            //        }
-            //    }
-
-            //}
-
+            
 
             listBoxSelectedRoom.Items.Clear();
-            foreach (Room room in Model.RoomsList)
+            foreach (Room room in Model.RoomsOnGivenDates)
             {
-                if (radioButtonSmoking.Checked && radioButtonSingle.Checked && room.Smoking == true && room.RoomType=="Single") //single smoking
+                if (radioButtonSmoking.Checked && radioButtonSingle.Checked && room.Smoking == true && room.RoomType == "Single") //single smoking
                 {
                     listBoxSelectedRoom.Items.Add(room.RoomNumber);
                 }
@@ -97,7 +83,7 @@ namespace BloomFeildHotel
                 {
                     listBoxSelectedRoom.Items.Add(room.RoomNumber);
                 }
-
+                //listBoxSelectedRoom.Items.Add(room.RoomNumber);
             }
 
 
@@ -150,7 +136,7 @@ namespace BloomFeildHotel
 
         private void BtnSubmitReservation_Click(object sender, EventArgs e)
         {
-            bool sendMInfo = false;
+           
             int guestID = 0;
             int numofchildren= Convert.ToInt32(textBoxNumOfChildren.Text);
             int numofAdults= Convert.ToInt32(textBoxNumOfAdults.Text); 
@@ -167,19 +153,13 @@ namespace BloomFeildHotel
                 PayedInFull = true;
             }
 
-            if(radioButtonMIYes.Checked)
-            {
-                sendMInfo = true;
-            }
-            if (Model.addNewGuest(textBoxFirstName.Text, textBoxSurname.Text, textBoxContact.Text, textBoxAddress.Text, textBoxEmail.Text, sendMInfo))
-            {
-                MessageBox.Show("Guest Added");
-            }
+           
+           
 
 
             foreach(Guest g in Model.GuestsList)
             {
-                if(g.Email==textBoxEmail.Text&&g.FirstName==textBoxFirstName.Text)
+                if(g.Email==textBoxEmail.Text&&g.FirstName==textBoxFirstName.Text && g.ContactNumber==textBoxContact.Text)
                 {
                     guestID = g.GuestID;
                 }
@@ -195,6 +175,82 @@ namespace BloomFeildHotel
         private void DTPCheckInDate_ValueChanged(object sender, EventArgs e)
         {
             DTPCheckOutDate.MinDate = DTPCheckInDate.Value.AddDays(1);
+        }
+
+        private void BtnSelectExistingGuest_Click(object sender, EventArgs e)
+        {
+            formSavedGuests frm2 = new formSavedGuests(Model);
+            frm2.Show();
+
+            frm2.FormClosed += new FormClosedEventHandler(Form_Closed);
+        }
+        void Form_Closed(object sender, FormClosedEventArgs e)
+        {
+            RefreshList();
+        }
+        private void BtnEnterSelectedGuestData_Click(object sender, EventArgs e)
+        {
+            foreach(Guest g in Model.GuestsList)
+            {
+                if(g.GuestID==Model.SelectedGuestID)
+                {
+                    textBoxFirstName.Text = g.FirstName;
+                    textBoxSurname.Text = g.Surname;
+                    textBoxContact.Text = g.ContactNumber;
+                    textBoxAddress.Text = g.Address;
+                    textBoxEmail.Text = g.Email;
+                    if(g.SendMarketingInfo==false)
+                    {
+                        radioButtonMINo.Checked=true;
+                    }
+                    else
+                    {
+                        radioButtonMIYes.Checked = true;
+                    }
+                    
+                }
+
+            }
+        }
+
+        public void RefreshList()
+        {
+            foreach (Guest g in Model.GuestsList)
+            {
+                if (g.GuestID == Model.SelectedGuestID)
+                {
+                    textBoxFirstName.Text = g.FirstName;
+                    textBoxSurname.Text = g.Surname;
+                    textBoxContact.Text = g.ContactNumber;
+                    textBoxAddress.Text = g.Address;
+                    textBoxEmail.Text = g.Email;
+                    if (g.SendMarketingInfo == false)
+                    {
+                        radioButtonMINo.Checked = true;
+                    }
+                    else
+                    {
+                        radioButtonMIYes.Checked = true;
+                    }
+
+                }
+
+            }
+        }
+
+
+        private void BtnAddGuest_Click(object sender, EventArgs e)
+        {
+            bool sendMInfo = false;
+            if (radioButtonMIYes.Checked)
+            {
+                sendMInfo = true;
+            }
+
+            if (Model.addNewGuest(textBoxFirstName.Text, textBoxSurname.Text, textBoxContact.Text, textBoxAddress.Text, textBoxEmail.Text, sendMInfo))
+            {
+                MessageBox.Show("Guest Added");
+            }
         }
     }
 }

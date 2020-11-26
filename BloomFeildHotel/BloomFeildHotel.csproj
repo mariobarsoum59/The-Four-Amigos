@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BloomFeildHotelDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BloomFeildHotelDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BloomFeildHotelDataSetUsers.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -225,6 +230,12 @@
     <Compile Include="formSales.Designer.cs">
       <DependentUpon>formSales.cs</DependentUpon>
     </Compile>
+    <Compile Include="formSavedGuests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSavedGuests.Designer.cs">
+      <DependentUpon>formSavedGuests.cs</DependentUpon>
+    </Compile>
     <Compile Include="formSearchReservation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -371,6 +382,9 @@
     <EmbeddedResource Include="formSales.resx">
       <DependentUpon>formSales.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formSavedGuests.resx">
+      <DependentUpon>formSavedGuests.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formSearchReservation.resx">
       <DependentUpon>formSearchReservation.cs</DependentUpon>
     </EmbeddedResource>
@@ -411,6 +425,17 @@
     <EmbeddedResource Include="formViewWaste.resx">
       <DependentUpon>formViewWaste.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="BloomFeildHotelDataSet.xsc">
+      <DependentUpon>BloomFeildHotelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BloomFeildHotelDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BloomFeildHotelDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BloomFeildHotelDataSet.xss">
+      <DependentUpon>BloomFeildHotelDataSet.xsd</DependentUpon>
+    </None>
     <None Include="BloomFeildHotelDataSetUsers.xsc">
       <DependentUpon>BloomFeildHotelDataSetUsers.xsd</DependentUpon>
     </None>

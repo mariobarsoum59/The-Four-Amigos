@@ -408,5 +408,64 @@ namespace DataAccessLayer
         }
 
 
+
+        public virtual List<IRoom> getRoomForDates(string CheckIn, string CheckOut)
+        {
+            List<IRoom> AvailableRoomsList = new List<IRoom>();
+            DataSet ds;                 //Declare the DataSet object
+            SqlDataAdapter da;   //Declare the DataAdapter object
+            SqlCommandBuilder cb;
+
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT Rooms.RoomNumber,rooms.BasePrice,rooms.Available,rooms.RoomType,Rooms.Smoking FROM rooms LEFT JOIN reservations ON(reservations.RoomNumber = rooms.RoomNumber AND NOT((reservations.CheckInDate < '"+CheckIn+ "' and reservations.CheckOutDate < '" + CheckIn + "') OR (reservations.CheckInDate > '" + CheckOut + "' and reservations.CheckOutDate > '" + CheckOut + "'))) WHERE reservations.RoomNumber IS NULL; ";
+                //MessageBox.Show(sql);
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "ARoomsData");
+                int totNumsRooms = ds.Tables["ARoomsData"].Rows.Count;
+                for (int i = 0; i < totNumsRooms; i++)
+                {
+                    DataRow dRow = ds.Tables["ARoomsData"].Rows[i];
+
+                    IRoom room = RoomHotel.GetRoom(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),  // Using a Hotel to create the Room entity object. ie seperating object creation from business logic
+                                                       Convert.ToDouble(dRow.ItemArray.GetValue(1).ToString()),
+                                                        Convert.ToBoolean(dRow.ItemArray.GetValue(2).ToString()),
+                                                        dRow.ItemArray.GetValue(3).ToString(),
+                                                       Convert.ToBoolean((dRow.ItemArray.GetValue(4))));
+
+
+                    AvailableRoomsList.Add(room);
+                }
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+
+
+            return AvailableRoomsList;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

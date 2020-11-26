@@ -23,6 +23,8 @@ namespace BusinessLayer
         private List<IRoom> roomsList;
         private List<IGuest> guestsList;
         private List<IReservation> reservationsList;
+        private List<IRoom> roomsOnDates;
+        private int selectedGuestID;
         #endregion
 
         #region Instance Properties
@@ -90,6 +92,35 @@ namespace BusinessLayer
             set
             {
                 reservationsList = value;
+            }
+        }
+
+
+
+
+        public List<IRoom> RoomsOnGivenDates
+        {
+            get
+            {
+                return roomsOnDates;
+            }
+            set
+            {
+                roomsOnDates = value;
+            }
+        }
+
+
+
+        public int SelectedGuestID
+        {
+            get
+            {
+                return selectedGuestID;
+            }
+            set
+            {
+                selectedGuestID = value;
             }
         }
 
@@ -267,9 +298,15 @@ namespace BusinessLayer
         }
 
 
+        public void GetRoomsForDates(string CheckIn, string CheckOut)
+        {
+            RoomsOnGivenDates = dataLayer.getRoomForDates(CheckIn, CheckOut);
+        }
 
-
-
+        public void getSelectedGuest(int guestid)
+        {
+            SelectedGuestID = guestid;
+        }
 
 
 

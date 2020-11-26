@@ -30,6 +30,7 @@
         {
             this.lblCreateReservation = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.lblCheckInDate = new System.Windows.Forms.Label();
             this.lblCheckOutDate = new System.Windows.Forms.Label();
             this.DTPCheckInDate = new System.Windows.Forms.DateTimePicker();
@@ -46,6 +47,11 @@
             this.textBoxNumOfNights = new System.Windows.Forms.TextBox();
             this.lblNumOfNights = new System.Windows.Forms.Label();
             this.groupBoxGuestDetails = new System.Windows.Forms.GroupBox();
+            this.btnAddGuest = new System.Windows.Forms.Button();
+            this.btnSelectExistingGuest = new System.Windows.Forms.Button();
+            this.groupBoxDepositPayed = new System.Windows.Forms.GroupBox();
+            this.radioButtonDPNo = new System.Windows.Forms.RadioButton();
+            this.radioButtonDPYes = new System.Windows.Forms.RadioButton();
             this.textBoxNumOfChildren = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -56,20 +62,17 @@
             this.groupBoxSendMarketingInfo = new System.Windows.Forms.GroupBox();
             this.radioButtonMINo = new System.Windows.Forms.RadioButton();
             this.radioButtonMIYes = new System.Windows.Forms.RadioButton();
-            this.groupBoxDepositPayed = new System.Windows.Forms.GroupBox();
-            this.radioButtonDPNo = new System.Windows.Forms.RadioButton();
-            this.radioButtonDPYes = new System.Windows.Forms.RadioButton();
             this.textBoxAddress = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxContact = new System.Windows.Forms.TextBox();
             this.lblContact = new System.Windows.Forms.Label();
             this.textBoxSurname = new System.Windows.Forms.TextBox();
             this.textBoxFirstName = new System.Windows.Forms.TextBox();
-            this.btnSubmitReservation = new System.Windows.Forms.Button();
             this.textBoxNumOfAdults = new System.Windows.Forms.TextBox();
             this.lblNumberOfAdults = new System.Windows.Forms.Label();
             this.lblFirstName = new System.Windows.Forms.Label();
             this.lblSurname = new System.Windows.Forms.Label();
+            this.btnSubmitReservation = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.groupBoxRoomDetails = new System.Windows.Forms.GroupBox();
             this.listBoxSelectedRoom = new System.Windows.Forms.ListBox();
@@ -84,9 +87,9 @@
             this.groupBoxSearchForAvailability.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBoxGuestDetails.SuspendLayout();
+            this.groupBoxDepositPayed.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBoxSendMarketingInfo.SuspendLayout();
-            this.groupBoxDepositPayed.SuspendLayout();
             this.groupBoxRoomDetails.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,7 +98,7 @@
             this.lblCreateReservation.AutoSize = true;
             this.lblCreateReservation.Font = new System.Drawing.Font("Opus Chords Sans Std", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCreateReservation.ForeColor = System.Drawing.Color.White;
-            this.lblCreateReservation.Location = new System.Drawing.Point(3, 21);
+            this.lblCreateReservation.Location = new System.Drawing.Point(3, 0);
             this.lblCreateReservation.Name = "lblCreateReservation";
             this.lblCreateReservation.Size = new System.Drawing.Size(301, 47);
             this.lblCreateReservation.TabIndex = 0;
@@ -105,11 +108,24 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(94)))), ((int)(((byte)(84)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.lblCreateReservation);
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1283, 68);
             this.panel1.TabIndex = 12;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Yellow;
+            this.label4.Location = new System.Drawing.Point(11, 47);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(990, 20);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Note: A Guest Must Be Added To the System Or Selected from the Existing Guests Li" +
+    "st Before Subimtting the Reservation";
             // 
             // lblCheckInDate
             // 
@@ -163,7 +179,6 @@
             this.radioButtonTwin.Name = "radioButtonTwin";
             this.radioButtonTwin.Size = new System.Drawing.Size(59, 24);
             this.radioButtonTwin.TabIndex = 4;
-            this.radioButtonTwin.TabStop = true;
             this.radioButtonTwin.Text = "Twin";
             this.radioButtonTwin.UseVisualStyleBackColor = true;
             // 
@@ -174,13 +189,13 @@
             this.radioButtonDouble.Name = "radioButtonDouble";
             this.radioButtonDouble.Size = new System.Drawing.Size(78, 24);
             this.radioButtonDouble.TabIndex = 2;
-            this.radioButtonDouble.TabStop = true;
             this.radioButtonDouble.Text = "Double";
             this.radioButtonDouble.UseVisualStyleBackColor = true;
             // 
             // radioButtonSingle
             // 
             this.radioButtonSingle.AutoSize = true;
+            this.radioButtonSingle.Checked = true;
             this.radioButtonSingle.Location = new System.Drawing.Point(19, 25);
             this.radioButtonSingle.Name = "radioButtonSingle";
             this.radioButtonSingle.Size = new System.Drawing.Size(71, 24);
@@ -222,6 +237,7 @@
             // radioButtonNonSmoking
             // 
             this.radioButtonNonSmoking.AutoSize = true;
+            this.radioButtonNonSmoking.Checked = true;
             this.radioButtonNonSmoking.Location = new System.Drawing.Point(10, 60);
             this.radioButtonNonSmoking.Name = "radioButtonNonSmoking";
             this.radioButtonNonSmoking.Size = new System.Drawing.Size(123, 24);
@@ -237,7 +253,6 @@
             this.radioButtonSmoking.Name = "radioButtonSmoking";
             this.radioButtonSmoking.Size = new System.Drawing.Size(89, 24);
             this.radioButtonSmoking.TabIndex = 1;
-            this.radioButtonSmoking.TabStop = true;
             this.radioButtonSmoking.Text = "Smoking";
             this.radioButtonSmoking.UseVisualStyleBackColor = true;
             // 
@@ -272,43 +287,103 @@
             // 
             // groupBoxGuestDetails
             // 
+            this.groupBoxGuestDetails.Controls.Add(this.btnAddGuest);
+            this.groupBoxGuestDetails.Controls.Add(this.btnSelectExistingGuest);
+            this.groupBoxGuestDetails.Controls.Add(this.groupBoxDepositPayed);
             this.groupBoxGuestDetails.Controls.Add(this.textBoxNumOfChildren);
             this.groupBoxGuestDetails.Controls.Add(this.label3);
             this.groupBoxGuestDetails.Controls.Add(this.groupBox2);
             this.groupBoxGuestDetails.Controls.Add(this.textBoxEmail);
             this.groupBoxGuestDetails.Controls.Add(this.label1);
             this.groupBoxGuestDetails.Controls.Add(this.groupBoxSendMarketingInfo);
-            this.groupBoxGuestDetails.Controls.Add(this.groupBoxDepositPayed);
             this.groupBoxGuestDetails.Controls.Add(this.textBoxAddress);
             this.groupBoxGuestDetails.Controls.Add(this.label2);
             this.groupBoxGuestDetails.Controls.Add(this.textBoxContact);
             this.groupBoxGuestDetails.Controls.Add(this.lblContact);
             this.groupBoxGuestDetails.Controls.Add(this.textBoxSurname);
             this.groupBoxGuestDetails.Controls.Add(this.textBoxFirstName);
-            this.groupBoxGuestDetails.Controls.Add(this.btnSubmitReservation);
             this.groupBoxGuestDetails.Controls.Add(this.textBoxNumOfAdults);
             this.groupBoxGuestDetails.Controls.Add(this.lblNumberOfAdults);
             this.groupBoxGuestDetails.Controls.Add(this.lblFirstName);
             this.groupBoxGuestDetails.Controls.Add(this.lblSurname);
             this.groupBoxGuestDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxGuestDetails.Location = new System.Drawing.Point(800, 74);
+            this.groupBoxGuestDetails.Location = new System.Drawing.Point(719, 74);
             this.groupBoxGuestDetails.Name = "groupBoxGuestDetails";
-            this.groupBoxGuestDetails.Size = new System.Drawing.Size(449, 457);
+            this.groupBoxGuestDetails.Size = new System.Drawing.Size(530, 457);
             this.groupBoxGuestDetails.TabIndex = 22;
             this.groupBoxGuestDetails.TabStop = false;
             this.groupBoxGuestDetails.Text = "Guest Details";
             // 
+            // btnAddGuest
+            // 
+            this.btnAddGuest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnAddGuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddGuest.ForeColor = System.Drawing.Color.White;
+            this.btnAddGuest.Location = new System.Drawing.Point(246, 269);
+            this.btnAddGuest.Name = "btnAddGuest";
+            this.btnAddGuest.Size = new System.Drawing.Size(252, 41);
+            this.btnAddGuest.TabIndex = 35;
+            this.btnAddGuest.Text = "Add Guest";
+            this.btnAddGuest.UseVisualStyleBackColor = false;
+            this.btnAddGuest.Click += new System.EventHandler(this.BtnAddGuest_Click);
+            // 
+            // btnSelectExistingGuest
+            // 
+            this.btnSelectExistingGuest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnSelectExistingGuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSelectExistingGuest.ForeColor = System.Drawing.Color.White;
+            this.btnSelectExistingGuest.Location = new System.Drawing.Point(25, 25);
+            this.btnSelectExistingGuest.Name = "btnSelectExistingGuest";
+            this.btnSelectExistingGuest.Size = new System.Drawing.Size(483, 42);
+            this.btnSelectExistingGuest.TabIndex = 33;
+            this.btnSelectExistingGuest.Text = "Select Guest";
+            this.btnSelectExistingGuest.UseVisualStyleBackColor = false;
+            this.btnSelectExistingGuest.Click += new System.EventHandler(this.BtnSelectExistingGuest_Click);
+            // 
+            // groupBoxDepositPayed
+            // 
+            this.groupBoxDepositPayed.Controls.Add(this.radioButtonDPNo);
+            this.groupBoxDepositPayed.Controls.Add(this.radioButtonDPYes);
+            this.groupBoxDepositPayed.Location = new System.Drawing.Point(11, 394);
+            this.groupBoxDepositPayed.Name = "groupBoxDepositPayed";
+            this.groupBoxDepositPayed.Size = new System.Drawing.Size(229, 55);
+            this.groupBoxDepositPayed.TabIndex = 28;
+            this.groupBoxDepositPayed.TabStop = false;
+            this.groupBoxDepositPayed.Text = "Deposit Payed";
+            // 
+            // radioButtonDPNo
+            // 
+            this.radioButtonDPNo.AutoSize = true;
+            this.radioButtonDPNo.Location = new System.Drawing.Point(117, 25);
+            this.radioButtonDPNo.Name = "radioButtonDPNo";
+            this.radioButtonDPNo.Size = new System.Drawing.Size(47, 24);
+            this.radioButtonDPNo.TabIndex = 1;
+            this.radioButtonDPNo.TabStop = true;
+            this.radioButtonDPNo.Text = "No";
+            this.radioButtonDPNo.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDPYes
+            // 
+            this.radioButtonDPYes.AutoSize = true;
+            this.radioButtonDPYes.Location = new System.Drawing.Point(19, 25);
+            this.radioButtonDPYes.Name = "radioButtonDPYes";
+            this.radioButtonDPYes.Size = new System.Drawing.Size(55, 24);
+            this.radioButtonDPYes.TabIndex = 0;
+            this.radioButtonDPYes.TabStop = true;
+            this.radioButtonDPYes.Text = "Yes";
+            this.radioButtonDPYes.UseVisualStyleBackColor = true;
+            // 
             // textBoxNumOfChildren
             // 
-            this.textBoxNumOfChildren.Location = new System.Drawing.Point(373, 180);
+            this.textBoxNumOfChildren.Location = new System.Drawing.Point(464, 340);
             this.textBoxNumOfChildren.Name = "textBoxNumOfChildren";
             this.textBoxNumOfChildren.Size = new System.Drawing.Size(45, 26);
-            this.textBoxNumOfChildren.TabIndex = 33;
+            this.textBoxNumOfChildren.TabIndex = 28;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(225, 183);
+            this.label3.Location = new System.Drawing.Point(300, 344);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(148, 20);
             this.label3.TabIndex = 32;
@@ -318,9 +393,9 @@
             // 
             this.groupBox2.Controls.Add(this.radioButtonPIFNo);
             this.groupBox2.Controls.Add(this.radioButtonPIFYes);
-            this.groupBox2.Location = new System.Drawing.Point(19, 337);
+            this.groupBox2.Location = new System.Drawing.Point(295, 400);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(416, 51);
+            this.groupBox2.Size = new System.Drawing.Size(229, 51);
             this.groupBox2.TabIndex = 30;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Payed In Full";
@@ -349,15 +424,15 @@
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(108, 147);
+            this.textBoxEmail.Location = new System.Drawing.Point(108, 227);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(327, 26);
-            this.textBoxEmail.TabIndex = 31;
+            this.textBoxEmail.Size = new System.Drawing.Size(403, 26);
+            this.textBoxEmail.TabIndex = 26;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 153);
+            this.label1.Location = new System.Drawing.Point(15, 233);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 20);
             this.label1.TabIndex = 30;
@@ -367,9 +442,9 @@
             // 
             this.groupBoxSendMarketingInfo.Controls.Add(this.radioButtonMINo);
             this.groupBoxSendMarketingInfo.Controls.Add(this.radioButtonMIYes);
-            this.groupBoxSendMarketingInfo.Location = new System.Drawing.Point(19, 273);
+            this.groupBoxSendMarketingInfo.Location = new System.Drawing.Point(11, 259);
             this.groupBoxSendMarketingInfo.Name = "groupBoxSendMarketingInfo";
-            this.groupBoxSendMarketingInfo.Size = new System.Drawing.Size(416, 51);
+            this.groupBoxSendMarketingInfo.Size = new System.Drawing.Size(229, 51);
             this.groupBoxSendMarketingInfo.TabIndex = 29;
             this.groupBoxSendMarketingInfo.TabStop = false;
             this.groupBoxSendMarketingInfo.Text = "Send Marketing Information";
@@ -396,50 +471,17 @@
             this.radioButtonMIYes.Text = "Yes";
             this.radioButtonMIYes.UseVisualStyleBackColor = true;
             // 
-            // groupBoxDepositPayed
-            // 
-            this.groupBoxDepositPayed.Controls.Add(this.radioButtonDPNo);
-            this.groupBoxDepositPayed.Controls.Add(this.radioButtonDPYes);
-            this.groupBoxDepositPayed.Location = new System.Drawing.Point(19, 212);
-            this.groupBoxDepositPayed.Name = "groupBoxDepositPayed";
-            this.groupBoxDepositPayed.Size = new System.Drawing.Size(416, 55);
-            this.groupBoxDepositPayed.TabIndex = 28;
-            this.groupBoxDepositPayed.TabStop = false;
-            this.groupBoxDepositPayed.Text = "Deposit Payed";
-            // 
-            // radioButtonDPNo
-            // 
-            this.radioButtonDPNo.AutoSize = true;
-            this.radioButtonDPNo.Location = new System.Drawing.Point(117, 25);
-            this.radioButtonDPNo.Name = "radioButtonDPNo";
-            this.radioButtonDPNo.Size = new System.Drawing.Size(47, 24);
-            this.radioButtonDPNo.TabIndex = 1;
-            this.radioButtonDPNo.TabStop = true;
-            this.radioButtonDPNo.Text = "No";
-            this.radioButtonDPNo.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDPYes
-            // 
-            this.radioButtonDPYes.AutoSize = true;
-            this.radioButtonDPYes.Location = new System.Drawing.Point(19, 25);
-            this.radioButtonDPYes.Name = "radioButtonDPYes";
-            this.radioButtonDPYes.Size = new System.Drawing.Size(55, 24);
-            this.radioButtonDPYes.TabIndex = 0;
-            this.radioButtonDPYes.TabStop = true;
-            this.radioButtonDPYes.Text = "Yes";
-            this.radioButtonDPYes.UseVisualStyleBackColor = true;
-            // 
             // textBoxAddress
             // 
-            this.textBoxAddress.Location = new System.Drawing.Point(108, 113);
+            this.textBoxAddress.Location = new System.Drawing.Point(108, 189);
             this.textBoxAddress.Name = "textBoxAddress";
-            this.textBoxAddress.Size = new System.Drawing.Size(327, 26);
-            this.textBoxAddress.TabIndex = 27;
+            this.textBoxAddress.Size = new System.Drawing.Size(403, 26);
+            this.textBoxAddress.TabIndex = 25;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 119);
+            this.label2.Location = new System.Drawing.Point(15, 195);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 20);
             this.label2.TabIndex = 26;
@@ -447,15 +489,15 @@
             // 
             // textBoxContact
             // 
-            this.textBoxContact.Location = new System.Drawing.Point(108, 81);
+            this.textBoxContact.Location = new System.Drawing.Point(108, 151);
             this.textBoxContact.Name = "textBoxContact";
-            this.textBoxContact.Size = new System.Drawing.Size(327, 26);
-            this.textBoxContact.TabIndex = 25;
+            this.textBoxContact.Size = new System.Drawing.Size(403, 26);
+            this.textBoxContact.TabIndex = 24;
             // 
             // lblContact
             // 
             this.lblContact.AutoSize = true;
-            this.lblContact.Location = new System.Drawing.Point(15, 87);
+            this.lblContact.Location = new System.Drawing.Point(15, 157);
             this.lblContact.Name = "lblContact";
             this.lblContact.Size = new System.Drawing.Size(89, 20);
             this.lblContact.TabIndex = 24;
@@ -463,41 +505,29 @@
             // 
             // textBoxSurname
             // 
-            this.textBoxSurname.Location = new System.Drawing.Point(108, 49);
+            this.textBoxSurname.Location = new System.Drawing.Point(108, 110);
             this.textBoxSurname.Name = "textBoxSurname";
-            this.textBoxSurname.Size = new System.Drawing.Size(327, 26);
+            this.textBoxSurname.Size = new System.Drawing.Size(403, 26);
             this.textBoxSurname.TabIndex = 23;
             // 
             // textBoxFirstName
             // 
-            this.textBoxFirstName.Location = new System.Drawing.Point(108, 16);
+            this.textBoxFirstName.Location = new System.Drawing.Point(108, 73);
             this.textBoxFirstName.Name = "textBoxFirstName";
-            this.textBoxFirstName.Size = new System.Drawing.Size(327, 26);
+            this.textBoxFirstName.Size = new System.Drawing.Size(400, 26);
             this.textBoxFirstName.TabIndex = 22;
-            // 
-            // btnSubmitReservation
-            // 
-            this.btnSubmitReservation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
-            this.btnSubmitReservation.ForeColor = System.Drawing.Color.White;
-            this.btnSubmitReservation.Location = new System.Drawing.Point(19, 394);
-            this.btnSubmitReservation.Name = "btnSubmitReservation";
-            this.btnSubmitReservation.Size = new System.Drawing.Size(416, 48);
-            this.btnSubmitReservation.TabIndex = 21;
-            this.btnSubmitReservation.Text = "Submit Reservation";
-            this.btnSubmitReservation.UseVisualStyleBackColor = false;
-            this.btnSubmitReservation.Click += new System.EventHandler(this.BtnSubmitReservation_Click);
             // 
             // textBoxNumOfAdults
             // 
-            this.textBoxNumOfAdults.Location = new System.Drawing.Point(163, 180);
+            this.textBoxNumOfAdults.Location = new System.Drawing.Point(167, 340);
             this.textBoxNumOfAdults.Name = "textBoxNumOfAdults";
             this.textBoxNumOfAdults.Size = new System.Drawing.Size(45, 26);
-            this.textBoxNumOfAdults.TabIndex = 20;
+            this.textBoxNumOfAdults.TabIndex = 27;
             // 
             // lblNumberOfAdults
             // 
             this.lblNumberOfAdults.AutoSize = true;
-            this.lblNumberOfAdults.Location = new System.Drawing.Point(15, 183);
+            this.lblNumberOfAdults.Location = new System.Drawing.Point(26, 344);
             this.lblNumberOfAdults.Name = "lblNumberOfAdults";
             this.lblNumberOfAdults.Size = new System.Drawing.Size(135, 20);
             this.lblNumberOfAdults.TabIndex = 19;
@@ -506,7 +536,7 @@
             // lblFirstName
             // 
             this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Location = new System.Drawing.Point(15, 22);
+            this.lblFirstName.Location = new System.Drawing.Point(15, 79);
             this.lblFirstName.Name = "lblFirstName";
             this.lblFirstName.Size = new System.Drawing.Size(86, 20);
             this.lblFirstName.TabIndex = 13;
@@ -515,11 +545,24 @@
             // lblSurname
             // 
             this.lblSurname.AutoSize = true;
-            this.lblSurname.Location = new System.Drawing.Point(15, 55);
+            this.lblSurname.Location = new System.Drawing.Point(15, 116);
             this.lblSurname.Name = "lblSurname";
             this.lblSurname.Size = new System.Drawing.Size(74, 20);
             this.lblSurname.TabIndex = 14;
             this.lblSurname.Text = "Surname";
+            // 
+            // btnSubmitReservation
+            // 
+            this.btnSubmitReservation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnSubmitReservation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmitReservation.ForeColor = System.Drawing.Color.White;
+            this.btnSubmitReservation.Location = new System.Drawing.Point(719, 539);
+            this.btnSubmitReservation.Name = "btnSubmitReservation";
+            this.btnSubmitReservation.Size = new System.Drawing.Size(371, 48);
+            this.btnSubmitReservation.TabIndex = 21;
+            this.btnSubmitReservation.Text = "Submit Reservation";
+            this.btnSubmitReservation.UseVisualStyleBackColor = false;
+            this.btnSubmitReservation.Click += new System.EventHandler(this.BtnSubmitReservation_Click);
             // 
             // btnCancel
             // 
@@ -546,7 +589,7 @@
             this.groupBoxRoomDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxRoomDetails.Location = new System.Drawing.Point(477, 74);
             this.groupBoxRoomDetails.Name = "groupBoxRoomDetails";
-            this.groupBoxRoomDetails.Size = new System.Drawing.Size(305, 508);
+            this.groupBoxRoomDetails.Size = new System.Drawing.Size(214, 508);
             this.groupBoxRoomDetails.TabIndex = 24;
             this.groupBoxRoomDetails.TabStop = false;
             this.groupBoxRoomDetails.Text = "Room Details";
@@ -557,7 +600,7 @@
             this.listBoxSelectedRoom.ItemHeight = 20;
             this.listBoxSelectedRoom.Location = new System.Drawing.Point(10, 33);
             this.listBoxSelectedRoom.Name = "listBoxSelectedRoom";
-            this.listBoxSelectedRoom.Size = new System.Drawing.Size(287, 244);
+            this.listBoxSelectedRoom.Size = new System.Drawing.Size(180, 244);
             this.listBoxSelectedRoom.TabIndex = 6;
             this.listBoxSelectedRoom.SelectedIndexChanged += new System.EventHandler(this.ListBoxSelectedRoom_SelectedIndexChanged);
             // 
@@ -565,7 +608,7 @@
             // 
             this.textBoxVariablePrice.Location = new System.Drawing.Point(10, 437);
             this.textBoxVariablePrice.Name = "textBoxVariablePrice";
-            this.textBoxVariablePrice.Size = new System.Drawing.Size(288, 26);
+            this.textBoxVariablePrice.Size = new System.Drawing.Size(181, 26);
             this.textBoxVariablePrice.TabIndex = 5;
             // 
             // textBoxBasePrice
@@ -573,7 +616,7 @@
             this.textBoxBasePrice.Location = new System.Drawing.Point(9, 373);
             this.textBoxBasePrice.Name = "textBoxBasePrice";
             this.textBoxBasePrice.ReadOnly = true;
-            this.textBoxBasePrice.Size = new System.Drawing.Size(288, 26);
+            this.textBoxBasePrice.Size = new System.Drawing.Size(181, 26);
             this.textBoxBasePrice.TabIndex = 4;
             // 
             // textBoxRoomNumber
@@ -581,7 +624,7 @@
             this.textBoxRoomNumber.Location = new System.Drawing.Point(10, 308);
             this.textBoxRoomNumber.Name = "textBoxRoomNumber";
             this.textBoxRoomNumber.ReadOnly = true;
-            this.textBoxRoomNumber.Size = new System.Drawing.Size(288, 26);
+            this.textBoxRoomNumber.Size = new System.Drawing.Size(108, 26);
             this.textBoxRoomNumber.TabIndex = 3;
             // 
             // lblVariablePrice
@@ -589,18 +632,18 @@
             this.lblVariablePrice.AutoSize = true;
             this.lblVariablePrice.Location = new System.Drawing.Point(5, 413);
             this.lblVariablePrice.Name = "lblVariablePrice";
-            this.lblVariablePrice.Size = new System.Drawing.Size(110, 20);
+            this.lblVariablePrice.Size = new System.Drawing.Size(187, 20);
             this.lblVariablePrice.TabIndex = 2;
-            this.lblVariablePrice.Text = "Variable Price ";
+            this.lblVariablePrice.Text = "System Suggested Price ";
             // 
             // lblBasePrice
             // 
             this.lblBasePrice.AutoSize = true;
             this.lblBasePrice.Location = new System.Drawing.Point(5, 344);
             this.lblBasePrice.Name = "lblBasePrice";
-            this.lblBasePrice.Size = new System.Drawing.Size(85, 20);
+            this.lblBasePrice.Size = new System.Drawing.Size(154, 20);
             this.lblBasePrice.TabIndex = 1;
-            this.lblBasePrice.Text = "Base Price";
+            this.lblBasePrice.Text = "Base Price Per Night";
             // 
             // lbl
             // 
@@ -622,6 +665,7 @@
             this.Controls.Add(this.groupBoxGuestDetails);
             this.Controls.Add(this.groupBoxSearchForAvailability);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnSubmitReservation);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formCreateReservation";
             this.Text = "formCreateReservation";
@@ -636,12 +680,12 @@
             this.groupBox1.PerformLayout();
             this.groupBoxGuestDetails.ResumeLayout(false);
             this.groupBoxGuestDetails.PerformLayout();
+            this.groupBoxDepositPayed.ResumeLayout(false);
+            this.groupBoxDepositPayed.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBoxSendMarketingInfo.ResumeLayout(false);
             this.groupBoxSendMarketingInfo.PerformLayout();
-            this.groupBoxDepositPayed.ResumeLayout(false);
-            this.groupBoxDepositPayed.PerformLayout();
             this.groupBoxRoomDetails.ResumeLayout(false);
             this.groupBoxRoomDetails.PerformLayout();
             this.ResumeLayout(false);
@@ -701,5 +745,8 @@
         private System.Windows.Forms.RadioButton radioButtonPIFYes;
         private System.Windows.Forms.TextBox textBoxNumOfChildren;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnSelectExistingGuest;
+        private System.Windows.Forms.Button btnAddGuest;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -195,3 +195,6 @@ C:\Users\jackk\source\repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeild
 C:\Users\jackk\source\repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.pdb
 C:\Users\jackk\source\repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formBarStaff.resources
 C:\Users\jackk\source\repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formStockManager.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formBarStaff.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formStockManager.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formSavedGuests.resources

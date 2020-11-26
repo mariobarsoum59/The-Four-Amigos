@@ -36,6 +36,11 @@ namespace BusinessLayer
         List<IReservation> ReservationsList { get; set; }
 
         void GetAllReservations();
+        List<IRoom> RoomsOnGivenDates { get; set; }
+        int SelectedGuestID { get; set; }
+
+        void getSelectedGuest(int guestid);
+        void GetRoomsForDates(string CheckIn, string CheckOut);
 
     }
 }

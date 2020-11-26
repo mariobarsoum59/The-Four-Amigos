@@ -22,6 +22,8 @@ namespace DataAccessLayer
 
         List<IReservation> getAllReservations();
 
+        List<IRoom> getRoomForDates(string CheckIn, string CheckOut);
+
         void addNewGuestToDB(BusinessEntities.IGuest theGuest);
         void addNewReservationToDB(BusinessEntities.IReservation theReservation);
 
