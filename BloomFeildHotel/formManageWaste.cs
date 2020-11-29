@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace BloomFeildHotel
 {
-    public partial class formViewWaste : Form
+    public partial class formManageWaste : Form
     {
-        public formViewWaste()
+        public formManageWaste()
         {
             InitializeComponent();
+        }
+
+        private void lblTotalPrep_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
