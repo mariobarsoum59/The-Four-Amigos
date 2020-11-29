@@ -1,6 +1,6 @@
 ﻿namespace BloomFeildHotel
 {
-    partial class formViewOrders
+    partial class formViewOrdersChef
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formViewOrders));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formViewOrdersChef));
             this.btnBack = new System.Windows.Forms.Button();
             this.btnOk = new System.Windows.Forms.Button();
             this.listBoxOrders = new System.Windows.Forms.ListBox();

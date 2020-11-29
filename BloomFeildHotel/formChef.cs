@@ -32,7 +32,7 @@ namespace BloomFeildHotel
 
         private void btnViewOrders_Click(object sender, EventArgs e)
         {
-            formViewOrders form = new formViewOrders();
+            formViewOrdersChef form = new formViewOrdersChef();
             //form.Show();
             form.Dock = DockStyle.Fill;
 

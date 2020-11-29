@@ -260,11 +260,11 @@
     <Compile Include="formViewMonthlyReports.Designer.cs">
       <DependentUpon>formViewMonthlyReports.cs</DependentUpon>
     </Compile>
-    <Compile Include="formViewOrders.cs">
+    <Compile Include="formViewOrdersChef.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formViewOrders.Designer.cs">
-      <DependentUpon>formViewOrders.cs</DependentUpon>
+    <Compile Include="formViewOrdersChef.Designer.cs">
+      <DependentUpon>formViewOrdersChef.cs</DependentUpon>
     </Compile>
     <Compile Include="formViewStock.cs">
       <SubType>Form</SubType>
@@ -297,6 +297,12 @@
     </Compile>
     <Compile Include="formViewWaste.Designer.cs">
       <DependentUpon>formViewWaste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewOrdersBarStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewOrdersBarStaff.Designer.cs">
+      <DependentUpon>ViewOrdersBarStaff.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Editres1.resx">
       <DependentUpon>Editres1.cs</DependentUpon>
@@ -397,8 +403,8 @@
     <EmbeddedResource Include="formViewMonthlyReports.resx">
       <DependentUpon>formViewMonthlyReports.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formViewOrders.resx">
-      <DependentUpon>formViewOrders.cs</DependentUpon>
+    <EmbeddedResource Include="formViewOrdersChef.resx">
+      <DependentUpon>formViewOrdersChef.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formViewStock.resx">
       <DependentUpon>formViewStock.cs</DependentUpon>
@@ -424,6 +430,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formViewWaste.resx">
       <DependentUpon>formViewWaste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewOrdersBarStaff.resx">
+      <DependentUpon>ViewOrdersBarStaff.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="BloomFeildHotelDataSet.xsc">
       <DependentUpon>BloomFeildHotelDataSet.xsd</DependentUpon>
