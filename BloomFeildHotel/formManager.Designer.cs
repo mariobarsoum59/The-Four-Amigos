@@ -33,7 +33,7 @@
             this.btnDeleteUsers = new System.Windows.Forms.Button();
             this.btnCreateReservation = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnViewRoomBookings = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -98,15 +98,16 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
-            // button5
+            // btnViewRoomBookings
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(582, 282);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(161, 104);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnViewRoomBookings.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewRoomBookings.Location = new System.Drawing.Point(582, 282);
+            this.btnViewRoomBookings.Name = "btnViewRoomBookings";
+            this.btnViewRoomBookings.Size = new System.Drawing.Size(161, 104);
+            this.btnViewRoomBookings.TabIndex = 5;
+            this.btnViewRoomBookings.Text = "View Room Bookings";
+            this.btnViewRoomBookings.UseVisualStyleBackColor = true;
+            this.btnViewRoomBookings.Click += new System.EventHandler(this.BtnViewRoomBookings_Click);
             // 
             // button6
             // 
@@ -181,7 +182,7 @@
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnViewRoomBookings);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnCreateReservation);
             this.Controls.Add(this.btnDeleteUsers);
@@ -205,7 +206,7 @@
         private System.Windows.Forms.Button btnDeleteUsers;
         private System.Windows.Forms.Button btnCreateReservation;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnViewRoomBookings;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;

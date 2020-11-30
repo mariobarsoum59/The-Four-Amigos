@@ -266,6 +266,12 @@
     <Compile Include="formViewOrdersChef.Designer.cs">
       <DependentUpon>formViewOrdersChef.cs</DependentUpon>
     </Compile>
+    <Compile Include="formViewRoomBookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formViewRoomBookings.Designer.cs">
+      <DependentUpon>formViewRoomBookings.cs</DependentUpon>
+    </Compile>
     <Compile Include="formViewStock.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -405,6 +411,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formViewOrdersChef.resx">
       <DependentUpon>formViewOrdersChef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formViewRoomBookings.resx">
+      <DependentUpon>formViewRoomBookings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formViewStock.resx">
       <DependentUpon>formViewStock.cs</DependentUpon>
