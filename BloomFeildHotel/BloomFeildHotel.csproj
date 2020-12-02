@@ -266,6 +266,12 @@
     <Compile Include="formViewOrdersChef.Designer.cs">
       <DependentUpon>formViewOrdersChef.cs</DependentUpon>
     </Compile>
+    <Compile Include="formViewReservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formViewReservations.Designer.cs">
+      <DependentUpon>formViewReservations.cs</DependentUpon>
+    </Compile>
     <Compile Include="formViewRoomBookings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -412,6 +418,9 @@
     <EmbeddedResource Include="formViewOrdersChef.resx">
       <DependentUpon>formViewOrdersChef.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formViewReservations.resx">
+      <DependentUpon>formViewReservations.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formViewRoomBookings.resx">
       <DependentUpon>formViewRoomBookings.cs</DependentUpon>
     </EmbeddedResource>
@@ -533,6 +542,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\foodanddrink .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loupe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

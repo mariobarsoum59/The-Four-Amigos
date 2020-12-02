@@ -33,7 +33,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnView = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnCreateReservation = new System.Windows.Forms.Button();
@@ -93,15 +93,16 @@
             this.button5.Text = "button5";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnView
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(574, 176);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(161, 104);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnView.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView.Location = new System.Drawing.Point(574, 176);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(161, 104);
+            this.btnView.TabIndex = 14;
+            this.btnView.Text = "View Reservations";
+            this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // button3
             // 
@@ -137,21 +138,21 @@
             // lblReceptionMenu
             // 
             this.lblReceptionMenu.AutoSize = true;
-            this.lblReceptionMenu.Font = new System.Drawing.Font("Opus Chords Sans Std", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReceptionMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReceptionMenu.Location = new System.Drawing.Point(513, 117);
             this.lblReceptionMenu.Name = "lblReceptionMenu";
-            this.lblReceptionMenu.Size = new System.Drawing.Size(253, 47);
+            this.lblReceptionMenu.Size = new System.Drawing.Size(268, 39);
             this.lblReceptionMenu.TabIndex = 10;
             this.lblReceptionMenu.Text = "Reception Menu";
             // 
             // lblHiReceptionMenu
             // 
             this.lblHiReceptionMenu.AutoSize = true;
-            this.lblHiReceptionMenu.Font = new System.Drawing.Font("Opus Chords Sans Std", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHiReceptionMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHiReceptionMenu.ForeColor = System.Drawing.Color.White;
             this.lblHiReceptionMenu.Location = new System.Drawing.Point(10, 21);
             this.lblHiReceptionMenu.Name = "lblHiReceptionMenu";
-            this.lblHiReceptionMenu.Size = new System.Drawing.Size(56, 47);
+            this.lblHiReceptionMenu.Size = new System.Drawing.Size(59, 39);
             this.lblHiReceptionMenu.TabIndex = 0;
             this.lblHiReceptionMenu.Text = "Hi ";
             // 
@@ -178,7 +179,7 @@
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnView);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnCreateReservation);
@@ -202,7 +203,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnCreateReservation;

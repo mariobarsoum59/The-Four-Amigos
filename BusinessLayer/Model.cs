@@ -269,7 +269,26 @@ namespace BusinessLayer
 
         }
 
+        public bool deleteReservation(IReservation reservation)
+        {
 
+            DataLayer.deleteReservationFromDB(reservation);
+            reservationsList.Remove(reservation); //remove object from collection
+            return true;
+
+        }
+
+        public bool updateReservation(IReservation reservation)
+        {
+            DataLayer.updateReservationFromDB(reservation);
+            return true;
+        }
+
+        public bool updateGuest(IGuest guest)
+        {
+            DataLayer.updateGuestFromDB(guest);
+            return true;
+        }
 
         public bool PasswordCheck(string password)
         {

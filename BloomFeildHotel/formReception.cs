@@ -42,5 +42,12 @@ namespace BloomFeildHotel
 
             form.Show();
         }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            formViewReservations form = new formViewReservations(fc, Model);
+            form.Dock = DockStyle.Fill;
+            form.Show();
+        }
     }
 }

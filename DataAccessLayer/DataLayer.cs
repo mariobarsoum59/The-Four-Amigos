@@ -266,6 +266,33 @@ namespace DataAccessLayer
             return true;
         }
 
+        public bool deleteReservationFromDB(BusinessEntities.IReservation reservation)
+        {
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Reservations";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "ReservationsData");
+                DataRow findRow = ds.Tables["ReservationsData"].Rows.Find(reservation.ReservationID);
+                if (findRow != null)
+                {
+                    findRow.Delete(); //mark row as deleted
+                }
+                da.Update(ds, "ReservationsData"); //remove row from database table
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
+                Application.Exit();
+            }
+            return true;
+        }
+
         public virtual List<IRoom>getAllRooms()
         {
             List<IRoom> RoomsList = new List<IRoom>();
@@ -458,9 +485,74 @@ namespace DataAccessLayer
 
 
 
+        public bool updateReservationFromDB(BusinessEntities.IReservation reservation)
+        {
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Reservations";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "ReservationsData");
+                DataRow findRow = ds.Tables["ReservationsData"].Rows.Find(reservation.ReservationID);
+                if (findRow != null)
+                {
+                    //findRow[0] = reservation.ReservationID;
+                    findRow[1] = reservation.CheckInDate;
+                    findRow[2] = reservation.CheckOutDate;
+                    findRow[3] = reservation.Adults;
+                    findRow[4] = reservation.Children;
+                    findRow[5] = reservation.ReservationPrice;
+                    findRow[6] = reservation.PayedDeposit;
+                    findRow[7] = reservation.PayedInFull;
+                    findRow[8] = reservation.GuestID;
+                    findRow[9] = reservation.RoomNumber;
+                }
+                da.Update(ds, "ReservationsData"); //remove row from database table
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
+                Application.Exit();
+            }
+            return true;
+        }
 
-
-
+        public bool updateGuestFromDB(BusinessEntities.IGuest guest)
+        {
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Guests";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "GuestsData");
+                DataRow findRow = ds.Tables["GuestsData"].Rows.Find(guest.GuestID);
+                if (findRow != null)
+                {
+                    //findRow[0] = guest.GuestID;
+                    findRow[1] = guest.FirstName;
+                    findRow[2] = guest.Surname;
+                    findRow[3] = guest.ContactNumber;
+                    findRow[4] = guest.Address;
+                    findRow[5] = guest.Email;
+                    findRow[6] = guest.SendMarketingInfo;
+                }
+                da.Update(ds, "GuestsData"); //remove row from database table
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
+                Application.Exit();
+            }
+            return true;
+        }
 
 
 

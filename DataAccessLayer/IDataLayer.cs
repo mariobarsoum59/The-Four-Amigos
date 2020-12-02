@@ -16,6 +16,8 @@ namespace DataAccessLayer
         void openConnection();
         bool deleteUserFromDB(BusinessEntities.IUser user);
 
+        bool deleteReservationFromDB(BusinessEntities.IReservation reservation);
+
         List<IRoom> getAllRooms();
 
         List<IGuest> getAllGuests();
@@ -26,6 +28,8 @@ namespace DataAccessLayer
 
         void addNewGuestToDB(BusinessEntities.IGuest theGuest);
         void addNewReservationToDB(BusinessEntities.IReservation theReservation);
+        bool updateReservationFromDB(BusinessEntities.IReservation reservation);
+        bool updateGuestFromDB(BusinessEntities.IGuest guest);
 
     }
 }

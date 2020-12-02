@@ -23,6 +23,11 @@ namespace BusinessLayer
 
         bool deleteUser(IUser user);
 
+        bool deleteReservation(IReservation reservation);
+
+        bool updateReservation(IReservation reservation);
+        bool updateGuest(IGuest guest);
+
         void tearDown();
         System.Collections.ArrayList UserList { get; }
         bool PasswordCheck(string password);

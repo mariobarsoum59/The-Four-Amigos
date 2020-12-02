@@ -52,6 +52,9 @@ namespace BloomFeildHotel
             Application.Exit();
         }
 
-        
+        private void formLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
