@@ -555,8 +555,84 @@ namespace DataAccessLayer
         }
 
 
+        public virtual List<IRoomCleaningRecord> getAllRoomCleaningRecords()
+        {
+            List<IRoomCleaningRecord> RecordsList = new List<IRoomCleaningRecord>();
+            DataSet ds;                 //Declare the DataSet object
+            SqlDataAdapter da;   //Declare the DataAdapter object
+            SqlCommandBuilder cb;
 
 
+
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From RoomCleaningRecords";
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "RecordsData");
+                int totNumRecords = ds.Tables["RecordsData"].Rows.Count;
+                for (int i = 0; i < totNumRecords; i++)
+                {
+                    DataRow dRow = ds.Tables["RecordsData"].Rows[i];
+
+
+                    IRoomCleaningRecord record = RoomCleaningRecordHotel.GetRecords      // Using factory to create the reservation entity object. ie seperating object creation from business logic
+                        (Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),  //recordID
+                                                       Convert.ToInt16(dRow.ItemArray.GetValue(1).ToString()), //RoomNumber
+                                                        Convert.ToDateTime(dRow.ItemArray.GetValue(2).ToString()), //CleanedAt
+                                                        dRow.ItemArray.GetValue(3).ToString());
+
+
+
+                    RecordsList.Add(record);
+                }
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+
+
+            return RecordsList;
+
+        }
+
+
+        public void addNewRoomCleaningRecordToDB(IRoomCleaningRecord theRecord)
+        {
+            try
+            {
+                DataSet ds = new DataSet();
+                string sql = "SELECT * From RoomCleaningRecords";
+                SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                SqlCommandBuilder cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "RecordsData");
+                maxRows = ds.Tables["RecordsData"].Rows.Count;
+                DataRow dRow = ds.Tables["RecordsData"].NewRow();
+                dRow[0] = theRecord.RecordID;
+                dRow[1] = theRecord.RoomNumber;
+                dRow[2] = theRecord.CleanedAt;
+                dRow[3] = theRecord.Note;
+
+
+
+
+                ds.Tables["RecordsData"].Rows.Add(dRow);
+                da.Update(ds, "RecordsData");
+            }
+            catch (System.Exception excep)
+            {
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+        }
 
 
     }

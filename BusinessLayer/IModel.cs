@@ -16,6 +16,8 @@ namespace BusinessLayer
 
         bool addNewReservation(DateTime CheckInDate, DateTime CheckOutDate, int Adults, int Children, double ReservationPrice, bool PayedDeposit, bool PayedInFull, int GuestID, int RoomNumber);
 
+        bool addNewRoomCleaningRecord(int RoomNumber, DateTime CleanedAt, string Note);
+
         BusinessEntities.User CurrentUser { get; set; }
         DataAccessLayer.IDataLayer DataLayer { get; set; }
         string getUserTypeForCurrentuser();
@@ -37,6 +39,11 @@ namespace BusinessLayer
 
         List<IGuest> GuestsList { get; set; }
         void GetAllGuests();
+
+
+        List<IRoomCleaningRecord> RoomCleaningRecordsList { get; set; }
+
+        void GetAllRoomCleaningRecords();
 
         List<IReservation> ReservationsList { get; set; }
 

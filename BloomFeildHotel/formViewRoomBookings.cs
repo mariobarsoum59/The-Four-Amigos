@@ -69,18 +69,18 @@ namespace BloomFeildHotel
             } while (date.Month == month);
 
             dataGridView1.Columns.Add("Room", "Room");
+
             // Add the month day values in the columns
             foreach (DateTime d in list)
             {
-                dataGridView1.Columns.Add("DayOfMonth", d.Day.ToString());
+                dataGridView1.Columns.Add(d.Date.ToShortDateString(), d.Date.ToShortDateString());
                 //DataGridViewColumn column = dataGridView1.Columns[d.Day.ToString()];
                 //column.Width = 10;
             }
 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
-
-
-
+            this.dataGridView1.Columns["Room"].Frozen = true;
+            
 
 
 
@@ -107,8 +107,8 @@ namespace BloomFeildHotel
 
             foreach (Reservation r in Model.ReservationsList)
             {
-                if (r.CheckInDate.Month == month && r.CheckInDate.Year==year)
-                {
+                //if (r.CheckInDate.Month == month && r.CheckInDate.Year==year)
+               // {
 
 
                     // list to hold date number for given dates
@@ -121,13 +121,26 @@ namespace BloomFeildHotel
                     //shade the days in grid with the days of the reservation.
                     foreach (DateTime d in dates)
                     {
-                        dataGridView1.Rows[r.RoomNumber - 1].Cells[d.Day].Style.BackColor = Color.Red;
+
+                        foreach (DataGridViewColumn column in dataGridView1.Columns)
+                        {
+                            DataGridViewColumnHeaderCell headerCell = column.HeaderCell;
+                            string headerCaptionText = column.HeaderText;
+                            string columnName = column.Name; // Used as a key to myDataGridView.Columns['key_name'];
+
+                            
+                            if (columnName == d.Date.ToShortDateString())
+                            {
+                                dataGridView1.Rows[r.RoomNumber - 1].Cells[d.Day].Style.BackColor = Color.Red;
+                            }
+                        }
 
                     }
                     dates.Clear();
-                }
+                //}
                 
             }
+            dataGridView1.Rows[1].Frozen = true;
             list.Clear();
         }
     }

@@ -26,8 +26,12 @@ namespace DataAccessLayer
 
         List<IRoom> getRoomForDates(string CheckIn, string CheckOut);
 
+        List<IRoomCleaningRecord> getAllRoomCleaningRecords();
+
         void addNewGuestToDB(BusinessEntities.IGuest theGuest);
         void addNewReservationToDB(BusinessEntities.IReservation theReservation);
+
+        void addNewRoomCleaningRecordToDB(BusinessEntities.IRoomCleaningRecord theRecord);
         bool updateReservationFromDB(BusinessEntities.IReservation reservation);
         bool updateGuestFromDB(BusinessEntities.IGuest guest);
 

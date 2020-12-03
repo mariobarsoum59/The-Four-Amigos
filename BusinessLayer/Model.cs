@@ -24,6 +24,7 @@ namespace BusinessLayer
         private List<IGuest> guestsList;
         private List<IReservation> reservationsList;
         private List<IRoom> roomsOnDates;
+        private List<IRoomCleaningRecord> roomCleaningRecordsList;
         private int selectedGuestID;
         #endregion
 
@@ -95,7 +96,17 @@ namespace BusinessLayer
             }
         }
 
-
+        public List<IRoomCleaningRecord> RoomCleaningRecordsList
+        {
+            get
+            {
+                return roomCleaningRecordsList;
+            }
+            set
+            {
+                roomCleaningRecordsList = value;
+            }
+        }
 
 
         public List<IRoom> RoomsOnGivenDates
@@ -244,6 +255,38 @@ namespace BusinessLayer
         }
 
 
+        public Boolean addNewRoomCleaningRecord(int RoomNumber, DateTime CleanedAt, string Note)
+        {
+            try
+            {
+                int maxId = 0;
+
+                foreach (RoomCleaningRecord r in RoomCleaningRecordsList)
+                {
+                    if (r.RecordID > maxId)
+                        maxId = r.RecordID;
+                }
+                IRoomCleaningRecord theRecord = RoomCleaningRecordHotel.GetRecords(maxId + 1, RoomNumber, CleanedAt, Note);   // Using a Factory to create the user entity object. ie seperating object creation from business logic
+                RoomCleaningRecordsList.Add(theRecord);                             // Add a reference to the newly created object to the Models UserList
+                DataLayer.addNewRoomCleaningRecordToDB(theRecord); //Gets the DataLayer to add the new user to the DB. 
+                return true;
+            }
+            catch (System.Exception excep)
+            {
+                return false;
+            }
+
+        }
+
+
+
+
+
+
+
+
+
+
 
         public String getUserTypeForCurrentuser()
         {
@@ -327,7 +370,10 @@ namespace BusinessLayer
             SelectedGuestID = guestid;
         }
 
-
+        public void GetAllRoomCleaningRecords()
+        {
+            RoomCleaningRecordsList = dataLayer.getAllRoomCleaningRecords();
+        }
 
 
     }
