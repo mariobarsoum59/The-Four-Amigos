@@ -47,6 +47,9 @@
     <Compile Include="GuestHotel.cs" />
     <Compile Include="IBarItems.cs" />
     <Compile Include="IGuest.cs" />
+    <Compile Include="IIngredients.cs" />
+    <Compile Include="Ingredients.cs" />
+    <Compile Include="IngredientsHotel.cs" />
     <Compile Include="IOrders.cs" />
     <Compile Include="IReservation.cs" />
     <Compile Include="IRoom.cs" />

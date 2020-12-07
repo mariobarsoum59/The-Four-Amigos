@@ -795,6 +795,43 @@ namespace DataAccessLayer
         }
 
 
+        public virtual List<IIngredients> GetIngredients()
+        {
+            List<IIngredients> Ingredients = new List<IIngredients>();
+
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From StockItems";
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "IngData");
+                int allIngData = ds.Tables["IngData"].Rows.Count;
+                for (int i = 0; i < allIngData; i++)
+                {
+                    DataRow dRow = ds.Tables["IngData"].Rows[i];
+                    IIngredients ingredients = IngredientsHotel.GetIngredients(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
+                                                                                         dRow.ItemArray.GetValue(1).ToString(),
+                                                                                         dRow.ItemArray.GetValue(2).ToString(),
+                                                                        Convert.ToDouble(dRow.ItemArray.GetValue(3).ToString()),
+                                                                         Convert.ToInt16(dRow.ItemArray.GetValue(4).ToString()),
+                                                                                         dRow.ItemArray.GetValue(5).ToString());
+
+                    Ingredients.Add(ingredients);
+                }
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+            return Ingredients;
+
+
+        }
 
 
 

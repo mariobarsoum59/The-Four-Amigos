@@ -12,11 +12,15 @@ namespace DataAccessLayer
         void addNewUserToDB(BusinessEntities.IUser theUser);
         void closeConnection();
         System.Collections.ArrayList GetAllUsers();
+ 
         System.Data.SqlClient.SqlConnection getConnection();
         void openConnection();
         bool deleteUserFromDB(BusinessEntities.IUser user);
 
         bool deleteReservationFromDB(BusinessEntities.IReservation reservation);
+
+
+        
 
         List<IRoom> getAllRooms();
 
@@ -44,6 +48,9 @@ namespace DataAccessLayer
         bool checkGusetInDB(BusinessEntities.IReservation reservation);
 
 
+
+        //rebecca i1 manage waste - get ingredients
+        List<IIngredients> GetIngredients();
 
     }
 }

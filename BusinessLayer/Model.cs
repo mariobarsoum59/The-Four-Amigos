@@ -28,6 +28,7 @@ namespace BusinessLayer
         private int selectedGuestID;
         private List<IBarItems> baritemslist;
         private List<IOrders> orderslist;
+        private List<IIngredients> ingredientsList;
         #endregion
 
         #region Instance Properties
@@ -157,6 +158,18 @@ namespace BusinessLayer
             set
             {
                 orderslist = value;
+            }
+        }
+
+        public List<IIngredients> IngredientsList
+        {
+            get
+            {
+                return ingredientsList;
+            }
+            set
+            {
+                ingredientsList = value;
             }
         }
         #endregion
@@ -421,6 +434,14 @@ namespace BusinessLayer
         {
             OrdersList = dataLayer.getAllOrders();
 
+        }
+
+
+        //Rebecca i1 manage waste get ingredients
+
+        public void GetIngredients()
+        {
+            ingredientsList = dataLayer.GetIngredients();
         }
     }
 }

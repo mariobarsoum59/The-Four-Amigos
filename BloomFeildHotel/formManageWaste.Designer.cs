@@ -43,6 +43,9 @@
             this.lblMoneyWaste = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtTotalPrep = new System.Windows.Forms.TextBox();
+            this.ingList = new System.Windows.Forms.ListBox();
+            this.ingLabel = new System.Windows.Forms.Label();
+            this.mealLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,7 +88,7 @@
             "Chicken Curry and Chips",
             "Fish and Chips",
             "Salad and Soup"});
-            this.foodList.Location = new System.Drawing.Point(46, 179);
+            this.foodList.Location = new System.Drawing.Point(36, 169);
             this.foodList.Name = "foodList";
             this.foodList.Size = new System.Drawing.Size(190, 124);
             this.foodList.TabIndex = 3;
@@ -130,7 +133,7 @@
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExit.Location = new System.Drawing.Point(262, 411);
+            this.btnExit.Location = new System.Drawing.Point(307, 421);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(112, 49);
             this.btnExit.TabIndex = 8;
@@ -156,7 +159,7 @@
             // 
             // txtMoneyWaste
             // 
-            this.txtMoneyWaste.Location = new System.Drawing.Point(500, 362);
+            this.txtMoneyWaste.Location = new System.Drawing.Point(500, 373);
             this.txtMoneyWaste.Name = "txtMoneyWaste";
             this.txtMoneyWaste.Size = new System.Drawing.Size(87, 26);
             this.txtMoneyWaste.TabIndex = 11;
@@ -165,7 +168,7 @@
             // 
             this.lblMoneyWaste.AutoSize = true;
             this.lblMoneyWaste.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMoneyWaste.Location = new System.Drawing.Point(436, 337);
+            this.lblMoneyWaste.Location = new System.Drawing.Point(446, 346);
             this.lblMoneyWaste.Name = "lblMoneyWaste";
             this.lblMoneyWaste.Size = new System.Drawing.Size(196, 22);
             this.lblMoneyWaste.TabIndex = 12;
@@ -188,12 +191,42 @@
             this.txtTotalPrep.Size = new System.Drawing.Size(87, 26);
             this.txtTotalPrep.TabIndex = 14;
             // 
+            // ingList
+            // 
+            this.ingList.FormattingEnabled = true;
+            this.ingList.ItemHeight = 20;
+            this.ingList.Location = new System.Drawing.Point(36, 346);
+            this.ingList.Name = "ingList";
+            this.ingList.Size = new System.Drawing.Size(190, 124);
+            this.ingList.TabIndex = 15;
+            // 
+            // ingLabel
+            // 
+            this.ingLabel.AutoSize = true;
+            this.ingLabel.Location = new System.Drawing.Point(52, 323);
+            this.ingLabel.Name = "ingLabel";
+            this.ingLabel.Size = new System.Drawing.Size(149, 20);
+            this.ingLabel.TabIndex = 16;
+            this.ingLabel.Text = "Ingredients Needed";
+            // 
+            // mealLabel
+            // 
+            this.mealLabel.AutoSize = true;
+            this.mealLabel.Location = new System.Drawing.Point(103, 146);
+            this.mealLabel.Name = "mealLabel";
+            this.mealLabel.Size = new System.Drawing.Size(51, 20);
+            this.mealLabel.TabIndex = 17;
+            this.mealLabel.Text = "Meals";
+            // 
             // formManageWaste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(723, 524);
+            this.Controls.Add(this.mealLabel);
+            this.Controls.Add(this.ingLabel);
+            this.Controls.Add(this.ingList);
             this.Controls.Add(this.txtTotalPrep);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblMoneyWaste);
@@ -234,5 +267,8 @@
         private System.Windows.Forms.Label lblMoneyWaste;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTotalPrep;
+        private System.Windows.Forms.ListBox ingList;
+        private System.Windows.Forms.Label ingLabel;
+        private System.Windows.Forms.Label mealLabel;
     }
 }
