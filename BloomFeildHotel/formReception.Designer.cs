@@ -30,12 +30,10 @@
         {
             this.btnExit = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnViewRoomChart = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btnView = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCheckIn = new System.Windows.Forms.Button();
             this.btnCreateReservation = new System.Windows.Forms.Button();
             this.lblReceptionMenu = new System.Windows.Forms.Label();
             this.lblHiReceptionMenu = new System.Windows.Forms.Label();
@@ -45,9 +43,9 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(790, 443);
+            this.btnExit.Location = new System.Drawing.Point(407, 444);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(112, 57);
+            this.btnExit.Size = new System.Drawing.Size(495, 57);
             this.btnExit.TabIndex = 19;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -56,37 +54,28 @@
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(741, 286);
+            this.button8.Location = new System.Drawing.Point(741, 309);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(161, 104);
             this.button8.TabIndex = 18;
             this.button8.Text = "button8";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnViewRoomChart
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(741, 176);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(161, 104);
-            this.button7.TabIndex = 17;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(574, 396);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(161, 104);
-            this.button6.TabIndex = 16;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnViewRoomChart.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewRoomChart.Location = new System.Drawing.Point(741, 199);
+            this.btnViewRoomChart.Name = "btnViewRoomChart";
+            this.btnViewRoomChart.Size = new System.Drawing.Size(161, 104);
+            this.btnViewRoomChart.TabIndex = 17;
+            this.btnViewRoomChart.Text = "View Room Bookings";
+            this.btnViewRoomChart.UseVisualStyleBackColor = true;
+            this.btnViewRoomChart.Click += new System.EventHandler(this.BtnViewRoomChart_Click);
             // 
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(574, 286);
+            this.button5.Location = new System.Drawing.Point(574, 309);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(161, 104);
             this.button5.TabIndex = 15;
@@ -96,7 +85,7 @@
             // btnView
             // 
             this.btnView.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnView.Location = new System.Drawing.Point(574, 176);
+            this.btnView.Location = new System.Drawing.Point(574, 199);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(161, 104);
             this.btnView.TabIndex = 14;
@@ -104,30 +93,21 @@
             this.btnView.UseVisualStyleBackColor = true;
             this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
-            // button3
+            // btnCheckIn
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(407, 396);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(161, 104);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(407, 286);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(161, 104);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCheckIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckIn.Location = new System.Drawing.Point(407, 309);
+            this.btnCheckIn.Name = "btnCheckIn";
+            this.btnCheckIn.Size = new System.Drawing.Size(161, 104);
+            this.btnCheckIn.TabIndex = 12;
+            this.btnCheckIn.Text = "Check In";
+            this.btnCheckIn.UseVisualStyleBackColor = true;
+            this.btnCheckIn.Click += new System.EventHandler(this.BtnCheckIn_Click);
             // 
             // btnCreateReservation
             // 
             this.btnCreateReservation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateReservation.Location = new System.Drawing.Point(407, 176);
+            this.btnCreateReservation.Location = new System.Drawing.Point(407, 199);
             this.btnCreateReservation.Name = "btnCreateReservation";
             this.btnCreateReservation.Size = new System.Drawing.Size(161, 104);
             this.btnCreateReservation.TabIndex = 1;
@@ -176,12 +156,10 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnViewRoomChart);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btnView);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnCheckIn);
             this.Controls.Add(this.btnCreateReservation);
             this.Controls.Add(this.lblReceptionMenu);
             this.DoubleBuffered = true;
@@ -200,12 +178,10 @@
 
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnViewRoomChart;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btnView;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCheckIn;
         private System.Windows.Forms.Button btnCreateReservation;
         private System.Windows.Forms.Label lblReceptionMenu;
         private System.Windows.Forms.Label lblHiReceptionMenu;

@@ -212,7 +212,7 @@ namespace DataAccessLayer
                 dRow[7] = theReservation.PayedInFull;
                 dRow[8] = theReservation.GuestID;
                 dRow[9] = theReservation.RoomNumber;
-
+                dRow[10] = theReservation.CheckIn;
 
 
 
@@ -414,7 +414,9 @@ namespace DataAccessLayer
                                                         Convert.ToBoolean(dRow.ItemArray.GetValue(6).ToString()), //deposit
                                                         Convert.ToBoolean(dRow.ItemArray.GetValue(7).ToString()), //Payedfull
                                                         Convert.ToInt16(dRow.ItemArray.GetValue(8).ToString()), //guestID
-                                                       Convert.ToInt16((dRow.ItemArray.GetValue(9)))); //RoomNum
+                                                       Convert.ToInt16((dRow.ItemArray.GetValue(9))),
+                                                       Convert.ToBoolean(dRow.ItemArray.GetValue(10).ToString())
+                                                       ); //RoomNum
 
 
                     ReservationsList.Add(reservation);
@@ -634,6 +636,7 @@ namespace DataAccessLayer
             }
         }
 
+<<<<<<< HEAD
         public virtual List<IBarItems> getAllbarItems()
         {
             List<IBarItems> BarItems = new List<IBarItems>();
@@ -661,10 +664,74 @@ namespace DataAccessLayer
 
                     BarItems.Add(baritem);
                 }
+=======
+        public virtual bool updateRoomPriceInDB(IRoom room)
+        {
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Rooms";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "RoomsData");
+                DataRow findRow = ds.Tables["RoomsData"].Rows.Find(room.RoomNumber);
+                if (findRow != null)
+                {
+                    findRow[0] = room.RoomNumber;
+                    findRow[1] = room.BasePrice;
+                    findRow[2] = room.Available;
+                    findRow[3] = room.RoomType;
+                    findRow[4] = room.Smoking;
+
+                }
+                da.Update(ds, "RoomsData"); //remove row from database table
             }
             catch (System.Exception excep)
             {
                 MessageBox.Show(excep.Message);
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
+                Application.Exit();
+            }
+            return true;
+        }
+
+
+        public virtual bool checkGusetInDB(IReservation reservation)
+        {
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Reservations";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "ReservationData");
+                DataRow findRow = ds.Tables["ReservationData"].Rows.Find(reservation.ReservationID);
+                if (findRow != null)
+                {
+                    //findRow[0] = reservation.ReservationID;
+                    findRow[1] = reservation.CheckInDate.Date;
+                    findRow[2] = reservation.CheckOutDate.Date;
+                    findRow[3] = reservation.Adults;
+                    findRow[4] = reservation.Children;
+                    findRow[5] = reservation.ReservationPrice;
+                    findRow[6] = reservation.PayedDeposit;
+                    findRow[7] = reservation.PayedInFull;
+                    findRow[8] = reservation.GuestID;
+                    findRow[9] = reservation.RoomNumber;
+                    findRow[10] = reservation.CheckIn;
+
+
+                }
+                da.Update(ds, "ReservationData"); //remove row from database table
+>>>>>>> 9758fac5420bb43eaa1da570c10a0fd1450962bd
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+<<<<<<< HEAD
                 if (con.State.ToString() == "Open")
                     con.Close();
                 Application.Exit();
@@ -674,6 +741,24 @@ namespace DataAccessLayer
 
             return BarItems;
         }
+=======
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
+                Application.Exit();
+            }
+            return true;
+        }
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 9758fac5420bb43eaa1da570c10a0fd1450962bd
 
 
     }

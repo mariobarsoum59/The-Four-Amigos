@@ -35,7 +35,14 @@ namespace DataAccessLayer
         bool updateReservationFromDB(BusinessEntities.IReservation reservation);
         bool updateGuestFromDB(BusinessEntities.IGuest guest);
 
+<<<<<<< HEAD
         List<IBarItems> getAllbarItems();
+=======
+        bool updateRoomPriceInDB(BusinessEntities.IRoom room);
+
+        bool checkGusetInDB(BusinessEntities.IReservation reservation);
+
+>>>>>>> 9758fac5420bb43eaa1da570c10a0fd1450962bd
 
     }
 }

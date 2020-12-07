@@ -34,8 +34,8 @@
             this.btnCreateReservation = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btnViewRoomBookings = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnChangeRoomBasePrice = new System.Windows.Forms.Button();
+            this.btnCheckIn = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -109,25 +109,27 @@
             this.btnViewRoomBookings.UseVisualStyleBackColor = true;
             this.btnViewRoomBookings.Click += new System.EventHandler(this.BtnViewRoomBookings_Click);
             // 
-            // button6
+            // btnChangeRoomBasePrice
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(582, 392);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(161, 104);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnChangeRoomBasePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangeRoomBasePrice.Location = new System.Drawing.Point(582, 392);
+            this.btnChangeRoomBasePrice.Name = "btnChangeRoomBasePrice";
+            this.btnChangeRoomBasePrice.Size = new System.Drawing.Size(161, 104);
+            this.btnChangeRoomBasePrice.TabIndex = 6;
+            this.btnChangeRoomBasePrice.Text = "Change Room Base Price";
+            this.btnChangeRoomBasePrice.UseVisualStyleBackColor = true;
+            this.btnChangeRoomBasePrice.Click += new System.EventHandler(this.BtnChangeRoomBasePrice_Click);
             // 
-            // button7
+            // btnCheckIn
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(749, 172);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(161, 104);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnCheckIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckIn.Location = new System.Drawing.Point(749, 172);
+            this.btnCheckIn.Name = "btnCheckIn";
+            this.btnCheckIn.Size = new System.Drawing.Size(161, 104);
+            this.btnCheckIn.TabIndex = 7;
+            this.btnCheckIn.Text = "Check In";
+            this.btnCheckIn.UseVisualStyleBackColor = true;
+            this.btnCheckIn.Click += new System.EventHandler(this.BtnCheckIn_Click);
             // 
             // button8
             // 
@@ -180,8 +182,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnCheckIn);
+            this.Controls.Add(this.btnChangeRoomBasePrice);
             this.Controls.Add(this.btnViewRoomBookings);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnCreateReservation);
@@ -207,8 +209,8 @@
         private System.Windows.Forms.Button btnCreateReservation;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnViewRoomBookings;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnChangeRoomBasePrice;
+        private System.Windows.Forms.Button btnCheckIn;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Panel panel1;

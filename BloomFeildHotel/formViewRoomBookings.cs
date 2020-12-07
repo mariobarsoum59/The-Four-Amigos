@@ -22,8 +22,7 @@ namespace BloomFeildHotel
         public formViewRoomBookings(FormContainer parent, IModel Model)
         {
             InitializeComponent();
-            MdiParent = parent;
-            fc = parent;
+
             this.Model = Model;
         }
 
@@ -131,7 +130,7 @@ namespace BloomFeildHotel
                             
                             if (columnName == d.Date.ToShortDateString())
                             {
-                                dataGridView1.Rows[r.RoomNumber - 1].Cells[d.Day].Style.BackColor = Color.Red;
+                                dataGridView1.Rows[r.RoomNumber -1].Cells[d.Day].Style.BackColor = Color.Red;
                             }
                         }
 

@@ -14,7 +14,7 @@ namespace BusinessLayer
 
         bool addNewGuest(string FirstName, string Surname, string ContactNumber, string Address, string Email, bool SendMarketingInfo);
 
-        bool addNewReservation(DateTime CheckInDate, DateTime CheckOutDate, int Adults, int Children, double ReservationPrice, bool PayedDeposit, bool PayedInFull, int GuestID, int RoomNumber);
+        bool addNewReservation(DateTime CheckInDate, DateTime CheckOutDate, int Adults, int Children, double ReservationPrice, bool PayedDeposit, bool PayedInFull, int GuestID, int RoomNumber,bool CheckIn);
 
         bool addNewRoomCleaningRecord(int RoomNumber, DateTime CleanedAt, string Note);
 
@@ -54,8 +54,14 @@ namespace BusinessLayer
         void getSelectedGuest(int guestid);
         void GetRoomsForDates(string CheckIn, string CheckOut);
 
+<<<<<<< HEAD
         List<IBarItems> BarItemsList { get; set; }
         void GetAllBarItems();
+=======
+        bool UpdateRoomPrice(IRoom room);
+
+        bool CheckGuestIn(IReservation reservation);
+>>>>>>> 9758fac5420bb43eaa1da570c10a0fd1450962bd
 
     }
 }

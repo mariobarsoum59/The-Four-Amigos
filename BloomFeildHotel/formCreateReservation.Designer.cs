@@ -82,6 +82,7 @@
             this.lblVariablePrice = new System.Windows.Forms.Label();
             this.lblBasePrice = new System.Windows.Forms.Label();
             this.lbl = new System.Windows.Forms.Label();
+            this.btnRoomChart = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBoxRoomType.SuspendLayout();
             this.groupBoxSearchForAvailability.SuspendLayout();
@@ -206,6 +207,7 @@
             // 
             // groupBoxSearchForAvailability
             // 
+            this.groupBoxSearchForAvailability.Controls.Add(this.btnRoomChart);
             this.groupBoxSearchForAvailability.Controls.Add(this.groupBox1);
             this.groupBoxSearchForAvailability.Controls.Add(this.btnSearch);
             this.groupBoxSearchForAvailability.Controls.Add(this.textBoxNumOfNights);
@@ -654,6 +656,18 @@
             this.lbl.TabIndex = 0;
             this.lbl.Text = "Room Number";
             // 
+            // btnRoomChart
+            // 
+            this.btnRoomChart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnRoomChart.ForeColor = System.Drawing.Color.White;
+            this.btnRoomChart.Location = new System.Drawing.Point(19, 448);
+            this.btnRoomChart.Name = "btnRoomChart";
+            this.btnRoomChart.Size = new System.Drawing.Size(246, 48);
+            this.btnRoomChart.TabIndex = 23;
+            this.btnRoomChart.Text = "View Rooms Availability Chart";
+            this.btnRoomChart.UseVisualStyleBackColor = false;
+            this.btnRoomChart.Click += new System.EventHandler(this.BtnRoomChart_Click);
+            // 
             // formCreateReservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -748,5 +762,6 @@
         private System.Windows.Forms.Button btnSelectExistingGuest;
         private System.Windows.Forms.Button btnAddGuest;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnRoomChart;
     }
 }
