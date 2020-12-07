@@ -634,6 +634,47 @@ namespace DataAccessLayer
             }
         }
 
+        public virtual List<IBarItems> getAllbarItems()
+        {
+            List<IBarItems> BarItems = new List<IBarItems>();
+            DataSet ds;                 //Declare the DataSet object
+            SqlDataAdapter da;   //Declare the DataAdapter object
+            SqlCommandBuilder cb;
+
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From BarItems";
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "BarItemsData");
+                int totNumsBarItems = ds.Tables["BarItemsData"].Rows.Count;
+                for (int i = 0; i < totNumsBarItems; i++)
+                {
+                    DataRow dRow = ds.Tables["BarItemsData"].Rows[i];
+
+                    IBarItems baritem = BarItemsHotel.GetBarItems(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),  // Using a Hotel to create the Room entity object. ie seperating object creation from business logic
+                                                       dRow.ItemArray.GetValue(1).ToString(),
+                                                        Convert.ToDouble(dRow.ItemArray.GetValue(2).ToString()),
+                                                        dRow.ItemArray.GetValue(3).ToString(),
+                                                       Convert.ToDouble(dRow.ItemArray.GetValue(4)));
+
+                    BarItems.Add(baritem);
+                }
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+
+
+            return BarItems;
+        }
+
 
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,11 +13,42 @@ namespace BloomFeildHotel
 {
     public partial class formViewOrdersChef : Form
     {
-        public formViewOrdersChef()
+        private FormContainer fc;
+        private IModel Model;
+        public formViewOrdersChef(FormContainer parent, IModel Model)
         {
             InitializeComponent();
+            MdiParent = parent;
+            fc = parent;
+            this.Model = Model;
         }
 
-        
+        private void formViewOrdersChef_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            formChef form = new formChef(fc, Model);
+            //form.Show();
+            form.Dock = DockStyle.Fill;
+
+            form.Show();
+        }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnChangeOrderStatus_Click(object sender, EventArgs e)
+        {
+            formManageOrder form = new formManageOrder(fc, Model);
+            //form.Show();
+            form.Dock = DockStyle.Fill;
+
+            form.Show();
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using BusinessLayer;
+﻿using BusinessEntities;
+using BusinessLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -27,7 +28,18 @@ namespace BloomFeildHotel
 
         private void formSales_Load(object sender, EventArgs e)
         {
+            Model.GetAllBarItems();
+            foreach (BarItems baritem in Model.BarItemsList)
+            {
 
+                listBox2.Items.Add(string.Format("{0} | €{1}", baritem.Food, baritem.FoodPrice));
+
+            }
+            foreach (BarItems baritem in Model.BarItemsList)
+            {
+
+                listBox1.Items.Add(string.Format("{0} | €{1}", baritem.Drink, baritem.DrinkPrice));
+            }
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -37,6 +49,20 @@ namespace BloomFeildHotel
             form.Dock = DockStyle.Fill;
 
             form.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string selectedItemText;
+            selectedItemText = listBox2.SelectedItem.ToString();
+            listBox3.Items.Add(selectedItemText);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string selectedItemText;
+            selectedItemText = listBox1.SelectedItem.ToString();
+            listBox3.Items.Add(selectedItemText);
         }
     }
 }

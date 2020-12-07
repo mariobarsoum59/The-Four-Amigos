@@ -50,6 +50,13 @@ namespace BloomFeildHotel
                     form3.Dock = DockStyle.Fill;
                     form3.Show();
                     break;
+                case "Chef":
+                    formChef form4 = new formChef(this, Model);
+                    //formAddUser form1 = new formAddUser(this, model);
+                    this.Text = this.Text + "-BarStaff";
+                    form4.Dock = DockStyle.Fill;
+                    form4.Show();
+                    break;
 
 
             }
@@ -57,9 +64,6 @@ namespace BloomFeildHotel
 
         }
 
-        private void FormContainer_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

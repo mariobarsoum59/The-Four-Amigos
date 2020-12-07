@@ -42,5 +42,10 @@ namespace BloomFeildHotel
 
             form.Show();
         }
+
+        private void lblBarStaffMenu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

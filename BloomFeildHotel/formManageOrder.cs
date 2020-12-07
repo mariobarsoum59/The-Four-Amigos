@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,21 @@ namespace BloomFeildHotel
 {
     public partial class formManageOrder : Form
     {
-        public formManageOrder()
+        private FormContainer fc;
+        private IModel Model;
+        public formManageOrder(FormContainer parent, IModel Model)
         {
             InitializeComponent();
+            MdiParent = parent;
+            fc = parent;
+            this.Model = Model;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
 
         }
+
+        
     }
 }

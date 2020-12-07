@@ -54,5 +54,8 @@ namespace BusinessLayer
         void getSelectedGuest(int guestid);
         void GetRoomsForDates(string CheckIn, string CheckOut);
 
+        List<IBarItems> BarItemsList { get; set; }
+        void GetAllBarItems();
+
     }
 }

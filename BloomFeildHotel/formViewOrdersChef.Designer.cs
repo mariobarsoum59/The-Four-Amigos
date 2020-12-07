@@ -29,75 +29,139 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formViewOrdersChef));
-            this.btnBack = new System.Windows.Forms.Button();
-            this.btnOk = new System.Windows.Forms.Button();
             this.listBoxOrders = new System.Windows.Forms.ListBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblCreateReservation = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnChangeOrderStatus = new System.Windows.Forms.Button();
+            this.btnOk = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.btnBack.Location = new System.Drawing.Point(280, 471);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 23);
-            this.btnBack.TabIndex = 5;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = false;
-            // 
-            // btnOk
-            // 
-            this.btnOk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.btnOk.Location = new System.Drawing.Point(199, 471);
-            this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(75, 23);
-            this.btnOk.TabIndex = 4;
-            this.btnOk.Text = "Ok";
-            this.btnOk.UseVisualStyleBackColor = false;
-            // 
             // listBoxOrders
             // 
-            this.listBoxOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
+            this.listBoxOrders.BackColor = System.Drawing.Color.White;
+            this.listBoxOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.listBoxOrders.ForeColor = System.Drawing.Color.Black;
             this.listBoxOrders.FormattingEnabled = true;
-            this.listBoxOrders.Location = new System.Drawing.Point(12, 84);
+            this.listBoxOrders.ItemHeight = 36;
+            this.listBoxOrders.Items.AddRange(new object[] {
+            "bob"});
+            this.listBoxOrders.Location = new System.Drawing.Point(16, 331);
+            this.listBoxOrders.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBoxOrders.Name = "listBoxOrders";
-            this.listBoxOrders.Size = new System.Drawing.Size(344, 381);
+            this.listBoxOrders.Size = new System.Drawing.Size(846, 796);
             this.listBoxOrders.TabIndex = 3;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(94)))), ((int)(((byte)(84)))));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.lblCreateReservation);
+            this.panel1.Location = new System.Drawing.Point(1, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1913, 109);
+            this.panel1.TabIndex = 25;
+            // 
+            // lblCreateReservation
+            // 
+            this.lblCreateReservation.AutoSize = true;
+            this.lblCreateReservation.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreateReservation.ForeColor = System.Drawing.Color.White;
+            this.lblCreateReservation.Location = new System.Drawing.Point(4, 32);
+            this.lblCreateReservation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCreateReservation.Name = "lblCreateReservation";
+            this.lblCreateReservation.Size = new System.Drawing.Size(189, 61);
+            this.lblCreateReservation.TabIndex = 0;
+            this.lblCreateReservation.Text = "Orders";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::BloomFeildHotel.Properties.Resources.chef_hat__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Image = global::BloomFeildHotel.Properties.Resources.chef1234;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 120);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(101, 67);
+            this.pictureBox1.Size = new System.Drawing.Size(202, 201);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
-            // formViewOrders
+            // button1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(646, 1168);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(216, 135);
+            this.button1.TabIndex = 41;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnChangeOrderStatus
+            // 
+            this.btnChangeOrderStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnChangeOrderStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangeOrderStatus.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnChangeOrderStatus.Location = new System.Drawing.Point(337, 1168);
+            this.btnChangeOrderStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnChangeOrderStatus.Name = "btnChangeOrderStatus";
+            this.btnChangeOrderStatus.Size = new System.Drawing.Size(216, 135);
+            this.btnChangeOrderStatus.TabIndex = 42;
+            this.btnChangeOrderStatus.Text = "Mange Order";
+            this.btnChangeOrderStatus.UseVisualStyleBackColor = false;
+            this.btnChangeOrderStatus.Click += new System.EventHandler(this.btnChangeOrderStatus_Click);
+            // 
+            // btnOk
+            // 
+            this.btnOk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOk.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnOk.Location = new System.Drawing.Point(16, 1168);
+            this.btnOk.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(216, 135);
+            this.btnOk.TabIndex = 43;
+            this.btnOk.Text = "Ok";
+            this.btnOk.UseVisualStyleBackColor = false;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
+            // 
+            // formViewOrdersChef
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(183)))), ((int)(((byte)(241)))));
-            this.ClientSize = new System.Drawing.Size(370, 506);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnBack);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
+            this.ClientSize = new System.Drawing.Size(907, 1327);
             this.Controls.Add(this.btnOk);
+            this.Controls.Add(this.btnChangeOrderStatus);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.listBoxOrders);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "formViewOrders";
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "formViewOrdersChef";
             this.Text = "formViewOrders";
+            this.Load += new System.EventHandler(this.formViewOrdersChef_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.ListBox listBoxOrders;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblCreateReservation;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnChangeOrderStatus;
+        private System.Windows.Forms.Button btnOk;
     }
 }

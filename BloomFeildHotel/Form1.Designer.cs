@@ -40,7 +40,7 @@
             this.Name = "FormContainer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bloom Feild Hotel";
-            this.Load += new System.EventHandler(this.FormContainer_Load);
+            
             this.Shown += new System.EventHandler(this.formContainer_Shown);
             this.ResumeLayout(false);
 

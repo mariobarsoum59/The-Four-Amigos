@@ -549,5 +549,14 @@
   <ItemGroup>
     <None Include="Resources\search.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chef-icon %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chef123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chef1234.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

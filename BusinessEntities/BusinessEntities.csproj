@@ -41,8 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarItems.cs" />
+    <Compile Include="BarItemsHotel.cs" />
     <Compile Include="Guest.cs" />
     <Compile Include="GuestHotel.cs" />
+    <Compile Include="IBarItems.cs" />
     <Compile Include="IGuest.cs" />
     <Compile Include="IReservation.cs" />
     <Compile Include="IRoom.cs" />

@@ -26,6 +26,7 @@ namespace BusinessLayer
         private List<IRoom> roomsOnDates;
         private List<IRoomCleaningRecord> roomCleaningRecordsList;
         private int selectedGuestID;
+        private List<IBarItems> baritemslist;
         #endregion
 
         #region Instance Properties
@@ -132,6 +133,18 @@ namespace BusinessLayer
             set
             {
                 selectedGuestID = value;
+            }
+        }
+
+        public List<IBarItems> BarItemsList
+        {
+            get
+            {
+                return baritemslist;
+            }
+            set
+            {
+                baritemslist = value;
             }
         }
 
@@ -374,7 +387,11 @@ namespace BusinessLayer
         {
             RoomCleaningRecordsList = dataLayer.getAllRoomCleaningRecords();
         }
+        public void GetAllBarItems()
+        {
+            BarItemsList = dataLayer.getAllbarItems();
 
+        }
 
     }
 }
