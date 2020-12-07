@@ -22,7 +22,7 @@ namespace BusinessEntities
         int GuestID { get; set; }
         int RoomNumber { get; set; }
 
-
+        bool CheckIn { get; set; }
 
 
 

@@ -231,7 +231,7 @@ namespace BusinessLayer
         }
 
 
-        public Boolean addNewReservation(DateTime CheckInDate, DateTime CheckOutDate, int Adults, int Children, double ReservationPrice, bool PayedDeposit, bool PayedInFull, int GuestID, int RoomNumber)
+        public Boolean addNewReservation(DateTime CheckInDate, DateTime CheckOutDate, int Adults, int Children, double ReservationPrice, bool PayedDeposit, bool PayedInFull, int GuestID, int RoomNumber,bool CheckIn)
         {
             try
             {
@@ -242,7 +242,7 @@ namespace BusinessLayer
                     if (u.ReservationID > maxId)
                         maxId = u.ReservationID;
                 }
-                IReservation theReservation = ReservationHotel.GetReservation(maxId + 1, CheckInDate, CheckOutDate, Adults, Children, ReservationPrice, PayedDeposit, PayedInFull, GuestID, RoomNumber);   // Using a Factory to create the user entity object. ie seperating object creation from business logic
+                IReservation theReservation = ReservationHotel.GetReservation(maxId + 1, CheckInDate, CheckOutDate, Adults, Children, ReservationPrice, PayedDeposit, PayedInFull, GuestID, RoomNumber,CheckIn);   // Using a Factory to create the user entity object. ie seperating object creation from business logic
                 ReservationsList.Add(theReservation);                             // Add a reference to the newly created object to the Models UserList
                 DataLayer.addNewReservationToDB(theReservation); //Gets the DataLayer to add the new user to the DB. 
                 return true;
@@ -376,5 +376,17 @@ namespace BusinessLayer
         }
 
 
+        public bool UpdateRoomPrice(IRoom room)
+        {
+            dataLayer.updateRoomPriceInDB(room);
+            return true;
+        }
+
+
+        public bool CheckGuestIn(IReservation reservation)
+        {
+            dataLayer.checkGusetInDB(reservation);
+            return true;
+        }
     }
 }

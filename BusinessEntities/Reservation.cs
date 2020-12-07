@@ -19,6 +19,7 @@ namespace BusinessEntities
         private bool payedInFull;
         private int guestID;
         private int roomNumber;
+        private bool checkIn;
 
 
         public int ReservationID
@@ -140,13 +141,25 @@ namespace BusinessEntities
             }
         }
 
+        public bool CheckIn
+        {
+            get
+            {
+                return checkIn;
+            }
+            set
+            {
+                checkIn = value;
+            }
+        }
+
 
         public Reservation()
         {
             throw new System.NotImplementedException();
         }
 
-        public Reservation(int ReservationID, DateTime CheckInDate, DateTime CheckOutDate, int Adults, int Children, double ReservationPrice, bool PayedDeposit, bool PayedInFull, int GuestID, int RoomNumber)
+        public Reservation(int ReservationID, DateTime CheckInDate, DateTime CheckOutDate, int Adults, int Children, double ReservationPrice, bool PayedDeposit, bool PayedInFull, int GuestID, int RoomNumber, bool CheckIn)
         {
             this.reservationID = ReservationID;
             this.checkInDate = CheckInDate;
@@ -158,6 +171,7 @@ namespace BusinessEntities
             this.payedInFull = PayedInFull;
             this.guestID = GuestID;
             this.roomNumber = RoomNumber;
+            this.checkIn = CheckIn;
         }
     }
 }

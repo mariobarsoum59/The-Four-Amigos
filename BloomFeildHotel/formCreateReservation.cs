@@ -166,9 +166,16 @@ namespace BloomFeildHotel
             }
 
 
-            if(Model.addNewReservation(DTPCheckInDate.Value.Date,DTPCheckOutDate.Value.Date,numofAdults,numofchildren,Price,DepositPayed,PayedInFull,guestID,roomnum))
+            if(Model.addNewReservation(DTPCheckInDate.Value.Date,DTPCheckOutDate.Value.Date,numofAdults,numofchildren,Price,DepositPayed,PayedInFull,guestID,roomnum,false))
             {
-                MessageBox.Show("Reservation Added");
+                foreach(Reservation r in Model.ReservationsList)
+                {
+                    if(r.CheckInDate.Date==DTPCheckInDate.Value.Date && r.CheckOutDate.Date==DTPCheckOutDate.Value.Date && r.RoomNumber==Convert.ToInt32(textBoxRoomNumber.Text))
+                    {
+                        MessageBox.Show("Reservation Added\n\n\n\n  Reservation Number:" + r.ReservationID);
+                    }
+                }
+                
             }
         }
 
@@ -251,6 +258,12 @@ namespace BloomFeildHotel
             {
                 MessageBox.Show("Guest Added");
             }
+        }
+
+        private void BtnRoomChart_Click(object sender, EventArgs e)
+        {
+            formViewRoomBookings f3 = new formViewRoomBookings(fc, Model);
+            f3.Show();
         }
     }
 }

@@ -35,5 +35,10 @@ namespace DataAccessLayer
         bool updateReservationFromDB(BusinessEntities.IReservation reservation);
         bool updateGuestFromDB(BusinessEntities.IGuest guest);
 
+        bool updateRoomPriceInDB(BusinessEntities.IRoom room);
+
+        bool checkGusetInDB(BusinessEntities.IReservation reservation);
+
+
     }
 }

@@ -11,7 +11,7 @@ namespace BusinessEntities
         private static IReservation Reservation = null;
 
 
-        public static IReservation GetReservation(int ReservationID, DateTime CheckInDate, DateTime CheckOutDate, int Adults, int Children, double ReservationPrice, bool PayedDeposit, bool PayedInFull, int GuestID, int RoomNumber)
+        public static IReservation GetReservation(int ReservationID, DateTime CheckInDate, DateTime CheckOutDate, int Adults, int Children, double ReservationPrice, bool PayedDeposit, bool PayedInFull, int GuestID, int RoomNumber,bool CheckIn)
         {
             if (Reservation != null)
             {
@@ -19,7 +19,7 @@ namespace BusinessEntities
             }
             else
             {
-                return new Reservation(ReservationID, CheckInDate, CheckOutDate, Adults, Children, ReservationPrice, PayedDeposit, PayedInFull, GuestID, RoomNumber);
+                return new Reservation(ReservationID, CheckInDate, CheckOutDate, Adults, Children, ReservationPrice, PayedDeposit, PayedInFull, GuestID, RoomNumber,CheckIn);
             }
         }
 
