@@ -27,6 +27,7 @@ namespace BusinessLayer
         private List<IRoomCleaningRecord> roomCleaningRecordsList;
         private int selectedGuestID;
         private List<IBarItems> baritemslist;
+        private List<IOrders> orderslist;
         #endregion
 
         #region Instance Properties
@@ -147,7 +148,17 @@ namespace BusinessLayer
                 baritemslist = value;
             }
         }
-
+        public List<IOrders> OrdersList
+        {
+            get
+            {
+                return orderslist;
+            }
+            set
+            {
+                orderslist = value;
+            }
+        }
         #endregion
 
 
@@ -404,6 +415,12 @@ namespace BusinessLayer
         {
             dataLayer.checkGusetInDB(reservation);
             return true;
+        }
+
+        public void GetAllOrders()
+        {
+            OrdersList = dataLayer.getAllOrders();
+
         }
     }
 }

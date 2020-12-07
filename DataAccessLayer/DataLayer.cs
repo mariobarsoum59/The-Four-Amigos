@@ -636,7 +636,7 @@ namespace DataAccessLayer
             }
         }
 
-<<<<<<< HEAD
+
         public virtual List<IBarItems> getAllbarItems()
         {
             List<IBarItems> BarItems = new List<IBarItems>();
@@ -664,7 +664,18 @@ namespace DataAccessLayer
 
                     BarItems.Add(baritem);
                 }
-=======
+                
+            }
+            catch (System.Exception excep)
+            {
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+            return BarItems;
+        }
+
         public virtual bool updateRoomPriceInDB(IRoom room)
         {
             try
@@ -686,6 +697,7 @@ namespace DataAccessLayer
 
                 }
                 da.Update(ds, "RoomsData"); //remove row from database table
+                
             }
             catch (System.Exception excep)
             {
@@ -726,12 +738,12 @@ namespace DataAccessLayer
 
                 }
                 da.Update(ds, "ReservationData"); //remove row from database table
->>>>>>> 9758fac5420bb43eaa1da570c10a0fd1450962bd
+
             }
             catch (System.Exception excep)
             {
                 MessageBox.Show(excep.Message);
-<<<<<<< HEAD
+
                 if (con.State.ToString() == "Open")
                     con.Close();
                 Application.Exit();
@@ -739,16 +751,48 @@ namespace DataAccessLayer
             }
 
 
-            return BarItems;
-        }
-=======
-                if (getConnection().ToString() == "Open")
-                    closeConnection();
-                Application.Exit();
-            }
             return true;
         }
 
+        public virtual List<IOrders> getAllOrders()
+        {
+            List<IOrders> Orders = new List<IOrders>();
+            DataSet ds;                 //Declare the DataSet object
+            SqlDataAdapter da;   //Declare the DataAdapter object
+            SqlCommandBuilder cb;
+
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From BarOrders";
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "OrdersData");
+                int totNumsBarItems = ds.Tables["OrdersData"].Rows.Count;
+                for (int i = 0; i < totNumsBarItems; i++)
+                {
+                    DataRow dRow = ds.Tables["OrdersData"].Rows[i];
+
+                    IOrders orders = OrdersHotel.GetOrders(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),  // Using a Hotel to create the Room entity object. ie seperating object creation from business logic
+                                                       dRow.ItemArray.GetValue(1).ToString(),
+                                                        Convert.ToDouble(dRow.ItemArray.GetValue(2).ToString()),
+                                                        dRow.ItemArray.GetValue(3).ToString(),
+                                                       Convert.ToDouble(dRow.ItemArray.GetValue(4).ToString()),
+                                                       dRow.ItemArray.GetValue(5).ToString());
+
+                    Orders.Add(orders);
+                }
+
+            }
+            catch (System.Exception excep)
+            {
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+            return Orders;
+        }
 
 
 
@@ -758,7 +802,9 @@ namespace DataAccessLayer
 
 
 
->>>>>>> 9758fac5420bb43eaa1da570c10a0fd1450962bd
+
+
+
 
 
     }

@@ -1,4 +1,5 @@
-﻿using BusinessLayer;
+﻿using BusinessEntities;
+using BusinessLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,7 +26,14 @@ namespace BloomFeildHotel
 
         private void formViewOrdersChef_Load(object sender, EventArgs e)
         {
+            Model.GetAllOrders();
+            foreach (Orders order in Model.OrdersList)
+            {
 
+                listBoxOrders.Items.Add(string.Format("{0} | €{1}", order.Food, order.FoodPrice));
+
+            }
+           
         }
 
         private void button1_Click(object sender, EventArgs e)

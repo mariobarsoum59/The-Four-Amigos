@@ -47,12 +47,10 @@
             this.listBoxOrders.ForeColor = System.Drawing.Color.Black;
             this.listBoxOrders.FormattingEnabled = true;
             this.listBoxOrders.ItemHeight = 36;
-            this.listBoxOrders.Items.AddRange(new object[] {
-            "bob"});
-            this.listBoxOrders.Location = new System.Drawing.Point(16, 331);
+            this.listBoxOrders.Location = new System.Drawing.Point(16, 439);
             this.listBoxOrders.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBoxOrders.Name = "listBoxOrders";
-            this.listBoxOrders.Size = new System.Drawing.Size(846, 796);
+            this.listBoxOrders.Size = new System.Drawing.Size(846, 832);
             this.listBoxOrders.TabIndex = 3;
             // 
             // panel1
@@ -63,7 +61,7 @@
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1913, 109);
+            this.panel1.Size = new System.Drawing.Size(905, 109);
             this.panel1.TabIndex = 25;
             // 
             // lblCreateReservation
@@ -84,7 +82,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(13, 120);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(202, 201);
+            this.pictureBox1.Size = new System.Drawing.Size(346, 286);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
@@ -93,7 +91,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(646, 1168);
+            this.button1.Location = new System.Drawing.Point(646, 1303);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(216, 135);
@@ -107,7 +105,7 @@
             this.btnChangeOrderStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnChangeOrderStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangeOrderStatus.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnChangeOrderStatus.Location = new System.Drawing.Point(337, 1168);
+            this.btnChangeOrderStatus.Location = new System.Drawing.Point(339, 1303);
             this.btnChangeOrderStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnChangeOrderStatus.Name = "btnChangeOrderStatus";
             this.btnChangeOrderStatus.Size = new System.Drawing.Size(216, 135);
@@ -121,7 +119,7 @@
             this.btnOk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOk.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnOk.Location = new System.Drawing.Point(16, 1168);
+            this.btnOk.Location = new System.Drawing.Point(13, 1303);
             this.btnOk.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(216, 135);
@@ -135,7 +133,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(907, 1327);
+            this.ClientSize = new System.Drawing.Size(907, 1481);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.btnChangeOrderStatus);
             this.Controls.Add(this.button1);
@@ -146,6 +144,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "formViewOrdersChef";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formViewOrders";
             this.Load += new System.EventHandler(this.formViewOrdersChef_Load);
             this.panel1.ResumeLayout(false);

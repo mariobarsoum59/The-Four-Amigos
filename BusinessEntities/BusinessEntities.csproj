@@ -47,9 +47,12 @@
     <Compile Include="GuestHotel.cs" />
     <Compile Include="IBarItems.cs" />
     <Compile Include="IGuest.cs" />
+    <Compile Include="IOrders.cs" />
     <Compile Include="IReservation.cs" />
     <Compile Include="IRoom.cs" />
     <Compile Include="IRoomCleaningRecord.cs" />
+    <Compile Include="Orders.cs" />
+    <Compile Include="OrdersHotel.cs" />
     <Compile Include="Reservation.cs" />
     <Compile Include="ReservationHotel.cs" />
     <Compile Include="Room.cs" />
