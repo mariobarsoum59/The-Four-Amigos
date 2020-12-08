@@ -47,5 +47,14 @@ namespace BloomFeildHotel
         {
 
         }
+
+        private void btnViewOrders_Click(object sender, EventArgs e)
+        {
+            ViewOrdersBarStaff form = new ViewOrdersBarStaff(fc, Model);
+            //form.Show();
+            form.Dock = DockStyle.Fill;
+
+            form.Show();
+        }
     }
 }
