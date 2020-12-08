@@ -55,5 +55,14 @@ namespace BloomFeildHotel
 
             form.Show();
         }
+
+        private void btnMangeWaste_Click(object sender, EventArgs e)
+        {
+            formManageWaste form = new formManageWaste(fc, Model);
+            //form.Show();
+            form.Dock = DockStyle.Fill;
+
+            form.Show();
+        }
     }
 }

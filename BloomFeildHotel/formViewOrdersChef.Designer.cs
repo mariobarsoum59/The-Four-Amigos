@@ -52,6 +52,7 @@
             this.listBoxOrders.Name = "listBoxOrders";
             this.listBoxOrders.Size = new System.Drawing.Size(846, 832);
             this.listBoxOrders.TabIndex = 3;
+            this.listBoxOrders.SelectedIndexChanged += new System.EventHandler(this.listBoxOrders_SelectedIndexChanged);
             // 
             // panel1
             // 
@@ -133,7 +134,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(907, 1481);
+            this.ClientSize = new System.Drawing.Size(907, 1226);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.btnChangeOrderStatus);
             this.Controls.Add(this.button1);

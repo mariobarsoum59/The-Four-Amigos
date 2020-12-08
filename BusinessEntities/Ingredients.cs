@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessEntities
 {
-    class Ingredients : BusinessEntities.IIngredients
+    public class Ingredients : IIngredients
     { 
 
         #region Instance Properties

@@ -8,15 +8,19 @@ namespace BusinessEntities
 {
    public static class IngredientsHotel
     {
-        private static IIngredients ingredientsPrices = null;
+        private static IIngredients ingredients = null;
 
         public static IIngredients GetIngredients(int ItemID, string ItemName, string Description, double Price, int Quantity, string Category)
         {
-            if (ingredientsPrices != null)
-                return ingredientsPrices;
+            if (ingredients != null)
+                return ingredients;
             else
                 return new Ingredients(ItemID, ItemName, Description, Price, Quantity, Category);
 
+        }
+        public static void SetIngredients(IIngredients aIngredient)
+        {
+            ingredients = aIngredient;
         }
     }
 }

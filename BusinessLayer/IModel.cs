@@ -65,7 +65,8 @@ namespace BusinessLayer
         void GetAllOrders();
 
         //Rebecca i1 manage waste - get ingredients
-        List<IIngredients> ingredientsList { get; set; }
+        List<IIngredients> IngredientsList { get; set; }
+        void GetAllIngredients();
 
     }
 }

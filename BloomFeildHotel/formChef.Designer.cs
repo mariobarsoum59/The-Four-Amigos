@@ -36,6 +36,7 @@
             this.btnChangeOrderStatus = new System.Windows.Forms.Button();
             this.btnViewOrders = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnMangeWaste = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -127,12 +128,27 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnMangeWaste
+            // 
+            this.btnMangeWaste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnMangeWaste.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMangeWaste.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnMangeWaste.Location = new System.Drawing.Point(657, 511);
+            this.btnMangeWaste.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnMangeWaste.Name = "btnMangeWaste";
+            this.btnMangeWaste.Size = new System.Drawing.Size(242, 160);
+            this.btnMangeWaste.TabIndex = 35;
+            this.btnMangeWaste.Text = "Mange Waste";
+            this.btnMangeWaste.UseVisualStyleBackColor = false;
+            this.btnMangeWaste.Click += new System.EventHandler(this.btnMangeWaste_Click);
+            // 
             // formChef
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(1892, 942);
+            this.Controls.Add(this.btnMangeWaste);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnChangeOrderStatus);
             this.Controls.Add(this.btnViewOrders);
@@ -162,5 +178,6 @@
         private System.Windows.Forms.Button btnChangeOrderStatus;
         private System.Windows.Forms.Button btnViewOrders;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnMangeWaste;
     }
 }

@@ -43,6 +43,7 @@ namespace DataAccessLayer
         List<IBarItems> getAllbarItems();
 
         List<IOrders> getAllOrders();
+
         bool updateRoomPriceInDB(BusinessEntities.IRoom room);
 
         bool checkGusetInDB(BusinessEntities.IReservation reservation);
@@ -50,7 +51,7 @@ namespace DataAccessLayer
 
 
         //rebecca i1 manage waste - get ingredients
-        List<IIngredients> GetIngredients();
+        List<IIngredients> getAllIngredients();
 
     }
 }

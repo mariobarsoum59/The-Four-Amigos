@@ -55,7 +55,7 @@
             this.panel1.Controls.Add(this.lblViewWaste);
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(710, 88);
+            this.panel1.Size = new System.Drawing.Size(722, 88);
             this.panel1.TabIndex = 0;
             // 
             // lblViewWaste
@@ -92,6 +92,7 @@
             this.foodList.Name = "foodList";
             this.foodList.Size = new System.Drawing.Size(190, 124);
             this.foodList.TabIndex = 3;
+            this.foodList.SelectedIndexChanged += new System.EventHandler(this.foodList_SelectedIndexChanged);
             // 
             // totalPrep
             // 
@@ -139,6 +140,7 @@
             this.btnExit.TabIndex = 8;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // txtCosttoPrep
             // 
@@ -199,6 +201,7 @@
             this.ingList.Name = "ingList";
             this.ingList.Size = new System.Drawing.Size(190, 124);
             this.ingList.TabIndex = 15;
+            this.ingList.SelectedIndexChanged += new System.EventHandler(this.ingList_SelectedIndexChanged);
             // 
             // ingLabel
             // 
@@ -241,8 +244,10 @@
             this.Controls.Add(this.foodList);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formManageWaste";
             this.Text = "ViewWaste";
+            this.Load += new System.EventHandler(this.formManageWaste_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

@@ -795,7 +795,7 @@ namespace DataAccessLayer
         }
 
 
-        public virtual List<IIngredients> GetIngredients()
+        public virtual List<IIngredients> getAllIngredients()
         {
             List<IIngredients> Ingredients = new List<IIngredients>();
 

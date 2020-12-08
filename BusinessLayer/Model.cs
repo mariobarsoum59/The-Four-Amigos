@@ -439,9 +439,9 @@ namespace BusinessLayer
 
         //Rebecca i1 manage waste get ingredients
 
-        public void GetIngredients()
+        public void GetAllIngredients()
         {
-            ingredientsList = dataLayer.GetIngredients();
+           IngredientsList = dataLayer.getAllIngredients();
         }
     }
 }
