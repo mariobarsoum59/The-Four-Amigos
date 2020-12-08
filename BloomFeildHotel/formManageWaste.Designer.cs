@@ -46,6 +46,8 @@
             this.ingList = new System.Windows.Forms.ListBox();
             this.ingLabel = new System.Windows.Forms.Label();
             this.mealLabel = new System.Windows.Forms.Label();
+            this.priceList = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +57,7 @@
             this.panel1.Controls.Add(this.lblViewWaste);
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(722, 88);
+            this.panel1.Size = new System.Drawing.Size(948, 85);
             this.panel1.TabIndex = 0;
             // 
             // lblViewWaste
@@ -74,7 +76,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(243, 106);
+            this.label1.Location = new System.Drawing.Point(370, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(217, 32);
             this.label1.TabIndex = 2;
@@ -88,7 +90,7 @@
             "Chicken Curry and Chips",
             "Fish and Chips",
             "Salad and Soup"});
-            this.foodList.Location = new System.Drawing.Point(36, 169);
+            this.foodList.Location = new System.Drawing.Point(36, 179);
             this.foodList.Name = "foodList";
             this.foodList.Size = new System.Drawing.Size(190, 124);
             this.foodList.TabIndex = 3;
@@ -96,14 +98,14 @@
             // 
             // totalPrep
             // 
-            this.totalPrep.Location = new System.Drawing.Point(273, 204);
+            this.totalPrep.Location = new System.Drawing.Point(558, 204);
             this.totalPrep.Name = "totalPrep";
             this.totalPrep.Size = new System.Drawing.Size(100, 26);
             this.totalPrep.TabIndex = 4;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(273, 296);
+            this.textBox2.Location = new System.Drawing.Point(558, 287);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 26);
             this.textBox2.TabIndex = 5;
@@ -112,7 +114,7 @@
             // 
             this.lblTotalPrep.AutoSize = true;
             this.lblTotalPrep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalPrep.Location = new System.Drawing.Point(258, 179);
+            this.lblTotalPrep.Location = new System.Drawing.Point(544, 179);
             this.lblTotalPrep.Name = "lblTotalPrep";
             this.lblTotalPrep.Size = new System.Drawing.Size(130, 22);
             this.lblTotalPrep.TabIndex = 6;
@@ -123,7 +125,7 @@
             // 
             this.lblTotalLeft.AutoSize = true;
             this.lblTotalLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalLeft.Location = new System.Drawing.Point(258, 262);
+            this.lblTotalLeft.Location = new System.Drawing.Point(533, 262);
             this.lblTotalLeft.Name = "lblTotalLeft";
             this.lblTotalLeft.Size = new System.Drawing.Size(141, 22);
             this.lblTotalLeft.TabIndex = 7;
@@ -134,7 +136,7 @@
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExit.Location = new System.Drawing.Point(307, 421);
+            this.btnExit.Location = new System.Drawing.Point(537, 463);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(112, 49);
             this.btnExit.TabIndex = 8;
@@ -144,7 +146,7 @@
             // 
             // txtCosttoPrep
             // 
-            this.txtCosttoPrep.Location = new System.Drawing.Point(500, 204);
+            this.txtCosttoPrep.Location = new System.Drawing.Point(775, 204);
             this.txtCosttoPrep.Name = "txtCosttoPrep";
             this.txtCosttoPrep.Size = new System.Drawing.Size(87, 26);
             this.txtCosttoPrep.TabIndex = 9;
@@ -153,7 +155,7 @@
             // 
             this.lblCosttoPrep.AutoSize = true;
             this.lblCosttoPrep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCosttoPrep.Location = new System.Drawing.Point(476, 179);
+            this.lblCosttoPrep.Location = new System.Drawing.Point(740, 179);
             this.lblCosttoPrep.Name = "lblCosttoPrep";
             this.lblCosttoPrep.Size = new System.Drawing.Size(166, 22);
             this.lblCosttoPrep.TabIndex = 10;
@@ -161,7 +163,7 @@
             // 
             // txtMoneyWaste
             // 
-            this.txtMoneyWaste.Location = new System.Drawing.Point(500, 373);
+            this.txtMoneyWaste.Location = new System.Drawing.Point(775, 364);
             this.txtMoneyWaste.Name = "txtMoneyWaste";
             this.txtMoneyWaste.Size = new System.Drawing.Size(87, 26);
             this.txtMoneyWaste.TabIndex = 11;
@@ -170,7 +172,7 @@
             // 
             this.lblMoneyWaste.AutoSize = true;
             this.lblMoneyWaste.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMoneyWaste.Location = new System.Drawing.Point(446, 346);
+            this.lblMoneyWaste.Location = new System.Drawing.Point(722, 339);
             this.lblMoneyWaste.Name = "lblMoneyWaste";
             this.lblMoneyWaste.Size = new System.Drawing.Size(196, 22);
             this.lblMoneyWaste.TabIndex = 12;
@@ -180,7 +182,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(476, 262);
+            this.label2.Location = new System.Drawing.Point(740, 262);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 22);
             this.label2.TabIndex = 13;
@@ -188,7 +190,7 @@
             // 
             // txtTotalPrep
             // 
-            this.txtTotalPrep.Location = new System.Drawing.Point(500, 287);
+            this.txtTotalPrep.Location = new System.Drawing.Point(775, 287);
             this.txtTotalPrep.Name = "txtTotalPrep";
             this.txtTotalPrep.Size = new System.Drawing.Size(87, 26);
             this.txtTotalPrep.TabIndex = 14;
@@ -215,18 +217,38 @@
             // mealLabel
             // 
             this.mealLabel.AutoSize = true;
-            this.mealLabel.Location = new System.Drawing.Point(103, 146);
+            this.mealLabel.Location = new System.Drawing.Point(100, 156);
             this.mealLabel.Name = "mealLabel";
             this.mealLabel.Size = new System.Drawing.Size(51, 20);
             this.mealLabel.TabIndex = 17;
             this.mealLabel.Text = "Meals";
+            // 
+            // priceList
+            // 
+            this.priceList.FormattingEnabled = true;
+            this.priceList.ItemHeight = 20;
+            this.priceList.Location = new System.Drawing.Point(241, 346);
+            this.priceList.Name = "priceList";
+            this.priceList.Size = new System.Drawing.Size(87, 124);
+            this.priceList.TabIndex = 18;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(255, 323);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(44, 20);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Price";
             // 
             // formManageWaste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(723, 524);
+            this.ClientSize = new System.Drawing.Size(946, 573);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.priceList);
             this.Controls.Add(this.mealLabel);
             this.Controls.Add(this.ingLabel);
             this.Controls.Add(this.ingList);
@@ -275,5 +297,7 @@
         private System.Windows.Forms.ListBox ingList;
         private System.Windows.Forms.Label ingLabel;
         private System.Windows.Forms.Label mealLabel;
+        private System.Windows.Forms.ListBox priceList;
+        private System.Windows.Forms.Label label3;
     }
 }
