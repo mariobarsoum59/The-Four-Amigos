@@ -13,7 +13,7 @@ namespace BusinessEntities
         private double foodprice;
         private string drink;
         private double drinkprice;
-        private string timestamp;
+        private DateTime timestamp;
 
 
         public int OrderID
@@ -73,22 +73,22 @@ namespace BusinessEntities
             }
         }
 
-        public string Timestamp
+        public DateTime Timestamp
         {
             get
             {
-                return Timestamp;
+                return timestamp;
             }
             set
             {
-                Timestamp = value;
+                timestamp = value;
             }
         }
         public Orders()
         {
             throw new System.NotImplementedException();
         }
-        public Orders(int OrderID, string Food, double FoodPrice, string Drink, double Drinkprice, string Timestamp)
+        public Orders(int OrderID, string Food, double FoodPrice, string Drink, double Drinkprice, DateTime Timestamp)
         {
             this.orderID = OrderID;
             this.food = Food;

@@ -36,7 +36,7 @@ namespace BloomFeildHotel
             foreach (Orders order in Model.OrdersList)
             {
 
-                listBox3.Items.Add(string.Format("{0} | €{1} , {2} | €{3}", order.Food, order.FoodPrice, order.Drink, order.DrinkPrice));
+                listBox3.Items.Add(string.Format("{0}  €{1} | {2}  €{3} | {4}", order.Food, order.FoodPrice, order.Drink, order.DrinkPrice, order.Timestamp.ToString("yyyy-MM-dd HH:mm:ss.fff")));
 
             }
         }

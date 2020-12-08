@@ -11,7 +11,7 @@ namespace BusinessEntities
 
         private static IOrders orders = null;
 
-        public static IOrders GetOrders(int OrderID, string Food, double FoodPrice, string Drink, double Drinkprice, string Timestamp)
+        public static IOrders GetOrders(int OrderID, string Food, double FoodPrice, string Drink, double Drinkprice, DateTime Timestamp)
         {
             if (orders != null)  // ie is Factory is primed with an object. 
                 return orders;
