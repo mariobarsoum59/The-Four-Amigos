@@ -41,6 +41,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblManagerMenuTag = new System.Windows.Forms.Label();
             this.btnViewReport = new System.Windows.Forms.Button();
+            this.btnManageStockItems = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +59,7 @@
             // btnAddUsers
             // 
             this.btnAddUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddUsers.Location = new System.Drawing.Point(415, 172);
+            this.btnAddUsers.Location = new System.Drawing.Point(334, 154);
             this.btnAddUsers.Name = "btnAddUsers";
             this.btnAddUsers.Size = new System.Drawing.Size(161, 104);
             this.btnAddUsers.TabIndex = 1;
@@ -69,7 +70,7 @@
             // btnDeleteUsers
             // 
             this.btnDeleteUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteUsers.Location = new System.Drawing.Point(415, 282);
+            this.btnDeleteUsers.Location = new System.Drawing.Point(334, 264);
             this.btnDeleteUsers.Name = "btnDeleteUsers";
             this.btnDeleteUsers.Size = new System.Drawing.Size(161, 104);
             this.btnDeleteUsers.TabIndex = 2;
@@ -80,7 +81,7 @@
             // btnCreateReservation
             // 
             this.btnCreateReservation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateReservation.Location = new System.Drawing.Point(415, 392);
+            this.btnCreateReservation.Location = new System.Drawing.Point(334, 374);
             this.btnCreateReservation.Name = "btnCreateReservation";
             this.btnCreateReservation.Size = new System.Drawing.Size(161, 104);
             this.btnCreateReservation.TabIndex = 3;
@@ -91,7 +92,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(582, 172);
+            this.button4.Location = new System.Drawing.Point(501, 154);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(161, 104);
             this.button4.TabIndex = 4;
@@ -102,7 +103,7 @@
             // btnViewRoomBookings
             // 
             this.btnViewRoomBookings.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewRoomBookings.Location = new System.Drawing.Point(582, 282);
+            this.btnViewRoomBookings.Location = new System.Drawing.Point(501, 264);
             this.btnViewRoomBookings.Name = "btnViewRoomBookings";
             this.btnViewRoomBookings.Size = new System.Drawing.Size(161, 104);
             this.btnViewRoomBookings.TabIndex = 5;
@@ -113,7 +114,7 @@
             // btnChangeRoomBasePrice
             // 
             this.btnChangeRoomBasePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChangeRoomBasePrice.Location = new System.Drawing.Point(582, 392);
+            this.btnChangeRoomBasePrice.Location = new System.Drawing.Point(501, 374);
             this.btnChangeRoomBasePrice.Name = "btnChangeRoomBasePrice";
             this.btnChangeRoomBasePrice.Size = new System.Drawing.Size(161, 104);
             this.btnChangeRoomBasePrice.TabIndex = 6;
@@ -124,7 +125,7 @@
             // btnCheckIn
             // 
             this.btnCheckIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckIn.Location = new System.Drawing.Point(749, 172);
+            this.btnCheckIn.Location = new System.Drawing.Point(668, 154);
             this.btnCheckIn.Name = "btnCheckIn";
             this.btnCheckIn.Size = new System.Drawing.Size(161, 104);
             this.btnCheckIn.TabIndex = 7;
@@ -135,7 +136,7 @@
             // btnCreateReport
             // 
             this.btnCreateReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateReport.Location = new System.Drawing.Point(749, 282);
+            this.btnCreateReport.Location = new System.Drawing.Point(668, 264);
             this.btnCreateReport.Name = "btnCreateReport";
             this.btnCreateReport.Size = new System.Drawing.Size(161, 104);
             this.btnCreateReport.TabIndex = 8;
@@ -145,7 +146,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(798, 549);
+            this.btnExit.Location = new System.Drawing.Point(795, 495);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(112, 57);
             this.btnExit.TabIndex = 9;
@@ -167,7 +168,7 @@
             // 
             this.lblManagerMenuTag.AutoSize = true;
             this.lblManagerMenuTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblManagerMenuTag.Location = new System.Drawing.Point(520, 107);
+            this.lblManagerMenuTag.Location = new System.Drawing.Point(517, 87);
             this.lblManagerMenuTag.Name = "lblManagerMenuTag";
             this.lblManagerMenuTag.Size = new System.Drawing.Size(248, 39);
             this.lblManagerMenuTag.TabIndex = 11;
@@ -176,12 +177,23 @@
             // btnViewReport
             // 
             this.btnViewReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewReport.Location = new System.Drawing.Point(749, 392);
+            this.btnViewReport.Location = new System.Drawing.Point(668, 374);
             this.btnViewReport.Name = "btnViewReport";
             this.btnViewReport.Size = new System.Drawing.Size(161, 104);
             this.btnViewReport.TabIndex = 12;
             this.btnViewReport.Text = "View Monthly Reports";
             this.btnViewReport.UseVisualStyleBackColor = true;
+            // 
+            // btnManageStockItems
+            // 
+            this.btnManageStockItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageStockItems.Location = new System.Drawing.Point(835, 154);
+            this.btnManageStockItems.Name = "btnManageStockItems";
+            this.btnManageStockItems.Size = new System.Drawing.Size(161, 104);
+            this.btnManageStockItems.TabIndex = 13;
+            this.btnManageStockItems.Text = "Manage Stock Items";
+            this.btnManageStockItems.UseVisualStyleBackColor = true;
+            this.btnManageStockItems.Click += new System.EventHandler(this.BtnManageStockItems_Click);
             // 
             // formManager
             // 
@@ -190,6 +202,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1277, 633);
             this.ControlBox = false;
+            this.Controls.Add(this.btnManageStockItems);
             this.Controls.Add(this.btnViewReport);
             this.Controls.Add(this.lblManagerMenuTag);
             this.Controls.Add(this.panel1);
@@ -229,5 +242,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblManagerMenuTag;
         private System.Windows.Forms.Button btnViewReport;
+        private System.Windows.Forms.Button btnManageStockItems;
     }
 }

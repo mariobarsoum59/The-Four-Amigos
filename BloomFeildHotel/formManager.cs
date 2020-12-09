@@ -98,5 +98,13 @@ namespace BloomFeildHotel
 
             f8.Show();
         }
+
+        private void BtnManageStockItems_Click(object sender, EventArgs e)
+        {
+            formEditCurrentStock f9 = new formEditCurrentStock(fc, Model);
+            f9.Dock = DockStyle.Fill;
+
+            f9.Show();
+        }
     }
 }
