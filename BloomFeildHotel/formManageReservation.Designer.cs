@@ -41,11 +41,18 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.gbReservation = new System.Windows.Forms.GroupBox();
-            this.gbDeposit = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.rbPaidNo = new System.Windows.Forms.RadioButton();
-            this.label10 = new System.Windows.Forms.Label();
+            this.numAdults = new System.Windows.Forms.NumericUpDown();
             this.rbPaidYes = new System.Windows.Forms.RadioButton();
+            this.dtpCheckIn = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dtpCheckOut = new System.Windows.Forms.DateTimePicker();
+            this.gbDeposit = new System.Windows.Forms.GroupBox();
+            this.rbDepositYes = new System.Windows.Forms.RadioButton();
+            this.rbDepositNo = new System.Windows.Forms.RadioButton();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.tbDeposit = new System.Windows.Forms.TextBox();
             this.numNights = new System.Windows.Forms.NumericUpDown();
             this.numChildren = new System.Windows.Forms.NumericUpDown();
@@ -56,6 +63,11 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.gbGuest = new System.Windows.Forms.GroupBox();
+            this.tbGuestID = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.rbMarketingYes = new System.Windows.Forms.RadioButton();
+            this.label19 = new System.Windows.Forms.Label();
+            this.rbMarketingNo = new System.Windows.Forms.RadioButton();
             this.rtbAddress = new System.Windows.Forms.RichTextBox();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.tbPhone = new System.Windows.Forms.TextBox();
@@ -66,26 +78,14 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dtpCheckOut = new System.Windows.Forms.DateTimePicker();
-            this.dtpCheckIn = new System.Windows.Forms.DateTimePicker();
-            this.numAdults = new System.Windows.Forms.NumericUpDown();
-            this.label11 = new System.Windows.Forms.Label();
-            this.rbDepositNo = new System.Windows.Forms.RadioButton();
-            this.rbDepositYes = new System.Windows.Forms.RadioButton();
-            this.label19 = new System.Windows.Forms.Label();
-            this.rbMarketingYes = new System.Windows.Forms.RadioButton();
-            this.rbMarketingNo = new System.Windows.Forms.RadioButton();
-            this.tbGuestID = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.gbReservation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numAdults)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.gbDeposit.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numNights)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numChildren)).BeginInit();
             this.gbGuest.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numAdults)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -250,6 +250,73 @@
             this.gbReservation.TabIndex = 11;
             this.gbReservation.TabStop = false;
             this.gbReservation.Text = "Guest Details";
+            this.gbReservation.Enter += new System.EventHandler(this.gbReservation_Enter);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(50, 313);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(76, 16);
+            this.label11.TabIndex = 37;
+            this.label11.Text = "Paid in Full:";
+            // 
+            // rbPaidNo
+            // 
+            this.rbPaidNo.AutoSize = true;
+            this.rbPaidNo.Location = new System.Drawing.Point(209, 311);
+            this.rbPaidNo.Name = "rbPaidNo";
+            this.rbPaidNo.Size = new System.Drawing.Size(44, 20);
+            this.rbPaidNo.TabIndex = 31;
+            this.rbPaidNo.TabStop = true;
+            this.rbPaidNo.Text = "No";
+            this.rbPaidNo.UseVisualStyleBackColor = true;
+            // 
+            // numAdults
+            // 
+            this.numAdults.Location = new System.Drawing.Point(136, 218);
+            this.numAdults.Name = "numAdults";
+            this.numAdults.Size = new System.Drawing.Size(46, 22);
+            this.numAdults.TabIndex = 36;
+            this.numAdults.ValueChanged += new System.EventHandler(this.numGuests_ValueChanged);
+            // 
+            // rbPaidYes
+            // 
+            this.rbPaidYes.AutoSize = true;
+            this.rbPaidYes.Location = new System.Drawing.Point(136, 311);
+            this.rbPaidYes.Name = "rbPaidYes";
+            this.rbPaidYes.Size = new System.Drawing.Size(50, 20);
+            this.rbPaidYes.TabIndex = 30;
+            this.rbPaidYes.TabStop = true;
+            this.rbPaidYes.Text = "Yes";
+            this.rbPaidYes.UseVisualStyleBackColor = true;
+            // 
+            // dtpCheckIn
+            // 
+            this.dtpCheckIn.Location = new System.Drawing.Point(137, 113);
+            this.dtpCheckIn.Name = "dtpCheckIn";
+            this.dtpCheckIn.Size = new System.Drawing.Size(238, 22);
+            this.dtpCheckIn.TabIndex = 35;
+            this.dtpCheckIn.Value = new System.DateTime(2020, 12, 1, 22, 37, 39, 0);
+            this.dtpCheckIn.ValueChanged += new System.EventHandler(this.dtpCheckOut_ValueChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BloomFeildHotel.Properties.Resources.bed;
+            this.pictureBox1.Location = new System.Drawing.Point(519, 337);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(146, 141);
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
+            // 
+            // dtpCheckOut
+            // 
+            this.dtpCheckOut.Location = new System.Drawing.Point(136, 149);
+            this.dtpCheckOut.Name = "dtpCheckOut";
+            this.dtpCheckOut.Size = new System.Drawing.Size(239, 22);
+            this.dtpCheckOut.TabIndex = 34;
+            this.dtpCheckOut.ValueChanged += new System.EventHandler(this.dtpCheckIn_ValueChanged);
             // 
             // gbDeposit
             // 
@@ -265,6 +332,28 @@
             this.gbDeposit.TabStop = false;
             this.gbDeposit.Text = "Deposit";
             // 
+            // rbDepositYes
+            // 
+            this.rbDepositYes.AutoSize = true;
+            this.rbDepositYes.Location = new System.Drawing.Point(135, 25);
+            this.rbDepositYes.Name = "rbDepositYes";
+            this.rbDepositYes.Size = new System.Drawing.Size(50, 20);
+            this.rbDepositYes.TabIndex = 38;
+            this.rbDepositYes.TabStop = true;
+            this.rbDepositYes.Text = "Yes";
+            this.rbDepositYes.UseVisualStyleBackColor = true;
+            // 
+            // rbDepositNo
+            // 
+            this.rbDepositNo.AutoSize = true;
+            this.rbDepositNo.Location = new System.Drawing.Point(191, 27);
+            this.rbDepositNo.Name = "rbDepositNo";
+            this.rbDepositNo.Size = new System.Drawing.Size(44, 20);
+            this.rbDepositNo.TabIndex = 39;
+            this.rbDepositNo.TabStop = true;
+            this.rbDepositNo.Text = "No";
+            this.rbDepositNo.UseVisualStyleBackColor = true;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -275,17 +364,6 @@
             this.label9.TabIndex = 12;
             this.label9.Text = "Deposit Paid:";
             // 
-            // rbPaidNo
-            // 
-            this.rbPaidNo.AutoSize = true;
-            this.rbPaidNo.Location = new System.Drawing.Point(209, 311);
-            this.rbPaidNo.Name = "rbPaidNo";
-            this.rbPaidNo.Size = new System.Drawing.Size(44, 20);
-            this.rbPaidNo.TabIndex = 31;
-            this.rbPaidNo.TabStop = true;
-            this.rbPaidNo.Text = "No";
-            this.rbPaidNo.UseVisualStyleBackColor = true;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -295,17 +373,6 @@
             this.label10.Size = new System.Drawing.Size(106, 16);
             this.label10.TabIndex = 13;
             this.label10.Text = "Deposit Amount:";
-            // 
-            // rbPaidYes
-            // 
-            this.rbPaidYes.AutoSize = true;
-            this.rbPaidYes.Location = new System.Drawing.Point(136, 311);
-            this.rbPaidYes.Name = "rbPaidYes";
-            this.rbPaidYes.Size = new System.Drawing.Size(50, 20);
-            this.rbPaidYes.TabIndex = 30;
-            this.rbPaidYes.TabStop = true;
-            this.rbPaidYes.Text = "Yes";
-            this.rbPaidYes.UseVisualStyleBackColor = true;
             // 
             // tbDeposit
             // 
@@ -404,6 +471,56 @@
             this.gbGuest.TabStop = false;
             this.gbGuest.Text = "Guest Details";
             // 
+            // tbGuestID
+            // 
+            this.tbGuestID.Location = new System.Drawing.Point(168, 25);
+            this.tbGuestID.Name = "tbGuestID";
+            this.tbGuestID.ReadOnly = true;
+            this.tbGuestID.Size = new System.Drawing.Size(155, 22);
+            this.tbGuestID.TabIndex = 43;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(86, 28);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(62, 16);
+            this.label20.TabIndex = 42;
+            this.label20.Text = "Guest ID:";
+            // 
+            // rbMarketingYes
+            // 
+            this.rbMarketingYes.AutoSize = true;
+            this.rbMarketingYes.Location = new System.Drawing.Point(174, 276);
+            this.rbMarketingYes.Name = "rbMarketingYes";
+            this.rbMarketingYes.Size = new System.Drawing.Size(50, 20);
+            this.rbMarketingYes.TabIndex = 40;
+            this.rbMarketingYes.TabStop = true;
+            this.rbMarketingYes.Text = "Yes";
+            this.rbMarketingYes.UseVisualStyleBackColor = true;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(33, 276);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(129, 16);
+            this.label19.TabIndex = 38;
+            this.label19.Text = "Send Marketing Info:";
+            // 
+            // rbMarketingNo
+            // 
+            this.rbMarketingNo.AutoSize = true;
+            this.rbMarketingNo.Location = new System.Drawing.Point(230, 276);
+            this.rbMarketingNo.Name = "rbMarketingNo";
+            this.rbMarketingNo.Size = new System.Drawing.Size(44, 20);
+            this.rbMarketingNo.TabIndex = 41;
+            this.rbMarketingNo.TabStop = true;
+            this.rbMarketingNo.Text = "No";
+            this.rbMarketingNo.UseVisualStyleBackColor = true;
+            // 
             // rtbAddress
             // 
             this.rtbAddress.Location = new System.Drawing.Point(168, 169);
@@ -490,122 +607,6 @@
             this.label12.TabIndex = 15;
             this.label12.Text = "First Name:";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BloomFeildHotel.Properties.Resources.bed;
-            this.pictureBox1.Location = new System.Drawing.Point(519, 337);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 141);
-            this.pictureBox1.TabIndex = 33;
-            this.pictureBox1.TabStop = false;
-            // 
-            // dtpCheckOut
-            // 
-            this.dtpCheckOut.Location = new System.Drawing.Point(136, 149);
-            this.dtpCheckOut.Name = "dtpCheckOut";
-            this.dtpCheckOut.Size = new System.Drawing.Size(239, 22);
-            this.dtpCheckOut.TabIndex = 34;
-            this.dtpCheckOut.ValueChanged += new System.EventHandler(this.dtpCheckIn_ValueChanged);
-            // 
-            // dtpCheckIn
-            // 
-            this.dtpCheckIn.Location = new System.Drawing.Point(137, 113);
-            this.dtpCheckIn.Name = "dtpCheckIn";
-            this.dtpCheckIn.Size = new System.Drawing.Size(238, 22);
-            this.dtpCheckIn.TabIndex = 35;
-            this.dtpCheckIn.Value = new System.DateTime(2020, 12, 1, 22, 37, 39, 0);
-            this.dtpCheckIn.ValueChanged += new System.EventHandler(this.dtpCheckOut_ValueChanged);
-            // 
-            // numAdults
-            // 
-            this.numAdults.Location = new System.Drawing.Point(136, 218);
-            this.numAdults.Name = "numAdults";
-            this.numAdults.Size = new System.Drawing.Size(46, 22);
-            this.numAdults.TabIndex = 36;
-            this.numAdults.ValueChanged += new System.EventHandler(this.numGuests_ValueChanged);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(50, 313);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(76, 16);
-            this.label11.TabIndex = 37;
-            this.label11.Text = "Paid in Full:";
-            // 
-            // rbDepositNo
-            // 
-            this.rbDepositNo.AutoSize = true;
-            this.rbDepositNo.Location = new System.Drawing.Point(191, 27);
-            this.rbDepositNo.Name = "rbDepositNo";
-            this.rbDepositNo.Size = new System.Drawing.Size(44, 20);
-            this.rbDepositNo.TabIndex = 39;
-            this.rbDepositNo.TabStop = true;
-            this.rbDepositNo.Text = "No";
-            this.rbDepositNo.UseVisualStyleBackColor = true;
-            // 
-            // rbDepositYes
-            // 
-            this.rbDepositYes.AutoSize = true;
-            this.rbDepositYes.Location = new System.Drawing.Point(135, 25);
-            this.rbDepositYes.Name = "rbDepositYes";
-            this.rbDepositYes.Size = new System.Drawing.Size(50, 20);
-            this.rbDepositYes.TabIndex = 38;
-            this.rbDepositYes.TabStop = true;
-            this.rbDepositYes.Text = "Yes";
-            this.rbDepositYes.UseVisualStyleBackColor = true;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(33, 276);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(129, 16);
-            this.label19.TabIndex = 38;
-            this.label19.Text = "Send Marketing Info:";
-            // 
-            // rbMarketingYes
-            // 
-            this.rbMarketingYes.AutoSize = true;
-            this.rbMarketingYes.Location = new System.Drawing.Point(174, 276);
-            this.rbMarketingYes.Name = "rbMarketingYes";
-            this.rbMarketingYes.Size = new System.Drawing.Size(50, 20);
-            this.rbMarketingYes.TabIndex = 40;
-            this.rbMarketingYes.TabStop = true;
-            this.rbMarketingYes.Text = "Yes";
-            this.rbMarketingYes.UseVisualStyleBackColor = true;
-            // 
-            // rbMarketingNo
-            // 
-            this.rbMarketingNo.AutoSize = true;
-            this.rbMarketingNo.Location = new System.Drawing.Point(230, 276);
-            this.rbMarketingNo.Name = "rbMarketingNo";
-            this.rbMarketingNo.Size = new System.Drawing.Size(44, 20);
-            this.rbMarketingNo.TabIndex = 41;
-            this.rbMarketingNo.TabStop = true;
-            this.rbMarketingNo.Text = "No";
-            this.rbMarketingNo.UseVisualStyleBackColor = true;
-            // 
-            // tbGuestID
-            // 
-            this.tbGuestID.Location = new System.Drawing.Point(168, 25);
-            this.tbGuestID.Name = "tbGuestID";
-            this.tbGuestID.ReadOnly = true;
-            this.tbGuestID.Size = new System.Drawing.Size(155, 22);
-            this.tbGuestID.TabIndex = 43;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(86, 28);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(62, 16);
-            this.label20.TabIndex = 42;
-            this.label20.Text = "Guest ID:";
-            // 
             // formManageReservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -625,14 +626,14 @@
             this.panel1.PerformLayout();
             this.gbReservation.ResumeLayout(false);
             this.gbReservation.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numAdults)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.gbDeposit.ResumeLayout(false);
             this.gbDeposit.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numNights)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numChildren)).EndInit();
             this.gbGuest.ResumeLayout(false);
             this.gbGuest.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numAdults)).EndInit();
             this.ResumeLayout(false);
 
         }

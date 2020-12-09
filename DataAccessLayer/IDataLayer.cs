@@ -57,5 +57,6 @@ namespace DataAccessLayer
         List<IStockOrder> getAllStockOrders();
         List<IOrderItem> getAllOrderItems();
         List<IMonthlyReport> getAllMonthlyReports();
+        void addNewMonthlyReportToDB(IMonthlyReport aMonthlyReport);
     }
 }

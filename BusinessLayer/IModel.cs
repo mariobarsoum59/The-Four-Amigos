@@ -79,6 +79,7 @@ namespace BusinessLayer
 
         List<IMonthlyReport> MonthlyReportsList { get; set; }
         void GetAllMonthlyReports();
+        Boolean createMonthlyReport(DateTime Date, int Reservations, decimal ReservationIncome, int Sales, decimal SalesIncome, int StockOrders, decimal StockExpenses);
 
     }
 }

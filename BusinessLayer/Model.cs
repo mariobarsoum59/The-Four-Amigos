@@ -509,5 +509,21 @@ namespace BusinessLayer
         {
             MonthlyReportsList = dataLayer.getAllMonthlyReports();
         }
+        public Boolean createMonthlyReport(DateTime Date, int Reservations, decimal ReservationIncome, int Sales, decimal SalesIncome, int StockOrders, decimal StockExpenses)
+        {
+            try
+            {
+                
+                IMonthlyReport aMonthlyReport = MonthlyReportsHotel.GetMonthlyReports(0, Date, Reservations, ReservationIncome, Sales, SalesIncome, StockOrders, StockExpenses);
+                MonthlyReportsList.Add(aMonthlyReport);                            
+                DataLayer.addNewMonthlyReportToDB(aMonthlyReport);
+                return true;
+            }
+            catch (System.Exception excep)
+            {
+                return false;
+            }
+
+        }
     }
 }
