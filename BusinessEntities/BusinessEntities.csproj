@@ -48,12 +48,14 @@
     <Compile Include="IBarItems.cs" />
     <Compile Include="IGuest.cs" />
     <Compile Include="IIngredients.cs" />
+    <Compile Include="IMonthlyReport.cs" />
     <Compile Include="Ingredients.cs" />
     <Compile Include="IngredientsHotel.cs" />
     <Compile Include="IOrders.cs" />
     <Compile Include="IReservation.cs" />
     <Compile Include="IRoom.cs" />
     <Compile Include="IRoomCleaningRecord.cs" />
+    <Compile Include="MonthlyReport.cs" />
     <Compile Include="Orders.cs" />
     <Compile Include="OrdersHotel.cs" />
     <Compile Include="Reservation.cs" />
