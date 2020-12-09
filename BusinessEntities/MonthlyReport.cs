@@ -93,11 +93,11 @@ namespace BusinessEntities
                 stockExpenses = value;
             }
         }
-        MonthlyReport()
+        public MonthlyReport()
         {
             throw new System.NotImplementedException();
         }
-        MonthlyReport(int ReportID, DateTime Date, int Reservations, decimal ReservationIncome, int Sales, decimal SalesIncome, decimal StockExpenses)
+        public MonthlyReport(int ReportID, DateTime Date, int Reservations, decimal ReservationIncome, int Sales, decimal SalesIncome, decimal StockExpenses)
         {
             this.reportID = ReportID;
             this.date = Date;

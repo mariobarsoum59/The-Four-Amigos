@@ -836,13 +836,160 @@ namespace DataAccessLayer
 
 
 
+        public virtual List<IStockItem> getAllStockItems()
+        {
+            List<IStockItem> StockItems = new List<IStockItem>();
+
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From StockItems";
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "IngData");
+                int allIngData = ds.Tables["IngData"].Rows.Count;
+                for (int i = 0; i < allIngData; i++)
+                {
+                    DataRow dRow = ds.Tables["IngData"].Rows[i];
+                    IStockItem stockItems = StockItemsHotel.GetStockItems(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
+                                                                                         dRow.ItemArray.GetValue(1).ToString(),
+                                                                                         dRow.ItemArray.GetValue(2).ToString(),
+                                                                        Convert.ToDecimal(dRow.ItemArray.GetValue(3).ToString()),
+                                                                         Convert.ToInt16(dRow.ItemArray.GetValue(4).ToString()),
+                                                                                         dRow.ItemArray.GetValue(5).ToString(),
+                                                                                         dRow.ItemArray.GetValue(6).ToString());
+
+                StockItems.Add(stockItems);
+                }
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+            return StockItems;
+
+
+        }
+
+
+        public virtual List<IStockOrder> getAllStockOrders()
+        {
+            List<IStockOrder> StockOrders = new List<IStockOrder>();
+
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From StockOrders";
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "IngData");
+                int allIngData = ds.Tables["IngData"].Rows.Count;
+                for (int i = 0; i < allIngData; i++)
+                {
+                    DataRow dRow = ds.Tables["IngData"].Rows[i];
+                    IStockOrder stockOrders = StockOrdersHotel.GetStockOrders(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
+                                                                       Convert.ToDateTime(dRow.ItemArray.GetValue(1).ToString()),
+                                                                                         dRow.ItemArray.GetValue(2).ToString(),
+                                                                        Convert.ToBoolean(dRow.ItemArray.GetValue(3).ToString()),
+                                                                         Convert.ToInt16(dRow.ItemArray.GetValue(4).ToString()));
+                                                                                         
+
+                    StockOrders.Add(stockOrders);
+                }
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+            return StockOrders;
+
+
+        }
+
+        public virtual List<IOrderItem> getAllOrderItems()
+        {
+            List<IOrderItem> OrderItems = new List<IOrderItem>();
+
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From OrderItems";
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "IngData");
+                int allIngData = ds.Tables["IngData"].Rows.Count;
+                for (int i = 0; i < allIngData; i++)
+                {
+                    DataRow dRow = ds.Tables["IngData"].Rows[i];
+                    IOrderItem orderItems = OrderItemsHotel.GetOrderItems(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
+                                                                       Convert.ToInt16(dRow.ItemArray.GetValue(1).ToString()),
+                                                                                         Convert.ToInt16(dRow.ItemArray.GetValue(2).ToString()));
+                                                                        
+
+
+                    OrderItems.Add(orderItems);
+                }
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+            return OrderItems;
+
+
+        }
+        public virtual List<IMonthlyReport> getAllMonthlyReports()
+        {
+            List<IMonthlyReport> MonthlyReports = new List<IMonthlyReport>();
+
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From MonthlyReport";
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "IngData");
+                int allIngData = ds.Tables["IngData"].Rows.Count;
+                for (int i = 0; i < allIngData; i++)
+                {
+                    DataRow dRow = ds.Tables["IngData"].Rows[i];
+                    IMonthlyReport monthlyReports = MonthlyReportsHotel.GetMonthlyReports(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
+                                                                       Convert.ToDateTime(dRow.ItemArray.GetValue(1).ToString()),
+                                                                                         Convert.ToInt16(dRow.ItemArray.GetValue(2).ToString()),
+                                                                                         Convert.ToDecimal(dRow.ItemArray.GetValue(3).ToString()),
+                                                                                         Convert.ToInt16(dRow.ItemArray.GetValue(4).ToString()),
+                                                                                         Convert.ToDecimal(dRow.ItemArray.GetValue(5).ToString()),
+                                                                                         Convert.ToDecimal(dRow.ItemArray.GetValue(6).ToString()));
 
 
 
+                    MonthlyReports.Add(monthlyReports);
+                }
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+            return MonthlyReports;
 
 
-
-
+        }
 
     }
 }

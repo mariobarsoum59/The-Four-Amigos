@@ -90,5 +90,13 @@ namespace BloomFeildHotel
 
             f7.Show();
         }
+
+        private void btnCreateReport_Click(object sender, EventArgs e)
+        {
+            formCreateMonthlyReport f8 = new formCreateMonthlyReport(fc, Model);
+            f8.Dock = DockStyle.Fill;
+
+            f8.Show();
+        }
     }
 }

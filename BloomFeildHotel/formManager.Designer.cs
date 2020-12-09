@@ -36,21 +36,22 @@
             this.btnViewRoomBookings = new System.Windows.Forms.Button();
             this.btnChangeRoomBasePrice = new System.Windows.Forms.Button();
             this.btnCheckIn = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnCreateReport = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblManagerMenuTag = new System.Windows.Forms.Label();
+            this.btnViewReport = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblManagerMenu
             // 
             this.lblManagerMenu.AutoSize = true;
-            this.lblManagerMenu.Font = new System.Drawing.Font("Opus Chords Sans Std", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManagerMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblManagerMenu.ForeColor = System.Drawing.Color.White;
             this.lblManagerMenu.Location = new System.Drawing.Point(16, 21);
             this.lblManagerMenu.Name = "lblManagerMenu";
-            this.lblManagerMenu.Size = new System.Drawing.Size(56, 47);
+            this.lblManagerMenu.Size = new System.Drawing.Size(59, 39);
             this.lblManagerMenu.TabIndex = 0;
             this.lblManagerMenu.Text = "Hi ";
             // 
@@ -131,19 +132,20 @@
             this.btnCheckIn.UseVisualStyleBackColor = true;
             this.btnCheckIn.Click += new System.EventHandler(this.BtnCheckIn_Click);
             // 
-            // button8
+            // btnCreateReport
             // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(749, 282);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(161, 104);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnCreateReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreateReport.Location = new System.Drawing.Point(749, 282);
+            this.btnCreateReport.Name = "btnCreateReport";
+            this.btnCreateReport.Size = new System.Drawing.Size(161, 104);
+            this.btnCreateReport.TabIndex = 8;
+            this.btnCreateReport.Text = "Create Monthly Report";
+            this.btnCreateReport.UseVisualStyleBackColor = true;
+            this.btnCreateReport.Click += new System.EventHandler(this.btnCreateReport_Click);
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(794, 445);
+            this.btnExit.Location = new System.Drawing.Point(798, 549);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(112, 57);
             this.btnExit.TabIndex = 9;
@@ -164,12 +166,22 @@
             // lblManagerMenuTag
             // 
             this.lblManagerMenuTag.AutoSize = true;
-            this.lblManagerMenuTag.Font = new System.Drawing.Font("Opus Chords Sans Std", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManagerMenuTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblManagerMenuTag.Location = new System.Drawing.Point(520, 107);
             this.lblManagerMenuTag.Name = "lblManagerMenuTag";
-            this.lblManagerMenuTag.Size = new System.Drawing.Size(235, 47);
+            this.lblManagerMenuTag.Size = new System.Drawing.Size(248, 39);
             this.lblManagerMenuTag.TabIndex = 11;
             this.lblManagerMenuTag.Text = "Manager Menu";
+            // 
+            // btnViewReport
+            // 
+            this.btnViewReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewReport.Location = new System.Drawing.Point(749, 392);
+            this.btnViewReport.Name = "btnViewReport";
+            this.btnViewReport.Size = new System.Drawing.Size(161, 104);
+            this.btnViewReport.TabIndex = 12;
+            this.btnViewReport.Text = "View Monthly Reports";
+            this.btnViewReport.UseVisualStyleBackColor = true;
             // 
             // formManager
             // 
@@ -178,10 +190,11 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1277, 633);
             this.ControlBox = false;
+            this.Controls.Add(this.btnViewReport);
             this.Controls.Add(this.lblManagerMenuTag);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.btnCreateReport);
             this.Controls.Add(this.btnCheckIn);
             this.Controls.Add(this.btnChangeRoomBasePrice);
             this.Controls.Add(this.btnViewRoomBookings);
@@ -211,9 +224,10 @@
         private System.Windows.Forms.Button btnViewRoomBookings;
         private System.Windows.Forms.Button btnChangeRoomBasePrice;
         private System.Windows.Forms.Button btnCheckIn;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnCreateReport;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblManagerMenuTag;
+        private System.Windows.Forms.Button btnViewReport;
     }
 }

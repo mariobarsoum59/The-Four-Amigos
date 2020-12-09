@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessEntities
 {
-    interface IMonthlyReport
+    public interface IMonthlyReport
     {
         int ReportID { get; set; }
         DateTime Date { get; set; }

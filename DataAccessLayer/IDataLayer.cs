@@ -53,5 +53,9 @@ namespace DataAccessLayer
         //rebecca i1 manage waste - get ingredients
         List<IIngredients> getAllIngredients();
 
+        List<IStockItem> getAllStockItems();
+        List<IStockOrder> getAllStockOrders();
+        List<IOrderItem> getAllOrderItems();
+        List<IMonthlyReport> getAllMonthlyReports();
     }
 }
