@@ -10,7 +10,6 @@ namespace BusinessEntities
     {
         int OrderID { get; set; }
         DateTime Date { get; set; }
-        decimal Total { get; set; }
         String Department { get; set; }
         bool Completed { get; set; }
         int CreatedBy { get; set; }

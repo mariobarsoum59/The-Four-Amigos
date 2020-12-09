@@ -46,6 +46,8 @@ namespace DataAccessLayer
 
         bool updateRoomPriceInDB(BusinessEntities.IRoom room);
 
+        bool updateCurrentStockItemInDB(BusinessEntities.IStockItem stockItem);
+
         bool checkGusetInDB(BusinessEntities.IReservation reservation);
 
 
@@ -57,6 +59,5 @@ namespace DataAccessLayer
         List<IStockOrder> getAllStockOrders();
         List<IOrderItem> getAllOrderItems();
         List<IMonthlyReport> getAllMonthlyReports();
-        void addNewMonthlyReportToDB(IMonthlyReport aMonthlyReport);
     }
 }

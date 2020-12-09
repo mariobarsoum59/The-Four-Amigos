@@ -210,10 +210,5 @@ namespace BloomFeildHotel
             form.Dock = DockStyle.Fill;
             form.Show();
         }
-
-        private void gbReservation_Enter(object sender, EventArgs e)
-        {
-
-        }
     }
 }

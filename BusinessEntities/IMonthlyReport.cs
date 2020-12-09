@@ -14,7 +14,6 @@ namespace BusinessEntities
         decimal ReservationIncome { get; set; }
         int Sales { get; set; }
         decimal SalesIncome { get; set; }
-        int StockOrders { get; set; }
         decimal StockExpenses { get; set; }
     }
 }

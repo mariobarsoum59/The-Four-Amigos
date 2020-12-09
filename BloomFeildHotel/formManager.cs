@@ -90,16 +90,7 @@ namespace BloomFeildHotel
 
             f7.Show();
         }
-<<<<<<< HEAD
 
-<<<<<<< HEAD
-        private void btnSearchForReservation_Click(object sender, EventArgs e)
-        {
-            formSearchReservation f8 = new formSearchReservation(fc, Model);
-            f8.Dock = DockStyle.Fill;
-            f8.Show();
-        }
-=======
         private void btnCreateReport_Click(object sender, EventArgs e)
         {
             formCreateMonthlyReport f8 = new formCreateMonthlyReport(fc, Model);
@@ -107,7 +98,6 @@ namespace BloomFeildHotel
 
             f8.Show();
         }
-<<<<<<< HEAD
 
         private void BtnManageStockItems_Click(object sender, EventArgs e)
         {
@@ -116,10 +106,5 @@ namespace BloomFeildHotel
 
             f9.Show();
         }
->>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
-=======
->>>>>>> parent of 32d2ca7... update View orders staff
-=======
->>>>>>> parent of 231d4e4... Merging remote changes to local repo
     }
 }
