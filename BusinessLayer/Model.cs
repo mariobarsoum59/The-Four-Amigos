@@ -29,10 +29,6 @@ namespace BusinessLayer
         private List<IBarItems> baritemslist;
         private List<IOrders> orderslist;
         private List<IIngredients> ingredientsList;
-        private List<IStockItem> stockItemsList;
-        private List<IStockOrder> stockOrdersList;
-        private List<IOrderItem> orderItemsList;
-        private List<IMonthlyReport> monthlyReportsList;
         #endregion
 
         #region Instance Properties
@@ -174,51 +170,6 @@ namespace BusinessLayer
             set
             {
                 ingredientsList = value;
-            }
-        }
-
-        public List<IStockItem> StockItemsList
-        {
-            get
-            {
-                return stockItemsList;
-            }
-            set
-            {
-                stockItemsList = value;
-            }
-        }
-        public List<IStockOrder> StockOrdersList
-        {
-            get
-            {
-                return stockOrdersList;
-            }
-            set
-            {
-                stockOrdersList = value;
-            }
-        }
-        public List<IOrderItem> OrderItemsList
-        {
-            get
-            {
-                return orderItemsList;
-            }
-            set
-            {
-                orderItemsList = value;
-            }
-        }
-        public List<IMonthlyReport> MonthlyReportsList
-        {
-            get
-            {
-                return monthlyReportsList;
-            }
-            set
-            {
-                monthlyReportsList = value;
             }
         }
         #endregion
@@ -365,7 +316,7 @@ namespace BusinessLayer
         }
 
 
-
+       
 
 
 
@@ -471,11 +422,9 @@ namespace BusinessLayer
             dataLayer.updateRoomPriceInDB(room);
             return true;
         }
-
-
-        public bool UpdateCurrrentStockItem(IStockItem stockItem)
+        public bool UpdateOrderComplete(IOrders completed)
         {
-            dataLayer.updateCurrentStockItemInDB(stockItem);
+            dataLayer.updateCompletedOrders(completed);
             return true;
         }
 
@@ -497,23 +446,6 @@ namespace BusinessLayer
         public void GetAllIngredients()
         {
            IngredientsList = dataLayer.getAllIngredients();
-        }
-
-        public void GetAllStockItems()
-        {
-            StockItemsList = dataLayer.getAllStockItems();
-        }
-        public void GetAllStockOrders()
-        {
-            StockOrdersList = dataLayer.getAllStockOrders();
-        }
-        public void GetAllOrderItems()
-        {
-            OrderItemsList = dataLayer.getAllOrderItems();
-        }
-        public void GetAllMonthlyReports()
-        {
-            MonthlyReportsList = dataLayer.getAllMonthlyReports();
         }
     }
 }

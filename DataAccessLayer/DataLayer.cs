@@ -710,54 +710,6 @@ namespace DataAccessLayer
         }
 
 
-
-        public virtual bool updateCurrentStockItemInDB(IStockItem stockItem)
-        {
-
-            try
-            {
-                ds = new DataSet();
-                string sql = "SELECT * From StockItems";
-                da = new SqlDataAdapter(sql, con);
-                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
-                cb = new SqlCommandBuilder(da);  //Generates
-                da.Fill(ds, "StockItemsData");
-                DataRow findRow = ds.Tables["StockItemsData"].Rows.Find(stockItem.ItemID);
-                if (findRow != null)
-                {
-                    //findRow[0] = stockItem.ItemID;
-                    findRow[1] = stockItem.ItemName;
-                    findRow[2] = stockItem.Description;
-                    findRow[3] = stockItem.Price;
-                    findRow[4] = stockItem.Quantity;
-                    findRow[5] = stockItem.Category;
-                    findRow[6] = stockItem.Department;
-
-                }
-                da.Update(ds, "StockItemsData"); //remove row from database table
-
-            }
-            catch (System.Exception excep)
-            {
-                MessageBox.Show(excep.Message);
-                if (getConnection().ToString() == "Open")
-                    closeConnection();
-                Application.Exit();
-            }
-            return true;
-
-
-
-
-
-        }
-
-
-
-
-
-
-
         public virtual bool checkGusetInDB(IReservation reservation)
         {
             try
@@ -826,7 +778,9 @@ namespace DataAccessLayer
                                                         Convert.ToDouble(dRow.ItemArray.GetValue(2).ToString()),
                                                         dRow.ItemArray.GetValue(3).ToString(),
                                                        Convert.ToDouble(dRow.ItemArray.GetValue(4).ToString()),
-                                                      Convert.ToDateTime(dRow.ItemArray.GetValue(5).ToString()));
+                                                      Convert.ToDateTime(dRow.ItemArray.GetValue(5).ToString()),
+                                                      Convert.ToBoolean(dRow.ItemArray.GetValue(6).ToString()),
+                                                      dRow.ItemArray.GetValue(7).ToString());
 
                     Orders.Add(orders);
                 }
@@ -881,163 +835,52 @@ namespace DataAccessLayer
 
         }
 
-
-
-
-        public virtual List<IStockItem> getAllStockItems()
+        public virtual bool updateCompletedOrders(IOrders completed)
         {
-            List<IStockItem> StockItems = new List<IStockItem>();
-
             try
             {
                 ds = new DataSet();
-                string sql = "SELECT * From StockItems";
+                string sql = "SELECT * From BarOrders";
                 da = new SqlDataAdapter(sql, con);
-                cb = new SqlCommandBuilder(da);
-                da.Fill(ds, "IngData");
-                int allIngData = ds.Tables["IngData"].Rows.Count;
-                for (int i = 0; i < allIngData; i++)
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "OrdersData");
+                DataRow findRow = ds.Tables["OrdersData"].Rows.Find(completed.OrderID);
+                if (findRow != null)
                 {
-                    DataRow dRow = ds.Tables["IngData"].Rows[i];
-                    IStockItem stockItems = StockItemsHotel.GetStockItems(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
-                                                                                         dRow.ItemArray.GetValue(1).ToString(),
-                                                                                         dRow.ItemArray.GetValue(2).ToString(),
-                                                                        Convert.ToDecimal(dRow.ItemArray.GetValue(3).ToString()),
-                                                                         Convert.ToInt16(dRow.ItemArray.GetValue(4).ToString()),
-                                                                                         dRow.ItemArray.GetValue(5).ToString(),
-                                                                                         dRow.ItemArray.GetValue(6).ToString());
+                    findRow[0] = completed.OrderID;
+                    findRow[1] = completed.Food;
+                    findRow[2] = completed.FoodPrice;
+                    findRow[3] = completed.Drink;
+                    findRow[4] = completed.DrinkPrice;
+                    findRow[5] = completed.Timestamp;
+                    findRow[6] = completed.Completed;
+                    findRow[7] = completed.Note;
 
-                StockItems.Add(stockItems);
+
                 }
+                da.Update(ds, "OrdersData"); //remove row from database table
+
             }
             catch (System.Exception excep)
             {
                 MessageBox.Show(excep.Message);
-                if (con.State.ToString() == "Open")
-                    con.Close();
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
                 Application.Exit();
-                //Environment.Exit(0); //Force the application to close
             }
-            return StockItems;
-
-
+            return true;
         }
 
 
-        public virtual List<IStockOrder> getAllStockOrders()
-        {
-            List<IStockOrder> StockOrders = new List<IStockOrder>();
-
-            try
-            {
-                ds = new DataSet();
-                string sql = "SELECT * From StockOrders";
-                da = new SqlDataAdapter(sql, con);
-                cb = new SqlCommandBuilder(da);
-                da.Fill(ds, "IngData");
-                int allIngData = ds.Tables["IngData"].Rows.Count;
-                for (int i = 0; i < allIngData; i++)
-                {
-                    DataRow dRow = ds.Tables["IngData"].Rows[i];
-                    IStockOrder stockOrders = StockOrdersHotel.GetStockOrders(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
-                                                                       Convert.ToDateTime(dRow.ItemArray.GetValue(1).ToString()),
-                                                                                         dRow.ItemArray.GetValue(2).ToString(),
-                                                                        Convert.ToBoolean(dRow.ItemArray.GetValue(3).ToString()),
-                                                                         Convert.ToInt16(dRow.ItemArray.GetValue(4).ToString()));
-                                                                                         
-
-                    StockOrders.Add(stockOrders);
-                }
-            }
-            catch (System.Exception excep)
-            {
-                MessageBox.Show(excep.Message);
-                if (con.State.ToString() == "Open")
-                    con.Close();
-                Application.Exit();
-                //Environment.Exit(0); //Force the application to close
-            }
-            return StockOrders;
-
-
-        }
-
-        public virtual List<IOrderItem> getAllOrderItems()
-        {
-            List<IOrderItem> OrderItems = new List<IOrderItem>();
-
-            try
-            {
-                ds = new DataSet();
-                string sql = "SELECT * From OrderItems";
-                da = new SqlDataAdapter(sql, con);
-                cb = new SqlCommandBuilder(da);
-                da.Fill(ds, "IngData");
-                int allIngData = ds.Tables["IngData"].Rows.Count;
-                for (int i = 0; i < allIngData; i++)
-                {
-                    DataRow dRow = ds.Tables["IngData"].Rows[i];
-                    IOrderItem orderItems = OrderItemsHotel.GetOrderItems(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
-                                                                       Convert.ToInt16(dRow.ItemArray.GetValue(1).ToString()),
-                                                                                         Convert.ToInt16(dRow.ItemArray.GetValue(2).ToString()));
-                                                                        
-
-
-                    OrderItems.Add(orderItems);
-                }
-            }
-            catch (System.Exception excep)
-            {
-                MessageBox.Show(excep.Message);
-                if (con.State.ToString() == "Open")
-                    con.Close();
-                Application.Exit();
-                //Environment.Exit(0); //Force the application to close
-            }
-            return OrderItems;
-
-
-        }
-        public virtual List<IMonthlyReport> getAllMonthlyReports()
-        {
-            List<IMonthlyReport> MonthlyReports = new List<IMonthlyReport>();
-
-            try
-            {
-                ds = new DataSet();
-                string sql = "SELECT * From MonthlyReport";
-                da = new SqlDataAdapter(sql, con);
-                cb = new SqlCommandBuilder(da);
-                da.Fill(ds, "IngData");
-                int allIngData = ds.Tables["IngData"].Rows.Count;
-                for (int i = 0; i < allIngData; i++)
-                {
-                    DataRow dRow = ds.Tables["IngData"].Rows[i];
-                    IMonthlyReport monthlyReports = MonthlyReportsHotel.GetMonthlyReports(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
-                                                                       Convert.ToDateTime(dRow.ItemArray.GetValue(1).ToString()),
-                                                                                         Convert.ToInt16(dRow.ItemArray.GetValue(2).ToString()),
-                                                                                         Convert.ToDecimal(dRow.ItemArray.GetValue(3).ToString()),
-                                                                                         Convert.ToInt16(dRow.ItemArray.GetValue(4).ToString()),
-                                                                                         Convert.ToDecimal(dRow.ItemArray.GetValue(5).ToString()),
-                                                                                         Convert.ToDecimal(dRow.ItemArray.GetValue(6).ToString()));
 
 
 
-                    MonthlyReports.Add(monthlyReports);
-                }
-            }
-            catch (System.Exception excep)
-            {
-                MessageBox.Show(excep.Message);
-                if (con.State.ToString() == "Open")
-                    con.Close();
-                Application.Exit();
-                //Environment.Exit(0); //Force the application to close
-            }
-            return MonthlyReports;
 
 
-        }
+
+
+
 
     }
 }
