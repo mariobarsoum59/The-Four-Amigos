@@ -48,7 +48,7 @@ namespace DataAccessLayer
 
         bool checkGusetInDB(BusinessEntities.IReservation reservation);
 
-
+        bool updateCompletedOrders(BusinessEntities.IOrders completed);
 
         //rebecca i1 manage waste - get ingredients
         List<IIngredients> getAllIngredients();

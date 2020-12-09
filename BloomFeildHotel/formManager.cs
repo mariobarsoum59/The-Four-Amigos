@@ -90,5 +90,12 @@ namespace BloomFeildHotel
 
             f7.Show();
         }
+
+        private void btnSearchForReservation_Click(object sender, EventArgs e)
+        {
+            formSearchReservation f8 = new formSearchReservation(fc, Model);
+            f8.Dock = DockStyle.Fill;
+            f8.Show();
+        }
     }
 }

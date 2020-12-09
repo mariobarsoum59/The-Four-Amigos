@@ -778,7 +778,9 @@ namespace DataAccessLayer
                                                         Convert.ToDouble(dRow.ItemArray.GetValue(2).ToString()),
                                                         dRow.ItemArray.GetValue(3).ToString(),
                                                        Convert.ToDouble(dRow.ItemArray.GetValue(4).ToString()),
-                                                      Convert.ToDateTime(dRow.ItemArray.GetValue(5).ToString()));
+                                                      Convert.ToDateTime(dRow.ItemArray.GetValue(5).ToString()),
+                                                      Convert.ToBoolean(dRow.ItemArray.GetValue(6).ToString()),
+                                                      dRow.ItemArray.GetValue(7).ToString());
 
                     Orders.Add(orders);
                 }
@@ -833,6 +835,42 @@ namespace DataAccessLayer
 
         }
 
+        public virtual bool updateCompletedOrders(IOrders completed)
+        {
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From BarOrders";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "OrdersData");
+                DataRow findRow = ds.Tables["OrdersData"].Rows.Find(completed.OrderID);
+                if (findRow != null)
+                {
+                    findRow[0] = completed.OrderID;
+                    findRow[1] = completed.Food;
+                    findRow[2] = completed.FoodPrice;
+                    findRow[3] = completed.Drink;
+                    findRow[4] = completed.DrinkPrice;
+                    findRow[5] = completed.Timestamp;
+                    findRow[6] = completed.Completed;
+                    findRow[7] = completed.Note;
+
+
+                }
+                da.Update(ds, "OrdersData"); //remove row from database table
+
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
+                Application.Exit();
+            }
+            return true;
+        }
 
 
 

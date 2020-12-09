@@ -68,5 +68,6 @@ namespace BusinessLayer
         List<IIngredients> IngredientsList { get; set; }
         void GetAllIngredients();
 
+        bool UpdateOrderComplete(IOrders completed);
     }
 }
