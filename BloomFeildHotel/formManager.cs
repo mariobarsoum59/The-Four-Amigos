@@ -107,6 +107,7 @@ namespace BloomFeildHotel
 
             f8.Show();
         }
+<<<<<<< HEAD
 
         private void BtnManageStockItems_Click(object sender, EventArgs e)
         {
@@ -118,5 +119,7 @@ namespace BloomFeildHotel
 >>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
 =======
 >>>>>>> parent of 32d2ca7... update View orders staff
+=======
+>>>>>>> parent of 231d4e4... Merging remote changes to local repo
     }
 }

@@ -473,12 +473,6 @@ namespace BusinessLayer
         }
 
 
-        public bool UpdateCurrrentStockItem(IStockItem stockItem)
-        {
-            dataLayer.updateCurrentStockItemInDB(stockItem);
-            return true;
-        }
-
         public bool CheckGuestIn(IReservation reservation)
         {
             dataLayer.checkGusetInDB(reservation);

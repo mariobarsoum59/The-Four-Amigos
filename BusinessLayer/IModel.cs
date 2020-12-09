@@ -58,7 +58,6 @@ namespace BusinessLayer
         void GetAllBarItems();
 
         bool UpdateRoomPrice(IRoom room);
-        bool UpdateCurrrentStockItem(IStockItem stockItem);
 
         bool CheckGuestIn(IReservation reservation);
 
