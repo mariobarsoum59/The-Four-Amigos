@@ -14,8 +14,6 @@ namespace BusinessEntities
         private string drink;
         private double drinkprice;
         private DateTime timestamp;
-        private bool completed;
-        private string note;
 
 
         public int OrderID
@@ -86,33 +84,11 @@ namespace BusinessEntities
                 timestamp = value;
             }
         }
-        public bool Completed
-        {
-            get
-            {
-                return completed;
-            }
-            set
-            {
-                completed = value;
-            }
-        }
-        public string Note
-        {
-            get
-            {
-                return note;
-            }
-            set
-            {
-                note = value;
-            }
-        }
         public Orders()
         {
             throw new System.NotImplementedException();
         }
-        public Orders(int OrderID, string Food, double FoodPrice, string Drink, double Drinkprice, DateTime Timestamp,  bool Completed, string Note)
+        public Orders(int OrderID, string Food, double FoodPrice, string Drink, double Drinkprice, DateTime Timestamp)
         {
             this.orderID = OrderID;
             this.food = Food;
@@ -120,8 +96,6 @@ namespace BusinessEntities
             this.drink = Drink;
             this.drinkprice = Drinkprice;
             this.timestamp = Timestamp;
-            this.completed = Completed;
-            this.note = Note;
 
 
 

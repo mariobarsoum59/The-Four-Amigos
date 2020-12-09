@@ -33,6 +33,7 @@ C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessE
 C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.dll
 C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.pdb
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
 =======
 C:\Users\Saoir\Source\Repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
@@ -41,3 +42,5 @@ C:\Users\Saoir\Source\Repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessE
 C:\Users\Saoir\Source\Repos\The-Four-Amigos\BusinessEntities\bin\Debug\BusinessEntities.dll
 C:\Users\Saoir\Source\Repos\The-Four-Amigos\BusinessEntities\bin\Debug\BusinessEntities.pdb
 >>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
+=======
+>>>>>>> parent of 32d2ca7... update View orders staff

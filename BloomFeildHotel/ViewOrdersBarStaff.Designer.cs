@@ -89,7 +89,6 @@ namespace BloomFeildHotel
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(586, 444);
             this.listBox1.TabIndex = 42;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // lblAddDrink
             // 
@@ -123,7 +122,6 @@ namespace BloomFeildHotel
             this.listBox3.Name = "listBox3";
             this.listBox3.Size = new System.Drawing.Size(586, 444);
             this.listBox3.TabIndex = 44;
-            this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -199,9 +197,9 @@ namespace BloomFeildHotel
             this.lblLeaveANote.Location = new System.Drawing.Point(1251, 638);
             this.lblLeaveANote.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLeaveANote.Name = "lblLeaveANote";
-            this.lblLeaveANote.Size = new System.Drawing.Size(264, 29);
+            this.lblLeaveANote.Size = new System.Drawing.Size(157, 29);
             this.lblLeaveANote.TabIndex = 52;
-            this.lblLeaveANote.Text = "Leave A Note On Order";
+            this.lblLeaveANote.Text = "Leave A Note";
             // 
             // textBoxNoteArea
             // 
@@ -225,7 +223,6 @@ namespace BloomFeildHotel
             this.btnNote.TabIndex = 53;
             this.btnNote.Text = "Submit Note";
             this.btnNote.UseVisualStyleBackColor = false;
-            this.btnNote.Click += new System.EventHandler(this.btnNote_Click);
             // 
             // ViewOrdersBarStaff
             // 

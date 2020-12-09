@@ -15,11 +15,6 @@ namespace BusinessEntities
         double DrinkPrice { get; set; }
 
         DateTime Timestamp { get; set; }
-        bool Completed { get; set; }
-
-        string Note { get; set; }
-
-       
 
     }
 }

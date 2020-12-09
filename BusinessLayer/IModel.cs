@@ -70,6 +70,7 @@ namespace BusinessLayer
         void GetAllIngredients();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         bool UpdateOrderComplete(IOrders completed);
 =======
         List<IStockItem> StockItemsList { get; set; }
@@ -86,5 +87,7 @@ namespace BusinessLayer
         Boolean createMonthlyReport(DateTime Date, int Reservations, decimal ReservationIncome, int Sales, decimal SalesIncome, int StockOrders, decimal StockExpenses);
 
 >>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
+=======
+>>>>>>> parent of 32d2ca7... update View orders staff
     }
 }

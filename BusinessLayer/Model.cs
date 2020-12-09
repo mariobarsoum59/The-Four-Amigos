@@ -365,7 +365,7 @@ namespace BusinessLayer
         }
 
 
-       
+
 
 
 
@@ -471,11 +471,7 @@ namespace BusinessLayer
             dataLayer.updateRoomPriceInDB(room);
             return true;
         }
-        public bool UpdateOrderComplete(IOrders completed)
-        {
-            dataLayer.updateCompletedOrders(completed);
-            return true;
-        }
+
 
         public bool UpdateCurrrentStockItem(IStockItem stockItem)
         {

@@ -41,27 +41,33 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblManagerMenuTag = new System.Windows.Forms.Label();
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnSearchForReservation = new System.Windows.Forms.Button();
 =======
             this.btnViewReport = new System.Windows.Forms.Button();
             this.btnManageStockItems = new System.Windows.Forms.Button();
 >>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
+=======
+>>>>>>> parent of 32d2ca7... update View orders staff
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblManagerMenu
             // 
             this.lblManagerMenu.AutoSize = true;
-            this.lblManagerMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManagerMenu.Font = new System.Drawing.Font("Opus Chords Sans Std", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblManagerMenu.ForeColor = System.Drawing.Color.White;
-            this.lblManagerMenu.Location = new System.Drawing.Point(24, 32);
-            this.lblManagerMenu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblManagerMenu.Location = new System.Drawing.Point(16, 21);
             this.lblManagerMenu.Name = "lblManagerMenu";
+<<<<<<< HEAD
 <<<<<<< HEAD
             this.lblManagerMenu.Size = new System.Drawing.Size(92, 61);
 =======
             this.lblManagerMenu.Size = new System.Drawing.Size(59, 39);
 >>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
+=======
+            this.lblManagerMenu.Size = new System.Drawing.Size(56, 47);
+>>>>>>> parent of 32d2ca7... update View orders staff
             this.lblManagerMenu.TabIndex = 0;
             this.lblManagerMenu.Text = "Hi ";
             // 
@@ -69,13 +75,17 @@
             // 
             this.btnAddUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnAddUsers.Location = new System.Drawing.Point(622, 265);
             this.btnAddUsers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 =======
             this.btnAddUsers.Location = new System.Drawing.Point(334, 154);
 >>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
+=======
+            this.btnAddUsers.Location = new System.Drawing.Point(415, 172);
+>>>>>>> parent of 32d2ca7... update View orders staff
             this.btnAddUsers.Name = "btnAddUsers";
-            this.btnAddUsers.Size = new System.Drawing.Size(242, 160);
+            this.btnAddUsers.Size = new System.Drawing.Size(161, 104);
             this.btnAddUsers.TabIndex = 1;
             this.btnAddUsers.Text = "Add Users";
             this.btnAddUsers.UseVisualStyleBackColor = true;
@@ -85,13 +95,17 @@
             // 
             this.btnDeleteUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnDeleteUsers.Location = new System.Drawing.Point(622, 434);
             this.btnDeleteUsers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 =======
             this.btnDeleteUsers.Location = new System.Drawing.Point(334, 264);
 >>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
+=======
+            this.btnDeleteUsers.Location = new System.Drawing.Point(415, 282);
+>>>>>>> parent of 32d2ca7... update View orders staff
             this.btnDeleteUsers.Name = "btnDeleteUsers";
-            this.btnDeleteUsers.Size = new System.Drawing.Size(242, 160);
+            this.btnDeleteUsers.Size = new System.Drawing.Size(161, 104);
             this.btnDeleteUsers.TabIndex = 2;
             this.btnDeleteUsers.Text = "Delete Users";
             this.btnDeleteUsers.UseVisualStyleBackColor = true;
@@ -101,13 +115,17 @@
             // 
             this.btnCreateReservation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnCreateReservation.Location = new System.Drawing.Point(622, 603);
             this.btnCreateReservation.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 =======
             this.btnCreateReservation.Location = new System.Drawing.Point(334, 374);
 >>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
+=======
+            this.btnCreateReservation.Location = new System.Drawing.Point(415, 392);
+>>>>>>> parent of 32d2ca7... update View orders staff
             this.btnCreateReservation.Name = "btnCreateReservation";
-            this.btnCreateReservation.Size = new System.Drawing.Size(242, 160);
+            this.btnCreateReservation.Size = new System.Drawing.Size(161, 104);
             this.btnCreateReservation.TabIndex = 3;
             this.btnCreateReservation.Text = "Create Reservation";
             this.btnCreateReservation.UseVisualStyleBackColor = true;
@@ -117,13 +135,17 @@
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.button4.Location = new System.Drawing.Point(873, 265);
             this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 =======
             this.button4.Location = new System.Drawing.Point(501, 154);
 >>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
+=======
+            this.button4.Location = new System.Drawing.Point(582, 172);
+>>>>>>> parent of 32d2ca7... update View orders staff
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(242, 160);
+            this.button4.Size = new System.Drawing.Size(161, 104);
             this.button4.TabIndex = 4;
             this.button4.Text = "Room Cleaning Service";
             this.button4.UseVisualStyleBackColor = true;
@@ -133,13 +155,17 @@
             // 
             this.btnViewRoomBookings.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnViewRoomBookings.Location = new System.Drawing.Point(873, 434);
             this.btnViewRoomBookings.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 =======
             this.btnViewRoomBookings.Location = new System.Drawing.Point(501, 264);
 >>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
+=======
+            this.btnViewRoomBookings.Location = new System.Drawing.Point(582, 282);
+>>>>>>> parent of 32d2ca7... update View orders staff
             this.btnViewRoomBookings.Name = "btnViewRoomBookings";
-            this.btnViewRoomBookings.Size = new System.Drawing.Size(242, 160);
+            this.btnViewRoomBookings.Size = new System.Drawing.Size(161, 104);
             this.btnViewRoomBookings.TabIndex = 5;
             this.btnViewRoomBookings.Text = "View Room Bookings";
             this.btnViewRoomBookings.UseVisualStyleBackColor = true;
@@ -149,13 +175,17 @@
             // 
             this.btnChangeRoomBasePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnChangeRoomBasePrice.Location = new System.Drawing.Point(873, 603);
             this.btnChangeRoomBasePrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 =======
             this.btnChangeRoomBasePrice.Location = new System.Drawing.Point(501, 374);
 >>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
+=======
+            this.btnChangeRoomBasePrice.Location = new System.Drawing.Point(582, 392);
+>>>>>>> parent of 32d2ca7... update View orders staff
             this.btnChangeRoomBasePrice.Name = "btnChangeRoomBasePrice";
-            this.btnChangeRoomBasePrice.Size = new System.Drawing.Size(242, 160);
+            this.btnChangeRoomBasePrice.Size = new System.Drawing.Size(161, 104);
             this.btnChangeRoomBasePrice.TabIndex = 6;
             this.btnChangeRoomBasePrice.Text = "Change Room Base Price";
             this.btnChangeRoomBasePrice.UseVisualStyleBackColor = true;
@@ -165,13 +195,17 @@
             // 
             this.btnCheckIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 <<<<<<< HEAD
+<<<<<<< HEAD
             this.btnCheckIn.Location = new System.Drawing.Point(1124, 265);
             this.btnCheckIn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 =======
             this.btnCheckIn.Location = new System.Drawing.Point(668, 154);
 >>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
+=======
+            this.btnCheckIn.Location = new System.Drawing.Point(749, 172);
+>>>>>>> parent of 32d2ca7... update View orders staff
             this.btnCheckIn.Name = "btnCheckIn";
-            this.btnCheckIn.Size = new System.Drawing.Size(242, 160);
+            this.btnCheckIn.Size = new System.Drawing.Size(161, 104);
             this.btnCheckIn.TabIndex = 7;
             this.btnCheckIn.Text = "Check In";
             this.btnCheckIn.UseVisualStyleBackColor = true;
@@ -181,16 +215,16 @@
             // 
 <<<<<<< HEAD
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(1124, 434);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button8.Location = new System.Drawing.Point(749, 282);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(242, 160);
+            this.button8.Size = new System.Drawing.Size(161, 104);
             this.button8.TabIndex = 8;
             this.button8.Text = "button8";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // btnExit
             // 
+<<<<<<< HEAD
             this.btnExit.Location = new System.Drawing.Point(1374, 676);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 =======
@@ -207,8 +241,11 @@
             // 
             this.btnExit.Location = new System.Drawing.Point(795, 495);
 >>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
+=======
+            this.btnExit.Location = new System.Drawing.Point(794, 445);
+>>>>>>> parent of 32d2ca7... update View orders staff
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(168, 88);
+            this.btnExit.Size = new System.Drawing.Size(112, 57);
             this.btnExit.TabIndex = 9;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -219,24 +256,29 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(94)))), ((int)(((byte)(84)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.lblManagerMenu);
-            this.panel1.Location = new System.Drawing.Point(-6, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(-4, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1924, 105);
+            this.panel1.Size = new System.Drawing.Size(1283, 68);
             this.panel1.TabIndex = 10;
             // 
             // lblManagerMenuTag
             // 
             this.lblManagerMenuTag.AutoSize = true;
+<<<<<<< HEAD
             this.lblManagerMenuTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 <<<<<<< HEAD
             this.lblManagerMenuTag.Location = new System.Drawing.Point(780, 165);
             this.lblManagerMenuTag.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+=======
+            this.lblManagerMenuTag.Font = new System.Drawing.Font("Opus Chords Sans Std", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblManagerMenuTag.Location = new System.Drawing.Point(520, 107);
+>>>>>>> parent of 32d2ca7... update View orders staff
             this.lblManagerMenuTag.Name = "lblManagerMenuTag";
-            this.lblManagerMenuTag.Size = new System.Drawing.Size(379, 61);
+            this.lblManagerMenuTag.Size = new System.Drawing.Size(235, 47);
             this.lblManagerMenuTag.TabIndex = 11;
             this.lblManagerMenuTag.Text = "Manager Menu";
             // 
+<<<<<<< HEAD
             // btnSearchForReservation
             // 
             this.btnSearchForReservation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -277,19 +319,24 @@
             this.btnManageStockItems.Click += new System.EventHandler(this.BtnManageStockItems_Click);
 >>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
             // 
+=======
+>>>>>>> parent of 32d2ca7... update View orders staff
             // formManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1916, 974);
+            this.ClientSize = new System.Drawing.Size(1277, 633);
             this.ControlBox = false;
+<<<<<<< HEAD
 <<<<<<< HEAD
             this.Controls.Add(this.btnSearchForReservation);
 =======
             this.Controls.Add(this.btnManageStockItems);
             this.Controls.Add(this.btnViewReport);
 >>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
+=======
+>>>>>>> parent of 32d2ca7... update View orders staff
             this.Controls.Add(this.lblManagerMenuTag);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnExit);
@@ -303,7 +350,6 @@
             this.Controls.Add(this.btnAddUsers);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "formManager";
             this.Text = "Manager";
             this.Load += new System.EventHandler(this.FormManager_Load);
@@ -329,10 +375,13 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblManagerMenuTag;
 <<<<<<< HEAD
+<<<<<<< HEAD
         private System.Windows.Forms.Button btnSearchForReservation;
 =======
         private System.Windows.Forms.Button btnViewReport;
         private System.Windows.Forms.Button btnManageStockItems;
 >>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
+=======
+>>>>>>> parent of 32d2ca7... update View orders staff
     }
 }

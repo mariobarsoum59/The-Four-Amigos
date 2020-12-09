@@ -90,6 +90,7 @@ namespace BloomFeildHotel
 
             f7.Show();
         }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
         private void btnSearchForReservation_Click(object sender, EventArgs e)
@@ -115,5 +116,7 @@ namespace BloomFeildHotel
             f9.Show();
         }
 >>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
+=======
+>>>>>>> parent of 32d2ca7... update View orders staff
     }
 }
