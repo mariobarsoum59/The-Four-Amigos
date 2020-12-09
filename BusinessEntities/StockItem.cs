@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessEntities
 {
-    class StockItem : IStockItem
+    public class StockItem : IStockItem
     {
         private int itemID;
         private String itemName;

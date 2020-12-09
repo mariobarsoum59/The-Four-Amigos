@@ -46,6 +46,8 @@ namespace DataAccessLayer
 
         bool updateRoomPriceInDB(BusinessEntities.IRoom room);
 
+        bool updateCurrentStockItemInDB(BusinessEntities.IStockItem stockItem);
+
         bool checkGusetInDB(BusinessEntities.IReservation reservation);
 
 
