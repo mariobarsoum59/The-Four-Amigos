@@ -58,6 +58,7 @@ namespace BusinessLayer
         void GetAllBarItems();
 
         bool UpdateRoomPrice(IRoom room);
+        bool UpdateCurrrentStockItem(IStockItem stockItem);
 
         bool CheckGuestIn(IReservation reservation);
 
@@ -68,6 +69,22 @@ namespace BusinessLayer
         List<IIngredients> IngredientsList { get; set; }
         void GetAllIngredients();
 
+<<<<<<< HEAD
         bool UpdateOrderComplete(IOrders completed);
+=======
+        List<IStockItem> StockItemsList { get; set; }
+        void GetAllStockItems();
+
+        List<IStockOrder> StockOrdersList { get; set; }
+        void GetAllStockOrders();
+
+        List<IOrderItem> OrderItemsList { get; set; }
+        void GetAllOrderItems();
+
+        List<IMonthlyReport> MonthlyReportsList { get; set; }
+        void GetAllMonthlyReports();
+        Boolean createMonthlyReport(DateTime Date, int Reservations, decimal ReservationIncome, int Sales, decimal SalesIncome, int StockOrders, decimal StockExpenses);
+
+>>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
     }
 }

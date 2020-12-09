@@ -32,4 +32,12 @@ C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\bin\Debug\BusinessE
 C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
 C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.dll
 C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.pdb
+<<<<<<< HEAD
 C:\Users\jackk\source\repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
+=======
+C:\Users\Saoir\Source\Repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
+C:\Users\Saoir\Source\Repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\Users\Saoir\Source\Repos\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.pdb
+C:\Users\Saoir\Source\Repos\The-Four-Amigos\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\Users\Saoir\Source\Repos\The-Four-Amigos\BusinessEntities\bin\Debug\BusinessEntities.pdb
+>>>>>>> 231d4e430556594713998489bae15b5d0fcfc0a6
