@@ -778,7 +778,7 @@ namespace DataAccessLayer
                                                         Convert.ToDouble(dRow.ItemArray.GetValue(2).ToString()),
                                                         dRow.ItemArray.GetValue(3).ToString(),
                                                        Convert.ToDouble(dRow.ItemArray.GetValue(4).ToString()),
-                                                       dRow.ItemArray.GetValue(5).ToString());
+                                                      Convert.ToDateTime(dRow.ItemArray.GetValue(5).ToString()));
 
                     Orders.Add(orders);
                 }

@@ -17,9 +17,6 @@ namespace BloomFeildHotel
             InitializeComponent();
         }
 
-        private void Reservation_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

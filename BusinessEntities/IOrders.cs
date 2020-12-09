@@ -14,7 +14,7 @@ namespace BusinessEntities
         string Drink { get; set; }
         double DrinkPrice { get; set; }
 
-        string Timestamp { get; set; }
+        DateTime Timestamp { get; set; }
 
     }
 }

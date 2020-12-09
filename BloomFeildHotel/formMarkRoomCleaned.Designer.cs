@@ -52,11 +52,12 @@
             // lblRoomCleaningService
             // 
             this.lblRoomCleaningService.AutoSize = true;
-            this.lblRoomCleaningService.Font = new System.Drawing.Font("Opus Chords Sans Std", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoomCleaningService.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRoomCleaningService.ForeColor = System.Drawing.Color.White;
-            this.lblRoomCleaningService.Location = new System.Drawing.Point(3, 21);
+            this.lblRoomCleaningService.Location = new System.Drawing.Point(4, 32);
+            this.lblRoomCleaningService.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRoomCleaningService.Name = "lblRoomCleaningService";
-            this.lblRoomCleaningService.Size = new System.Drawing.Size(355, 47);
+            this.lblRoomCleaningService.Size = new System.Drawing.Size(582, 61);
             this.lblRoomCleaningService.TabIndex = 0;
             this.lblRoomCleaningService.Text = "Room Cleaning Service";
             // 
@@ -65,9 +66,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(94)))), ((int)(((byte)(84)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.lblRoomCleaningService);
-            this.panel1.Location = new System.Drawing.Point(2, 1);
+            this.panel1.Location = new System.Drawing.Point(3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1283, 68);
+            this.panel1.Size = new System.Drawing.Size(1924, 105);
             this.panel1.TabIndex = 13;
             // 
             // groupBoxFilter
@@ -80,9 +82,11 @@
             this.groupBoxFilter.Controls.Add(this.lblType);
             this.groupBoxFilter.Controls.Add(this.comboBoxRType);
             this.groupBoxFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxFilter.Location = new System.Drawing.Point(50, 88);
+            this.groupBoxFilter.Location = new System.Drawing.Point(75, 135);
+            this.groupBoxFilter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBoxFilter.Name = "groupBoxFilter";
-            this.groupBoxFilter.Size = new System.Drawing.Size(1077, 71);
+            this.groupBoxFilter.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxFilter.Size = new System.Drawing.Size(1616, 109);
             this.groupBoxFilter.TabIndex = 14;
             this.groupBoxFilter.TabStop = false;
             this.groupBoxFilter.Text = "Filter Rooms";
@@ -92,9 +96,10 @@
             this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(895, 13);
+            this.btnSearch.Location = new System.Drawing.Point(1342, 20);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(153, 51);
+            this.btnSearch.Size = new System.Drawing.Size(230, 78);
             this.btnSearch.TabIndex = 28;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -103,9 +108,10 @@
             // lblAvailability
             // 
             this.lblAvailability.AutoSize = true;
-            this.lblAvailability.Location = new System.Drawing.Point(605, 28);
+            this.lblAvailability.Location = new System.Drawing.Point(908, 43);
+            this.lblAvailability.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAvailability.Name = "lblAvailability";
-            this.lblAvailability.Size = new System.Drawing.Size(81, 20);
+            this.lblAvailability.Size = new System.Drawing.Size(126, 29);
             this.lblAvailability.TabIndex = 7;
             this.lblAvailability.Text = "Availability";
             // 
@@ -115,17 +121,19 @@
             this.comboBoxAvailable.Items.AddRange(new object[] {
             "Available",
             "Not Available"});
-            this.comboBoxAvailable.Location = new System.Drawing.Point(692, 25);
+            this.comboBoxAvailable.Location = new System.Drawing.Point(1038, 38);
+            this.comboBoxAvailable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBoxAvailable.Name = "comboBoxAvailable";
-            this.comboBoxAvailable.Size = new System.Drawing.Size(157, 28);
+            this.comboBoxAvailable.Size = new System.Drawing.Size(234, 37);
             this.comboBoxAvailable.TabIndex = 6;
             // 
             // lblSmokingNonSmoking
             // 
             this.lblSmokingNonSmoking.AutoSize = true;
-            this.lblSmokingNonSmoking.Location = new System.Drawing.Point(333, 28);
+            this.lblSmokingNonSmoking.Location = new System.Drawing.Point(500, 43);
+            this.lblSmokingNonSmoking.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSmokingNonSmoking.Name = "lblSmokingNonSmoking";
-            this.lblSmokingNonSmoking.Size = new System.Drawing.Size(71, 20);
+            this.lblSmokingNonSmoking.Size = new System.Drawing.Size(108, 29);
             this.lblSmokingNonSmoking.TabIndex = 5;
             this.lblSmokingNonSmoking.Text = "Smoking";
             // 
@@ -135,17 +143,19 @@
             this.comboBoxSmoking.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.comboBoxSmoking.Location = new System.Drawing.Point(410, 25);
+            this.comboBoxSmoking.Location = new System.Drawing.Point(615, 38);
+            this.comboBoxSmoking.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBoxSmoking.Name = "comboBoxSmoking";
-            this.comboBoxSmoking.Size = new System.Drawing.Size(156, 28);
+            this.comboBoxSmoking.Size = new System.Drawing.Size(232, 37);
             this.comboBoxSmoking.TabIndex = 4;
             // 
             // lblType
             // 
             this.lblType.AutoSize = true;
-            this.lblType.Location = new System.Drawing.Point(37, 28);
+            this.lblType.Location = new System.Drawing.Point(56, 43);
+            this.lblType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblType.Name = "lblType";
-            this.lblType.Size = new System.Drawing.Size(90, 20);
+            this.lblType.Size = new System.Drawing.Size(139, 29);
             this.lblType.TabIndex = 3;
             this.lblType.Text = "Room Type";
             // 
@@ -156,19 +166,21 @@
             "Single",
             "Double",
             "Twin"});
-            this.comboBoxRType.Location = new System.Drawing.Point(133, 25);
+            this.comboBoxRType.Location = new System.Drawing.Point(200, 38);
+            this.comboBoxRType.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBoxRType.Name = "comboBoxRType";
-            this.comboBoxRType.Size = new System.Drawing.Size(163, 28);
+            this.comboBoxRType.Size = new System.Drawing.Size(242, 37);
             this.comboBoxRType.TabIndex = 2;
             // 
             // listBox1
             // 
             this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 37;
-            this.listBox1.Location = new System.Drawing.Point(50, 176);
+            this.listBox1.ItemHeight = 55;
+            this.listBox1.Location = new System.Drawing.Point(75, 271);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(173, 337);
+            this.listBox1.Size = new System.Drawing.Size(258, 499);
             this.listBox1.TabIndex = 15;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.ListBox1_SelectedIndexChanged);
             // 
@@ -176,19 +188,21 @@
             // 
             this.lblLastCleanDate.AutoSize = true;
             this.lblLastCleanDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLastCleanDate.Location = new System.Drawing.Point(285, 191);
+            this.lblLastCleanDate.Location = new System.Drawing.Point(428, 294);
+            this.lblLastCleanDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLastCleanDate.Name = "lblLastCleanDate";
-            this.lblLastCleanDate.Size = new System.Drawing.Size(124, 20);
+            this.lblLastCleanDate.Size = new System.Drawing.Size(182, 29);
             this.lblLastCleanDate.TabIndex = 16;
             this.lblLastCleanDate.Text = "Last Clean Date";
             // 
             // txtLastCleanDate
             // 
             this.txtLastCleanDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastCleanDate.Location = new System.Drawing.Point(416, 191);
+            this.txtLastCleanDate.Location = new System.Drawing.Point(624, 294);
+            this.txtLastCleanDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtLastCleanDate.Name = "txtLastCleanDate";
             this.txtLastCleanDate.ReadOnly = true;
-            this.txtLastCleanDate.Size = new System.Drawing.Size(373, 26);
+            this.txtLastCleanDate.Size = new System.Drawing.Size(558, 35);
             this.txtLastCleanDate.TabIndex = 17;
             // 
             // btnBack
@@ -196,9 +210,10 @@
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(1080, 492);
+            this.btnBack.Location = new System.Drawing.Point(1620, 757);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(153, 51);
+            this.btnBack.Size = new System.Drawing.Size(230, 78);
             this.btnBack.TabIndex = 24;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -209,9 +224,10 @@
             this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(945, 305);
+            this.btnSubmit.Location = new System.Drawing.Point(1418, 469);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(153, 129);
+            this.btnSubmit.Size = new System.Drawing.Size(230, 198);
             this.btnSubmit.TabIndex = 25;
             this.btnSubmit.Text = "Mark As Cleaned And Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
@@ -220,28 +236,31 @@
             // textBoxNoteArea
             // 
             this.textBoxNoteArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNoteArea.Location = new System.Drawing.Point(290, 258);
+            this.textBoxNoteArea.Location = new System.Drawing.Point(435, 397);
+            this.textBoxNoteArea.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxNoteArea.Multiline = true;
             this.textBoxNoteArea.Name = "textBoxNoteArea";
-            this.textBoxNoteArea.Size = new System.Drawing.Size(622, 238);
+            this.textBoxNoteArea.Size = new System.Drawing.Size(931, 364);
             this.textBoxNoteArea.TabIndex = 26;
+            
             // 
             // lblLeaveANote
             // 
             this.lblLeaveANote.AutoSize = true;
             this.lblLeaveANote.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLeaveANote.Location = new System.Drawing.Point(285, 235);
+            this.lblLeaveANote.Location = new System.Drawing.Point(428, 362);
+            this.lblLeaveANote.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLeaveANote.Name = "lblLeaveANote";
-            this.lblLeaveANote.Size = new System.Drawing.Size(105, 20);
+            this.lblLeaveANote.Size = new System.Drawing.Size(157, 29);
             this.lblLeaveANote.TabIndex = 27;
             this.lblLeaveANote.Text = "Leave A Note";
             // 
             // formMarkRoomCleaned
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(1245, 555);
+            this.ClientSize = new System.Drawing.Size(1868, 854);
             this.Controls.Add(this.lblLeaveANote);
             this.Controls.Add(this.textBoxNoteArea);
             this.Controls.Add(this.btnSubmit);
@@ -252,6 +271,7 @@
             this.Controls.Add(this.groupBoxFilter);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "formMarkRoomCleaned";
             this.Text = "formMarkRoomCleaned";
             this.Load += new System.EventHandler(this.FormMarkRoomCleaned_Load);
