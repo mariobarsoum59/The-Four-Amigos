@@ -517,13 +517,13 @@ namespace BusinessLayer
             try
             {
                 
-                IMonthlyReport aMonthlyReport = MonthlyReportsHotel.GetMonthlyReports(0, Date, Reservations, ReservationIncome, Sales, SalesIncome, StockOrders, StockExpenses);
-                MonthlyReportsList.Add(aMonthlyReport);                            
+                IMonthlyReport aMonthlyReport = MonthlyReportsHotel.GetMonthlyReports(0, Date, Reservations, ReservationIncome, Sales, SalesIncome, StockOrders, StockExpenses);                          
                 DataLayer.addNewMonthlyReportToDB(aMonthlyReport);
                 return true;
             }
             catch (System.Exception excep)
             {
+                
                 return false;
             }
 
