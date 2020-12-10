@@ -41,6 +41,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblManagerMenuTag = new System.Windows.Forms.Label();
             this.btnSearchForReservation = new System.Windows.Forms.Button();
+            this.btnViewReports = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -184,6 +185,17 @@
             this.btnSearchForReservation.UseVisualStyleBackColor = true;
             this.btnSearchForReservation.Click += new System.EventHandler(this.btnSearchForReservation_Click);
             // 
+            // btnViewReports
+            // 
+            this.btnViewReports.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewReports.Location = new System.Drawing.Point(916, 282);
+            this.btnViewReports.Name = "btnViewReports";
+            this.btnViewReports.Size = new System.Drawing.Size(161, 104);
+            this.btnViewReports.TabIndex = 17;
+            this.btnViewReports.Text = "View Monthly Reports";
+            this.btnViewReports.UseVisualStyleBackColor = true;
+            this.btnViewReports.Click += new System.EventHandler(this.btnViewReports_Click);
+            // 
             // formManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,6 +203,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1277, 633);
             this.ControlBox = false;
+            this.Controls.Add(this.btnViewReports);
             this.Controls.Add(this.btnSearchForReservation);
             this.Controls.Add(this.lblManagerMenuTag);
             this.Controls.Add(this.panel1);
@@ -230,5 +243,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblManagerMenuTag;
         private System.Windows.Forms.Button btnSearchForReservation;
+        private System.Windows.Forms.Button btnViewReports;
     }
 }

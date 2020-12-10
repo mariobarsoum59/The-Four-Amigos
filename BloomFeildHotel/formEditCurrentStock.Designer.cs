@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.lxlFirstName = new System.Windows.Forms.Label();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.lblType = new System.Windows.Forms.Label();
@@ -40,7 +41,6 @@
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnCommit = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
@@ -62,6 +62,15 @@
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Search";
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(138, 116);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(409, 344);
+            this.listBox1.TabIndex = 9;
             // 
             // lxlFirstName
             // 
@@ -104,11 +113,11 @@
             // lblAddUser
             // 
             this.lblAddUser.AutoSize = true;
-            this.lblAddUser.Font = new System.Drawing.Font("Opus Chords Sans Std", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddUser.ForeColor = System.Drawing.Color.White;
             this.lblAddUser.Location = new System.Drawing.Point(3, 21);
             this.lblAddUser.Name = "lblAddUser";
-            this.lblAddUser.Size = new System.Drawing.Size(285, 47);
+            this.lblAddUser.Size = new System.Drawing.Size(299, 39);
             this.lblAddUser.TabIndex = 0;
             this.lblAddUser.Text = "Edit Current Stock";
             // 
@@ -148,15 +157,6 @@
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(138, 116);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(409, 344);
-            this.listBox1.TabIndex = 9;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -190,6 +190,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formEditCurrentStock";
             this.Text = "formEditCurrentStock";
+            this.Load += new System.EventHandler(this.formEditCurrentStock_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);

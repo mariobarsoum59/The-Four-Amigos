@@ -192,5 +192,10 @@ namespace BloomFeildHotel
         {
             Close();
         }
+
+        private void lbReservations_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

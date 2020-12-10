@@ -16,5 +16,10 @@ namespace BloomFeildHotel
         {
             InitializeComponent();
         }
+
+        private void formEditCurrentStock_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

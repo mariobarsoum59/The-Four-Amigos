@@ -104,5 +104,12 @@ namespace BloomFeildHotel
             f9.Dock = DockStyle.Fill;
             f9.Show();
         }
+
+        private void btnViewReports_Click(object sender, EventArgs e)
+        {
+            formViewMonthlyReports f10 = new formViewMonthlyReports(fc, Model);
+            f10.Dock = DockStyle.Fill;
+            f10.Show();
+        }
     }
 }
