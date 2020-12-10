@@ -91,20 +91,11 @@ namespace BloomFeildHotel
             f7.Show();
         }
 
-        private void btnCreateReport_Click(object sender, EventArgs e)
+        private void btnSearchForReservation_Click(object sender, EventArgs e)
         {
-            formCreateMonthlyReport f8 = new formCreateMonthlyReport(fc, Model);
+            formSearchReservation f8 = new formSearchReservation(fc, Model);
             f8.Dock = DockStyle.Fill;
-
             f8.Show();
-        }
-
-        private void BtnManageStockItems_Click(object sender, EventArgs e)
-        {
-            formEditCurrentStock f9 = new formEditCurrentStock(fc, Model);
-            f9.Dock = DockStyle.Fill;
-
-            f9.Show();
         }
     }
 }

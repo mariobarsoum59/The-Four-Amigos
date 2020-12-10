@@ -80,12 +80,6 @@
     <Compile Include="formCheckOut.Designer.cs">
       <DependentUpon>formCheckOut.cs</DependentUpon>
     </Compile>
-    <Compile Include="formCreateMonthlyReport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formCreateMonthlyReport.Designer.cs">
-      <DependentUpon>formCreateMonthlyReport.cs</DependentUpon>
-    </Compile>
     <Compile Include="formCurrentGuestDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -333,9 +327,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formCheckOut.resx">
       <DependentUpon>formCheckOut.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formCreateMonthlyReport.resx">
-      <DependentUpon>formCreateMonthlyReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formCurrentGuestDetails.resx">
       <DependentUpon>formCurrentGuestDetails.cs</DependentUpon>

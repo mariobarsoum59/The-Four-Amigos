@@ -14,7 +14,6 @@ namespace BusinessEntities
         private decimal reservationIncome;
         private int sales;
         private decimal salesIncome;
-        private int stockOrders;
         private decimal stockExpenses;
 
         public int ReportID
@@ -83,17 +82,6 @@ namespace BusinessEntities
                 salesIncome = value;
             }
         }
-        public int StockOrders
-        {
-            get
-            {
-                return stockOrders;
-            }
-            set
-            {
-                stockOrders = value;
-            }
-        }
         public decimal StockExpenses
         {
             get
@@ -109,7 +97,7 @@ namespace BusinessEntities
         {
             throw new System.NotImplementedException();
         }
-        public MonthlyReport(int ReportID, DateTime Date, int Reservations, decimal ReservationIncome, int Sales, decimal SalesIncome, int StockOrders, decimal StockExpenses)
+        public MonthlyReport(int ReportID, DateTime Date, int Reservations, decimal ReservationIncome, int Sales, decimal SalesIncome, decimal StockExpenses)
         {
             this.reportID = ReportID;
             this.date = Date;
@@ -117,7 +105,6 @@ namespace BusinessEntities
             this.reservationIncome = ReservationIncome;
             this.sales = Sales;
             this.salesIncome = SalesIncome;
-            this.stockOrders = StockOrders;
             this.stockExpenses = StockExpenses;
         }
     }

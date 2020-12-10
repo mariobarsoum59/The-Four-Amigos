@@ -35,10 +35,16 @@ namespace BloomFeildHotel
             Model.GetAllOrders();
             foreach (Orders order in Model.OrdersList)
             {
-
-                listBox3.Items.Add(string.Format("{0}  €{1} | {2}  €{3} | {4}", order.Food, order.FoodPrice, order.Drink, order.DrinkPrice, order.Timestamp.ToString("yyyy-MM-dd HH:mm:ss.fff")));
-
+                if (order.Completed == false)
+                {
+                    listBox3.Items.Add(string.Format("{0}  €{1} | {2}  €{3} | {4}", order.Food, order.FoodPrice, order.Drink, order.DrinkPrice, order.Timestamp.ToString("yyyy-MM-dd HH:mm:ss.fff")));
+                }
+                if (order.Completed == true)
+                {
+                    listBox1.Items.Add(string.Format("{0}  €{1} | {2}  €{3} | {4}", order.Food, order.FoodPrice, order.Drink, order.DrinkPrice, order.Timestamp.ToString("yyyy-MM-dd HH:mm:ss.fff")));
+                }
             }
+         
         }
 
         private void btnComplete_Click(object sender, EventArgs e)
@@ -46,8 +52,20 @@ namespace BloomFeildHotel
             string selectedItemText;
             selectedItemText = listBox3.SelectedItem.ToString();
             listBox1.Items.Add(selectedItemText);
-            // add the item to the ListBoxStuff settings 
-            
+
+            foreach (Orders order in Model.OrdersList)
+            {
+                if (listBox3.SelectedIndex >= 0)
+                {
+                    order.Completed = true;
+                   
+                    Model.UpdateOrderComplete(order);
+                }
+            }
+            selectedItemText = listBox3.SelectedItem.ToString();
+            listBox3.Items.Remove(selectedItemText);
+            MessageBox.Show("Order Completed");
+
         }
 
       
@@ -70,7 +88,61 @@ namespace BloomFeildHotel
         {
             string selectedItemText;
             selectedItemText = listBox1.SelectedItem.ToString();
+            listBox3.Items.Add(selectedItemText);
+
+            foreach (Orders order in Model.OrdersList)
+            {
+
+                if (listBox1.SelectedIndex >= 0)
+                {
+                    order.Completed = false;
+                    Model.UpdateOrderComplete(order);
+
+                   
+
+                }
+            }
+            selectedItemText = listBox1.SelectedItem.ToString();
             listBox1.Items.Remove(selectedItemText);
+            MessageBox.Show("Order Not Completed");
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listBox3.SelectedIndex != -1)
+            {
+                foreach (Orders order in Model.OrdersList)
+                {
+                    if (listBox3.SelectedIndex >= 0)
+                    {
+                        textBoxNoteArea.Text = order.Note;
+                       
+                    }
+                }
+
+
+
+
+            }
+        }
+
+        private void btnNote_Click(object sender, EventArgs e)
+        {
+            foreach (Orders order in Model.OrdersList)
+            {
+
+                if (listBox3.SelectedIndex >= 0)
+                {
+                    order.Note = Convert.ToString(textBoxNoteArea.Text);
+                    Model.UpdateOrderComplete(order);
+
+                }
+            }
         }
     }
 }

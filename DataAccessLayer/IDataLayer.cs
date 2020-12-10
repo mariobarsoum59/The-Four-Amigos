@@ -46,19 +46,12 @@ namespace DataAccessLayer
 
         bool updateRoomPriceInDB(BusinessEntities.IRoom room);
 
-        bool updateCurrentStockItemInDB(BusinessEntities.IStockItem stockItem);
-
         bool checkGusetInDB(BusinessEntities.IReservation reservation);
 
-
+        bool updateCompletedOrders(BusinessEntities.IOrders completed);
 
         //rebecca i1 manage waste - get ingredients
         List<IIngredients> getAllIngredients();
 
-        List<IStockItem> getAllStockItems();
-        List<IStockOrder> getAllStockOrders();
-        List<IOrderItem> getAllOrderItems();
-        List<IMonthlyReport> getAllMonthlyReports();
-        void addNewMonthlyReportToDB(IMonthlyReport aMonthlyReport);
     }
 }
