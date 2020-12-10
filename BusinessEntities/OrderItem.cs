@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessEntities
 {
-    class OrderItem : IOrderItem
+    public class OrderItem : IOrderItem
     {
         private int orderID;
         private int itemID;

@@ -320,3 +320,4 @@ C:\Users\jackk\source\repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeild
 C:\Users\jackk\source\repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.csproj.CopyComplete
 C:\Users\jackk\source\repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.exe
 C:\Users\jackk\source\repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.pdb
+C:\Users\Saoir\Source\Repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formCreateMonthlyReport.resources

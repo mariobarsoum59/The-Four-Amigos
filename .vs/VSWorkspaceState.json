@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BloomFeildHotel"
+    "\\BloomFeildHotel",
+    "\\BusinessEntities",
+    "\\BusinessLayer",
+    "\\DataAccessLayer"
   ],
-  "SelectedNode": "\\BloomFeildHotel\\formStockManager.cs",
+  "SelectedNode": "\\BloomFeildHotel\\formCreateMonthlyReport.resx",
   "PreviewInSolutionExplorer": false
 }

@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace BusinessEntities
 {
-    class StockOrder : IStockOrder
+    public class StockOrder : IStockOrder
     {
         private int orderID;
+        private decimal total;
         private DateTime date;
         private string department;
         private bool completed;
@@ -34,6 +35,17 @@ namespace BusinessEntities
             set
             {
                 date = value;
+            }
+        }
+        public decimal Total
+        {
+            get
+            {
+                return total;
+            }
+            set
+            {
+                total = value;
             }
         }
         public String Department
@@ -73,10 +85,11 @@ namespace BusinessEntities
         {
             throw new System.NotImplementedException();
         }
-        public StockOrder(int OrderID, DateTime Date, String Department, bool Completed, int CreatedBy)
+        public StockOrder(int OrderID, DateTime Date, decimal Total, String Department, bool Completed, int CreatedBy)
         {
             this.orderID = OrderID;
             this.date = Date;
+            this.total = Total;
             this.department = Department;
             this.completed = Completed;
             this.createdBy = CreatedBy;

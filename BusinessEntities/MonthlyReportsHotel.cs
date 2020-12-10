@@ -10,12 +10,12 @@ namespace BusinessEntities
     {
         private static IMonthlyReport monthlyReports = null;
 
-        public static IMonthlyReport GetMonthlyReports(int ReportID, DateTime Date, int Reservations, decimal ReservationIncome, int Sales, decimal SalesIncome, decimal StockExpenses)
+        public static IMonthlyReport GetMonthlyReports(int ReportID, DateTime Date, int Reservations, decimal ReservationIncome, int Sales, decimal SalesIncome, int StockOrders, decimal StockExpenses)
         {
             if (monthlyReports != null)
                 return monthlyReports;
             else
-                return new MonthlyReport(ReportID, Date, Reservations, ReservationIncome, Sales, SalesIncome, StockExpenses);
+                return new MonthlyReport(ReportID, Date, Reservations, ReservationIncome, Sales, SalesIncome, StockOrders, StockExpenses);
 
         }
         public static void SetMonthlyReports(IMonthlyReport aMonthlyReport)
