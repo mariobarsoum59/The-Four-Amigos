@@ -46,10 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BloomFeildHotelDataSet.cs">
+      <DependentUpon>BloomFeildHotelDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BloomFeildHotelDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BloomFeildHotelDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BloomFeildHotelDataSetRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BloomFeildHotelDataSetRes.xsd</DependentUpon>
     </Compile>
     <Compile Include="BloomFeildHotelDataSetUsers.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -471,6 +479,17 @@
     </None>
     <None Include="BloomFeildHotelDataSet.xss">
       <DependentUpon>BloomFeildHotelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BloomFeildHotelDataSetRes.xsc">
+      <DependentUpon>BloomFeildHotelDataSetRes.xsd</DependentUpon>
+    </None>
+    <None Include="BloomFeildHotelDataSetRes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BloomFeildHotelDataSetRes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BloomFeildHotelDataSetRes.xss">
+      <DependentUpon>BloomFeildHotelDataSetRes.xsd</DependentUpon>
     </None>
     <None Include="BloomFeildHotelDataSetUsers.xsc">
       <DependentUpon>BloomFeildHotelDataSetUsers.xsd</DependentUpon>

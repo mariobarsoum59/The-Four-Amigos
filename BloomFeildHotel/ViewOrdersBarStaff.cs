@@ -55,7 +55,8 @@ namespace BloomFeildHotel
 
             foreach (Orders order in Model.OrdersList)
             {
-                if (listBox3.SelectedIndex >= 0)
+                string std = string.Format("{0}  €{1} | {2}  €{3} | {4}", order.Food, order.FoodPrice, order.Drink, order.DrinkPrice, order.Timestamp.ToString("yyyy-MM-dd HH:mm:ss.fff"));
+                if (listBox3.SelectedItem.ToString() == std )
                 {
                     order.Completed = true;
                    
@@ -90,10 +91,13 @@ namespace BloomFeildHotel
             selectedItemText = listBox1.SelectedItem.ToString();
             listBox3.Items.Add(selectedItemText);
 
+            
+
             foreach (Orders order in Model.OrdersList)
             {
+                string std = string.Format("{0}  €{1} | {2}  €{3} | {4}", order.Food, order.FoodPrice, order.Drink, order.DrinkPrice, order.Timestamp.ToString("yyyy-MM-dd HH:mm:ss.fff"));
 
-                if (listBox1.SelectedIndex >= 0)
+                if (listBox1.SelectedItem.ToString() == std)
                 {
                     order.Completed = false;
                     Model.UpdateOrderComplete(order);
@@ -118,7 +122,8 @@ namespace BloomFeildHotel
             {
                 foreach (Orders order in Model.OrdersList)
                 {
-                    if (listBox3.SelectedIndex >= 0)
+                    string std = string.Format("{0}  €{1} | {2}  €{3} | {4}", order.Food, order.FoodPrice, order.Drink, order.DrinkPrice, order.Timestamp.ToString("yyyy-MM-dd HH:mm:ss.fff"));
+                    if (listBox3.SelectedItem.ToString() == std)
                     {
                         textBoxNoteArea.Text = order.Note;
                        
@@ -135,14 +140,23 @@ namespace BloomFeildHotel
         {
             foreach (Orders order in Model.OrdersList)
             {
-
-                if (listBox3.SelectedIndex >= 0)
+                string std = string.Format("{0}  €{1} | {2}  €{3} | {4}", order.Food, order.FoodPrice, order.Drink, order.DrinkPrice, order.Timestamp.ToString("yyyy-MM-dd HH:mm:ss.fff"));
+                if (listBox3.SelectedItem.ToString() == std)
                 {
                     order.Note = Convert.ToString(textBoxNoteArea.Text);
                     Model.UpdateOrderComplete(order);
 
                 }
             }
+        }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            formManageOrder form = new formManageOrder(fc, Model);
+            //form.Show();
+            form.Dock = DockStyle.Fill;
+
+            form.Show();
         }
     }
 }

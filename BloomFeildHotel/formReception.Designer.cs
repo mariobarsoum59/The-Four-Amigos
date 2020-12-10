@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnExit = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnSavedGuests = new System.Windows.Forms.Button();
             this.btnViewRoomChart = new System.Windows.Forms.Button();
             this.btnSearchForReservation = new System.Windows.Forms.Button();
             this.btnView = new System.Windows.Forms.Button();
@@ -52,16 +52,17 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
-            // button8
+            // btnSavedGuests
             // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(1112, 475);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(242, 160);
-            this.button8.TabIndex = 18;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnSavedGuests.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSavedGuests.Location = new System.Drawing.Point(1112, 475);
+            this.btnSavedGuests.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSavedGuests.Name = "btnSavedGuests";
+            this.btnSavedGuests.Size = new System.Drawing.Size(242, 160);
+            this.btnSavedGuests.TabIndex = 18;
+            this.btnSavedGuests.Text = "Saved Guests";
+            this.btnSavedGuests.UseVisualStyleBackColor = true;
+            
             // 
             // btnViewRoomChart
             // 
@@ -85,6 +86,7 @@
             this.btnSearchForReservation.TabIndex = 15;
             this.btnSearchForReservation.Text = "Search For Reservation";
             this.btnSearchForReservation.UseVisualStyleBackColor = true;
+            this.btnSearchForReservation.Click += new System.EventHandler(this.btnSearchForReservation_Click);
             // 
             // btnView
             // 
@@ -165,7 +167,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.btnSavedGuests);
             this.Controls.Add(this.btnViewRoomChart);
             this.Controls.Add(this.btnSearchForReservation);
             this.Controls.Add(this.btnView);
@@ -188,7 +190,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnSavedGuests;
         private System.Windows.Forms.Button btnViewRoomChart;
         private System.Windows.Forms.Button btnSearchForReservation;
         private System.Windows.Forms.Button btnView;
