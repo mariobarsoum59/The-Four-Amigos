@@ -1068,7 +1068,46 @@ namespace DataAccessLayer
             }
         }
 
+        public virtual bool updateCurrentStockItemInDB(IStockItem stockItem)
+        {
 
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From StockItems";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "StockItemsData");
+                DataRow findRow = ds.Tables["StockItemsData"].Rows.Find(stockItem.ItemID);
+                if (findRow != null)
+                {
+                    //findRow[0] = stockItem.ItemID;
+                    findRow[1] = stockItem.ItemName;
+                    findRow[2] = stockItem.Description;
+                    findRow[3] = stockItem.Price;
+                    findRow[4] = stockItem.Quantity;
+                    findRow[5] = stockItem.Category;
+                    findRow[6] = stockItem.Department;
+
+                }
+                da.Update(ds, "StockItemsData"); //remove row from database table
+
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
+                Application.Exit();
+            }
+            return true;
+
+
+
+
+
+        }
 
 
     }

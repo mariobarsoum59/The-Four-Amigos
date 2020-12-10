@@ -83,5 +83,6 @@ namespace BusinessLayer
         void GetAllMonthlyReports();
         Boolean createMonthlyReport(DateTime Date, int Reservations, decimal ReservationIncome, int Sales, decimal SalesIncome, int StockOrders, decimal StockExpenses);
 
+        bool UpdateCurrrentStockItem(IStockItem stockItem);
     }
 }

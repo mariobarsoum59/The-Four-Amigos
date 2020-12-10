@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessEntities;
 using BusinessLayer;
 
 namespace BloomFeildHotel
@@ -21,6 +22,7 @@ namespace BloomFeildHotel
             MdiParent = parent;
             fc = parent;
             this.Model = Model;
+            //Model.GetAllReservations();
         }
 
         private void BtnExit_Click(object sender, EventArgs e)
@@ -48,7 +50,14 @@ namespace BloomFeildHotel
 
         private void FormManager_Load(object sender, EventArgs e)
         {
+            //int numGuests = 0;
             lblManagerMenu.Text = "Hi "+Model.CurrentUser.FirstName;
+            //foreach(Reservation r in Model.ReservationsList)
+            //{
+             //   if (r.CheckIn == true)
+            //    { numGuests++; }
+            //}
+            //lblNumberOfGuests.Text = "Number of Checked in Guests: " + numGuests;
         }
 
         private void BtnCreateReservation_Click(object sender, EventArgs e)
@@ -110,6 +119,14 @@ namespace BloomFeildHotel
             formViewMonthlyReports f10 = new formViewMonthlyReports(fc, Model);
             f10.Dock = DockStyle.Fill;
             f10.Show();
+        }
+
+        private void BtnManageStockItems_Click(object sender, EventArgs e)
+        {
+            formEditCurrentStock f9 = new formEditCurrentStock(fc, Model);
+            f9.Dock = DockStyle.Fill;
+
+            f9.Show();
         }
     }
 }

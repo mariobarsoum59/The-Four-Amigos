@@ -528,5 +528,13 @@ namespace BusinessLayer
             }
 
         }
+
+        public bool UpdateCurrrentStockItem(IStockItem stockItem)
+        {
+            dataLayer.updateCurrentStockItemInDB(stockItem);
+            return true;
+        }
+
+
     }
 }
