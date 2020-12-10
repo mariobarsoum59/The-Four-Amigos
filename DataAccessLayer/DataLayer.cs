@@ -1060,6 +1060,7 @@ namespace DataAccessLayer
             }
             catch (System.Exception excep)
             {
+                MessageBox.Show(excep.Message);
                 if (con.State.ToString() == "Open")
                     con.Close();
                 Application.Exit();
