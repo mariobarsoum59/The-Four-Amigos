@@ -44,6 +44,7 @@ namespace BloomFeildHotel
             this.lblLeaveANote = new System.Windows.Forms.Label();
             this.textBoxNoteArea = new System.Windows.Forms.TextBox();
             this.btnNote = new System.Windows.Forms.Button();
+            this.btn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -169,7 +170,7 @@ namespace BloomFeildHotel
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBack.Location = new System.Drawing.Point(17, 781);
+            this.btnBack.Location = new System.Drawing.Point(17, 930);
             this.btnBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(582, 135);
@@ -183,7 +184,7 @@ namespace BloomFeildHotel
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExit.Location = new System.Drawing.Point(631, 781);
+            this.btnExit.Location = new System.Drawing.Point(631, 930);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(586, 135);
@@ -218,7 +219,7 @@ namespace BloomFeildHotel
             this.btnNote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNote.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnNote.Location = new System.Drawing.Point(631, 926);
+            this.btnNote.Location = new System.Drawing.Point(631, 781);
             this.btnNote.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnNote.Name = "btnNote";
             this.btnNote.Size = new System.Drawing.Size(586, 135);
@@ -227,12 +228,27 @@ namespace BloomFeildHotel
             this.btnNote.UseVisualStyleBackColor = false;
             this.btnNote.Click += new System.EventHandler(this.btnNote_Click);
             // 
+            // btn
+            // 
+            this.btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn.Location = new System.Drawing.Point(13, 781);
+            this.btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(586, 135);
+            this.btn.TabIndex = 54;
+            this.btn.Text = "Mange Order";
+            this.btn.UseVisualStyleBackColor = false;
+            this.btn.Click += new System.EventHandler(this.btn_Click);
+            // 
             // ViewOrdersBarStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(1868, 1079);
+            this.Controls.Add(this.btn);
             this.Controls.Add(this.btnNote);
             this.Controls.Add(this.lblLeaveANote);
             this.Controls.Add(this.textBoxNoteArea);
@@ -276,5 +292,6 @@ namespace BloomFeildHotel
         private System.Windows.Forms.Label lblLeaveANote;
         private System.Windows.Forms.TextBox textBoxNoteArea;
         private System.Windows.Forms.Button btnNote;
+        private System.Windows.Forms.Button btn;
     }
 }
