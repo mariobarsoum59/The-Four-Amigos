@@ -33,7 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.foodList = new System.Windows.Forms.ListBox();
             this.totalPrep = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.totalRemain = new System.Windows.Forms.TextBox();
             this.lblTotalPrep = new System.Windows.Forms.Label();
             this.lblTotalLeft = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
@@ -48,6 +48,8 @@
             this.mealLabel = new System.Windows.Forms.Label();
             this.priceList = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.listQuant = new System.Windows.Forms.ListBox();
+            this.lblQuant = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,12 +105,12 @@
             this.totalPrep.Size = new System.Drawing.Size(100, 26);
             this.totalPrep.TabIndex = 4;
             // 
-            // textBox2
+            // totalRemain
             // 
-            this.textBox2.Location = new System.Drawing.Point(558, 287);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
-            this.textBox2.TabIndex = 5;
+            this.totalRemain.Location = new System.Drawing.Point(558, 287);
+            this.totalRemain.Name = "totalRemain";
+            this.totalRemain.Size = new System.Drawing.Size(100, 26);
+            this.totalRemain.TabIndex = 5;
             // 
             // lblTotalPrep
             // 
@@ -201,7 +203,7 @@
             this.ingList.ItemHeight = 20;
             this.ingList.Location = new System.Drawing.Point(36, 346);
             this.ingList.Name = "ingList";
-            this.ingList.Size = new System.Drawing.Size(190, 124);
+            this.ingList.Size = new System.Drawing.Size(190, 164);
             this.ingList.TabIndex = 15;
             this.ingList.SelectedIndexChanged += new System.EventHandler(this.ingList_SelectedIndexChanged);
             // 
@@ -229,7 +231,7 @@
             this.priceList.ItemHeight = 20;
             this.priceList.Location = new System.Drawing.Point(241, 346);
             this.priceList.Name = "priceList";
-            this.priceList.Size = new System.Drawing.Size(87, 124);
+            this.priceList.Size = new System.Drawing.Size(87, 164);
             this.priceList.TabIndex = 18;
             // 
             // label3
@@ -241,12 +243,32 @@
             this.label3.TabIndex = 19;
             this.label3.Text = "Price";
             // 
+            // listQuant
+            // 
+            this.listQuant.FormattingEnabled = true;
+            this.listQuant.ItemHeight = 20;
+            this.listQuant.Location = new System.Drawing.Point(334, 346);
+            this.listQuant.Name = "listQuant";
+            this.listQuant.Size = new System.Drawing.Size(87, 164);
+            this.listQuant.TabIndex = 20;
+            // 
+            // lblQuant
+            // 
+            this.lblQuant.AutoSize = true;
+            this.lblQuant.Location = new System.Drawing.Point(350, 323);
+            this.lblQuant.Name = "lblQuant";
+            this.lblQuant.Size = new System.Drawing.Size(68, 20);
+            this.lblQuant.TabIndex = 21;
+            this.lblQuant.Text = "Quantity";
+            // 
             // formManageWaste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(946, 573);
+            this.Controls.Add(this.lblQuant);
+            this.Controls.Add(this.listQuant);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.priceList);
             this.Controls.Add(this.mealLabel);
@@ -261,7 +283,7 @@
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblTotalLeft);
             this.Controls.Add(this.lblTotalPrep);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.totalRemain);
             this.Controls.Add(this.totalPrep);
             this.Controls.Add(this.foodList);
             this.Controls.Add(this.label1);
@@ -284,7 +306,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox foodList;
         private System.Windows.Forms.TextBox totalPrep;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox totalRemain;
         private System.Windows.Forms.Label lblTotalPrep;
         private System.Windows.Forms.Label lblTotalLeft;
         private System.Windows.Forms.Button btnExit;
@@ -299,5 +321,7 @@
         private System.Windows.Forms.Label mealLabel;
         private System.Windows.Forms.ListBox priceList;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListBox listQuant;
+        private System.Windows.Forms.Label lblQuant;
     }
 }

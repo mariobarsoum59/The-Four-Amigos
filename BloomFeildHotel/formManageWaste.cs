@@ -37,68 +37,88 @@ namespace BloomFeildHotel
         }
 
         private void foodList_SelectedIndexChanged(object sender, EventArgs e)
-        { 
-            
+        {
+               
+
                 if (foodList.SelectedIndex == 0)      //if chicken curry is selected
-                {
-                 ingList.Items.Clear();
-                 priceList.Items.Clear();
+                    {
+                     ingList.Items.Clear();
+                     priceList.Items.Clear();
+                     listQuant.Items.Clear();
 
+                        //first ingredient (potato) is added to list
 
-                //first ingredient (potato) is added to list
-
-
-
-                    foreach (Ingredients ingredient in Model.IngredientsList)
-                    { 
-                        if (ingredient.ItemName == "Potatoes")
+                        foreach (Ingredients ingredient in Model.IngredientsList)
                         {
-                            string Ing1 = ingredient.ItemName;
-                            decimal price1 = Convert.ToDecimal(ingredient.Price);
-                            // string s = String.Format("{0:C}", price1);
-                            string s = price1.ToString("C2");
-                            ingList.Items.Add(Ing1);
-                            priceList.Items.Add(s);
+                            if (ingredient.ItemName == "Potatoes")
+                            {
+                                string Ing1 = ingredient.ItemName;
+                                decimal price1 = Convert.ToDecimal(ingredient.Price);
+                                // string s = String.Format("{0:C}", price1);
+                                string s = price1.ToString("C2");
+                                ingList.Items.Add(Ing1);
+                                priceList.Items.Add(s);
+                                listQuant.Items.Add(3);
+                            }
+
+                            if (ingredient.ItemName == "Chicken Breasts")
+                            {
+
+                                string Ing2 = ingredient.ItemName;
+                                decimal price2 = Convert.ToDecimal(ingredient.Price);
+                                string s = price2.ToString("C2");
+                                ingList.Items.Add(Ing2);
+                                priceList.Items.Add(s);
+                                listQuant.Items.Add(3);
+                            }
+
+                            if (ingredient.ItemName == "Curry Powder")
+                            {
+                                string Ing3 = ingredient.ItemName;
+                                decimal price3 = Convert.ToDecimal(ingredient.Price);
+                                string s = price3.ToString("C2");
+                                ingList.Items.Add(Ing3);
+                                priceList.Items.Add(s);
+                                listQuant.Items.Add(2);
+                            }
+
+                            if (ingredient.ItemName == "Garlic")
+                            {
+                                string Ing4 = ingredient.ItemName;
+                                decimal price4 = Convert.ToDecimal(ingredient.Price);
+                                string s = price4.ToString("C2");
+                                ingList.Items.Add(Ing4);
+                                priceList.Items.Add(s);
+                                listQuant.Items.Add("1/2");
+                            }
+
+                            if (ingredient.ItemName == "Chicken Stock")
+                            {
+                                string Ing5 = ingredient.ItemName;
+                                decimal price5 = Convert.ToDecimal(ingredient.Price);
+                                string s = price5.ToString("C2");
+                                ingList.Items.Add(Ing5);
+                                priceList.Items.Add(s);
+                                listQuant.Items.Add(1);
+                            }
+
                         }
 
-                        if (ingredient.ItemName == "Chicken Breasts")
+                        foreach (Meals meal in Model.MealsList)
                         {
+                            if (meal.DishID == 1)
+                            {
+                                totalPrep.Text = meal.Quantity.ToString();
+                                 foreach (Waste waste in Model.WasteList)
+                                {
+                                    meal.
+                                }
+                            }
 
-                            string Ing2 = ingredient.ItemName;
-                            decimal price2 = Convert.ToDecimal(ingredient.Price);
-                            string s = price2.ToString("C2");
-                            ingList.Items.Add(Ing2);
-                            priceList.Items.Add(s);
                         }
 
-                        if (ingredient.ItemName == "Curry Powder")
-                        {
-                            string Ing3 = ingredient.ItemName;
-                            decimal price3 = Convert.ToDecimal(ingredient.Price);
-                            string s = price3.ToString("C2");
-                            ingList.Items.Add(Ing3);
-                            priceList.Items.Add(s);
-                        }
+                        
 
-                        if (ingredient.ItemName == "Garlic")
-                        {
-                            string Ing4 = ingredient.ItemName;
-                            decimal price4 = Convert.ToDecimal(ingredient.Price);
-                            string s = price4.ToString("C2");
-                            ingList.Items.Add(Ing4);
-                            priceList.Items.Add(s);
-                        }
-
-                        if (ingredient.ItemName == "Chicken Stock")
-                        {
-                            string Ing5 = ingredient.ItemName;
-                            decimal price5 = Convert.ToDecimal(ingredient.Price);
-                            string s = price5.ToString("C2");
-                            ingList.Items.Add(Ing5);
-                            priceList.Items.Add(s);
-                        }
-
-                    }
 
                 }
 
@@ -106,6 +126,7 @@ namespace BloomFeildHotel
                 {
                     ingList.Items.Clear();
                     priceList.Items.Clear();
+                    listQuant.Items.Clear();
                     foreach (Ingredients ingredient in Model.IngredientsList)
                     {
                         if (ingredient.ItemName == "Cod Fillet")
@@ -115,6 +136,7 @@ namespace BloomFeildHotel
                             string s = price1.ToString("C2");
                             ingList.Items.Add(Ing1);
                             priceList.Items.Add(s);
+                            listQuant.Items.Add(12);
                         }
 
                         if (ingredient.ItemName == "Oil")
@@ -124,6 +146,7 @@ namespace BloomFeildHotel
                             string s = price2.ToString("C2");
                             ingList.Items.Add(Ing2);
                             priceList.Items.Add(s);
+                            listQuant.Items.Add(3);
                         }
 
 
@@ -134,6 +157,7 @@ namespace BloomFeildHotel
                             string s = price3.ToString("C2");
                             ingList.Items.Add(Ing3);
                             priceList.Items.Add(s);
+                            listQuant.Items.Add(2);
                         }
 
                         if (ingredient.ItemName == "Salt")
@@ -143,9 +167,22 @@ namespace BloomFeildHotel
                             string s = price4.ToString("C2");
                             ingList.Items.Add(Ing4);
                             priceList.Items.Add(s);
+                            listQuant.Items.Add("1/2");
                         }
 
                     }
+
+                    foreach (Meals meal in Model.MealsList)
+                    {
+
+                        if (meal.DishID == 2)
+                        {
+                        totalPrep.Text = meal.Quantity.ToString();
+
+                        }
+                        
+                    }
+
 
                 }
 
@@ -153,6 +190,7 @@ namespace BloomFeildHotel
                 {
                     ingList.Items.Clear();
                     priceList.Items.Clear();
+                    listQuant.Items.Clear();
                     foreach (Ingredients ingredient in Model.IngredientsList)
                     { 
                         if (ingredient.ItemName == "Lettuce")
@@ -162,6 +200,7 @@ namespace BloomFeildHotel
                             string s = price1.ToString("C2");
                             ingList.Items.Add(Ing1);
                             priceList.Items.Add(s);
+                            listQuant.Items.Add(1);
                         }
 
                         if (ingredient.ItemName == "Tomatoes")
@@ -171,6 +210,7 @@ namespace BloomFeildHotel
                             string s = price2.ToString("C2");
                             ingList.Items.Add(Ing2);
                             priceList.Items.Add(s);
+                            listQuant.Items.Add(2);
                         }
 
                         if (ingredient.ItemName == "Avocado")
@@ -180,6 +220,7 @@ namespace BloomFeildHotel
                             string s = price3.ToString("C2");
                             ingList.Items.Add(Ing3);
                             priceList.Items.Add(s);
+                            listQuant.Items.Add(1);
                         }
 
                         if (ingredient.ItemName == "Garlic")
@@ -189,6 +230,7 @@ namespace BloomFeildHotel
                             string s = price4.ToString("C2");
                             ingList.Items.Add(Ing4);
                             priceList.Items.Add(s);
+                            listQuant.Items.Add(1);
                         }
 
                         if (ingredient.ItemName == "Cucumber")
@@ -198,6 +240,7 @@ namespace BloomFeildHotel
                             string s = price5.ToString("C2");
                             ingList.Items.Add(Ing5);
                             priceList.Items.Add(s);
+                            listQuant.Items.Add(1);
                         }
 
                         if (ingredient.ItemName == "Vinegar")
@@ -207,6 +250,7 @@ namespace BloomFeildHotel
                             string s = price6.ToString("C2");
                             ingList.Items.Add(Ing6);
                             priceList.Items.Add(s);
+                            listQuant.Items.Add(1);
                         }
 
                         if (ingredient.ItemName == "Potato")
@@ -216,6 +260,7 @@ namespace BloomFeildHotel
                             string s = price7.ToString("C2");
                             ingList.Items.Add(Ing7);
                             priceList.Items.Add(s);
+                            listQuant.Items.Add(2);
                         }
 
                         if (ingredient.ItemName == "Chicken Stock")
@@ -225,6 +270,7 @@ namespace BloomFeildHotel
                             string s = price8.ToString("C2");
                             ingList.Items.Add(Ing8);
                             priceList.Items.Add(s);
+                            listQuant.Items.Add(1);
                         }
 
                         if (ingredient.ItemName == "Onions")
@@ -234,12 +280,21 @@ namespace BloomFeildHotel
                             string s = price9.ToString("C2");
                             ingList.Items.Add(Ing9);
                             priceList.Items.Add(s);
+                            listQuant.Items.Add(1);
                         }
                     }
 
+                    foreach (Meals meal in Model.MealsList)
+                    {
+                        if (meal.DishID == 3)
+                        {
+                            totalPrep.Text = meal.Quantity.ToString();
+                        }
+
+                    }
 
 
-                }
+                }   
 
 
 
@@ -253,6 +308,8 @@ namespace BloomFeildHotel
         private void formManageWaste_Load(object sender, EventArgs e)
         {
             Model.GetAllIngredients();
+            Model.GetAllMeals();
+            Model.GetAllWaste();
         }
     }
 }

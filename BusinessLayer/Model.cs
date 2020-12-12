@@ -29,6 +29,8 @@ namespace BusinessLayer
         private List<IBarItems> baritemslist;
         private List<IOrders> orderslist;
         private List<IIngredients> ingredientsList;
+        private List<IMeals> mealsList;
+        private List<IWaste> wasteList;
         private List<IStockItem> stockItemsList;
         private List<IStockOrder> stockOrdersList;
         private List<IOrderItem> orderItemsList;
@@ -174,6 +176,30 @@ namespace BusinessLayer
             set
             {
                 ingredientsList = value;
+            }
+        }
+
+        public List<IMeals> MealsList
+        {
+            get
+            {
+                return mealsList;
+            }
+            set
+            {
+                mealsList = value;
+            }
+        }
+
+        public List<IWaste> WasteList
+        {
+            get
+            {
+                return wasteList;
+            }
+            set
+            {
+                wasteList = value;
             }
         }
         public List<IStockItem> StockItemsList
@@ -489,13 +515,24 @@ namespace BusinessLayer
         }
 
 
-        //Rebecca i1 manage waste get ingredients
+        //-------------------Rebecca i1 manage waste ---------------------------------------------- 
 
         public void GetAllIngredients()
         {
            IngredientsList = dataLayer.getAllIngredients();
         }
 
+        public void GetAllMeals()
+        {
+            MealsList = dataLayer.getAllMealsDB();
+        }
+
+        public void GetAllWaste()
+        {
+            WasteList = dataLayer.getAllWasteDB();
+        }
+
+        //-----------------------------------------------------------------------------------------
         public void GetAllStockItems()
         {
             StockItemsList = dataLayer.getAllStockItems();

@@ -64,9 +64,18 @@ namespace BusinessLayer
         List<IOrders> OrdersList { get; set; }
         void GetAllOrders();
 
-        //Rebecca i1 manage waste - get ingredients
+        //----------------------------Rebecca i1 manage waste -----------------------------------------------------------
         List<IIngredients> IngredientsList { get; set; }
         void GetAllIngredients();
+
+        List<IMeals> MealsList { get; set; }
+        void GetAllMeals();
+
+        List<IWaste> WasteList { get; set; }
+        void GetAllWaste();
+
+
+        //-------------------------------------------------------------------------------------------------------------------------
 
         bool UpdateOrderComplete(IOrders completed);
 

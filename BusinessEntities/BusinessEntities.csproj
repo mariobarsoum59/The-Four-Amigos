@@ -48,6 +48,7 @@
     <Compile Include="IBarItems.cs" />
     <Compile Include="IGuest.cs" />
     <Compile Include="IIngredients.cs" />
+    <Compile Include="IMeals.cs" />
     <Compile Include="IMonthlyReport.cs" />
     <Compile Include="Ingredients.cs" />
     <Compile Include="IngredientsHotel.cs" />
@@ -58,6 +59,9 @@
     <Compile Include="IRoomCleaningRecord.cs" />
     <Compile Include="IStockItem.cs" />
     <Compile Include="IStockOrder.cs" />
+    <Compile Include="IWaste.cs" />
+    <Compile Include="Meals.cs" />
+    <Compile Include="MealsHotel.cs" />
     <Compile Include="MonthlyReport.cs" />
     <Compile Include="MonthlyReportsHotel.cs" />
     <Compile Include="OrderItem.cs" />
@@ -78,6 +82,8 @@
     <Compile Include="IUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserHotel.cs" />
+    <Compile Include="Waste.cs" />
+    <Compile Include="WasteHotel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

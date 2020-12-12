@@ -50,8 +50,14 @@ namespace DataAccessLayer
 
         bool updateCompletedOrders(BusinessEntities.IOrders completed);
 
-        //rebecca i1 manage waste - get ingredients
+
+        //-------------------------- rebecca i1 manage waste -----------------------------------
         List<IIngredients> getAllIngredients();
+
+        List<IMeals> getAllMealsDB();
+
+        List<IWaste> getAllWasteDB();
+        //--------------------------------------------------------------------------------------
 
         List<IStockItem> getAllStockItems();
         List<IStockOrder> getAllStockOrders();

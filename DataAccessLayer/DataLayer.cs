@@ -796,7 +796,7 @@ namespace DataAccessLayer
             return Orders;
         }
 
-
+        //------------------------------rebecca i1 manage waste-----------------------------------------------
         public virtual List<IIngredients> getAllIngredients()
         {
             List<IIngredients> Ingredients = new List<IIngredients>();
@@ -834,6 +834,84 @@ namespace DataAccessLayer
 
 
         }
+
+
+        public virtual List<IMeals> getAllMealsDB()
+        {
+            List<IMeals> Meals = new List<IMeals>();
+            
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Meals";
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "MealData");
+                int allMealData = ds.Tables["MealData"].Rows.Count;
+                for (int i = 0; i < allMealData; i++)
+                {
+                    DataRow dRow = ds.Tables["MealData"].Rows[i];
+                    IMeals meals = MealsHotel.GetMeals(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
+                                                                           dRow.ItemArray.GetValue(1).ToString(),
+                                                           Convert.ToDouble(dRow.ItemArray.GetValue(2).ToString()),
+                                                           Convert.ToInt16(dRow.ItemArray.GetValue(3).ToString()));
+
+
+                    Meals.Add(meals);
+                }
+            }
+            catch (System.Exception excep)
+            { 
+
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+            }
+            return Meals;
+
+        }
+
+
+        public virtual List<IWaste> getAllWasteDB()
+        {
+            List<IWaste> Waste = new List<IWaste>();
+
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Waste";
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "WasteData");
+                int allWasteData = ds.Tables["WasteData"].Rows.Count;
+
+                for (int i = 0; i < allWasteData; i++)
+                {
+                    DataRow dRow = ds.Tables["WasteData"].Rows[i];
+                    IWaste waste = WasteHotel.GetWaste(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
+                                                                       dRow.ItemArray.GetValue(1).ToString(),
+                                                        Convert.ToInt16(dRow.ItemArray.GetValue(2).ToString()),
+                                                        Convert.ToDouble(dRow.ItemArray.GetValue(3).ToString()),
+                                                        Convert.ToDateTime(dRow.ItemArray.GetValue(4).ToString()));
+
+                    Waste.Add(waste);
+                }
+            }
+            catch (System.Exception excep)
+            {
+
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+            }
+            return Waste;
+
+        }
+
+        //---------------------------------------------------------------------------------------------------------------------------------
+
 
         public virtual bool updateCompletedOrders(IOrders completed)
         {
