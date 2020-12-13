@@ -41,12 +41,18 @@ namespace BloomFeildHotel
                
 
                 if (foodList.SelectedIndex == 0)      //if chicken curry is selected
-                    {
+                {
                      ingList.Items.Clear();
                      priceList.Items.Clear();
                      listQuant.Items.Clear();
+                     totalPrep.Text = string.Empty;
+                     totalRemain.Text = string.Empty;
+                     txtCosttoPrep.Text = string.Empty;
+                     txtTotalPrep.Text = string.Empty;
+                     txtMoneyWaste.Text = string.Empty;
+                     List<double> total = new List<double>();
 
-                        //first ingredient (potato) is added to list
+                    //first ingredient (potato) is added to list
 
                         foreach (Ingredients ingredient in Model.IngredientsList)
                         {
@@ -59,6 +65,8 @@ namespace BloomFeildHotel
                                 ingList.Items.Add(Ing1);
                                 priceList.Items.Add(s);
                                 listQuant.Items.Add(3);
+                                total.Add(ingredient.Price * 3);
+                             
                             }
 
                             if (ingredient.ItemName == "Chicken Breasts")
@@ -70,6 +78,8 @@ namespace BloomFeildHotel
                                 ingList.Items.Add(Ing2);
                                 priceList.Items.Add(s);
                                 listQuant.Items.Add(3);
+                                total.Add(ingredient.Price * 3);
+
                             }
 
                             if (ingredient.ItemName == "Curry Powder")
@@ -80,6 +90,8 @@ namespace BloomFeildHotel
                                 ingList.Items.Add(Ing3);
                                 priceList.Items.Add(s);
                                 listQuant.Items.Add(2);
+                                total.Add(ingredient.Price * 2);
+                               
                             }
 
                             if (ingredient.ItemName == "Garlic")
@@ -89,7 +101,9 @@ namespace BloomFeildHotel
                                 string s = price4.ToString("C2");
                                 ingList.Items.Add(Ing4);
                                 priceList.Items.Add(s);
-                                listQuant.Items.Add("1/2");
+                                listQuant.Items.Add("1");
+                                total.Add(ingredient.Price);
+                                
                             }
 
                             if (ingredient.ItemName == "Chicken Stock")
@@ -100,21 +114,50 @@ namespace BloomFeildHotel
                                 ingList.Items.Add(Ing5);
                                 priceList.Items.Add(s);
                                 listQuant.Items.Add(1);
+                                total.Add(ingredient.Price);
+
                             }
+                            
 
                         }
+                        
+
 
                         foreach (Meals meal in Model.MealsList)
                         {
                             if (meal.DishID == 1)
                             {
                                 totalPrep.Text = meal.Quantity.ToString();
-                                 foreach (Waste waste in Model.WasteList)
+                                double totalPerAll = total.Sum();
+                                double totalPerMeal = totalPerAll / meal.Quantity;
+                                txtCosttoPrep.Text = totalPerMeal.ToString("C2");
+                                txtTotalPrep.Text = totalPerAll.ToString("C2");
+
+                                foreach (Waste waste in Model.WasteList)
                                 {
-                                    meal.
+                                    if (waste.DishID == 1)
+                                    {
+                                        double lossFromWaste = 0;
+                                        lossFromWaste = totalPerMeal * waste.NumWasted;
+                                        txtMoneyWaste.Text = lossFromWaste.ToString("C2");
+
+
+                                    }
+
                                 }
+
                             }
 
+                        }
+
+                        foreach(Waste waste in Model.WasteList)
+                        {
+                            if(waste.DishID ==1)
+                            {
+                            totalRemain.Text = waste.NumWasted.ToString();
+                                
+                            //txtMoneyWaste.Text = 
+                            }
                         }
 
                         
@@ -127,6 +170,13 @@ namespace BloomFeildHotel
                     ingList.Items.Clear();
                     priceList.Items.Clear();
                     listQuant.Items.Clear();
+                    totalPrep.Text = string.Empty;
+                    totalRemain.Text = string.Empty;
+                    txtCosttoPrep.Text = string.Empty;
+                    txtTotalPrep.Text = string.Empty;
+                    txtMoneyWaste.Text = string.Empty;
+                    List<double> total = new List<double>();
+
                     foreach (Ingredients ingredient in Model.IngredientsList)
                     {
                         if (ingredient.ItemName == "Cod Fillet")
@@ -137,6 +187,7 @@ namespace BloomFeildHotel
                             ingList.Items.Add(Ing1);
                             priceList.Items.Add(s);
                             listQuant.Items.Add(12);
+                            total.Add(ingredient.Price * 12);
                         }
 
                         if (ingredient.ItemName == "Oil")
@@ -147,6 +198,7 @@ namespace BloomFeildHotel
                             ingList.Items.Add(Ing2);
                             priceList.Items.Add(s);
                             listQuant.Items.Add(3);
+                            total.Add(ingredient.Price * 3);
                         }
 
 
@@ -158,6 +210,7 @@ namespace BloomFeildHotel
                             ingList.Items.Add(Ing3);
                             priceList.Items.Add(s);
                             listQuant.Items.Add(2);
+                            total.Add(ingredient.Price * 2);
                         }
 
                         if (ingredient.ItemName == "Salt")
@@ -168,19 +221,47 @@ namespace BloomFeildHotel
                             ingList.Items.Add(Ing4);
                             priceList.Items.Add(s);
                             listQuant.Items.Add("1/2");
+                            total.Add(ingredient.Price * 0.5);
                         }
 
                     }
 
+
                     foreach (Meals meal in Model.MealsList)
                     {
-
                         if (meal.DishID == 2)
                         {
-                        totalPrep.Text = meal.Quantity.ToString();
+                            totalPrep.Text = meal.Quantity.ToString();
+                            double totalPerAll = total.Sum();
+                            double totalPerMeal = totalPerAll / meal.Quantity;
+                            txtCosttoPrep.Text = totalPerMeal.ToString("C2");
+                            txtTotalPrep.Text = totalPerAll.ToString("C2");
+
+                            foreach (Waste waste in Model.WasteList)
+                            {
+                                if (waste.DishID == 2)
+                                {
+                                    double lossFromWaste = 0;
+                                    lossFromWaste = totalPerMeal * waste.NumWasted;
+                                    txtMoneyWaste.Text = lossFromWaste.ToString("C2");
+
+
+                                }
+
+                            }
 
                         }
-                        
+
+                    }
+
+                    foreach (Waste waste in Model.WasteList)
+                    {
+                        if (waste.DishID == 2)
+                        {
+                            totalRemain.Text = waste.NumWasted.ToString();
+
+                            //txtMoneyWaste.Text = 
+                        }
                     }
 
 
@@ -191,6 +272,13 @@ namespace BloomFeildHotel
                     ingList.Items.Clear();
                     priceList.Items.Clear();
                     listQuant.Items.Clear();
+                    totalPrep.Text = string.Empty;
+                    totalRemain.Text = string.Empty;
+                    txtCosttoPrep.Text = string.Empty;
+                    txtTotalPrep.Text = string.Empty;
+                    txtMoneyWaste.Text = string.Empty;
+                    List<double> total = new List<double>();
+
                     foreach (Ingredients ingredient in Model.IngredientsList)
                     { 
                         if (ingredient.ItemName == "Lettuce")
@@ -201,6 +289,7 @@ namespace BloomFeildHotel
                             ingList.Items.Add(Ing1);
                             priceList.Items.Add(s);
                             listQuant.Items.Add(1);
+                            total.Add(ingredient.Price);
                         }
 
                         if (ingredient.ItemName == "Tomatoes")
@@ -211,6 +300,7 @@ namespace BloomFeildHotel
                             ingList.Items.Add(Ing2);
                             priceList.Items.Add(s);
                             listQuant.Items.Add(2);
+                            total.Add(ingredient.Price * 2);
                         }
 
                         if (ingredient.ItemName == "Avocado")
@@ -221,6 +311,7 @@ namespace BloomFeildHotel
                             ingList.Items.Add(Ing3);
                             priceList.Items.Add(s);
                             listQuant.Items.Add(1);
+                            total.Add(ingredient.Price);
                         }
 
                         if (ingredient.ItemName == "Garlic")
@@ -231,6 +322,7 @@ namespace BloomFeildHotel
                             ingList.Items.Add(Ing4);
                             priceList.Items.Add(s);
                             listQuant.Items.Add(1);
+                            total.Add(ingredient.Price);
                         }
 
                         if (ingredient.ItemName == "Cucumber")
@@ -241,6 +333,7 @@ namespace BloomFeildHotel
                             ingList.Items.Add(Ing5);
                             priceList.Items.Add(s);
                             listQuant.Items.Add(1);
+                            total.Add(ingredient.Price);
                         }
 
                         if (ingredient.ItemName == "Vinegar")
@@ -251,6 +344,7 @@ namespace BloomFeildHotel
                             ingList.Items.Add(Ing6);
                             priceList.Items.Add(s);
                             listQuant.Items.Add(1);
+                            total.Add(ingredient.Price);
                         }
 
                         if (ingredient.ItemName == "Potato")
@@ -261,6 +355,7 @@ namespace BloomFeildHotel
                             ingList.Items.Add(Ing7);
                             priceList.Items.Add(s);
                             listQuant.Items.Add(2);
+                            total.Add(ingredient.Price * 2);
                         }
 
                         if (ingredient.ItemName == "Chicken Stock")
@@ -271,6 +366,7 @@ namespace BloomFeildHotel
                             ingList.Items.Add(Ing8);
                             priceList.Items.Add(s);
                             listQuant.Items.Add(1);
+                            total.Add(ingredient.Price);
                         }
 
                         if (ingredient.ItemName == "Onions")
@@ -281,6 +377,7 @@ namespace BloomFeildHotel
                             ingList.Items.Add(Ing9);
                             priceList.Items.Add(s);
                             listQuant.Items.Add(1);
+                            total.Add(ingredient.Price);
                         }
                     }
 
@@ -289,8 +386,36 @@ namespace BloomFeildHotel
                         if (meal.DishID == 3)
                         {
                             totalPrep.Text = meal.Quantity.ToString();
+                            double totalPerAll = total.Sum();
+                            double totalPerMeal = totalPerAll / meal.Quantity;
+                            txtCosttoPrep.Text = totalPerMeal.ToString("C2");
+                            txtTotalPrep.Text = totalPerAll.ToString("C2");
+
+                            foreach (Waste waste in Model.WasteList)
+                            {
+                                if (waste.DishID == 3)
+                                {
+                                    double lossFromWaste = 0;
+                                    lossFromWaste = totalPerMeal * waste.NumWasted;
+                                    txtMoneyWaste.Text = lossFromWaste.ToString("C2");
+
+
+                                }
+
+                            }
+
                         }
 
+                    }
+
+                    foreach (Waste waste in Model.WasteList)
+                    {
+                        if (waste.DishID == 3)
+                        {
+                            totalRemain.Text = waste.NumWasted.ToString();
+
+                            //txtMoneyWaste.Text = 
+                        }
                     }
 
 

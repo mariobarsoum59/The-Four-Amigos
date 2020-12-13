@@ -50,6 +50,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.listQuant = new System.Windows.Forms.ListBox();
             this.lblQuant = new System.Windows.Forms.Label();
+            this.btnUpdateWaste = new System.Windows.Forms.Button();
+            this.btnEdit1 = new System.Windows.Forms.Button();
+            this.btnEdit2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,7 +62,7 @@
             this.panel1.Controls.Add(this.lblViewWaste);
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(948, 85);
+            this.panel1.Size = new System.Drawing.Size(957, 85);
             this.panel1.TabIndex = 0;
             // 
             // lblViewWaste
@@ -100,14 +103,14 @@
             // 
             // totalPrep
             // 
-            this.totalPrep.Location = new System.Drawing.Point(558, 204);
+            this.totalPrep.Location = new System.Drawing.Point(459, 204);
             this.totalPrep.Name = "totalPrep";
             this.totalPrep.Size = new System.Drawing.Size(100, 26);
             this.totalPrep.TabIndex = 4;
             // 
             // totalRemain
             // 
-            this.totalRemain.Location = new System.Drawing.Point(558, 287);
+            this.totalRemain.Location = new System.Drawing.Point(459, 288);
             this.totalRemain.Name = "totalRemain";
             this.totalRemain.Size = new System.Drawing.Size(100, 26);
             this.totalRemain.TabIndex = 5;
@@ -116,7 +119,7 @@
             // 
             this.lblTotalPrep.AutoSize = true;
             this.lblTotalPrep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalPrep.Location = new System.Drawing.Point(544, 179);
+            this.lblTotalPrep.Location = new System.Drawing.Point(487, 179);
             this.lblTotalPrep.Name = "lblTotalPrep";
             this.lblTotalPrep.Size = new System.Drawing.Size(130, 22);
             this.lblTotalPrep.TabIndex = 6;
@@ -127,7 +130,7 @@
             // 
             this.lblTotalLeft.AutoSize = true;
             this.lblTotalLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalLeft.Location = new System.Drawing.Point(533, 262);
+            this.lblTotalLeft.Location = new System.Drawing.Point(476, 263);
             this.lblTotalLeft.Name = "lblTotalLeft";
             this.lblTotalLeft.Size = new System.Drawing.Size(141, 22);
             this.lblTotalLeft.TabIndex = 7;
@@ -138,7 +141,7 @@
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExit.Location = new System.Drawing.Point(537, 463);
+            this.btnExit.Location = new System.Drawing.Point(495, 461);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(112, 49);
             this.btnExit.TabIndex = 8;
@@ -148,7 +151,7 @@
             // 
             // txtCosttoPrep
             // 
-            this.txtCosttoPrep.Location = new System.Drawing.Point(775, 204);
+            this.txtCosttoPrep.Location = new System.Drawing.Point(735, 204);
             this.txtCosttoPrep.Name = "txtCosttoPrep";
             this.txtCosttoPrep.Size = new System.Drawing.Size(87, 26);
             this.txtCosttoPrep.TabIndex = 9;
@@ -157,7 +160,7 @@
             // 
             this.lblCosttoPrep.AutoSize = true;
             this.lblCosttoPrep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCosttoPrep.Location = new System.Drawing.Point(740, 179);
+            this.lblCosttoPrep.Location = new System.Drawing.Point(696, 179);
             this.lblCosttoPrep.Name = "lblCosttoPrep";
             this.lblCosttoPrep.Size = new System.Drawing.Size(166, 22);
             this.lblCosttoPrep.TabIndex = 10;
@@ -165,7 +168,7 @@
             // 
             // txtMoneyWaste
             // 
-            this.txtMoneyWaste.Location = new System.Drawing.Point(775, 364);
+            this.txtMoneyWaste.Location = new System.Drawing.Point(735, 364);
             this.txtMoneyWaste.Name = "txtMoneyWaste";
             this.txtMoneyWaste.Size = new System.Drawing.Size(87, 26);
             this.txtMoneyWaste.TabIndex = 11;
@@ -174,7 +177,7 @@
             // 
             this.lblMoneyWaste.AutoSize = true;
             this.lblMoneyWaste.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMoneyWaste.Location = new System.Drawing.Point(722, 339);
+            this.lblMoneyWaste.Location = new System.Drawing.Point(676, 339);
             this.lblMoneyWaste.Name = "lblMoneyWaste";
             this.lblMoneyWaste.Size = new System.Drawing.Size(196, 22);
             this.lblMoneyWaste.TabIndex = 12;
@@ -184,7 +187,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(740, 262);
+            this.label2.Location = new System.Drawing.Point(707, 262);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 22);
             this.label2.TabIndex = 13;
@@ -192,7 +195,7 @@
             // 
             // txtTotalPrep
             // 
-            this.txtTotalPrep.Location = new System.Drawing.Point(775, 287);
+            this.txtTotalPrep.Location = new System.Drawing.Point(735, 287);
             this.txtTotalPrep.Name = "txtTotalPrep";
             this.txtTotalPrep.Size = new System.Drawing.Size(87, 26);
             this.txtTotalPrep.TabIndex = 14;
@@ -261,12 +264,51 @@
             this.lblQuant.TabIndex = 21;
             this.lblQuant.Text = "Quantity";
             // 
+            // btnUpdateWaste
+            // 
+            this.btnUpdateWaste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
+            this.btnUpdateWaste.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateWaste.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnUpdateWaste.Location = new System.Drawing.Point(662, 461);
+            this.btnUpdateWaste.Name = "btnUpdateWaste";
+            this.btnUpdateWaste.Size = new System.Drawing.Size(160, 49);
+            this.btnUpdateWaste.TabIndex = 22;
+            this.btnUpdateWaste.Text = "Update Waste";
+            this.btnUpdateWaste.UseVisualStyleBackColor = false;
+            // 
+            // btnEdit1
+            // 
+            this.btnEdit1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
+            this.btnEdit1.Font = new System.Drawing.Font("Mongolian Baiti", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEdit1.Location = new System.Drawing.Point(565, 204);
+            this.btnEdit1.Name = "btnEdit1";
+            this.btnEdit1.Size = new System.Drawing.Size(74, 26);
+            this.btnEdit1.TabIndex = 23;
+            this.btnEdit1.Text = "Edit";
+            this.btnEdit1.UseVisualStyleBackColor = false;
+            // 
+            // btnEdit2
+            // 
+            this.btnEdit2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
+            this.btnEdit2.Font = new System.Drawing.Font("Mongolian Baiti", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEdit2.Location = new System.Drawing.Point(565, 288);
+            this.btnEdit2.Name = "btnEdit2";
+            this.btnEdit2.Size = new System.Drawing.Size(74, 26);
+            this.btnEdit2.TabIndex = 24;
+            this.btnEdit2.Text = "Edit";
+            this.btnEdit2.UseVisualStyleBackColor = false;
+            // 
             // formManageWaste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(946, 573);
+            this.ClientSize = new System.Drawing.Size(960, 573);
+            this.Controls.Add(this.btnEdit2);
+            this.Controls.Add(this.btnEdit1);
+            this.Controls.Add(this.btnUpdateWaste);
             this.Controls.Add(this.lblQuant);
             this.Controls.Add(this.listQuant);
             this.Controls.Add(this.label3);
@@ -323,5 +365,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListBox listQuant;
         private System.Windows.Forms.Label lblQuant;
+        private System.Windows.Forms.Button btnUpdateWaste;
+        private System.Windows.Forms.Button btnEdit1;
+        private System.Windows.Forms.Button btnEdit2;
     }
 }
