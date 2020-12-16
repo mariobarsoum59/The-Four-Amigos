@@ -51,12 +51,14 @@ namespace DataAccessLayer
         bool updateCompletedOrders(BusinessEntities.IOrders completed);
 
 
-        //-------------------------- rebecca i1 manage waste -----------------------------------
+        //-------------------------- rebecca ----------------------------------------------------
         List<IIngredients> getAllIngredients();
 
         List<IMeals> getAllMealsDB();
 
         List<IWaste> getAllWasteDB();
+
+        bool changeOrderStatus(BusinessEntities.IOrders status);
         //--------------------------------------------------------------------------------------
 
         List<IStockItem> getAllStockItems();

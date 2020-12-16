@@ -515,7 +515,7 @@ namespace BusinessLayer
         }
 
 
-        //-------------------Rebecca i1 manage waste ---------------------------------------------- 
+        //-------------------Rebecca ---------------------------------------------- 
 
         public void GetAllIngredients()
         {
@@ -531,6 +531,14 @@ namespace BusinessLayer
         {
             WasteList = dataLayer.getAllWasteDB();
         }
+
+        public bool ChangeOrderStatus(IOrders status)
+        {
+            DataLayer.changeOrderStatus(status);
+            return true;
+        }
+
+
 
         //-----------------------------------------------------------------------------------------
         public void GetAllStockItems()

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.gbOrder = new System.Windows.Forms.GroupBox();
+            this.cbOrderStat = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rbNo = new System.Windows.Forms.RadioButton();
             this.rbYes = new System.Windows.Forms.RadioButton();
@@ -45,7 +46,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lbOrderItems = new System.Windows.Forms.ListBox();
             this.tbRoomType = new System.Windows.Forms.TextBox();
-            this.tbStatus = new System.Windows.Forms.TextBox();
             this.tbOrderID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,6 +55,7 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.gbOrder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bdAddItem.SuspendLayout();
@@ -64,6 +65,7 @@
             // 
             // gbOrder
             // 
+            this.gbOrder.Controls.Add(this.cbOrderStat);
             this.gbOrder.Controls.Add(this.pictureBox1);
             this.gbOrder.Controls.Add(this.rbNo);
             this.gbOrder.Controls.Add(this.rbYes);
@@ -75,25 +77,36 @@
             this.gbOrder.Controls.Add(this.label5);
             this.gbOrder.Controls.Add(this.lbOrderItems);
             this.gbOrder.Controls.Add(this.tbRoomType);
-            this.gbOrder.Controls.Add(this.tbStatus);
             this.gbOrder.Controls.Add(this.tbOrderID);
             this.gbOrder.Controls.Add(this.label2);
             this.gbOrder.Controls.Add(this.label3);
             this.gbOrder.Controls.Add(this.label4);
             this.gbOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbOrder.Location = new System.Drawing.Point(46, 237);
+            this.gbOrder.Location = new System.Drawing.Point(48, 145);
             this.gbOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbOrder.Name = "gbOrder";
             this.gbOrder.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gbOrder.Size = new System.Drawing.Size(880, 763);
+            this.gbOrder.Size = new System.Drawing.Size(882, 609);
             this.gbOrder.TabIndex = 15;
             this.gbOrder.TabStop = false;
             this.gbOrder.Text = "Order Details";
             // 
+            // cbOrderStat
+            // 
+            this.cbOrderStat.FormattingEnabled = true;
+            this.cbOrderStat.Items.AddRange(new object[] {
+            "In Progress",
+            "Complete"});
+            this.cbOrderStat.Location = new System.Drawing.Point(194, 115);
+            this.cbOrderStat.Name = "cbOrderStat";
+            this.cbOrderStat.Size = new System.Drawing.Size(230, 33);
+            this.cbOrderStat.TabIndex = 38;
+            this.cbOrderStat.SelectedIndexChanged += new System.EventHandler(this.cbOrderStat_SelectedIndexChanged);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::BloomFeildHotel.Properties.Resources.diet;
-            this.pictureBox1.Location = new System.Drawing.Point(574, 471);
+            this.pictureBox1.Location = new System.Drawing.Point(554, 357);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(198, 206);
@@ -135,10 +148,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(492, 328);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button1.Location = new System.Drawing.Point(492, 302);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 63);
+            this.button1.Size = new System.Drawing.Size(130, 45);
             this.button1.TabIndex = 33;
             this.button1.Text = "Remove Item";
             this.button1.UseVisualStyleBackColor = true;
@@ -147,10 +160,10 @@
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(680, 328);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnClear.Location = new System.Drawing.Point(680, 302);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(6);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(180, 63);
+            this.btnClear.Size = new System.Drawing.Size(153, 43);
             this.btnClear.TabIndex = 32;
             this.btnClear.Text = "Clear Order";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -174,7 +187,7 @@
             // tbNewName
             // 
             this.tbNewName.Location = new System.Drawing.Point(136, 34);
-            this.tbNewName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbNewName.Margin = new System.Windows.Forms.Padding(6);
             this.tbNewName.Name = "tbNewName";
             this.tbNewName.Size = new System.Drawing.Size(200, 30);
             this.tbNewName.TabIndex = 27;
@@ -186,10 +199,10 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(136, 134);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnAdd.Location = new System.Drawing.Point(136, 143);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(6);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(177, 63);
+            this.btnAdd.Size = new System.Drawing.Size(164, 54);
             this.btnAdd.TabIndex = 30;
             this.btnAdd.Text = "Add to Order";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -217,7 +230,7 @@
             // numQty
             // 
             this.numQty.Location = new System.Drawing.Point(136, 80);
-            this.numQty.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.numQty.Margin = new System.Windows.Forms.Padding(6);
             this.numQty.Name = "numQty";
             this.numQty.Size = new System.Drawing.Size(108, 30);
             this.numQty.TabIndex = 29;
@@ -251,7 +264,7 @@
             this.lbOrderItems.Location = new System.Drawing.Point(56, 302);
             this.lbOrderItems.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lbOrderItems.Name = "lbOrderItems";
-            this.lbOrderItems.Size = new System.Drawing.Size(368, 429);
+            this.lbOrderItems.Size = new System.Drawing.Size(368, 229);
             this.lbOrderItems.TabIndex = 23;
             // 
             // tbRoomType
@@ -261,14 +274,6 @@
             this.tbRoomType.Name = "tbRoomType";
             this.tbRoomType.Size = new System.Drawing.Size(230, 30);
             this.tbRoomType.TabIndex = 22;
-            // 
-            // tbStatus
-            // 
-            this.tbStatus.Location = new System.Drawing.Point(194, 118);
-            this.tbStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tbStatus.Name = "tbStatus";
-            this.tbStatus.Size = new System.Drawing.Size(230, 30);
-            this.tbStatus.TabIndex = 21;
             // 
             // tbOrderID
             // 
@@ -315,7 +320,7 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(524, 1034);
+            this.btnDelete.Location = new System.Drawing.Point(506, 763);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(108, 51);
@@ -330,7 +335,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(798, 1034);
+            this.btnUpdate.Location = new System.Drawing.Point(717, 763);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(108, 51);
@@ -341,7 +346,7 @@
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(68, 1034);
+            this.btnBack.Location = new System.Drawing.Point(78, 763);
             this.btnBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(108, 51);
@@ -356,7 +361,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(987, 172);
+            this.panel1.Size = new System.Drawing.Size(987, 135);
             this.panel1.TabIndex = 38;
             // 
             // label1
@@ -371,22 +376,34 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Manage Order";
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(242, 764);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(108, 51);
+            this.button2.TabIndex = 39;
+            this.button2.Text = "Exit";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // formManageOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(988, 1120);
+            this.ClientSize = new System.Drawing.Size(968, 846);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.gbOrder);
-            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "formManageOrder";
             this.Text = "formManageOrder";
-            
             this.gbOrder.ResumeLayout(false);
             this.gbOrder.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -403,7 +420,6 @@
 
         private System.Windows.Forms.GroupBox gbOrder;
         private System.Windows.Forms.TextBox tbRoomType;
-        private System.Windows.Forms.TextBox tbStatus;
         private System.Windows.Forms.TextBox tbOrderID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -428,5 +444,7 @@
         private System.Windows.Forms.RadioButton rbNo;
         private System.Windows.Forms.RadioButton rbYes;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox cbOrderStat;
+        private System.Windows.Forms.Button button2;
     }
 }

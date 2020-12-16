@@ -910,6 +910,43 @@ namespace DataAccessLayer
 
         }
 
+        public virtual bool changeOrderStatus(IOrders status)
+        {
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From BarOrders";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "OrdersData");
+                DataRow findRow = ds.Tables["OrdersData"].Rows.Find(status.OrderID);
+
+                if (findRow != null)
+                {
+                    findRow[0] = status.OrderID;
+                    findRow[1] = status.Food;
+                    findRow[2] = status.FoodPrice;
+                    findRow[3] = status.Drink;
+                    findRow[4] = status.DrinkPrice;
+                    findRow[5] = status.Timestamp;
+                    findRow[6] = status.Completed;
+                    findRow[7] = status.Note;
+
+
+                }
+                da.Update(ds, "OrdersData"); //remove row from database table
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
+                Application.Exit();
+            }
+            return true;
+        }
+
         //---------------------------------------------------------------------------------------------------------------------------------
 
 

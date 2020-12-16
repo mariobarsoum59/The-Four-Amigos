@@ -1,5 +1,6 @@
 ﻿using BusinessLayer;
 using System;
+using BusinessEntities;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,9 +26,52 @@ namespace BloomFeildHotel
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
-        
+        private void formManageOrder_Load(object sender, EventArgs e)
+        {
+
+
+            
+        }
+
+  
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void cbOrderStat_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Model.GetAllOrders();
+            if (cbOrderStat.SelectedIndex ==0)
+            {
+                foreach (Orders order in Model.OrdersList)
+                {
+                    string ID = order.OrderID.ToString();
+                    if(ID == tbOrderID.Text)
+                    {
+                        order.Completed = false; //order is not complete
+                    }
+                }
+            }
+
+            if (cbOrderStat.SelectedIndex == 1)
+            {
+                foreach (Orders order in Model.OrdersList)
+                {
+                    string ID = order.OrderID.ToString();
+                    if (ID == tbOrderID.Text)
+                    {
+                        order.Completed = true; //order is complete
+                        
+                      
+                    }
+                }
+                
+            }
+        }
     }
 }

@@ -74,6 +74,8 @@ namespace BusinessLayer
         List<IWaste> WasteList { get; set; }
         void GetAllWaste();
 
+        bool ChangeOrderStatus (IOrders status);
+
 
         //-------------------------------------------------------------------------------------------------------------------------
 
