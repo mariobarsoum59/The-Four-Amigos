@@ -530,9 +530,9 @@
             this.lblFutureGuests.ForeColor = System.Drawing.SystemColors.Control;
             this.lblFutureGuests.Location = new System.Drawing.Point(22, 34);
             this.lblFutureGuests.Name = "lblFutureGuests";
-            this.lblFutureGuests.Size = new System.Drawing.Size(261, 40);
+            this.lblFutureGuests.Size = new System.Drawing.Size(339, 40);
             this.lblFutureGuests.TabIndex = 11;
-            this.lblFutureGuests.Text = "Current Guests";
+            this.lblFutureGuests.Text = "Reservation Details:";
             // 
             // btnCheckout
             // 
@@ -547,7 +547,7 @@
             this.btnCheckout.UseVisualStyleBackColor = false;
             this.btnCheckout.Click += new System.EventHandler(this.button1_Click);
             // 
-            // currentGuestDetails
+            // formCurrentGuestDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -584,7 +584,7 @@
             this.Controls.Add(this.groupBoxRoomType);
             this.Controls.Add(this.lblCheckOutDate);
             this.Controls.Add(this.DTPCheckOutDate);
-            this.Name = "currentGuestDetails";
+            this.Name = "formCurrentGuestDetails";
             this.Text = "currentGuestDetails";
             this.groupBoxRoomType.ResumeLayout(false);
             this.groupBoxRoomType.PerformLayout();

@@ -128,5 +128,13 @@ namespace BloomFeildHotel
 
             f9.Show();
         }
+
+        private void btnViewGuests_Click(object sender, EventArgs e)
+        {
+            formViewGuests f11 = new formViewGuests(fc, Model);
+            f11.Dock = DockStyle.Fill;
+
+            f11.Show();
+        }
     }
 }
