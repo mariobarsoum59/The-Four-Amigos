@@ -30,8 +30,8 @@ namespace BloomFeildHotel
             Model.GetAllGuests();
             Model.GetAllRooms();
             listBoxGuests.DataSource = Model.GuestsList;
-            listBoxGuests.DisplayMember = "Surname";
-            listBoxGuests.ValueMember = "Surname";
+            listBoxGuests.DisplayMember = "FirstName";
+            listBoxGuests.ValueMember = "FirstName";
             listBoxGuests.ClearSelected();
 
         }
@@ -53,42 +53,46 @@ namespace BloomFeildHotel
         {
             foreach (Guest guest in Model.GuestsList)
             {
-                foreach (Reservation res in Model.ReservationsList)
+                string text = listBoxGuests.GetItemText(listBoxGuests.SelectedItem);
+                if (text == guest.FirstName.ToString())
                 {
-                    foreach (Room room in Model.RoomsList)
+                    foreach (Reservation res in Model.ReservationsList)
                     {
-                        if (guest.GuestID == res.GuestID)
+                        foreach (Room room in Model.RoomsList)
                         {
-                            txtFirstName.Text = string.Empty;
-                            txtSurname.Text = string.Empty;
-                            txtEmail.Text = string.Empty;
-                            txtCheckIn.Text = string.Empty;
-                            txtRoomNo.Text = string.Empty;
-                            txtStayDura.Text = string.Empty;
-                            txtTele.Text = string.Empty;
-                            txtCheckOut.Text = string.Empty;
-                            DateTime d1 = res.CheckInDate;
-                            DateTime d2 = res.CheckOutDate;
-                            int days = (d2 - d1).Days;
-
-                            //listBoxGuests.Items.Add(guest);
-                            txtFirstName.Text = guest.FirstName.ToString();
-                            txtSurname.Text = guest.Surname.ToString();
-                            txtEmail.Text = guest.Email.ToString();
-                            txtCheckIn.Text = res.CheckInDate.ToString();
-                            txtRoomNo.Text = res.RoomNumber.ToString();
-                            txtStayDura.Text = days.ToString();
-                            txtTele.Text = guest.ContactNumber.ToString();
-                            txtCheckOut.Text = res.CheckOutDate.ToString();
-
-                            if (room.RoomNumber == res.RoomNumber)
+                            if (guest.GuestID == res.GuestID)
                             {
-                                //txtRoomNo.Text = room.RoomNumber.ToString();
-                                txtRoomType.Text = room.RoomType.ToString();
+                                txtFirstName.Text = string.Empty;
+                                txtSurname.Text = string.Empty;
+                                txtEmail.Text = string.Empty;
+                                txtCheckIn.Text = string.Empty;
+                                txtRoomNo.Text = string.Empty;
+                                txtStayDura.Text = string.Empty;
+                                txtTele.Text = string.Empty;
+                                txtCheckOut.Text = string.Empty;
+                                DateTime d1 = res.CheckInDate;
+                                DateTime d2 = res.CheckOutDate;
+                                int days = (d2 - d1).Days;
+
+                                //listBoxGuests.Items.Add(guest);
+                                txtFirstName.Text = guest.FirstName.ToString();
+                                txtSurname.Text = guest.Surname.ToString();
+                                txtEmail.Text = guest.Email.ToString();
+                                txtCheckIn.Text = res.CheckInDate.ToString();
+                                txtRoomNo.Text = res.RoomNumber.ToString();
+                                txtStayDura.Text = days.ToString();
+                                txtTele.Text = guest.ContactNumber.ToString();
+                                txtCheckOut.Text = res.CheckOutDate.ToString();
+
+                                if (room.RoomNumber == res.RoomNumber)
+                                {
+                                    //txtRoomNo.Text = room.RoomNumber.ToString();
+                                    txtRoomType.Text = room.RoomType.ToString();
+                                }
+
                             }
 
                         }
-
                     }
                 }
             }

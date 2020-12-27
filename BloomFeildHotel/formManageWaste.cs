@@ -38,7 +38,7 @@ namespace BloomFeildHotel
 
         private void foodList_SelectedIndexChanged(object sender, EventArgs e)
         {
-               
+              
 
                 if (foodList.SelectedIndex == 0)      //if chicken curry is selected
                 {
