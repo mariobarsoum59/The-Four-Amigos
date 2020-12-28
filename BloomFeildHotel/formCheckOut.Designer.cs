@@ -35,10 +35,10 @@
             this.lblPhone = new System.Windows.Forms.Label();
             this.lblRoomNo = new System.Windows.Forms.Label();
             this.lblSurname = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtSurname = new System.Windows.Forms.TextBox();
+            this.txtRoomNo = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -119,33 +119,41 @@
             this.lblSurname.TabIndex = 17;
             this.lblSurname.Text = "Surname";
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(192, 209);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(199, 26);
-            this.textBox1.TabIndex = 18;
+            this.txtName.Location = new System.Drawing.Point(192, 209);
+            this.txtName.Name = "txtName";
+            this.txtName.ReadOnly = true;
+            this.txtName.Size = new System.Drawing.Size(199, 26);
+            this.txtName.TabIndex = 18;
+            this.txtName.TabStop = false;
             // 
-            // textBox2
+            // txtSurname
             // 
-            this.textBox2.Location = new System.Drawing.Point(192, 252);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(199, 26);
-            this.textBox2.TabIndex = 19;
+            this.txtSurname.Location = new System.Drawing.Point(192, 252);
+            this.txtSurname.Name = "txtSurname";
+            this.txtSurname.ReadOnly = true;
+            this.txtSurname.Size = new System.Drawing.Size(199, 26);
+            this.txtSurname.TabIndex = 19;
+            this.txtSurname.TabStop = false;
             // 
-            // textBox3
+            // txtRoomNo
             // 
-            this.textBox3.Location = new System.Drawing.Point(192, 297);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(199, 26);
-            this.textBox3.TabIndex = 20;
+            this.txtRoomNo.Location = new System.Drawing.Point(192, 297);
+            this.txtRoomNo.Name = "txtRoomNo";
+            this.txtRoomNo.ReadOnly = true;
+            this.txtRoomNo.Size = new System.Drawing.Size(199, 26);
+            this.txtRoomNo.TabIndex = 20;
+            this.txtRoomNo.TabStop = false;
             // 
-            // textBox4
+            // txtPhone
             // 
-            this.textBox4.Location = new System.Drawing.Point(192, 341);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(199, 26);
-            this.textBox4.TabIndex = 21;
+            this.txtPhone.Location = new System.Drawing.Point(192, 341);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.ReadOnly = true;
+            this.txtPhone.Size = new System.Drawing.Size(199, 26);
+            this.txtPhone.TabIndex = 21;
+            this.txtPhone.TabStop = false;
             // 
             // btnConfirm
             // 
@@ -158,6 +166,7 @@
             this.btnConfirm.TabIndex = 22;
             this.btnConfirm.Text = "Confirm";
             this.btnConfirm.UseVisualStyleBackColor = false;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
             // btnExit
             // 
@@ -170,8 +179,9 @@
             this.btnExit.TabIndex = 23;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // CheckOut
+            // formCheckOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -179,18 +189,19 @@
             this.ClientSize = new System.Drawing.Size(553, 577);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnConfirm);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPhone);
+            this.Controls.Add(this.txtRoomNo);
+            this.Controls.Add(this.txtSurname);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblSurname);
             this.Controls.Add(this.lblRoomNo);
             this.Controls.Add(this.lblPhone);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Name = "CheckOut";
+            this.Name = "formCheckOut";
             this.Text = "CheckOut";
+            this.Load += new System.EventHandler(this.formCheckOut_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -207,10 +218,10 @@
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.Label lblRoomNo;
         private System.Windows.Forms.Label lblSurname;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtSurname;
+        private System.Windows.Forms.TextBox txtRoomNo;
+        private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnExit;
     }

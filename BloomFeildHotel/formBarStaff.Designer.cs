@@ -35,6 +35,7 @@ namespace BloomFeildHotel
             this.btnSales = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnViewOrders = new System.Windows.Forms.Button();
+            this.btnViewSales = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -115,12 +116,27 @@ namespace BloomFeildHotel
             this.btnViewOrders.UseVisualStyleBackColor = false;
             this.btnViewOrders.Click += new System.EventHandler(this.btnViewOrders_Click);
             // 
+            // btnViewSales
+            // 
+            this.btnViewSales.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnViewSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewSales.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnViewSales.Location = new System.Drawing.Point(1045, 525);
+            this.btnViewSales.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnViewSales.Name = "btnViewSales";
+            this.btnViewSales.Size = new System.Drawing.Size(242, 160);
+            this.btnViewSales.TabIndex = 34;
+            this.btnViewSales.Text = "View Sales";
+            this.btnViewSales.UseVisualStyleBackColor = false;
+            this.btnViewSales.Click += new System.EventHandler(this.btnViewSales_Click);
+            // 
             // formBarStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(1892, 914);
+            this.Controls.Add(this.btnViewSales);
             this.Controls.Add(this.btnViewOrders);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblBarStaff);
@@ -146,5 +162,6 @@ namespace BloomFeildHotel
         private System.Windows.Forms.Button btnSales;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnViewOrders;
+        private System.Windows.Forms.Button btnViewSales;
     }
 }

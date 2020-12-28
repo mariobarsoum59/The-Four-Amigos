@@ -37,7 +37,7 @@ namespace BloomFeildHotel
         private void btnSales_Click(object sender, EventArgs e)
         {
             formSales form = new formSales(fc, Model);
-            //form.Show();
+            form.Show();
             form.Dock = DockStyle.Fill;
 
             form.Show();
@@ -55,6 +55,12 @@ namespace BloomFeildHotel
             form.Dock = DockStyle.Fill;
 
             form.Show();
+        }
+
+        private void btnViewSales_Click(object sender, EventArgs e)
+        {
+            formViewSales vs = new formViewSales(fc, Model);
+            vs.Show();
         }
     }
 }

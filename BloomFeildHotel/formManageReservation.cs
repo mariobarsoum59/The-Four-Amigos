@@ -52,7 +52,6 @@ namespace BloomFeildHotel
                 {
                     foreach (IGuest guest in Model.GuestsList)
                     {
-
                         if (reservation.GuestID == guest.GuestID)
                         {
                             foreach(IRoom room in Model.RoomsList)
@@ -208,6 +207,12 @@ namespace BloomFeildHotel
             }
             formReservationUpdateConfirm form = new formReservationUpdateConfirm(this.fc, this.Model, this.ReservationID, GuestID);
             form.Dock = DockStyle.Fill;
+            form.Show();
+        }
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            formCheckOut form = new formCheckOut(this.fc, this.Model, this.ReservationID);
             form.Show();
         }
     }

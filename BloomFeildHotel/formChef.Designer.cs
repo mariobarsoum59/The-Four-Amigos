@@ -138,7 +138,7 @@
             this.btnMangeWaste.Name = "btnMangeWaste";
             this.btnMangeWaste.Size = new System.Drawing.Size(242, 160);
             this.btnMangeWaste.TabIndex = 35;
-            this.btnMangeWaste.Text = "Mange Waste";
+            this.btnMangeWaste.Text = "Manage Waste";
             this.btnMangeWaste.UseVisualStyleBackColor = false;
             this.btnMangeWaste.Click += new System.EventHandler(this.btnMangeWaste_Click);
             // 

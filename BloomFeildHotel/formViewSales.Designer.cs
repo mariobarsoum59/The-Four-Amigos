@@ -36,12 +36,12 @@
             this.salesOverRest = new System.Windows.Forms.Label();
             this.salesTodayRest = new System.Windows.Forms.Label();
             this.salesTodayBar = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtAllBar = new System.Windows.Forms.TextBox();
+            this.txtTodayRest = new System.Windows.Forms.TextBox();
+            this.txtTodayBar = new System.Windows.Forms.TextBox();
+            this.txtAllRest = new System.Windows.Forms.TextBox();
+            this.txtAllSale = new System.Windows.Forms.TextBox();
+            this.txtTodayS = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
@@ -134,47 +134,47 @@
             this.salesTodayBar.TabIndex = 6;
             this.salesTodayBar.Text = "Sales from Bar";
             // 
-            // textBox1
+            // txtAllBar
             // 
-            this.textBox1.Location = new System.Drawing.Point(76, 268);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(161, 26);
-            this.textBox1.TabIndex = 7;
+            this.txtAllBar.Location = new System.Drawing.Point(76, 268);
+            this.txtAllBar.Name = "txtAllBar";
+            this.txtAllBar.Size = new System.Drawing.Size(161, 26);
+            this.txtAllBar.TabIndex = 7;
             // 
-            // textBox2
+            // txtTodayRest
             // 
-            this.textBox2.Location = new System.Drawing.Point(371, 373);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(161, 26);
-            this.textBox2.TabIndex = 8;
+            this.txtTodayRest.Location = new System.Drawing.Point(371, 373);
+            this.txtTodayRest.Name = "txtTodayRest";
+            this.txtTodayRest.Size = new System.Drawing.Size(161, 26);
+            this.txtTodayRest.TabIndex = 8;
             // 
-            // textBox3
+            // txtTodayBar
             // 
-            this.textBox3.Location = new System.Drawing.Point(371, 268);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(161, 26);
-            this.textBox3.TabIndex = 9;
+            this.txtTodayBar.Location = new System.Drawing.Point(371, 268);
+            this.txtTodayBar.Name = "txtTodayBar";
+            this.txtTodayBar.Size = new System.Drawing.Size(161, 26);
+            this.txtTodayBar.TabIndex = 9;
             // 
-            // textBox4
+            // txtAllRest
             // 
-            this.textBox4.Location = new System.Drawing.Point(76, 373);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(161, 26);
-            this.textBox4.TabIndex = 10;
+            this.txtAllRest.Location = new System.Drawing.Point(76, 373);
+            this.txtAllRest.Name = "txtAllRest";
+            this.txtAllRest.Size = new System.Drawing.Size(161, 26);
+            this.txtAllRest.TabIndex = 10;
             // 
-            // textBox5
+            // txtAllSale
             // 
-            this.textBox5.Location = new System.Drawing.Point(76, 168);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(161, 26);
-            this.textBox5.TabIndex = 11;
+            this.txtAllSale.Location = new System.Drawing.Point(76, 168);
+            this.txtAllSale.Name = "txtAllSale";
+            this.txtAllSale.Size = new System.Drawing.Size(161, 26);
+            this.txtAllSale.TabIndex = 11;
             // 
-            // textBox6
+            // txtTodayS
             // 
-            this.textBox6.Location = new System.Drawing.Point(371, 168);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(161, 26);
-            this.textBox6.TabIndex = 12;
+            this.txtTodayS.Location = new System.Drawing.Point(371, 168);
+            this.txtTodayS.Name = "txtTodayS";
+            this.txtTodayS.Size = new System.Drawing.Size(161, 26);
+            this.txtTodayS.TabIndex = 12;
             // 
             // panel2
             // 
@@ -197,26 +197,27 @@
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnExit.Location = new System.Drawing.Point(252, 460);
+            this.btnExit.Location = new System.Drawing.Point(245, 468);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(113, 49);
             this.btnExit.TabIndex = 15;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // ViewSales
+            // formViewSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(620, 538);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTodayS);
+            this.Controls.Add(this.txtAllSale);
+            this.Controls.Add(this.txtAllRest);
+            this.Controls.Add(this.txtTodayBar);
+            this.Controls.Add(this.txtTodayRest);
+            this.Controls.Add(this.txtAllBar);
             this.Controls.Add(this.salesTodayBar);
             this.Controls.Add(this.salesTodayRest);
             this.Controls.Add(this.salesOverRest);
@@ -226,8 +227,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
-            this.Name = "ViewSales";
+            this.Name = "formViewSales";
             this.Text = "ViewSales";
+            this.Load += new System.EventHandler(this.formViewSales_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -245,12 +247,12 @@
         private System.Windows.Forms.Label salesOverRest;
         private System.Windows.Forms.Label salesTodayRest;
         private System.Windows.Forms.Label salesTodayBar;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtAllBar;
+        private System.Windows.Forms.TextBox txtTodayRest;
+        private System.Windows.Forms.TextBox txtTodayBar;
+        private System.Windows.Forms.TextBox txtAllRest;
+        private System.Windows.Forms.TextBox txtAllSale;
+        private System.Windows.Forms.TextBox txtTodayS;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnExit;

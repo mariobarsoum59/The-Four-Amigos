@@ -32,6 +32,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.lbISearch = new System.Windows.Forms.Label();
             this.btnGoResID = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,7 +56,6 @@
             this.bloomFeildHotelDataSetReservationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reservationsTableAdapter = new BloomFeildHotel.BloomFeildHotelDataSetResTableAdapters.reservationsTableAdapter();
             this.btnMangeRes = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.reservationsBindingSource)).BeginInit();
@@ -72,6 +72,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1895, 114);
             this.panel1.TabIndex = 22;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Yellow;
+            this.label4.Location = new System.Drawing.Point(4, 81);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(1132, 29);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Note: When Choosing a Reservation Click On the Very First Column For the Desired " +
+    "Reservation";
             // 
             // lbISearch
             // 
@@ -317,19 +330,6 @@
             this.btnMangeRes.Text = "Manage Reservation";
             this.btnMangeRes.UseVisualStyleBackColor = false;
             this.btnMangeRes.Click += new System.EventHandler(this.btnMangeRes_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Yellow;
-            this.label4.Location = new System.Drawing.Point(4, 81);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(1132, 29);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Note: When Choosing a Reservation Click On the Very First Column For the Desired " +
-    "Reservation";
             // 
             // formSearchReservation
             // 
