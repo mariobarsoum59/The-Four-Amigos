@@ -109,12 +109,10 @@ C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\D
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formSales.resources
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formSearchReservation.resources
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewFutureGuests.resources
-C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewOrders.resources
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.fromDeleteOrders.resources
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.Properties.Resources.resources
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formReservation.resources
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewSales.resources
-C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewWaste.resources
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.csproj.GenerateResource.cache
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.csproj.CopyComplete
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.exe
@@ -383,3 +381,13 @@ C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debu
 D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formCreateMonthlyReport.resources
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formCreateMonthlyReport.resources
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewGuests.resources
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formBarStaff.resources
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formCreateMonthlyReport.resources
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formSavedGuests.resources
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formStockManager.resources
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewGuests.resources
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewOrdersChef.resources
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewReservations.resources
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewRoomBookings.resources
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formManageWaste.resources
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.ViewOrdersBarStaff.resources

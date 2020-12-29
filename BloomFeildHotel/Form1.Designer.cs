@@ -32,16 +32,15 @@
             // 
             // FormContainer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1892, 914);
+            this.ClientSize = new System.Drawing.Size(1261, 594);
             this.ControlBox = false;
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormContainer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bloom Feild Hotel";
-            
+            this.Load += new System.EventHandler(this.FormContainer_Load);
             this.Shown += new System.EventHandler(this.formContainer_Shown);
             this.ResumeLayout(false);
 

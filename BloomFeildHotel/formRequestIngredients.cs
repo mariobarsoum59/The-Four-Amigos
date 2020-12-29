@@ -7,14 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BusinessEntities;
+using BusinessLayer;
 
 namespace BloomFeildHotel
 {
     public partial class formRequestIngredients : Form
     {
-        public formRequestIngredients()
+        private FormContainer fc;
+        private IModel Model;
+        public formRequestIngredients(FormContainer parent, IModel Model)
         {
             InitializeComponent();
+            MdiParent = parent;
+            fc = parent;
+            this.Model = Model;
         }
 
         private void button1_Click(object sender, EventArgs e)

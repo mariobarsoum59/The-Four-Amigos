@@ -69,3 +69,11 @@ C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\DataAccessLayer\obj\Debu
 C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
 C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\DataAccessLayer\bin\Debug\BusinessEntities.dll
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\DataAccessLayer\bin\Debug\BusinessEntities.pdb
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

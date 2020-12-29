@@ -57,6 +57,12 @@ namespace BloomFeildHotel
                     form4.Dock = DockStyle.Fill;
                     form4.Show();
                     break;
+                case "Stock Manager":
+                    formStockManager f5 = new formStockManager(this, Model);
+                    this.Text = this.Text + "-Stock Manager";
+                    f5.Dock = DockStyle.Fill;
+                    f5.Show();
+                    break;
 
 
             }
@@ -64,6 +70,9 @@ namespace BloomFeildHotel
 
         }
 
-      
+        private void FormContainer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
