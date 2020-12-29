@@ -33,24 +33,48 @@ namespace BloomFeildHotel
         {
             Model.GetAllOrders();
             Model.GetAllOrderItems();
-            List<double> SalesTotal = new List<double>();
+            //List<double> SalesTotal = new List<double>();
+            List<double> SalesTotalBar = new List<double>();
+            List<double> SalesTotalRest = new List<double>();
             List<double> SalesTodayBar = new List<double>();
             List<double> SalesTodayRest = new List<double>();
+            DateTime today = DateTime.Today;
 
             foreach (Orders order in Model.OrdersList)
             {
-                double foodPrice = order.FoodPrice;
-                SalesTodayRest.Add(foodPrice);
-                double TodayRestaurant = SalesTodayRest.Sum();
-                txtTodayRest.Text = TodayRestaurant.ToString();
 
-                double drinkPrice = order.DrinkPrice;
-                SalesTodayBar.Add(drinkPrice);
-                double TodayBar = SalesTodayBar.Sum();
-                txtTodayBar.Text = TodayBar.ToString();
+                if (order.Completed == true)
+                {
+                    double foodPrice = order.FoodPrice;
+                    SalesTodayRest.Add(foodPrice);
+                    SalesTotalRest.Add(foodPrice);
+                    double drinkPrice = order.DrinkPrice;
+                    SalesTodayBar.Add(drinkPrice);
+                    SalesTotalBar.Add(drinkPrice);
 
-                double totalToday = TodayRestaurant + TodayBar;
-                txtTodayS.Text = totalToday.ToString();
+                    if (order.Timestamp.Date == today)
+                    {
+                        double TodayRestaurant = SalesTodayRest.Sum();
+                        txtTodayRest.Text = TodayRestaurant.ToString();
+
+                        double TodayBar = SalesTodayBar.Sum();
+                        txtTodayBar.Text = TodayBar.ToString();
+
+                        double totalToday = TodayRestaurant + TodayBar;
+                        txtTodayS.Text = totalToday.ToString();
+                    }
+                    if(order.Timestamp.Date != today)
+                    { 
+                        double totalBar = SalesTotalBar.Sum();
+                        txtAllBar.Text = totalBar.ToString();
+
+                        double totalRest = SalesTotalRest.Sum();
+                        txtAllRest.Text = totalRest.ToString();
+
+                        double allSale = totalBar + totalRest;
+                        txtAllSale.Text = allSale.ToString();
+                    }
+                }
 
             }
         }
