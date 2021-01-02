@@ -573,7 +573,36 @@ namespace BusinessLayer
             }
 
         }
+        public Boolean createStockOrder(DateTime Date, decimal Total, String Department, int CreatedBy)
+        {
+            try
+            {
 
+                IStockOrder aStockOrder = StockOrdersHotel.GetStockOrders(0, Date, Total, Department, false, CreatedBy);
+                DataLayer.addNewStockOrderToDB(aStockOrder);
+                return true;
+            }
+            catch (System.Exception excep)
+            {
+
+                return false;
+            }
+        }
+        public Boolean createOrderItem(int OrderID, int ItemID, int Quantity)
+        {
+            try
+            {
+
+                IOrderItem aOrderItem = OrderItemsHotel.GetOrderItems(OrderID, ItemID, Quantity);
+                DataLayer.addNewOrderItemToDB(aOrderItem);
+                return true;
+            }
+            catch (System.Exception excep)
+            {
+
+                return false;
+            }
+        }
         public bool UpdateCurrrentStockItem(IStockItem stockItem)
         {
             dataLayer.updateCurrentStockItemInDB(stockItem);

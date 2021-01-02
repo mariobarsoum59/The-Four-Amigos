@@ -202,6 +202,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "formRequestCleaning_Supplies";
             this.Text = "formRequestCleaningSupplies";
+            this.Load += new System.EventHandler(this.formRequestCleaning_Supplies_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

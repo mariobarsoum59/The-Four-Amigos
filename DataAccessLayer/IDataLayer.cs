@@ -66,7 +66,8 @@ namespace DataAccessLayer
         List<IOrderItem> getAllOrderItems();
         List<IMonthlyReport> getAllMonthlyReports();
         void addNewMonthlyReportToDB(IMonthlyReport aMonthlyReport);
-
+        void addNewOrderItemToDB(IOrderItem aOrderItem);
+        void addNewStockOrderToDB(IStockOrder aStockOrder);
         bool updateCurrentStockItemInDB(BusinessEntities.IStockItem stockItem);
 
     }

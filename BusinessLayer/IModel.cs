@@ -93,7 +93,8 @@ namespace BusinessLayer
         List<IMonthlyReport> MonthlyReportsList { get; set; }
         void GetAllMonthlyReports();
         Boolean createMonthlyReport(DateTime Date, int Reservations, decimal ReservationIncome, int Sales, decimal SalesIncome, int StockOrders, decimal StockExpenses);
-
+        Boolean createStockOrder(DateTime Date, decimal Total, String Department, int CreatedBy);
+        Boolean createOrderItem(int OrderID, int ItemID, int Quantity);
         bool UpdateCurrrentStockItem(IStockItem stockItem);
     }
 }

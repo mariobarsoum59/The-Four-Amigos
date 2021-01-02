@@ -16,5 +16,10 @@ namespace BloomFeildHotel
         {
             InitializeComponent();
         }
+
+        private void formRequestCleaning_Supplies_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -83,7 +83,7 @@ namespace BusinessEntities
         }
         public StockOrder()
         {
-            throw new System.NotImplementedException();
+            
         }
         public StockOrder(int OrderID, DateTime Date, decimal Total, String Department, bool Completed, int CreatedBy)
         {

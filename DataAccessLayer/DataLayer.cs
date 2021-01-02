@@ -1183,6 +1183,68 @@ namespace DataAccessLayer
             }
         }
 
+        public virtual void addNewStockOrderToDB(IStockOrder aStockOrder)
+        {
+            try
+            {
+                DataSet ds = new DataSet();
+                string sql = "SELECT * From StockOrders";
+                SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                SqlCommandBuilder cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "stockOrderData");
+                maxRows = ds.Tables["stockOrderData"].Rows.Count;
+                DataRow dRow = ds.Tables["stockOrderData"].NewRow();
+                dRow[1] = aStockOrder.Date;
+                dRow[2] = aStockOrder.Total;
+                dRow[3] = aStockOrder.Department;
+                dRow[4] = aStockOrder.Completed;
+                dRow[5] = aStockOrder.CreatedBy;
+
+
+
+                ds.Tables["stockOrderData"].Rows.Add(dRow);
+                da.Update(ds, "stockOrderData");
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+        }
+
+        public virtual void addNewOrderItemToDB(IOrderItem aOrderItem)
+        {
+            try
+            {
+                DataSet ds = new DataSet();
+                string sql = "SELECT * From OrderItems";
+                SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                SqlCommandBuilder cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "orderItemData");
+                maxRows = ds.Tables["orderItemData"].Rows.Count;
+                DataRow dRow = ds.Tables["orderItemData"].NewRow();
+                dRow[0] = aOrderItem.OrderID;
+                dRow[1] = aOrderItem.ItemID;
+                dRow[2] = aOrderItem.Quantity;
+
+
+
+                ds.Tables["orderItemData"].Rows.Add(dRow);
+                da.Update(ds, "orderItemData");
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+        }
+
         public virtual bool updateCurrentStockItemInDB(IStockItem stockItem)
         {
 

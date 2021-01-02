@@ -64,5 +64,12 @@ namespace BloomFeildHotel
 
             form.Show();
         }
+
+        private void btnRequestIngredients_Click(object sender, EventArgs e)
+        {
+            formRequestIngredients form = new formRequestIngredients(fc, Model);
+            form.Dock = DockStyle.Fill;
+            form.Show();
+        }
     }
 }
