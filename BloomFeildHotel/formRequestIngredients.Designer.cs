@@ -69,7 +69,7 @@
             this.label1.Location = new System.Drawing.Point(4, 17);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(326, 39);
+            this.label1.Size = new System.Drawing.Size(499, 61);
             this.label1.TabIndex = 0;
             this.label1.Text = "Request Ingredients";
             // 
@@ -150,7 +150,7 @@
             this.cbCategories.Location = new System.Drawing.Point(21, 39);
             this.cbCategories.Margin = new System.Windows.Forms.Padding(4);
             this.cbCategories.Name = "cbCategories";
-            this.cbCategories.Size = new System.Drawing.Size(184, 24);
+            this.cbCategories.Size = new System.Drawing.Size(184, 33);
             this.cbCategories.TabIndex = 13;
             this.cbCategories.Text = "Please Select a Category";
             this.cbCategories.SelectedIndexChanged += new System.EventHandler(this.cbCategories_SelectedIndexChanged);
@@ -161,7 +161,7 @@
             this.label4.Location = new System.Drawing.Point(436, 41);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 16);
+            this.label4.Size = new System.Drawing.Size(91, 25);
             this.label4.TabIndex = 2;
             this.label4.Text = "Quantity:";
             // 
@@ -186,17 +186,17 @@
             this.numQty.Location = new System.Drawing.Point(503, 39);
             this.numQty.Margin = new System.Windows.Forms.Padding(4);
             this.numQty.Name = "numQty";
-            this.numQty.Size = new System.Drawing.Size(47, 22);
+            this.numQty.Size = new System.Drawing.Size(47, 30);
             this.numQty.TabIndex = 12;
             // 
             // lbAvailableIngredients
             // 
             this.lbAvailableIngredients.FormattingEnabled = true;
-            this.lbAvailableIngredients.ItemHeight = 16;
+            this.lbAvailableIngredients.ItemHeight = 25;
             this.lbAvailableIngredients.Location = new System.Drawing.Point(8, 80);
             this.lbAvailableIngredients.Margin = new System.Windows.Forms.Padding(4);
             this.lbAvailableIngredients.Name = "lbAvailableIngredients";
-            this.lbAvailableIngredients.Size = new System.Drawing.Size(700, 244);
+            this.lbAvailableIngredients.Size = new System.Drawing.Size(700, 229);
             this.lbAvailableIngredients.TabIndex = 4;
             // 
             // gbIngredientsOrder
@@ -241,11 +241,11 @@
             // lbIngredientsOrder
             // 
             this.lbIngredientsOrder.FormattingEnabled = true;
-            this.lbIngredientsOrder.ItemHeight = 16;
+            this.lbIngredientsOrder.ItemHeight = 25;
             this.lbIngredientsOrder.Location = new System.Drawing.Point(8, 63);
             this.lbIngredientsOrder.Margin = new System.Windows.Forms.Padding(4);
             this.lbIngredientsOrder.Name = "lbIngredientsOrder";
-            this.lbIngredientsOrder.Size = new System.Drawing.Size(700, 276);
+            this.lbIngredientsOrder.Size = new System.Drawing.Size(700, 254);
             this.lbIngredientsOrder.TabIndex = 6;
             // 
             // pictureBox1
@@ -259,10 +259,10 @@
             // 
             // formRequestIngredients
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(1057, 791);
+            this.ClientSize = new System.Drawing.Size(1552, 939);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.gbIngredientsOrder);

@@ -38,7 +38,14 @@ namespace BloomFeildHotel
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void btnRequestCleaningItems_Click(object sender, EventArgs e)
+        {
+            formRequestCleaningSupplies f8 = new formRequestCleaningSupplies(fc, Model);
+            f8.Dock = DockStyle.Fill;
+            f8.Show();
         }
     }
 }

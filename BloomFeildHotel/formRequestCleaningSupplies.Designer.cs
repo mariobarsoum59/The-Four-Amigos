@@ -1,6 +1,6 @@
 ﻿namespace BloomFeildHotel
 {
-    partial class formRequestCleaning_Supplies
+    partial class formRequestCleaningSupplies
     {
         /// <summary>
         /// Required designer variable.
@@ -28,73 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.btnCommit = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblSupplies = new System.Windows.Forms.Label();
-            this.ListBox2 = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.gbIngredientsOrder = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.lbIngredientsOrder = new System.Windows.Forms.ListBox();
+            this.gbAvailableIngredients = new System.Windows.Forms.GroupBox();
+            this.btnViewAll = new System.Windows.Forms.Button();
+            this.cbCategories = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.numQty = new System.Windows.Forms.NumericUpDown();
+            this.lbAvailableIngredients = new System.Windows.Forms.ListBox();
+            this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.gbIngredientsOrder.SuspendLayout();
+            this.gbAvailableIngredients.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numQty)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 94);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 20);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Quantity:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(82, 94);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(210, 26);
-            this.textBox2.TabIndex = 11;
-            // 
-            // btnCommit
-            // 
-            this.btnCommit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
-            this.btnCommit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCommit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCommit.Location = new System.Drawing.Point(8, 409);
-            this.btnCommit.Name = "btnCommit";
-            this.btnCommit.Size = new System.Drawing.Size(212, 50);
-            this.btnCommit.TabIndex = 23;
-            this.btnCommit.Text = "Add to Order";
-            this.btnCommit.UseVisualStyleBackColor = false;
-            // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBack.Location = new System.Drawing.Point(656, 409);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(212, 50);
-            this.btnBack.TabIndex = 22;
-            this.btnBack.Text = "Remove Item";
-            this.btnBack.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(94)))), ((int)(((byte)(84)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.lblSupplies);
-            this.panel1.Location = new System.Drawing.Point(-2, -1);
+            this.panel1.Location = new System.Drawing.Point(-3, -2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 70);
+            this.panel1.Size = new System.Drawing.Size(1326, 108);
             this.panel1.TabIndex = 24;
             // 
             // lblSupplies
@@ -102,128 +65,229 @@
             this.lblSupplies.AutoSize = true;
             this.lblSupplies.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSupplies.ForeColor = System.Drawing.Color.White;
-            this.lblSupplies.Location = new System.Drawing.Point(3, 21);
+            this.lblSupplies.Location = new System.Drawing.Point(4, 32);
+            this.lblSupplies.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSupplies.Name = "lblSupplies";
-            this.lblSupplies.Size = new System.Drawing.Size(442, 39);
+            this.lblSupplies.Size = new System.Drawing.Size(678, 61);
             this.lblSupplies.TabIndex = 0;
             this.lblSupplies.Text = "Request Cleaning Supplies ";
             // 
-            // ListBox2
+            // btnSubmit
             // 
-            this.ListBox2.FormattingEnabled = true;
-            this.ListBox2.Items.AddRange(new object[] {
-            "Disinfectant spray-Dettol",
-            "Hand sanitizer-Amazon"});
-            this.ListBox2.Location = new System.Drawing.Point(8, 151);
-            this.ListBox2.Name = "ListBox2";
-            this.ListBox2.Size = new System.Drawing.Size(284, 251);
-            this.ListBox2.TabIndex = 27;
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnSubmit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
+            this.btnSubmit.Location = new System.Drawing.Point(20, 929);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(141, 41);
+            this.btnSubmit.TabIndex = 34;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
-            // label1
+            // gbIngredientsOrder
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 123);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 20);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Items Available";
-            // 
-            // listBox3
-            // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.Items.AddRange(new object[] {
-            "30 Disinfectant spray-Dettol"});
-            this.listBox3.Location = new System.Drawing.Point(584, 152);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(284, 251);
-            this.listBox3.TabIndex = 29;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(584, 123);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 20);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "Items Ordered";
+            this.gbIngredientsOrder.Controls.Add(this.button1);
+            this.gbIngredientsOrder.Controls.Add(this.btnClear);
+            this.gbIngredientsOrder.Controls.Add(this.lbIngredientsOrder);
+            this.gbIngredientsOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbIngredientsOrder.Location = new System.Drawing.Point(20, 522);
+            this.gbIngredientsOrder.Margin = new System.Windows.Forms.Padding(4);
+            this.gbIngredientsOrder.Name = "gbIngredientsOrder";
+            this.gbIngredientsOrder.Padding = new System.Windows.Forms.Padding(4);
+            this.gbIngredientsOrder.Size = new System.Drawing.Size(1299, 399);
+            this.gbIngredientsOrder.TabIndex = 36;
+            this.gbIngredientsOrder.TabStop = false;
+            this.gbIngredientsOrder.Text = "Ingredients Order";
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(656, 465);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(121, 39);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 50);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "Exit";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Size = new System.Drawing.Size(121, 41);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Remove Item";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnClear
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(8, 465);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(212, 50);
-            this.button2.TabIndex = 31;
-            this.button2.Text = "Submit";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(8, 39);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(105, 41);
+            this.btnClear.TabIndex = 7;
+            this.btnClear.Text = "Clear Order";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // pictureBox1
+            // lbIngredientsOrder
             // 
-            this.pictureBox1.Image = global::BloomFeildHotel.Properties.Resources.boxes;
-            this.pictureBox1.Location = new System.Drawing.Point(294, 151);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(284, 252);
-            this.pictureBox1.TabIndex = 32;
-            this.pictureBox1.TabStop = false;
+            this.lbIngredientsOrder.FormattingEnabled = true;
+            this.lbIngredientsOrder.ItemHeight = 25;
+            this.lbIngredientsOrder.Location = new System.Drawing.Point(8, 88);
+            this.lbIngredientsOrder.Margin = new System.Windows.Forms.Padding(4);
+            this.lbIngredientsOrder.Name = "lbIngredientsOrder";
+            this.lbIngredientsOrder.Size = new System.Drawing.Size(1283, 279);
+            this.lbIngredientsOrder.TabIndex = 6;
             // 
-            // formRequestCleaning_Supplies
+            // gbAvailableIngredients
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.gbAvailableIngredients.Controls.Add(this.btnViewAll);
+            this.gbAvailableIngredients.Controls.Add(this.cbCategories);
+            this.gbAvailableIngredients.Controls.Add(this.label4);
+            this.gbAvailableIngredients.Controls.Add(this.btnAdd);
+            this.gbAvailableIngredients.Controls.Add(this.numQty);
+            this.gbAvailableIngredients.Controls.Add(this.lbAvailableIngredients);
+            this.gbAvailableIngredients.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbAvailableIngredients.Location = new System.Drawing.Point(20, 115);
+            this.gbAvailableIngredients.Margin = new System.Windows.Forms.Padding(4);
+            this.gbAvailableIngredients.Name = "gbAvailableIngredients";
+            this.gbAvailableIngredients.Padding = new System.Windows.Forms.Padding(4);
+            this.gbAvailableIngredients.Size = new System.Drawing.Size(1299, 399);
+            this.gbAvailableIngredients.TabIndex = 35;
+            this.gbAvailableIngredients.TabStop = false;
+            this.gbAvailableIngredients.Text = "Available Ingredients";
+            // 
+            // btnViewAll
+            // 
+            this.btnViewAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnViewAll.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnViewAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewAll.ForeColor = System.Drawing.Color.White;
+            this.btnViewAll.Location = new System.Drawing.Point(329, 33);
+            this.btnViewAll.Margin = new System.Windows.Forms.Padding(4);
+            this.btnViewAll.Name = "btnViewAll";
+            this.btnViewAll.Size = new System.Drawing.Size(115, 39);
+            this.btnViewAll.TabIndex = 13;
+            this.btnViewAll.Text = "View All";
+            this.btnViewAll.UseVisualStyleBackColor = false;
+            this.btnViewAll.Click += new System.EventHandler(this.btnViewAll_Click);
+            // 
+            // cbCategories
+            // 
+            this.cbCategories.FormattingEnabled = true;
+            this.cbCategories.Items.AddRange(new object[] {
+            "Meat",
+            "Poultry",
+            "Fish",
+            "Dairy",
+            "Fruits",
+            "Vegetables",
+            "Dry Grocery",
+            "Miscellaneous"});
+            this.cbCategories.Location = new System.Drawing.Point(8, 37);
+            this.cbCategories.Margin = new System.Windows.Forms.Padding(4);
+            this.cbCategories.Name = "cbCategories";
+            this.cbCategories.Size = new System.Drawing.Size(313, 33);
+            this.cbCategories.TabIndex = 13;
+            this.cbCategories.Text = "Please Select a Category";
+            this.cbCategories.SelectedIndexChanged += new System.EventHandler(this.cbCategories_SelectedIndexChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(479, 42);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 25);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Quantity:";
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(687, 33);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(115, 39);
+            this.btnAdd.TabIndex = 8;
+            this.btnAdd.Text = "Add to Order";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // numQty
+            // 
+            this.numQty.Location = new System.Drawing.Point(587, 40);
+            this.numQty.Margin = new System.Windows.Forms.Padding(4);
+            this.numQty.Name = "numQty";
+            this.numQty.Size = new System.Drawing.Size(72, 30);
+            this.numQty.TabIndex = 12;
+            // 
+            // lbAvailableIngredients
+            // 
+            this.lbAvailableIngredients.FormattingEnabled = true;
+            this.lbAvailableIngredients.ItemHeight = 25;
+            this.lbAvailableIngredients.Location = new System.Drawing.Point(8, 81);
+            this.lbAvailableIngredients.Margin = new System.Windows.Forms.Padding(4);
+            this.lbAvailableIngredients.Name = "lbAvailableIngredients";
+            this.lbAvailableIngredients.Size = new System.Drawing.Size(1283, 304);
+            this.lbAvailableIngredients.TabIndex = 4;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(169, 929);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(96, 41);
+            this.btnBack.TabIndex = 33;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // formRequestCleaningSupplies
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(880, 523);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.listBox3);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.ListBox2);
+            this.ClientSize = new System.Drawing.Size(1322, 1002);
+            this.Controls.Add(this.btnSubmit);
+            this.Controls.Add(this.gbIngredientsOrder);
+            this.Controls.Add(this.gbAvailableIngredients);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnCommit);
             this.Controls.Add(this.panel1);
-            this.Name = "formRequestCleaning_Supplies";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "formRequestCleaningSupplies";
             this.Text = "formRequestCleaningSupplies";
-            this.Load += new System.EventHandler(this.formRequestCleaning_Supplies_Load);
+            this.Load += new System.EventHandler(this.formRequestCleaningSupplies_Load_1);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.gbIngredientsOrder.ResumeLayout(false);
+            this.gbAvailableIngredients.ResumeLayout(false);
+            this.gbAvailableIngredients.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numQty)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblSupplies;
-        private System.Windows.Forms.Button btnCommit;
-        private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ListBox ListBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.GroupBox gbIngredientsOrder;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.ListBox lbIngredientsOrder;
+        private System.Windows.Forms.GroupBox gbAvailableIngredients;
+        private System.Windows.Forms.Button btnViewAll;
+        private System.Windows.Forms.ComboBox cbCategories;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.NumericUpDown numQty;
+        private System.Windows.Forms.ListBox lbAvailableIngredients;
+        private System.Windows.Forms.Button btnBack;
     }
 }
