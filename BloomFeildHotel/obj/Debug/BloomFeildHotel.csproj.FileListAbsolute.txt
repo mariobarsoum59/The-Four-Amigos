@@ -395,3 +395,4 @@ C:\Users\Saoir\Source\Repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeild
 C:\Users\Saoir\Source\Repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formCleaner.resources
 C:\Users\Saoir\Source\Repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formRequestCleaningSupplies.resources
 C:\Users\Saoir\Source\Repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewGuests.resources
+C:\Users\Saoir\Source\Repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formManageEmployeeProfile.resources

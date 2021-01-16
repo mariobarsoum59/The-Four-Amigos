@@ -611,7 +611,7 @@ namespace BusinessLayer
 
         public bool changePassword(IUser user)
         {
-            if(dataLayer.updateUser(user))
+            if(dataLayer.changePassword(user))
             {
                 return true;
             }
@@ -620,6 +620,16 @@ namespace BusinessLayer
                 return false;
             }
         }
-
+        public bool editUser(IUser user)
+        {
+            if (dataLayer.editUser(user))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

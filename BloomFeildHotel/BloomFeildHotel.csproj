@@ -178,6 +178,12 @@
     <Compile Include="formLogin.Designer.cs">
       <DependentUpon>formLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="formManageEmployeeProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formManageEmployeeProfile.Designer.cs">
+      <DependentUpon>formManageEmployeeProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="formManageOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -398,6 +404,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formManageEmployeeProfile.resx">
+      <DependentUpon>formManageEmployeeProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formManageOrder.resx">
       <DependentUpon>formManageOrder.cs</DependentUpon>

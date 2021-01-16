@@ -71,6 +71,7 @@ namespace DataAccessLayer
         bool updateCurrentStockItemInDB(BusinessEntities.IStockItem stockItem);
 
         bool changePassword(IUser user);
+        bool editUser(IUser user);
 
     }
 }

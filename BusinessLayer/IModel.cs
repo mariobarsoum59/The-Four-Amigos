@@ -97,5 +97,6 @@ namespace BusinessLayer
         Boolean createOrderItem(int OrderID, int ItemID, int Quantity);
         bool UpdateCurrrentStockItem(IStockItem stockItem);
         bool changePassword(IUser user);
+        bool editUser(IUser user);
     }
 }

@@ -136,5 +136,13 @@ namespace BloomFeildHotel
 
             f11.Show();
         }
+
+        private void btnManageEmployeeProfile_Click(object sender, EventArgs e)
+        {
+            formManageEmployeeProfile f12 = new formManageEmployeeProfile(fc, Model);
+            f12.Dock = DockStyle.Fill;
+
+            f12.Show();
+        }
     }
 }

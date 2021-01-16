@@ -1314,6 +1314,35 @@ namespace DataAccessLayer
             return true;
         }
 
+        public virtual bool editUser(IUser user)
+        {
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Users";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "UsersData");
+                DataRow findRow = ds.Tables["UsersData"].Rows.Find(user.UserID);
+                if (findRow != null)
+                {
+                    findRow[0] = user.FirstName;
+                    findRow[1] = user.Surname;
+                    findRow[2] = user.Username;
+                    findRow[4] = user.UserType;
+                }
+                da.Update(ds, "UsersData");
 
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
+                Application.Exit();
+            }
+            return true;
+        }
     }
 }
