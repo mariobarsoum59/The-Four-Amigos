@@ -71,5 +71,12 @@ namespace BloomFeildHotel
             form.Dock = DockStyle.Fill;
             form.Show();
         }
+
+        private void btnChangePassword_Click(object sender, EventArgs e)
+        {
+            formChangePassword form = new formChangePassword(fc, Model);
+            form.Dock = DockStyle.Fill;
+            form.Show();
+        }
     }
 }

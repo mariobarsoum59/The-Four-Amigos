@@ -38,6 +38,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnMangeWaste = new System.Windows.Forms.Button();
             this.btnRequestIngredients = new System.Windows.Forms.Button();
+            this.btnChangePassword = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -148,12 +149,26 @@
             this.btnRequestIngredients.UseVisualStyleBackColor = false;
             this.btnRequestIngredients.Click += new System.EventHandler(this.btnRequestIngredients_Click);
             // 
+            // btnChangePassword
+            // 
+            this.btnChangePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnChangePassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangePassword.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnChangePassword.Location = new System.Drawing.Point(271, 332);
+            this.btnChangePassword.Name = "btnChangePassword";
+            this.btnChangePassword.Size = new System.Drawing.Size(161, 104);
+            this.btnChangePassword.TabIndex = 37;
+            this.btnChangePassword.Text = "Change Password";
+            this.btnChangePassword.UseVisualStyleBackColor = false;
+            this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
+            // 
             // formChef
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(1261, 612);
+            this.Controls.Add(this.btnChangePassword);
             this.Controls.Add(this.btnRequestIngredients);
             this.Controls.Add(this.btnMangeWaste);
             this.Controls.Add(this.btnExit);
@@ -186,5 +201,6 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnMangeWaste;
         private System.Windows.Forms.Button btnRequestIngredients;
+        private System.Windows.Forms.Button btnChangePassword;
     }
 }

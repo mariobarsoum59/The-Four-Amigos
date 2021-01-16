@@ -82,6 +82,12 @@
     <Compile Include="formBarStaff.Designer.cs">
       <DependentUpon>formBarStaff.cs</DependentUpon>
     </Compile>
+    <Compile Include="formChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formChangePassword.Designer.cs">
+      <DependentUpon>formChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="formCheckOut.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -345,8 +351,14 @@
     <EmbeddedResource Include="formBarStaff.resx">
       <DependentUpon>formBarStaff.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formChangePassword.resx">
+      <DependentUpon>formChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formCheckOut.resx">
       <DependentUpon>formCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formCleaner.resx">
+      <DependentUpon>formCleaner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formCreateMonthlyReport.resx">
       <DependentUpon>formCreateMonthlyReport.cs</DependentUpon>

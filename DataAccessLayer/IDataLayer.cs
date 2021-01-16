@@ -70,5 +70,7 @@ namespace DataAccessLayer
         void addNewStockOrderToDB(IStockOrder aStockOrder);
         bool updateCurrentStockItemInDB(BusinessEntities.IStockItem stockItem);
 
+        bool changePassword(IUser user);
+
     }
 }

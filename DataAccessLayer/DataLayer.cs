@@ -1286,6 +1286,34 @@ namespace DataAccessLayer
 
         }
 
+        public virtual bool changePassword(IUser user)
+        {
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Users";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "UsersData");
+                DataRow findRow = ds.Tables["UsersData"].Rows.Find(user.UserID);
+                if (findRow != null)
+                {
+                    findRow[3] = user.Password;
+                }
+                da.Update(ds, "UsersData");
+
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
+                Application.Exit();
+            }
+            return true;
+        }
+
 
     }
 }

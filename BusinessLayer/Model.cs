@@ -609,6 +609,17 @@ namespace BusinessLayer
             return true;
         }
 
+        public bool changePassword(IUser user)
+        {
+            if(dataLayer.updateUser(user))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
     }
 }

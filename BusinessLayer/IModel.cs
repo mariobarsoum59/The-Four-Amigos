@@ -96,5 +96,6 @@ namespace BusinessLayer
         Boolean createStockOrder(DateTime Date, decimal Total, String Department, int CreatedBy);
         Boolean createOrderItem(int OrderID, int ItemID, int Quantity);
         bool UpdateCurrrentStockItem(IStockItem stockItem);
+        bool changePassword(IUser user);
     }
 }
