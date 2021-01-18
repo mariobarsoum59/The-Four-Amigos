@@ -144,5 +144,13 @@ namespace BloomFeildHotel
 
             f12.Show();
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            formRoomCleaningRecords f13 = new formRoomCleaningRecords(fc, Model);
+            f13.Dock = DockStyle.Fill;
+
+            f13.Show();
+        }
     }
 }

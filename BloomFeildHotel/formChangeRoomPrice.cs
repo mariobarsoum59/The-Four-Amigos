@@ -79,6 +79,13 @@ namespace BloomFeildHotel
                         txtSmoking.Text = r.Smoking.ToString();
                         txtAvailable.Text = r.Available.ToString();
                         txtBasePrice.Text = r.BasePrice.ToString();
+
+                        uComboBoxRType.Text = r.RoomType.ToString();
+                        uComboBoxRSmoking.Text = r.Smoking.ToString();
+                        uComboBoxRAvailabile.Text = r.Available.ToString();
+
+                        
+
                     }
                 }
                    
@@ -92,11 +99,31 @@ namespace BloomFeildHotel
 
         private void BtnChangeBasePrice_Click(object sender, EventArgs e)
         {
+            bool Available = false;
+            bool Smoking = false;
+
             foreach(Room r in Model.RoomsList)
             {
                 if(listBox1.SelectedItem.ToString()==r.RoomNumber.ToString())
                 {
                     r.BasePrice = Convert.ToDouble(txtBasePrice.Text);
+                    r.RoomType = uComboBoxRType.SelectedItem.ToString();
+
+                    if(uComboBoxRSmoking.SelectedItem.ToString()=="True")
+                    {
+                        Smoking = true;
+                    }
+
+
+
+                    if(uComboBoxRAvailabile.SelectedItem.ToString()=="True")
+                    {
+                        Available = true;
+                    }
+
+
+                    r.Available = Available;
+                    r.Smoking = Smoking;
                     if(Model.UpdateRoomPrice(r))
                     {
                         MessageBox.Show("Room Price Updated");

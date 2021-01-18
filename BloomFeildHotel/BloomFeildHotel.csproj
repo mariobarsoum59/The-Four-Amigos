@@ -250,6 +250,12 @@
     <Compile Include="formReservationUpdateConfirm.Designer.cs">
       <DependentUpon>formReservationUpdateConfirm.cs</DependentUpon>
     </Compile>
+    <Compile Include="formRoomCleaningRecords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formRoomCleaningRecords.Designer.cs">
+      <DependentUpon>formRoomCleaningRecords.cs</DependentUpon>
+    </Compile>
     <Compile Include="formSales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -440,6 +446,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formReservationUpdateConfirm.resx">
       <DependentUpon>formReservationUpdateConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formRoomCleaningRecords.resx">
+      <DependentUpon>formRoomCleaningRecords.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formSales.resx">
       <DependentUpon>formSales.cs</DependentUpon>

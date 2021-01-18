@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formChangeRoomPrice));
             this.btnChangeBasePrice = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.txtBasePrice = new System.Windows.Forms.TextBox();
@@ -49,8 +50,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.uComboBoxRAvailabile = new System.Windows.Forms.ComboBox();
+            this.uComboBoxRSmoking = new System.Windows.Forms.ComboBox();
+            this.uComboBoxRType = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBoxFilter.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnChangeBasePrice
@@ -62,7 +68,7 @@
             this.btnChangeBasePrice.Name = "btnChangeBasePrice";
             this.btnChangeBasePrice.Size = new System.Drawing.Size(153, 99);
             this.btnChangeBasePrice.TabIndex = 34;
-            this.btnChangeBasePrice.Text = "Change Base Price";
+            this.btnChangeBasePrice.Text = "Change Details";
             this.btnChangeBasePrice.UseVisualStyleBackColor = false;
             this.btnChangeBasePrice.Click += new System.EventHandler(this.BtnChangeBasePrice_Click);
             // 
@@ -115,9 +121,9 @@
             this.lblRoomCleaningService.ForeColor = System.Drawing.Color.White;
             this.lblRoomCleaningService.Location = new System.Drawing.Point(3, 21);
             this.lblRoomCleaningService.Name = "lblRoomCleaningService";
-            this.lblRoomCleaningService.Size = new System.Drawing.Size(389, 47);
+            this.lblRoomCleaningService.Size = new System.Drawing.Size(330, 47);
             this.lblRoomCleaningService.TabIndex = 0;
-            this.lblRoomCleaningService.Text = "Change Room Base Price";
+            this.lblRoomCleaningService.Text = "Change Room Details";
             // 
             // panel1
             // 
@@ -223,7 +229,7 @@
             // txtType
             // 
             this.txtType.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtType.Location = new System.Drawing.Point(428, 202);
+            this.txtType.Location = new System.Drawing.Point(428, 208);
             this.txtType.Name = "txtType";
             this.txtType.ReadOnly = true;
             this.txtType.Size = new System.Drawing.Size(260, 29);
@@ -232,7 +238,7 @@
             // txtSmoking
             // 
             this.txtSmoking.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSmoking.Location = new System.Drawing.Point(428, 234);
+            this.txtSmoking.Location = new System.Drawing.Point(428, 245);
             this.txtSmoking.Name = "txtSmoking";
             this.txtSmoking.ReadOnly = true;
             this.txtSmoking.Size = new System.Drawing.Size(260, 29);
@@ -241,7 +247,7 @@
             // txtAvailable
             // 
             this.txtAvailable.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAvailable.Location = new System.Drawing.Point(428, 269);
+            this.txtAvailable.Location = new System.Drawing.Point(428, 279);
             this.txtAvailable.Name = "txtAvailable";
             this.txtAvailable.ReadOnly = true;
             this.txtAvailable.Size = new System.Drawing.Size(260, 29);
@@ -261,7 +267,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(351, 240);
+            this.label2.Location = new System.Drawing.Point(351, 245);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 20);
             this.label2.TabIndex = 40;
@@ -271,11 +277,58 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(350, 275);
+            this.label3.Location = new System.Drawing.Point(350, 285);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 20);
             this.label3.TabIndex = 41;
             this.label3.Text = "Available";
+            // 
+            // uComboBoxRAvailabile
+            // 
+            this.uComboBoxRAvailabile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uComboBoxRAvailabile.FormattingEnabled = true;
+            this.uComboBoxRAvailabile.Items.AddRange(new object[] {
+            "True",
+            "False"});
+            this.uComboBoxRAvailabile.Location = new System.Drawing.Point(839, 282);
+            this.uComboBoxRAvailabile.Name = "uComboBoxRAvailabile";
+            this.uComboBoxRAvailabile.Size = new System.Drawing.Size(279, 28);
+            this.uComboBoxRAvailabile.TabIndex = 44;
+            // 
+            // uComboBoxRSmoking
+            // 
+            this.uComboBoxRSmoking.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uComboBoxRSmoking.FormattingEnabled = true;
+            this.uComboBoxRSmoking.Items.AddRange(new object[] {
+            "True",
+            "False"});
+            this.uComboBoxRSmoking.Location = new System.Drawing.Point(839, 246);
+            this.uComboBoxRSmoking.Name = "uComboBoxRSmoking";
+            this.uComboBoxRSmoking.Size = new System.Drawing.Size(279, 28);
+            this.uComboBoxRSmoking.TabIndex = 43;
+            // 
+            // uComboBoxRType
+            // 
+            this.uComboBoxRType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uComboBoxRType.FormattingEnabled = true;
+            this.uComboBoxRType.Items.AddRange(new object[] {
+            "Single",
+            "Double",
+            "Twin"});
+            this.uComboBoxRType.Location = new System.Drawing.Point(839, 211);
+            this.uComboBoxRType.Name = "uComboBoxRType";
+            this.uComboBoxRType.Size = new System.Drawing.Size(279, 28);
+            this.uComboBoxRType.TabIndex = 42;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(714, 224);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(105, 81);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 45;
+            this.pictureBox1.TabStop = false;
             // 
             // formChangeRoomPrice
             // 
@@ -283,6 +336,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(1245, 555);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.uComboBoxRAvailabile);
+            this.Controls.Add(this.uComboBoxRSmoking);
+            this.Controls.Add(this.uComboBoxRType);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -304,6 +361,7 @@
             this.panel1.PerformLayout();
             this.groupBoxFilter.ResumeLayout(false);
             this.groupBoxFilter.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,5 +389,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox uComboBoxRAvailabile;
+        private System.Windows.Forms.ComboBox uComboBoxRSmoking;
+        private System.Windows.Forms.ComboBox uComboBoxRType;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
