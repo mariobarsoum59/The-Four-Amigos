@@ -35,6 +35,10 @@ namespace BusinessLayer
         private List<IStockOrder> stockOrdersList;
         private List<IOrderItem> orderItemsList;
         private List<IMonthlyReport> monthlyReportsList;
+        private List<IBistroOrders> bistroOrdersList;
+        private List<IDrinks> drinksList;
+        private List<IOrder_has_Drinks> orderDrinksList;
+        private List<IOrder_has_Meals> orderMealsList;
         #endregion
 
         #region Instance Properties
@@ -244,6 +248,50 @@ namespace BusinessLayer
             set
             {
                 monthlyReportsList = value;
+            }
+        }
+        public List<IBistroOrders> BistroOrdersList
+        {
+            get
+            {
+                return bistroOrdersList;
+            }
+            set
+            {
+                bistroOrdersList = value;
+            }
+        }
+        public List<IDrinks> DrinksList
+        {
+            get
+            {
+                return drinksList;
+            }
+            set
+            {
+                drinksList = value;
+            }
+        }
+        public List<IOrder_has_Drinks> OrderDrinksList
+        {
+            get
+            {
+                return orderDrinksList;
+            }
+            set
+            {
+                orderDrinksList = value;
+            }
+        }
+        public List<IOrder_has_Meals> OrderMealsList
+        {
+            get
+            {
+                return orderMealsList;
+            }
+            set
+            {
+                orderMealsList = value;
             }
         }
         #endregion
@@ -628,6 +676,112 @@ namespace BusinessLayer
             }
             else
             {
+                return false;
+            }
+        }
+        public void GetAllBistroOrders()
+        {
+            BistroOrdersList = dataLayer.getAllBistroOrders();
+        }
+        public void GetAllDrinks()
+        {
+            DrinksList = dataLayer.getAllDrinks();
+        }
+        public void GetAllOrderDrinks()
+        {
+            OrderDrinksList = dataLayer.getAllOrderDrinks();
+        }
+        public void GetAllOrderMeals()
+        {
+            OrderMealsList = dataLayer.getAllOrderMeals();
+        }
+        public bool editBistroOrder(IBistroOrders aBistroOrder)
+        {
+            if (dataLayer.editBistroOrder(aBistroOrder))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool editOrderDrink(IOrder_has_Drinks anOrderDrink)
+        {
+            if (dataLayer.editOrderDrink(anOrderDrink))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool editOrderMeal(IOrder_has_Meals anOrderMeal)
+        {
+            if (dataLayer.editOrderMeal(anOrderMeal))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public Boolean createBistroOrder(DateTime OrderDate, decimal OrderTotal, int OrderMadeBy)
+        {
+            try
+            {
+
+                IBistroOrders aBistroOrder = BistroOrdersHotel.GetBistroOrders(0, OrderDate, OrderTotal, OrderMadeBy);
+                DataLayer.addNewBistroOrder(aBistroOrder);
+                return true;
+            }
+            catch (System.Exception excep)
+            {
+
+                return false;
+            }
+        }
+        public Boolean createOrderDrink(int OrderID, int DrinkID, int Quantity)
+        {
+            try
+            {
+                IOrder_has_Drinks anOrderDrink = Order_has_DrinksHotel.GetOrderDrinks(OrderID, DrinkID, Quantity);
+                DataLayer.addNewOrderDrink(anOrderDrink);
+                return true;
+            }
+            catch (System.Exception excep)
+            {
+
+                return false;
+            }
+        }
+        public Boolean createOrderMeal(int OrderID, int DishID, int Quantity)
+        {
+            try
+            {
+                IOrder_has_Meals anOrderMeal = Order_has_MealsHotel.GetOrderMeals(OrderID, DishID, Quantity);
+                DataLayer.addNewOrderMeal(anOrderMeal);
+                return true;
+            }
+            catch (System.Exception excep)
+            {
+
+                return false;
+            }
+        }
+        public Boolean createDrink(string DrinkName, decimal DrinkPrice)
+        {
+            try
+            {
+                IDrinks aDrink = DrinksHotel.GetDrinks(0, DrinkName, DrinkPrice);
+                DataLayer.addNewDrink(aDrink);
+                return true;
+            }
+            catch (System.Exception excep)
+            {
+
                 return false;
             }
         }

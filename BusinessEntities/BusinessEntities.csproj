@@ -43,9 +43,15 @@
   <ItemGroup>
     <Compile Include="BarItems.cs" />
     <Compile Include="BarItemsHotel.cs" />
+    <Compile Include="BistroOrders.cs" />
+    <Compile Include="BistroOrdersHotel.cs" />
+    <Compile Include="Drinks.cs" />
+    <Compile Include="DrinksHotel.cs" />
     <Compile Include="Guest.cs" />
     <Compile Include="GuestHotel.cs" />
     <Compile Include="IBarItems.cs" />
+    <Compile Include="IBistroOrders.cs" />
+    <Compile Include="IDrinks.cs" />
     <Compile Include="IGuest.cs" />
     <Compile Include="IIngredients.cs" />
     <Compile Include="IMeals.cs" />
@@ -54,6 +60,8 @@
     <Compile Include="IngredientsHotel.cs" />
     <Compile Include="IOrderItem.cs" />
     <Compile Include="IOrders.cs" />
+    <Compile Include="IOrder_has_Drinks.cs" />
+    <Compile Include="IOrder_has_Meals.cs" />
     <Compile Include="IReservation.cs" />
     <Compile Include="IRoom.cs" />
     <Compile Include="IRoomCleaningRecord.cs" />
@@ -68,6 +76,10 @@
     <Compile Include="OrderItemsHotel.cs" />
     <Compile Include="Orders.cs" />
     <Compile Include="OrdersHotel.cs" />
+    <Compile Include="Order_has_Drinks.cs" />
+    <Compile Include="Order_has_DrinksHotel.cs" />
+    <Compile Include="Order_has_Meals.cs" />
+    <Compile Include="Order_has_MealsHotel.cs" />
     <Compile Include="Reservation.cs" />
     <Compile Include="ReservationHotel.cs" />
     <Compile Include="Room.cs" />

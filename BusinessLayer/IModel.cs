@@ -98,5 +98,22 @@ namespace BusinessLayer
         bool UpdateCurrrentStockItem(IStockItem stockItem);
         bool changePassword(IUser user);
         bool editUser(IUser user);
+
+
+        List<IBistroOrders> BistroOrdersList { get; set; }
+        List<IDrinks> DrinksList { get; set; }
+        List<IOrder_has_Drinks> OrderDrinksList { get; set; }
+        List<IOrder_has_Meals> OrderMealsList { get; set; }
+        void GetAllBistroOrders();
+        void GetAllDrinks();
+        void GetAllOrderDrinks();
+        void GetAllOrderMeals();
+        bool editBistroOrder(IBistroOrders aBistroOrder);
+        bool editOrderDrink(IOrder_has_Drinks anOrderDrink);
+        bool editOrderMeal(IOrder_has_Meals anOrderMeal);
+        Boolean createBistroOrder(DateTime OrderDate, decimal OrderTotal, int OrderMadeBy);
+        Boolean createOrderDrink(int OrderID, int DrinkID, int Quantity);
+        Boolean createOrderMeal(int OrderID, int DishID, int Quantity);
+        Boolean createDrink(string DrinkName, decimal DrinkPrice);
     }
 }

@@ -73,5 +73,17 @@ namespace DataAccessLayer
         bool changePassword(IUser user);
         bool editUser(IUser user);
 
+        List<IBistroOrders> getAllBistroOrders();
+        List<IDrinks> getAllDrinks();
+        List<IOrder_has_Meals> getAllOrderMeals();
+        List<IOrder_has_Drinks> getAllOrderDrinks();
+        void addNewBistroOrder(IBistroOrders aBistroOrder);
+        void addNewDrink(IDrinks aDrink);
+        void addNewOrderDrink(IOrder_has_Drinks anOrderDrink);
+        void addNewOrderMeal(IOrder_has_Meals anOrderMeal);
+        bool editBistroOrder(IBistroOrders aBistroOrder);
+        bool editOrderDrink(IOrder_has_Drinks anOrderDrink);
+        bool editOrderMeal(IOrder_has_Meals anOrderMeal);
+
     }
 }

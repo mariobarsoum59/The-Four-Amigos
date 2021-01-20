@@ -397,11 +397,11 @@ namespace DataAccessLayer
                 string sql = "SELECT * From Reservations";
                 da = new SqlDataAdapter(sql, con);
                 cb = new SqlCommandBuilder(da);  //Generates
-                da.Fill(ds, "GuestsData");
-                int totNumsGuest = ds.Tables["GuestsData"].Rows.Count;
-                for (int i = 0; i < totNumsGuest; i++)
+                da.Fill(ds, "ReservationsData");
+                int totNumReservations = ds.Tables["ReservationsData"].Rows.Count;
+                for (int i = 0; i < totNumReservations; i++)
                 {
-                    DataRow dRow = ds.Tables["GuestsData"].Rows[i];
+                    DataRow dRow = ds.Tables["ReservationsData"].Rows[i];
 
 
                     IReservation reservation = ReservationHotel.GetReservation      // Using factory to create the reservation entity object. ie seperating object creation from business logic
@@ -768,8 +768,8 @@ namespace DataAccessLayer
                 da = new SqlDataAdapter(sql, con);
                 cb = new SqlCommandBuilder(da);  //Generates
                 da.Fill(ds, "OrdersData");
-                int totNumsBarItems = ds.Tables["OrdersData"].Rows.Count;
-                for (int i = 0; i < totNumsBarItems; i++)
+                int totNumOrders = ds.Tables["OrdersData"].Rows.Count;
+                for (int i = 0; i < totNumOrders; i++)
                 {
                     DataRow dRow = ds.Tables["OrdersData"].Rows[i];
 
@@ -1002,11 +1002,11 @@ namespace DataAccessLayer
                 string sql = "SELECT * From StockItems";
                 da = new SqlDataAdapter(sql, con);
                 cb = new SqlCommandBuilder(da);
-                da.Fill(ds, "IngData");
-                int allIngData = ds.Tables["IngData"].Rows.Count;
-                for (int i = 0; i < allIngData; i++)
+                da.Fill(ds, "StockItemData");
+                int allStockItems = ds.Tables["StockItemData"].Rows.Count;
+                for (int i = 0; i < allStockItems; i++)
                 {
-                    DataRow dRow = ds.Tables["IngData"].Rows[i];
+                    DataRow dRow = ds.Tables["StockItemData"].Rows[i];
                     IStockItem stockItems = StockItemsHotel.GetStockItems(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
                                                                                          dRow.ItemArray.GetValue(1).ToString(),
                                                                                          dRow.ItemArray.GetValue(2).ToString(),
@@ -1042,11 +1042,11 @@ namespace DataAccessLayer
                 string sql = "SELECT * From StockOrders";
                 da = new SqlDataAdapter(sql, con);
                 cb = new SqlCommandBuilder(da);
-                da.Fill(ds, "IngData");
-                int allIngData = ds.Tables["IngData"].Rows.Count;
-                for (int i = 0; i < allIngData; i++)
+                da.Fill(ds, "StockOrdersData");
+                int allStockOrders = ds.Tables["StockOrdersData"].Rows.Count;
+                for (int i = 0; i < allStockOrders; i++)
                 {
-                    DataRow dRow = ds.Tables["IngData"].Rows[i];
+                    DataRow dRow = ds.Tables["StockOrdersData"].Rows[i];
                     IStockOrder stockOrders = StockOrdersHotel.GetStockOrders(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
                                                                        Convert.ToDateTime(dRow.ItemArray.GetValue(1).ToString()),
                                                                        Convert.ToDecimal(dRow.ItemArray.GetValue(2).ToString()),
@@ -1081,11 +1081,11 @@ namespace DataAccessLayer
                 string sql = "SELECT * From OrderItems";
                 da = new SqlDataAdapter(sql, con);
                 cb = new SqlCommandBuilder(da);
-                da.Fill(ds, "IngData");
-                int allIngData = ds.Tables["IngData"].Rows.Count;
-                for (int i = 0; i < allIngData; i++)
+                da.Fill(ds, "OrderItemsData");
+                int allOrderItems = ds.Tables["OrderItemsData"].Rows.Count;
+                for (int i = 0; i < allOrderItems; i++)
                 {
-                    DataRow dRow = ds.Tables["IngData"].Rows[i];
+                    DataRow dRow = ds.Tables["OrderItemsData"].Rows[i];
                     IOrderItem orderItems = OrderItemsHotel.GetOrderItems(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
                                                                        Convert.ToInt16(dRow.ItemArray.GetValue(1).ToString()),
                                                                                          Convert.ToInt16(dRow.ItemArray.GetValue(2).ToString()));
@@ -1117,11 +1117,11 @@ namespace DataAccessLayer
                 string sql = "SELECT * From MonthlyReport";
                 da = new SqlDataAdapter(sql, con);
                 cb = new SqlCommandBuilder(da);
-                da.Fill(ds, "IngData");
-                int allIngData = ds.Tables["IngData"].Rows.Count;
-                for (int i = 0; i < allIngData; i++)
+                da.Fill(ds, "MonthlyData");
+                int allMonthlyReports = ds.Tables["MonthlyData"].Rows.Count;
+                for (int i = 0; i < allMonthlyReports; i++)
                 {
-                    DataRow dRow = ds.Tables["IngData"].Rows[i];
+                    DataRow dRow = ds.Tables["MonthlyData"].Rows[i];
                     IMonthlyReport monthlyReports = MonthlyReportsHotel.GetMonthlyReports(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
                                                                        Convert.ToDateTime(dRow.ItemArray.GetValue(1).ToString()),
                                                                                          Convert.ToInt16(dRow.ItemArray.GetValue(2).ToString()),
@@ -1333,6 +1333,349 @@ namespace DataAccessLayer
                     findRow[4] = user.UserType;
                 }
                 da.Update(ds, "UsersData");
+
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
+                Application.Exit();
+            }
+            return true;
+        }
+
+        public virtual List<IBistroOrders> getAllBistroOrders()
+        {
+            List<IBistroOrders> BistroOrders = new List<IBistroOrders>();
+
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From BistroOrders";
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "BistroData");
+                int allBistroOrders = ds.Tables["BistroData"].Rows.Count;
+                for (int i = 0; i < allBistroOrders; i++)
+                {
+                    DataRow dRow = ds.Tables["BistroData"].Rows[i];
+                    IBistroOrders bistroOrder = BistroOrdersHotel.GetBistroOrders(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
+                                                                       Convert.ToDateTime(dRow.ItemArray.GetValue(1).ToString()),
+                                                                                         Convert.ToDecimal(dRow.ItemArray.GetValue(2).ToString()),
+                                                                                         Convert.ToInt16(dRow.ItemArray.GetValue(4).ToString()));
+
+
+
+                    BistroOrders.Add(bistroOrder);
+                }
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+            return BistroOrders;
+        }
+        public virtual List<IDrinks> getAllDrinks()
+        {
+            List<IDrinks> Drinks = new List<IDrinks>();
+
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Drinks";
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "DrinkData");
+                int allDrinks = ds.Tables["DrinkData"].Rows.Count;
+                for (int i = 0; i < allDrinks; i++)
+                {
+                    DataRow dRow = ds.Tables["DrinkData"].Rows[i];
+                    IDrinks drinks = DrinksHotel.GetDrinks(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
+                                                                           dRow.ItemArray.GetValue(1).ToString(),
+                                                           Convert.ToDecimal(dRow.ItemArray.GetValue(2).ToString()));
+
+
+                    Drinks.Add(drinks);
+                }
+            }
+            catch (System.Exception excep)
+            {
+
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+            }
+            return Drinks;
+        }
+        public virtual List<IOrder_has_Meals> getAllOrderMeals()
+        {
+            List<IOrder_has_Meals> OrderMeals = new List<IOrder_has_Meals>();
+
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Order_has_Meals";
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "OrderMealData");
+                int allOrderMeals = ds.Tables["OrderMealData"].Rows.Count;
+                for (int i = 0; i < allOrderMeals; i++)
+                {
+                    DataRow dRow = ds.Tables["OrderMealData"].Rows[i];
+                    IOrder_has_Meals orderMeal = Order_has_MealsHotel.GetOrderMeals(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
+                                                                                                    Convert.ToInt16(dRow.ItemArray.GetValue(1).ToString()),
+                                                                                                    Convert.ToInt16(dRow.ItemArray.GetValue(2).ToString()));
+
+
+                    OrderMeals.Add(orderMeal);
+                }
+            }
+            catch (System.Exception excep)
+            {
+
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+            }
+            return OrderMeals;
+        }
+        public virtual List<IOrder_has_Drinks> getAllOrderDrinks()
+        {
+            List<IOrder_has_Drinks> OrderDrinks = new List<IOrder_has_Drinks>();
+
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Order_has_Drinks";
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "OrderMealData");
+                int allOrderDrinks = ds.Tables["OrderDrinkData"].Rows.Count;
+                for (int i = 0; i < allOrderDrinks; i++)
+                {
+                    DataRow dRow = ds.Tables["OrderDrinkData"].Rows[i];
+                    IOrder_has_Drinks orderDrink = Order_has_DrinksHotel.GetOrderDrinks(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
+                                                                                                    Convert.ToInt16(dRow.ItemArray.GetValue(1).ToString()),
+                                                                                                    Convert.ToInt16(dRow.ItemArray.GetValue(2).ToString()));
+
+
+                    OrderDrinks.Add(orderDrink);
+                }
+            }
+            catch (System.Exception excep)
+            {
+
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+            }
+            return OrderDrinks;
+        }
+        public virtual void addNewBistroOrder(IBistroOrders aBistroOrder)
+        {
+            try
+            {
+                DataSet ds = new DataSet();
+                string sql = "SELECT * From BistroOrders";
+                SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                SqlCommandBuilder cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "bistroOrderData");
+                maxRows = ds.Tables["bistroOrderData"].Rows.Count;
+                DataRow dRow = ds.Tables["bistroOrderData"].NewRow();
+                dRow[1] = aBistroOrder.OrderDate;
+                dRow[2] = aBistroOrder.OrderTotal;
+                dRow[3] = aBistroOrder.OrderMadeBy;
+
+
+
+                ds.Tables["bistroOrderData"].Rows.Add(dRow);
+                da.Update(ds, "bistroOrderData");
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+        }
+        public virtual void addNewDrink(IDrinks aDrink)
+        {
+            try
+            {
+                DataSet ds = new DataSet();
+                string sql = "SELECT * From Drinks";
+                SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                SqlCommandBuilder cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "drinksData");
+                maxRows = ds.Tables["drinksData"].Rows.Count;
+                DataRow dRow = ds.Tables["drinksData"].NewRow();
+                dRow[1] = aDrink.DrinkName;
+                dRow[2] = aDrink.DrinkPrice;
+
+
+
+                ds.Tables["drinksData"].Rows.Add(dRow);
+                da.Update(ds, "drinksData");
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+        }
+        public virtual void addNewOrderDrink(IOrder_has_Drinks anOrderDrink)
+        {
+            try
+            {
+                DataSet ds = new DataSet();
+                string sql = "SELECT * From Order_has_Drinks";
+                SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                SqlCommandBuilder cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "orderDrinksData");
+                maxRows = ds.Tables["orderDrinksData"].Rows.Count;
+                DataRow dRow = ds.Tables["orderDrinksData"].NewRow();
+                dRow[0] = anOrderDrink.OrderID;
+                dRow[1] = anOrderDrink.DrinkID;
+                dRow[2] = anOrderDrink.Quantity;
+
+
+
+                ds.Tables["orderDrinksData"].Rows.Add(dRow);
+                da.Update(ds, "orderDrinksData");
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+        }
+        public virtual void addNewOrderMeal(IOrder_has_Meals anOrderMeal)
+        {
+            try
+            {
+                DataSet ds = new DataSet();
+                string sql = "SELECT * From Order_has_Meals";
+                SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                SqlCommandBuilder cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "orderMealsData");
+                maxRows = ds.Tables["orderMealsData"].Rows.Count;
+                DataRow dRow = ds.Tables["orderMealsData"].NewRow();
+                dRow[0] = anOrderMeal.OrderID;
+                dRow[1] = anOrderMeal.DishID;
+                dRow[2] = anOrderMeal.Quantity;
+
+
+
+                ds.Tables["orderMealsData"].Rows.Add(dRow);
+                da.Update(ds, "orderMealsData");
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+        }
+        public virtual bool editBistroOrder(IBistroOrders aBistroOrder)
+        {
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From BistroOrders";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "BistroOrdersData");
+                DataRow findRow = ds.Tables["BistroOrdersData"].Rows.Find(aBistroOrder.OrderID);
+                if (findRow != null)
+                {
+                    findRow[1] = aBistroOrder.OrderDate;
+                    findRow[2] = aBistroOrder.OrderTotal;
+                    findRow[3] = aBistroOrder.OrderMadeBy;
+                }
+                da.Update(ds, "BistroOrdersData");
+
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
+                Application.Exit();
+            }
+            return true;
+        }
+        public virtual bool editOrderDrink(IOrder_has_Drinks anOrderDrink)
+        {
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Order_has_Drinks";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "OrderDrinksData");
+                object[] findItem = new object[2];
+                findItem[0] = anOrderDrink.OrderID;
+                findItem[1] = anOrderDrink.DrinkID;
+                DataRow findRow = ds.Tables["OrderDrinksData"].Rows.Find(findItem);
+                if (findRow != null)
+                {
+                    findRow[0] = anOrderDrink.OrderID;
+                    findRow[1] = anOrderDrink.DrinkID;
+                    findRow[2] = anOrderDrink.Quantity;
+                }
+                da.Update(ds, "OrderDrinksData");
+
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
+                Application.Exit();
+            }
+            return true;
+        }
+        public virtual bool editOrderMeal(IOrder_has_Meals anOrderMeal)
+        {
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Order_has_Meals";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "OrderMealsData");
+                object[] findItem = new object[2];
+                findItem[0] = anOrderMeal.OrderID;
+                findItem[1] = anOrderMeal.DishID;
+                DataRow findRow = ds.Tables["OrderMealsData"].Rows.Find(findItem);
+                if (findRow != null)
+                {
+                    findRow[0] = anOrderMeal.OrderID;
+                    findRow[1] = anOrderMeal.DishID;
+                    findRow[2] = anOrderMeal.Quantity;
+                }
+                da.Update(ds, "OrderMealsData");
 
             }
             catch (System.Exception excep)
