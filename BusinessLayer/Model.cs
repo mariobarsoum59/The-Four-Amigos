@@ -728,12 +728,12 @@ namespace BusinessLayer
                 return false;
             }
         }
-        public Boolean createBistroOrder(DateTime OrderDate, decimal OrderTotal, int OrderMadeBy)
+        public Boolean createBistroOrder(DateTime OrderDate, decimal OrderTotal, int OrderMadeBy, string OrderNote, Boolean OrderCompleted)
         {
             try
             {
 
-                IBistroOrders aBistroOrder = BistroOrdersHotel.GetBistroOrders(0, OrderDate, OrderTotal, OrderMadeBy);
+                IBistroOrders aBistroOrder = BistroOrdersHotel.GetBistroOrders(0, OrderDate, OrderTotal, OrderMadeBy, OrderNote, OrderCompleted);
                 DataLayer.addNewBistroOrder(aBistroOrder);
                 return true;
             }

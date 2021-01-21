@@ -12,5 +12,7 @@ namespace BusinessEntities
         DateTime OrderDate { get; set; }
         decimal OrderTotal { get; set; }
         int OrderMadeBy { get; set; }
+        string OrderNote { get; set; }
+        Boolean OrderCompleted { get; set; }
     }
 }

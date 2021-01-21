@@ -1363,7 +1363,9 @@ namespace DataAccessLayer
                     IBistroOrders bistroOrder = BistroOrdersHotel.GetBistroOrders(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
                                                                        Convert.ToDateTime(dRow.ItemArray.GetValue(1).ToString()),
                                                                                          Convert.ToDecimal(dRow.ItemArray.GetValue(2).ToString()),
-                                                                                         Convert.ToInt16(dRow.ItemArray.GetValue(3).ToString()));
+                                                                                         Convert.ToInt16(dRow.ItemArray.GetValue(3).ToString()),
+                                                                                         dRow.ItemArray.GetValue(4).ToString(),
+                                                                                         Convert.ToBoolean(dRow.ItemArray.GetValue(5).ToString()));
 
 
 
@@ -1495,6 +1497,8 @@ namespace DataAccessLayer
                 dRow[1] = aBistroOrder.OrderDate;
                 dRow[2] = aBistroOrder.OrderTotal;
                 dRow[3] = aBistroOrder.OrderMadeBy;
+                dRow[4] = aBistroOrder.OrderNote;
+                dRow[5] = aBistroOrder.OrderCompleted;
 
 
 
@@ -1614,6 +1618,8 @@ namespace DataAccessLayer
                     findRow[1] = aBistroOrder.OrderDate;
                     findRow[2] = aBistroOrder.OrderTotal;
                     findRow[3] = aBistroOrder.OrderMadeBy;
+                    findRow[4] = aBistroOrder.OrderNote;
+                    findRow[5] = aBistroOrder.OrderCompleted;
                 }
                 da.Update(ds, "BistroOrdersData");
 

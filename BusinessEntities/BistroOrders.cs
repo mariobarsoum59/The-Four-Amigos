@@ -13,6 +13,8 @@ namespace BusinessEntities
         private DateTime orderDate;
         private decimal orderTotal;
         private int orderMadeBy;
+        private string orderNote;
+        private Boolean orderCompleted;
         #endregion
 
         public int OrderID
@@ -59,16 +61,40 @@ namespace BusinessEntities
                 orderMadeBy = value;
             }
         }
+        public string OrderNote
+        {
+            get
+            {
+                return orderNote;
+            }
+            set
+            {
+                orderNote = value;
+            }
+        }
+        public Boolean OrderCompleted
+        {
+            get
+            {
+                return orderCompleted;
+            }
+            set
+            {
+                orderCompleted = value;
+            }
+        }
         public BistroOrders()
         {
 
         }
-        public BistroOrders(int OrderID, DateTime OrderDate, decimal OrderTotal, int OrderMadeBy)
+        public BistroOrders(int OrderID, DateTime OrderDate, decimal OrderTotal, int OrderMadeBy, string OrderNote, Boolean OrderCompleted)
         {
             this.orderID = OrderID;
             this.orderDate = OrderDate;
             this.orderTotal = OrderTotal;
             this.orderMadeBy = OrderMadeBy;
+            this.orderNote = OrderNote;
+            this.orderCompleted = OrderCompleted;
         }
     }
 }
