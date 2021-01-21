@@ -112,8 +112,8 @@ namespace BusinessLayer
         bool editOrderDrink(IOrder_has_Drinks anOrderDrink);
         bool editOrderMeal(IOrder_has_Meals anOrderMeal);
         Boolean createBistroOrder(DateTime OrderDate, decimal OrderTotal, int OrderMadeBy);
-        Boolean createOrderDrink(int OrderID, int DrinkID, int Quantity);
-        Boolean createOrderMeal(int OrderID, int DishID, int Quantity);
+        Boolean createOrderDrink(int OrderID, int DrinkID, int Quantity,  string Status);
+        Boolean createOrderMeal(int OrderID, int DishID, int Quantity, string Status);
         Boolean createDrink(string DrinkName, decimal DrinkPrice);
     }
 }

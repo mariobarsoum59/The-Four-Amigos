@@ -1430,7 +1430,8 @@ namespace DataAccessLayer
                     DataRow dRow = ds.Tables["OrderMealData"].Rows[i];
                     IOrder_has_Meals orderMeal = Order_has_MealsHotel.GetOrderMeals(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
                                                                                                     Convert.ToInt16(dRow.ItemArray.GetValue(1).ToString()),
-                                                                                                    Convert.ToInt16(dRow.ItemArray.GetValue(2).ToString()));
+                                                                                                    Convert.ToInt16(dRow.ItemArray.GetValue(2).ToString()),
+                                                                                                    dRow.ItemArray.GetValue(4).ToString());
 
 
                     OrderMeals.Add(orderMeal);
@@ -1463,7 +1464,8 @@ namespace DataAccessLayer
                     DataRow dRow = ds.Tables["OrderDrinkData"].Rows[i];
                     IOrder_has_Drinks orderDrink = Order_has_DrinksHotel.GetOrderDrinks(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
                                                                                                     Convert.ToInt16(dRow.ItemArray.GetValue(1).ToString()),
-                                                                                                    Convert.ToInt16(dRow.ItemArray.GetValue(2).ToString()));
+                                                                                                    Convert.ToInt16(dRow.ItemArray.GetValue(2).ToString()),
+                                                                                                    dRow.ItemArray.GetValue(4).ToString());
 
 
                     OrderDrinks.Add(orderDrink);
@@ -1550,6 +1552,7 @@ namespace DataAccessLayer
                 dRow[0] = anOrderDrink.OrderID;
                 dRow[1] = anOrderDrink.DrinkID;
                 dRow[2] = anOrderDrink.Quantity;
+                dRow[3] = anOrderDrink.Status;
 
 
 
@@ -1579,6 +1582,7 @@ namespace DataAccessLayer
                 dRow[0] = anOrderMeal.OrderID;
                 dRow[1] = anOrderMeal.DishID;
                 dRow[2] = anOrderMeal.Quantity;
+                dRow[3] = anOrderMeal.Status;
 
 
 
@@ -1642,6 +1646,7 @@ namespace DataAccessLayer
                     findRow[0] = anOrderDrink.OrderID;
                     findRow[1] = anOrderDrink.DrinkID;
                     findRow[2] = anOrderDrink.Quantity;
+                    findRow[3] = anOrderDrink.Status;
                 }
                 da.Update(ds, "OrderDrinksData");
 
@@ -1674,6 +1679,7 @@ namespace DataAccessLayer
                     findRow[0] = anOrderMeal.OrderID;
                     findRow[1] = anOrderMeal.DishID;
                     findRow[2] = anOrderMeal.Quantity;
+                    findRow[3] = anOrderMeal.Status;
                 }
                 da.Update(ds, "OrderMealsData");
 

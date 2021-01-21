@@ -12,6 +12,7 @@ namespace BusinessEntities
         private int orderID;
         private int dishID;
         private int quantity;
+        private string status;
         #endregion
 
         public int OrderID
@@ -47,15 +48,27 @@ namespace BusinessEntities
                 quantity = value;
             }
         }
+        public string Status
+        {
+            get
+            {
+                return status;
+            }
+            set
+            {
+                status = value;
+            }
+        }
         public Order_has_Meals()
         {
 
         }
-        public Order_has_Meals(int OrderID, int DishID, int Quantity)
+        public Order_has_Meals(int OrderID, int DishID, int Quantity, string Status)
         {
             this.orderID = OrderID;
             this.dishID = DishID;
             this.quantity = Quantity;
+            this.status = Status;
         }
     }
 }

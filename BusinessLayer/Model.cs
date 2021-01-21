@@ -743,11 +743,11 @@ namespace BusinessLayer
                 return false;
             }
         }
-        public Boolean createOrderDrink(int OrderID, int DrinkID, int Quantity)
+        public Boolean createOrderDrink(int OrderID, int DrinkID, int Quantity, string Status)
         {
             try
             {
-                IOrder_has_Drinks anOrderDrink = Order_has_DrinksHotel.GetOrderDrinks(OrderID, DrinkID, Quantity);
+                IOrder_has_Drinks anOrderDrink = Order_has_DrinksHotel.GetOrderDrinks(OrderID, DrinkID, Quantity, Status);
                 DataLayer.addNewOrderDrink(anOrderDrink);
                 return true;
             }
@@ -757,11 +757,11 @@ namespace BusinessLayer
                 return false;
             }
         }
-        public Boolean createOrderMeal(int OrderID, int DishID, int Quantity)
+        public Boolean createOrderMeal(int OrderID, int DishID, int Quantity, string Status)
         {
             try
             {
-                IOrder_has_Meals anOrderMeal = Order_has_MealsHotel.GetOrderMeals(OrderID, DishID, Quantity);
+                IOrder_has_Meals anOrderMeal = Order_has_MealsHotel.GetOrderMeals(OrderID, DishID, Quantity, Status);
                 DataLayer.addNewOrderMeal(anOrderMeal);
                 return true;
             }

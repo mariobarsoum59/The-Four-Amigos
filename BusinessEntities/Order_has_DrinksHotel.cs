@@ -10,12 +10,12 @@ namespace BusinessEntities
     {
         private static IOrder_has_Drinks orderDrink = null;
 
-        public static IOrder_has_Drinks GetOrderDrinks(int OrderID, int DrinkID, int Quantity)
+        public static IOrder_has_Drinks GetOrderDrinks(int OrderID, int DrinkID, int Quantity, string Status)
         {
             if (orderDrink != null)
                 return orderDrink;
             else
-                return new Order_has_Drinks(OrderID, DrinkID, Quantity);
+                return new Order_has_Drinks(OrderID, DrinkID, Quantity, Status);
 
         }
         public static void SetOrderDrinks(IOrder_has_Drinks anOrderDrink)

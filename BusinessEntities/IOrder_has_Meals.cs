@@ -11,5 +11,6 @@ namespace BusinessEntities
         int OrderID { get; set; }
         int DishID { get; set; }
         int Quantity { get; set; }
+        string Status { get; set;}
     }
 }
