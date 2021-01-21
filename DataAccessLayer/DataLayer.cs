@@ -1457,7 +1457,7 @@ namespace DataAccessLayer
                 string sql = "SELECT * From Order_has_Drinks";
                 da = new SqlDataAdapter(sql, con);
                 cb = new SqlCommandBuilder(da);
-                da.Fill(ds, "OrderMealData");
+                da.Fill(ds, "OrderDrinkData");
                 int allOrderDrinks = ds.Tables["OrderDrinkData"].Rows.Count;
                 for (int i = 0; i < allOrderDrinks; i++)
                 {

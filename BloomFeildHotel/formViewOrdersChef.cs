@@ -26,12 +26,28 @@ namespace BloomFeildHotel
 
         private void formViewOrdersChef_Load(object sender, EventArgs e)
         {
-            Model.GetAllOrders();
-            foreach (Orders order in Model.OrdersList)
+            listBoxOrders.Items.Clear();
+            Model.GetAllOrderDrinks();
+            Model.GetAllOrderMeals();
+            Model.GetAllMeals();
+            Model.GetAllDrinks();
+            Model.GetAllBistroOrders();
+            foreach(IBistroOrders orders in Model.BistroOrdersList)
             {
+                foreach (IOrder_has_Meals mealorders in Model.OrderMealsList)
+                {
+                   if(orders.OrderID == mealorders.OrderID)
+                    {
+                        foreach (IMeals meal in Model.MealsList)
+                        {
+                            if(mealorders.DishID == meal.DishID)
+                            {
+                                listBoxOrders.Items.Add(string.Format("{0} | {1} | {2} | {3}", meal.DishName, mealorders.Quantity, mealorders.Status, orders.OrderTotal));
+                            }
+                        }
+                    }
 
-                listBoxOrders.Items.Add(string.Format("{0} | €{1} | {2}", order.Food, order.FoodPrice, order.Timestamp.ToString("yyyy-MM-dd HH:mm:ss.fff")));
-
+                }
             }
            
         }

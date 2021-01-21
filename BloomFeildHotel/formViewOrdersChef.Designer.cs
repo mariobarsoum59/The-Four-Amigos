@@ -47,10 +47,10 @@
             this.listBoxOrders.ForeColor = System.Drawing.Color.Black;
             this.listBoxOrders.FormattingEnabled = true;
             this.listBoxOrders.ItemHeight = 25;
-            this.listBoxOrders.Location = new System.Drawing.Point(16, 439);
+            this.listBoxOrders.Location = new System.Drawing.Point(16, 414);
             this.listBoxOrders.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBoxOrders.Name = "listBoxOrders";
-            this.listBoxOrders.Size = new System.Drawing.Size(504, 254);
+            this.listBoxOrders.Size = new System.Drawing.Size(959, 379);
             this.listBoxOrders.TabIndex = 3;
             this.listBoxOrders.SelectedIndexChanged += new System.EventHandler(this.listBoxOrders_SelectedIndexChanged);
             // 
@@ -106,7 +106,7 @@
             this.btnChangeOrderStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnChangeOrderStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangeOrderStatus.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnChangeOrderStatus.Location = new System.Drawing.Point(710, 1291);
+            this.btnChangeOrderStatus.Location = new System.Drawing.Point(498, 798);
             this.btnChangeOrderStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnChangeOrderStatus.Name = "btnChangeOrderStatus";
             this.btnChangeOrderStatus.Size = new System.Drawing.Size(477, 135);
@@ -120,7 +120,7 @@
             this.btnOk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOk.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnOk.Location = new System.Drawing.Point(16, 1291);
+            this.btnOk.Location = new System.Drawing.Point(13, 798);
             this.btnOk.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(477, 135);
@@ -134,7 +134,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(1147, 859);
+            this.ClientSize = new System.Drawing.Size(987, 975);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.btnChangeOrderStatus);
             this.Controls.Add(this.button1);
