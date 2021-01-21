@@ -1363,7 +1363,7 @@ namespace DataAccessLayer
                     IBistroOrders bistroOrder = BistroOrdersHotel.GetBistroOrders(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
                                                                        Convert.ToDateTime(dRow.ItemArray.GetValue(1).ToString()),
                                                                                          Convert.ToDecimal(dRow.ItemArray.GetValue(2).ToString()),
-                                                                                         Convert.ToInt16(dRow.ItemArray.GetValue(4).ToString()));
+                                                                                         Convert.ToInt16(dRow.ItemArray.GetValue(3).ToString()));
 
 
 
@@ -1431,7 +1431,7 @@ namespace DataAccessLayer
                     IOrder_has_Meals orderMeal = Order_has_MealsHotel.GetOrderMeals(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
                                                                                                     Convert.ToInt16(dRow.ItemArray.GetValue(1).ToString()),
                                                                                                     Convert.ToInt16(dRow.ItemArray.GetValue(2).ToString()),
-                                                                                                    dRow.ItemArray.GetValue(4).ToString());
+                                                                                                    dRow.ItemArray.GetValue(3).ToString());
 
 
                     OrderMeals.Add(orderMeal);
@@ -1465,7 +1465,7 @@ namespace DataAccessLayer
                     IOrder_has_Drinks orderDrink = Order_has_DrinksHotel.GetOrderDrinks(Convert.ToInt16(dRow.ItemArray.GetValue(0).ToString()),
                                                                                                     Convert.ToInt16(dRow.ItemArray.GetValue(1).ToString()),
                                                                                                     Convert.ToInt16(dRow.ItemArray.GetValue(2).ToString()),
-                                                                                                    dRow.ItemArray.GetValue(4).ToString());
+                                                                                                    dRow.ItemArray.GetValue(3).ToString());
 
 
                     OrderDrinks.Add(orderDrink);

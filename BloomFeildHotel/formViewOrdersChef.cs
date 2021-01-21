@@ -27,11 +27,11 @@ namespace BloomFeildHotel
         private void formViewOrdersChef_Load(object sender, EventArgs e)
         {
             listBoxOrders.Items.Clear();
-            Model.GetAllOrderDrinks();
-            Model.GetAllOrderMeals();
             Model.GetAllMeals();
             Model.GetAllDrinks();
             Model.GetAllBistroOrders();
+            Model.GetAllOrderDrinks();
+            Model.GetAllOrderMeals();
             foreach(IBistroOrders orders in Model.BistroOrdersList)
             {
                 foreach (IOrder_has_Meals mealorders in Model.OrderMealsList)
@@ -49,7 +49,7 @@ namespace BloomFeildHotel
 
                 }
             }
-           
+
         }
 
         private void button1_Click(object sender, EventArgs e)
