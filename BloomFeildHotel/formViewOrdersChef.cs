@@ -42,7 +42,7 @@ namespace BloomFeildHotel
                         {
                             if(mealorders.DishID == meal.DishID)
                             {
-                                listBoxOrders.Items.Add(string.Format("{0} | {1} | {2} | {3}", meal.DishName, mealorders.Quantity, mealorders.Status, orders.OrderTotal));
+                                listBoxOrders.Items.Add(string.Format("{0} | Quantity: {1} | Status: {2}", meal.DishName, mealorders.Quantity, mealorders.Status));
                             }
                         }
                     }
