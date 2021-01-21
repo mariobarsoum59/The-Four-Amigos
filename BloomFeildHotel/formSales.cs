@@ -25,44 +25,52 @@ namespace BloomFeildHotel
         }
 
 
-
         private void formSales_Load(object sender, EventArgs e)
         {
-            Model.GetAllBarItems();
-            foreach (BarItems baritem in Model.BarItemsList)
+            Model.GetAllDrinks();
+            Model.GetAllMeals();
+            foreach (Drinks drink in Model.DrinksList)
             {
-
-                listBox2.Items.Add(string.Format("{0} | €{1}", baritem.Food, baritem.FoodPrice));
-
+                listBox4.Items.Add(string.Format("{0} | €{1} ", drink.DrinkName, drink.DrinkPrice));
+                
             }
-            foreach (BarItems baritem in Model.BarItemsList)
+            foreach (Drinks drink in Model.DrinksList)
             {
+                if(drink.DrinkName == "Pint of Guinness")
+                    listBox1.Items.Add(string.Format("{0}", drink.DrinkName));
+            }
+            foreach (Meals meal in Model.MealsList)
+            {
+                listBox5.Items.Add(string.Format("{0} | €{1} ", meal.DishName, meal.Price));
 
-                listBox1.Items.Add(string.Format("{0} | €{1}", baritem.Drink, baritem.DrinkPrice));
             }
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
             formBarStaff form = new formBarStaff(fc, Model);
-            //form.Show();
             form.Dock = DockStyle.Fill;
-
             form.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string selectedItemText;
-            selectedItemText = listBox2.SelectedItem.ToString();
-            listBox3.Items.Add(selectedItemText);
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string selectedItemText;
-            selectedItemText = listBox1.SelectedItem.ToString();
-            listBox3.Items.Add(selectedItemText);
+           
+        }
+
+        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

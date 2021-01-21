@@ -48,4 +48,3 @@ C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BusinessEntities\bin\
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.dll
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.pdb
-C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache

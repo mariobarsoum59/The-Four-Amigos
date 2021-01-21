@@ -402,3 +402,7 @@ D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHote
 D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewGuests.resources
 D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formRoomCleaningRecords.resources
 C:\Users\Saoir\Source\Repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formRoomCleaningRecords.resources
+C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formChangePassword.resources
+C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formCleaner.resources
+C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formManageEmployeeProfile.resources
+C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formRoomCleaningRecords.resources
