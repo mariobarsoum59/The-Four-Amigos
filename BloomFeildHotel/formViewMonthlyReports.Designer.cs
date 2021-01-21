@@ -76,9 +76,9 @@
             this.label1.Location = new System.Drawing.Point(23, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(354, 39);
+            this.label1.Size = new System.Drawing.Size(502, 39);
             this.label1.TabIndex = 0;
-            this.label1.Text = "View Monthly Reports";
+            this.label1.Text = "View Monthly Financial Reports";
             // 
             // groupBox1
             // 
@@ -110,7 +110,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(97, 33);
             this.btnSave.TabIndex = 28;
-            this.btnSave.Text = "Save to PDF";
+            this.btnSave.Text = "Save to File";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 

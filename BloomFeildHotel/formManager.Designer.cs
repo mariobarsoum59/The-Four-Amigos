@@ -159,7 +159,7 @@
             this.btnCreateReport.Name = "btnCreateReport";
             this.btnCreateReport.Size = new System.Drawing.Size(161, 104);
             this.btnCreateReport.TabIndex = 11;
-            this.btnCreateReport.Text = "Create Monthly Report";
+            this.btnCreateReport.Text = "Create Monthly Financial Report";
             this.btnCreateReport.UseVisualStyleBackColor = true;
             this.btnCreateReport.Click += new System.EventHandler(this.btnCreateReport_Click);
             // 
@@ -224,7 +224,7 @@
             this.btnViewReports.Name = "btnViewReports";
             this.btnViewReports.Size = new System.Drawing.Size(161, 104);
             this.btnViewReports.TabIndex = 12;
-            this.btnViewReports.Text = "View Monthly Reports";
+            this.btnViewReports.Text = "View Monthly Financial Reports";
             this.btnViewReports.UseVisualStyleBackColor = true;
             this.btnViewReports.Click += new System.EventHandler(this.btnViewReports_Click);
             // 

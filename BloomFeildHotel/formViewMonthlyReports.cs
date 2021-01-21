@@ -133,7 +133,33 @@ namespace BloomFeildHotel
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            
+            if (lbReports.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please select a report to save!");
+            }
+            else
+            {
+                Model.GetAllMonthlyReports();
+                string report = lbReports.SelectedItem.ToString();
+                string sep = "\t";
+                string[] splitContent = report.Split(sep.ToCharArray());
+                foreach (IMonthlyReport r in Model.MonthlyReportsList)
+                {
+                    if (splitContent[0] == r.ReportID.ToString())
+                    {
+                        StreamWriter writer = new StreamWriter(@"..\..\..\FinancialReport-" + r.ReportID + ".txt");
+                        writer.WriteLine("Report ID: " + r.ReportID);
+                        writer.WriteLine("Date of Report: " + r.Date.ToString("dd/MM/yyyy"));
+                        writer.WriteLine("Number of Reservations: " + r.Reservations);
+                        writer.WriteLine("Reservation Income: " + r.ReservationIncome);
+                        writer.WriteLine("Number of Bar/Restaurant Sales: " + r.Sales);
+                        writer.WriteLine("Bar/Restaurant Income: " + r.SalesIncome);
+                        writer.WriteLine("Number of Stock Orders: " + r.StockOrders);
+                        writer.WriteLine("Stock Order Expenses: " + r.StockExpenses);
+                        writer.Close();
+                    }
+                }
+            }
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
