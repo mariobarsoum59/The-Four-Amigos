@@ -68,7 +68,7 @@ namespace BloomFeildHotel
 
         private void btnChangeOrderStatus_Click(object sender, EventArgs e)
         {
-            formManageOrder form = new formManageOrder(fc, Model);
+            formChangeOrderStatus form = new formChangeOrderStatus(fc, Model);
             //form.Show();
             form.Dock = DockStyle.Fill;
 

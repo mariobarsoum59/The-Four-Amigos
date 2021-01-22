@@ -78,5 +78,12 @@ namespace BloomFeildHotel
             form.Dock = DockStyle.Fill;
             form.Show();
         }
+
+        private void btnChangeStatus_Click(object sender, EventArgs e)
+        {
+            formChangeOrderStatus form = new formChangeOrderStatus(fc, Model);
+            form.Dock = DockStyle.Fill;
+            form.Show();
+        }
     }
 }

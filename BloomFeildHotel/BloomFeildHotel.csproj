@@ -82,6 +82,12 @@
     <Compile Include="formBarStaff.Designer.cs">
       <DependentUpon>formBarStaff.cs</DependentUpon>
     </Compile>
+    <Compile Include="formChangeOrderStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formChangeOrderStatus.Designer.cs">
+      <DependentUpon>formChangeOrderStatus.cs</DependentUpon>
+    </Compile>
     <Compile Include="formChangePassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -362,6 +368,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formBarStaff.resx">
       <DependentUpon>formBarStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formChangeOrderStatus.resx">
+      <DependentUpon>formChangeOrderStatus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formChangePassword.resx">
       <DependentUpon>formChangePassword.cs</DependentUpon>

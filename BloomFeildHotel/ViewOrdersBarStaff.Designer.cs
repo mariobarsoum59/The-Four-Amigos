@@ -76,7 +76,7 @@ namespace BloomFeildHotel
             this.listBox1.Location = new System.Drawing.Point(631, 182);
             this.listBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(586, 444);
+            this.listBox1.Size = new System.Drawing.Size(586, 304);
             this.listBox1.TabIndex = 42;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
@@ -110,7 +110,7 @@ namespace BloomFeildHotel
             this.listBox3.Location = new System.Drawing.Point(13, 182);
             this.listBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(586, 444);
+            this.listBox3.Size = new System.Drawing.Size(572, 304);
             this.listBox3.TabIndex = 44;
             this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
             // 
@@ -119,7 +119,7 @@ namespace BloomFeildHotel
             this.btnComplete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnComplete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnComplete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnComplete.Location = new System.Drawing.Point(13, 636);
+            this.btnComplete.Location = new System.Drawing.Point(2, 520);
             this.btnComplete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnComplete.Name = "btnComplete";
             this.btnComplete.Size = new System.Drawing.Size(586, 135);
@@ -133,7 +133,7 @@ namespace BloomFeildHotel
             this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRemove.Location = new System.Drawing.Point(631, 636);
+            this.btnRemove.Location = new System.Drawing.Point(615, 520);
             this.btnRemove.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(586, 135);
@@ -147,7 +147,7 @@ namespace BloomFeildHotel
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBack.Location = new System.Drawing.Point(631, 781);
+            this.btnBack.Location = new System.Drawing.Point(615, 675);
             this.btnBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(582, 135);
@@ -200,7 +200,7 @@ namespace BloomFeildHotel
             this.btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn.Location = new System.Drawing.Point(13, 781);
+            this.btn.Location = new System.Drawing.Point(2, 675);
             this.btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn.Name = "btn";
             this.btn.Size = new System.Drawing.Size(586, 135);
