@@ -72,6 +72,7 @@
             this.lbOrders.Name = "lbOrders";
             this.lbOrders.Size = new System.Drawing.Size(392, 204);
             this.lbOrders.TabIndex = 15;
+            this.lbOrders.SelectedIndexChanged += new System.EventHandler(this.lbOrders_SelectedIndexChanged);
             // 
             // label1
             // 

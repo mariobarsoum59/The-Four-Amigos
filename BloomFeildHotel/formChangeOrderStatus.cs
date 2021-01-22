@@ -29,33 +29,24 @@ namespace BloomFeildHotel
 
         private void formChangeOrderStatus_Load(object sender, EventArgs e)
         {
-            Model.GetAllOrderMeals();
+            lbOrders.Items.Clear();
             Model.GetAllMeals();
+            Model.GetAllDrinks();
+            Model.GetAllBistroOrders();
+            Model.GetAllOrderDrinks();
+            Model.GetAllOrderMeals();
+            
+                foreach (IOrder_has_Meals mealorders in Model.OrderMealsList)
+                {
+                        foreach (IMeals meal in Model.MealsList)
+                        {
+                            if (mealorders.DishID == meal.DishID)
+                            {
+                                lbOrders.Items.Add(string.Format("{0} | Quantity: {1} | Price: €{2} | Status: {3}", meal.DishName, mealorders.Quantity, meal.Price, mealorders.Status));
+                            }
+                        }
 
-
-            foreach (Order_has_Meals orderMeal in Model.OrderMealsList)
-            {  
-                foreach (Meals meal in Model.MealsList)
-                { 
-                    if (orderMeal.DishID == meal.DishID)
-                    {
-                        lbOrders.Items.Add(meal.DishName);
-
-                        
-                    }
                 }
-
-            }
-
-        }
-
-
-        private void lbOrders_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-
-
-
 
         }
 
@@ -71,18 +62,46 @@ namespace BloomFeildHotel
 
         private void btnChange_Click(object sender, EventArgs e)
         {
-            foreach(IOrder_has_Meals orderMeal in Model.OrderMealsList)
-            {
-                foreach (IMeals meal in Model.MealsList)
+                foreach (IOrder_has_Meals mealorders in Model.OrderMealsList)
                 {
-                    orderMeal.Status = Convert.ToString(txtStatus.Text);
-                    Model.editOrderMeal(orderMeal);
+                        foreach (IMeals meal in Model.MealsList)
+                        {
+
+                            string std = string.Format("{0} | Quantity: {1} | Price: €{2} | Status: {3}", meal.DishName, mealorders.Quantity, meal.Price, mealorders.Status);
+                            if (lbOrders.SelectedItem.ToString() == std)
+                            {
+                                    mealorders.Status = Convert.ToString(txtStatus.Text);
+                                    Model.editOrderMeal(mealorders);
+
+                            }
+                            
+                        }
                 }
+        }
+
+        private void lbOrders_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lbOrders.SelectedIndex != -1)
+            {
+
+                    foreach (IOrder_has_Meals mealorders in Model.OrderMealsList)
+                    {
+                            foreach (IMeals meal in Model.MealsList)
+                            {
+                                if (mealorders.DishID == meal.DishID)
+                                {
+                                    string std = string.Format("{0} | Quantity: {1} | Price: €{2} | Status: {3}", meal.DishName, mealorders.Quantity, meal.Price, mealorders.Status);
+                                    if (lbOrders.SelectedItem.ToString() == std)
+                                    {
+                                        txtStatus.Text = mealorders.Status;
+
+                                    }
+                                }
+                            }
+                        
+                    }
+                
             }
-
-
-
-
         }
     }
 }

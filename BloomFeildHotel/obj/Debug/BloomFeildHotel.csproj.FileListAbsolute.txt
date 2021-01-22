@@ -411,3 +411,4 @@ C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debu
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formManageEmployeeProfile.resources
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formRequestCleaningSupplies.resources
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formRoomCleaningRecords.resources
+C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formChangeOrderStatus.resources

@@ -111,7 +111,7 @@
             this.btnChangeOrderStatus.Name = "btnChangeOrderStatus";
             this.btnChangeOrderStatus.Size = new System.Drawing.Size(477, 135);
             this.btnChangeOrderStatus.TabIndex = 42;
-            this.btnChangeOrderStatus.Text = "Mange Order";
+            this.btnChangeOrderStatus.Text = "Change Order Status";
             this.btnChangeOrderStatus.UseVisualStyleBackColor = false;
             this.btnChangeOrderStatus.Click += new System.EventHandler(this.btnChangeOrderStatus_Click);
             // 
