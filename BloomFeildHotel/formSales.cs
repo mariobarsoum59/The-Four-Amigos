@@ -27,21 +27,34 @@ namespace BloomFeildHotel
 
         private void formSales_Load(object sender, EventArgs e)
         {
+            Model.GetAllBistroOrders();
             Model.GetAllDrinks();
             Model.GetAllMeals();
-            foreach (Drinks drink in Model.DrinksList)
+            foreach (IDrinks drink in Model.DrinksList)
             {
                 listBox4.Items.Add(string.Format("{0} | €{1} ", drink.DrinkName, drink.DrinkPrice));
                 
             }
-            foreach (Drinks drink in Model.DrinksList)
+            foreach (IDrinks drink in Model.DrinksList)
             {
                 if(drink.DrinkName == "Pint of Guinness")
                     listBox1.Items.Add(string.Format("{0}", drink.DrinkName));
             }
-            foreach (Meals meal in Model.MealsList)
+            foreach (IMeals meal in Model.MealsList)
             {
                 listBox5.Items.Add(string.Format("{0} | €{1} ", meal.DishName, meal.Price));
+
+            }
+            foreach (IMeals meal in Model.MealsList)
+            {
+                if (meal.DishName == "Fish and Chips")
+                    listBox2.Items.Add(string.Format("{0}", meal.DishName));
+            }
+
+            foreach (IBistroOrders orders in Model.BistroOrdersList)
+            {
+
+               listBox3.Items.Add(string.Format("Order ID: {0} | Order Date: {1} | Order Total: €{2} | Order Made By User ID: {3} | Order Note: {4} | OrderCompleted: {5}", orders.OrderID, orders.OrderDate, orders.OrderTotal, orders.OrderMadeBy, orders.OrderNote, orders.OrderCompleted));
 
             }
         }
@@ -53,24 +66,28 @@ namespace BloomFeildHotel
             form.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSale_Click(object sender, EventArgs e)
         {
+            
+            foreach (IBistroOrders orders in Model.BistroOrdersList)
+            {
+                foreach (IMeals meal in Model.MealsList)
+                {
+                    string std = string.Format("{0}", meal.DishName);
+                    if (listBox2.SelectedItem.ToString() == std)
+                    {
+                        decimal num = 10;
+                        orders.OrderDate = DateTime.Now;
+                        orders.OrderTotal = num;
+                        orders.OrderMadeBy = Model.CurrentUser.UserID;
+                        orders.OrderCompleted = false;
+                        Model.editBistroOrder(orders);
+                    }
+                }
+            }
+
            
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void listBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            MessageBox.Show("Sale Made");
         }
     }
 }
