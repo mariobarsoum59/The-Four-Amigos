@@ -68,8 +68,8 @@ namespace BloomFeildHotel
 
         private void btnSale_Click(object sender, EventArgs e)
         {
-            
-            foreach (IBistroOrders orders in Model.BistroOrdersList)
+
+            /*foreach (IBistroOrders orders in Model.BistroOrdersList)
             {
                 foreach (IMeals meal in Model.MealsList)
                 {
@@ -87,7 +87,100 @@ namespace BloomFeildHotel
             }
 
            
-            MessageBox.Show("Sale Made");
+            MessageBox.Show("Sale Made");*/
+
+            DateTime date = DateTime.Now;
+            decimal total = 0.0m;
+            int madeBy = Model.CurrentUser.UserID;
+
+            List<String> names = listBox3.Items.Cast<String>().ToList();
+            List<IOrder_has_Drinks> orderDrinks = new List<IOrder_has_Drinks>();
+            List<IOrder_has_Meals> orderMeals = new List<IOrder_has_Meals>();
+            Model.GetAllDrinks();
+            Model.GetAllMeals();
+            bool drinkFound = false;
+            bool mealFound = false;
+            foreach(String name in names)
+            {
+                foreach(IMeals meal in Model.MealsList)
+                {
+                    if(name.Equals(meal.DishName))
+                    {
+                        total += Convert.ToDecimal(meal.Price);
+                        foreach(IOrder_has_Meals orderMeal in orderMeals)
+                        {
+                            if(orderMeal.DishID == meal.DishID)
+                            {
+                                mealFound = true;
+                                orderMeal.Quantity++;
+                            }
+                        }
+                        if(!mealFound)
+                        {
+                            IOrder_has_Meals newOrderMeal = new Order_has_Meals(0, meal.DishID, 1, "Not Ready");
+                        }
+                        mealFound = false;
+                    }
+                }
+                foreach(IDrinks drink in Model.DrinksList)
+                {
+                    if(name.Equals(drink.DrinkName))
+                    {
+                        total += drink.DrinkPrice;
+                        foreach(IOrder_has_Drinks orderDrink in orderDrinks)
+                        {
+                            if(orderDrink.DrinkID == drink.DrinkID)
+                            {
+                                drinkFound = true;
+                                orderDrink.Quantity++;
+                            }
+                        }
+                        if(!drinkFound)
+                        {
+                            IOrder_has_Drinks newOrderDrink = new Order_has_Drinks(0, drink.DrinkID, 1, "Not Ready");
+                            orderDrinks.Add(newOrderDrink);
+                        }
+                        drinkFound = false;
+                    }
+                }
+            }
+            Model.GetAllBistroOrders();
+            List<IBistroOrders> oldOrders = Model.BistroOrdersList;
+            if(Model.createBistroOrder(date, total, madeBy, "", false))
+            {
+                Model.GetAllBistroOrders();
+                foreach(IBistroOrders order in Model.BistroOrdersList)
+                {
+                    if(!oldOrders.Contains(order))
+                    {
+                        foreach(IOrder_has_Drinks orderDrink in orderDrinks)
+                        {
+                            orderDrink.OrderID = order.OrderID;
+                            Model.createOrderDrink(orderDrink.OrderID, orderDrink.DrinkID, orderDrink.Quantity, orderDrink.Status);
+                        }
+                        foreach(IOrder_has_Meals orderMeal in orderMeals)
+                        {
+                            orderMeal.OrderID = order.OrderID;
+                            Model.createOrderMeal(orderMeal.OrderID, orderMeal.DishID, orderMeal.Quantity, orderMeal.Status);
+                        }
+                    }
+                }
+                MessageBox.Show("The sale has been made");
+            }
+            else
+            {
+                MessageBox.Show("Sale was unsuccessful");
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void viewOrdersBTN_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
