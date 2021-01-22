@@ -73,7 +73,7 @@ namespace BloomFeildHotel
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(631, 182);
+            this.listBox1.Location = new System.Drawing.Point(615, 182);
             this.listBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(586, 304);
@@ -96,7 +96,7 @@ namespace BloomFeildHotel
             // 
             this.AddFood.AutoSize = true;
             this.AddFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddFood.Location = new System.Drawing.Point(626, 148);
+            this.AddFood.Location = new System.Drawing.Point(610, 148);
             this.AddFood.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AddFood.Name = "AddFood";
             this.AddFood.Size = new System.Drawing.Size(299, 29);
@@ -161,7 +161,7 @@ namespace BloomFeildHotel
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExit.Location = new System.Drawing.Point(1235, 781);
+            this.btnExit.Location = new System.Drawing.Point(1235, 675);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(586, 135);
@@ -186,7 +186,7 @@ namespace BloomFeildHotel
             this.btnNote.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnNote.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNote.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnNote.Location = new System.Drawing.Point(1235, 636);
+            this.btnNote.Location = new System.Drawing.Point(1235, 520);
             this.btnNote.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnNote.Name = "btnNote";
             this.btnNote.Size = new System.Drawing.Size(586, 135);
@@ -216,7 +216,7 @@ namespace BloomFeildHotel
             this.textBoxNoteArea.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxNoteArea.Multiline = true;
             this.textBoxNoteArea.Name = "textBoxNoteArea";
-            this.textBoxNoteArea.Size = new System.Drawing.Size(586, 444);
+            this.textBoxNoteArea.Size = new System.Drawing.Size(586, 304);
             this.textBoxNoteArea.TabIndex = 51;
             // 
             // ViewOrdersBarStaff
@@ -224,7 +224,7 @@ namespace BloomFeildHotel
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(1868, 952);
+            this.ClientSize = new System.Drawing.Size(1868, 840);
             this.Controls.Add(this.btn);
             this.Controls.Add(this.btnNote);
             this.Controls.Add(this.lblLeaveANote);
