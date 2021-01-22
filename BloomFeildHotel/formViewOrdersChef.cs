@@ -42,7 +42,7 @@ namespace BloomFeildHotel
                         {
                             if(mealorders.DishID == meal.DishID)
                             {
-                                listBoxOrders.Items.Add(string.Format("{0} | Quantity: {1} | Status: {2}", meal.DishName, mealorders.Quantity, mealorders.Status));
+                                listBoxOrders.Items.Add(string.Format("{0} | Quantity: {1} | Order Time: {2} | Status: {3}", meal.DishName, mealorders.Quantity, orders.OrderDate, mealorders.Status));
                             }
                         }
                     }
@@ -63,7 +63,11 @@ namespace BloomFeildHotel
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            formChef form = new formChef(fc, Model);
+            //form.Show();
+            form.Dock = DockStyle.Fill;
+
+            form.Show();
         }
 
         private void btnChangeOrderStatus_Click(object sender, EventArgs e)

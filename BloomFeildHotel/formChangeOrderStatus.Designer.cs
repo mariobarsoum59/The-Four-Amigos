@@ -49,7 +49,7 @@
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1008, 98);
+            this.panel1.Size = new System.Drawing.Size(1181, 98);
             this.panel1.TabIndex = 14;
             // 
             // lblOrderStat
@@ -68,9 +68,9 @@
             // 
             this.lbOrders.FormattingEnabled = true;
             this.lbOrders.ItemHeight = 20;
-            this.lbOrders.Location = new System.Drawing.Point(87, 218);
+            this.lbOrders.Location = new System.Drawing.Point(35, 173);
             this.lbOrders.Name = "lbOrders";
-            this.lbOrders.Size = new System.Drawing.Size(392, 204);
+            this.lbOrders.Size = new System.Drawing.Size(709, 204);
             this.lbOrders.TabIndex = 15;
             this.lbOrders.SelectedIndexChanged += new System.EventHandler(this.lbOrders_SelectedIndexChanged);
             // 
@@ -78,7 +78,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(111, 173);
+            this.label1.Location = new System.Drawing.Point(29, 121);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(336, 32);
             this.label1.TabIndex = 16;
@@ -86,7 +86,7 @@
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(101, 472);
+            this.btnBack.Location = new System.Drawing.Point(35, 383);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(109, 52);
             this.btnBack.TabIndex = 21;
@@ -96,7 +96,7 @@
             // 
             // btnChange
             // 
-            this.btnChange.Location = new System.Drawing.Point(672, 292);
+            this.btnChange.Location = new System.Drawing.Point(873, 219);
             this.btnChange.Name = "btnChange";
             this.btnChange.Size = new System.Drawing.Size(109, 52);
             this.btnChange.TabIndex = 22;
@@ -106,7 +106,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(370, 472);
+            this.btnExit.Location = new System.Drawing.Point(635, 383);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(109, 52);
             this.btnExit.TabIndex = 24;
@@ -118,7 +118,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(635, 173);
+            this.label2.Location = new System.Drawing.Point(847, 121);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(187, 32);
             this.label2.TabIndex = 17;
@@ -126,15 +126,15 @@
             // 
             // txtStatus
             // 
-            this.txtStatus.Location = new System.Drawing.Point(620, 250);
+            this.txtStatus.Location = new System.Drawing.Point(818, 176);
             this.txtStatus.Name = "txtStatus";
-            this.txtStatus.Size = new System.Drawing.Size(228, 26);
+            this.txtStatus.Size = new System.Drawing.Size(234, 26);
             this.txtStatus.TabIndex = 25;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(668, 227);
+            this.label3.Location = new System.Drawing.Point(869, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(133, 20);
             this.label3.TabIndex = 26;
@@ -145,7 +145,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(970, 584);
+            this.ClientSize = new System.Drawing.Size(1183, 584);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtStatus);
             this.Controls.Add(this.btnExit);
@@ -155,6 +155,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbOrders);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formChangeOrderStatus";
             this.Text = "formChangeOrderStatus";
             this.Load += new System.EventHandler(this.formChangeOrderStatus_Load);

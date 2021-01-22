@@ -82,6 +82,12 @@
     <Compile Include="formBarStaff.Designer.cs">
       <DependentUpon>formBarStaff.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCashOrCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCashOrCard.Designer.cs">
+      <DependentUpon>FormCashOrCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="formChangeOrderStatus.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,18 @@
     </Compile>
     <Compile Include="formLogin.Designer.cs">
       <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMakePaymentCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMakePaymentCard.Designer.cs">
+      <DependentUpon>formMakePaymentCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMakePaymentCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMakePaymentCash.Designer.cs">
+      <DependentUpon>FormMakePaymentCash.cs</DependentUpon>
     </Compile>
     <Compile Include="formManageEmployeeProfile.cs">
       <SubType>Form</SubType>
@@ -375,6 +393,9 @@
     <EmbeddedResource Include="formBarStaff.resx">
       <DependentUpon>formBarStaff.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCashOrCard.resx">
+      <DependentUpon>FormCashOrCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="formChangeOrderStatus.resx">
       <DependentUpon>formChangeOrderStatus.cs</DependentUpon>
     </EmbeddedResource>
@@ -425,6 +446,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formLogin.resx">
       <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMakePaymentCard.resx">
+      <DependentUpon>formMakePaymentCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMakePaymentCash.resx">
+      <DependentUpon>FormMakePaymentCash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formManageEmployeeProfile.resx">
       <DependentUpon>formManageEmployeeProfile.cs</DependentUpon>

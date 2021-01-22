@@ -111,12 +111,19 @@ namespace BloomFeildHotel
 
         private void btnComplete_Click(object sender, EventArgs e)
         {
-            string selectedItemText;
-            selectedItemText = listBox3.SelectedItem.ToString();
-            listBox1.Items.Add(selectedItemText);
-
-            foreach (IBistroOrders orders in Model.BistroOrdersList)
+            if (listBox3.SelectedIndex == -1)
             {
+                MessageBox.Show("Please select an item to Complete!");
+            }
+            else
+            {
+                string selectedItemText;
+                selectedItemText = listBox3.SelectedItem.ToString();
+                listBox1.Items.Add(selectedItemText);
+
+
+                foreach (IBistroOrders orders in Model.BistroOrdersList)
+                {
                     foreach (IOrder_has_Meals mealorders in Model.OrderMealsList)
                     {
                         if (orders.OrderID == mealorders.OrderID)
@@ -126,6 +133,7 @@ namespace BloomFeildHotel
                                 if (mealorders.DishID == meal.DishID)
                                 {
                                     string std = string.Format("{0} | Quantity: {1} | Price: €{2} | Status: {3}", meal.DishName, mealorders.Quantity, meal.Price, mealorders.Status);
+
                                     if (listBox3.SelectedItem.ToString() == std)
                                     {
                                         orders.OrderCompleted = true;
@@ -157,12 +165,12 @@ namespace BloomFeildHotel
                         }
 
                     }
+                }
+
+                selectedItemText = listBox3.SelectedItem.ToString();
+                listBox3.Items.Remove(selectedItemText);
+                MessageBox.Show("Order Completed");
             }
-
-            selectedItemText = listBox3.SelectedItem.ToString();
-            listBox3.Items.Remove(selectedItemText);
-            MessageBox.Show("Order Completed");
-
         }
 
       
@@ -183,12 +191,18 @@ namespace BloomFeildHotel
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            string selectedItemText;
-            selectedItemText = listBox1.SelectedItem.ToString();
-            listBox3.Items.Add(selectedItemText);
-            foreach (IBistroOrders orders in Model.BistroOrdersList)
+            if (listBox1.SelectedIndex == -1)
             {
-                
+                MessageBox.Show("Please select an item to Remove from completion !");
+            }
+            else
+            {
+                string selectedItemText;
+                selectedItemText = listBox1.SelectedItem.ToString();
+                listBox3.Items.Add(selectedItemText);
+                foreach (IBistroOrders orders in Model.BistroOrdersList)
+                {
+
                     foreach (IOrder_has_Meals mealorders in Model.OrderMealsList)
                     {
                         if (orders.OrderID == mealorders.OrderID)
@@ -231,10 +245,11 @@ namespace BloomFeildHotel
                         }
 
                     }
+                }
+                selectedItemText = listBox1.SelectedItem.ToString();
+                listBox1.Items.Remove(selectedItemText);
+                MessageBox.Show("Order Not Completed");
             }
-            selectedItemText = listBox1.SelectedItem.ToString();
-            listBox1.Items.Remove(selectedItemText);
-            MessageBox.Show("Order Not Completed");
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)

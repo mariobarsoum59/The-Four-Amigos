@@ -37,8 +37,6 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.lblManagerMenuTag = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.listBox4 = new System.Windows.Forms.ListBox();
             this.listBox5 = new System.Windows.Forms.ListBox();
@@ -48,9 +46,14 @@
             this.viewOrdersBTN = new System.Windows.Forms.Button();
             this.btnAddFood = new System.Windows.Forms.Button();
             this.btnAddDrink = new System.Windows.Forms.Button();
+            this.btnCFood = new System.Windows.Forms.Button();
+            this.btnCDrink = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnClear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,7 +64,7 @@
             this.panel1.Location = new System.Drawing.Point(-4, -2);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2026, 109);
+            this.panel1.Size = new System.Drawing.Size(2227, 109);
             this.panel1.TabIndex = 24;
             // 
             // lblCreateReservation
@@ -137,7 +140,7 @@
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBack.Location = new System.Drawing.Point(1425, 783);
+            this.btnBack.Location = new System.Drawing.Point(1649, 786);
             this.btnBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(216, 135);
@@ -150,32 +153,12 @@
             // 
             this.lblManagerMenuTag.AutoSize = true;
             this.lblManagerMenuTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblManagerMenuTag.Location = new System.Drawing.Point(1131, 123);
+            this.lblManagerMenuTag.Location = new System.Drawing.Point(1228, 123);
             this.lblManagerMenuTag.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblManagerMenuTag.Name = "lblManagerMenuTag";
             this.lblManagerMenuTag.Size = new System.Drawing.Size(160, 61);
             this.lblManagerMenuTag.TabIndex = 41;
             this.lblManagerMenuTag.Text = "Sales";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BloomFeildHotel.Properties.Resources.cash;
-            this.pictureBox1.Location = new System.Drawing.Point(1649, 189);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(339, 351);
-            this.pictureBox1.TabIndex = 42;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::BloomFeildHotel.Properties.Resources.foodanddrink_;
-            this.pictureBox2.Location = new System.Drawing.Point(1649, 550);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(339, 335);
-            this.pictureBox2.TabIndex = 43;
-            this.pictureBox2.TabStop = false;
             // 
             // listBox3
             // 
@@ -184,7 +167,7 @@
             this.listBox3.Location = new System.Drawing.Point(753, 189);
             this.listBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(888, 584);
+            this.listBox3.Size = new System.Drawing.Size(1112, 584);
             this.listBox3.TabIndex = 44;
             // 
             // listBox4
@@ -241,6 +224,7 @@
             this.button3.TabIndex = 51;
             this.button3.Text = "Make Payment";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // viewOrdersBTN
             // 
@@ -261,10 +245,10 @@
             this.btnAddFood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnAddFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddFood.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAddFood.Location = new System.Drawing.Point(34, 771);
+            this.btnAddFood.Location = new System.Drawing.Point(399, 786);
             this.btnAddFood.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAddFood.Name = "btnAddFood";
-            this.btnAddFood.Size = new System.Drawing.Size(185, 48);
+            this.btnAddFood.Size = new System.Drawing.Size(330, 48);
             this.btnAddFood.TabIndex = 53;
             this.btnAddFood.Text = "Add Food";
             this.btnAddFood.UseVisualStyleBackColor = false;
@@ -275,21 +259,86 @@
             this.btnAddDrink.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnAddDrink.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddDrink.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAddDrink.Location = new System.Drawing.Point(399, 771);
+            this.btnAddDrink.Location = new System.Drawing.Point(399, 870);
             this.btnAddDrink.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAddDrink.Name = "btnAddDrink";
-            this.btnAddDrink.Size = new System.Drawing.Size(185, 48);
+            this.btnAddDrink.Size = new System.Drawing.Size(330, 48);
             this.btnAddDrink.TabIndex = 54;
             this.btnAddDrink.Text = "Add Drink";
             this.btnAddDrink.UseVisualStyleBackColor = false;
             this.btnAddDrink.Click += new System.EventHandler(this.btnAddDrink_Click);
+            // 
+            // btnCFood
+            // 
+            this.btnCFood.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnCFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCFood.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCFood.Location = new System.Drawing.Point(34, 786);
+            this.btnCFood.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCFood.Name = "btnCFood";
+            this.btnCFood.Size = new System.Drawing.Size(330, 48);
+            this.btnCFood.TabIndex = 55;
+            this.btnCFood.Text = "Add Common Food";
+            this.btnCFood.UseVisualStyleBackColor = false;
+            this.btnCFood.Click += new System.EventHandler(this.btnCFood_Click);
+            // 
+            // btnCDrink
+            // 
+            this.btnCDrink.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnCDrink.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCDrink.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCDrink.Location = new System.Drawing.Point(34, 873);
+            this.btnCDrink.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCDrink.Name = "btnCDrink";
+            this.btnCDrink.Size = new System.Drawing.Size(330, 48);
+            this.btnCDrink.TabIndex = 56;
+            this.btnCDrink.Text = "Add Common Drink";
+            this.btnCDrink.UseVisualStyleBackColor = false;
+            this.btnCDrink.Click += new System.EventHandler(this.btnCDrink_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::BloomFeildHotel.Properties.Resources.foodanddrink_;
+            this.pictureBox2.Location = new System.Drawing.Point(1873, 541);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(339, 335);
+            this.pictureBox2.TabIndex = 43;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BloomFeildHotel.Properties.Resources.cash;
+            this.pictureBox1.Location = new System.Drawing.Point(1873, 189);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(339, 351);
+            this.pictureBox1.TabIndex = 42;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnClear.Location = new System.Drawing.Point(1425, 786);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(216, 135);
+            this.btnClear.TabIndex = 57;
+            this.btnClear.Text = "Clear Sale";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // formSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(2023, 960);
+            this.ClientSize = new System.Drawing.Size(2222, 960);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnCDrink);
+            this.Controls.Add(this.btnCFood);
             this.Controls.Add(this.btnAddDrink);
             this.Controls.Add(this.btnAddFood);
             this.Controls.Add(this.viewOrdersBTN);
@@ -316,8 +365,8 @@
             this.Load += new System.EventHandler(this.formSales_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,5 +393,8 @@
         private System.Windows.Forms.Button viewOrdersBTN;
         private System.Windows.Forms.Button btnAddFood;
         private System.Windows.Forms.Button btnAddDrink;
+        private System.Windows.Forms.Button btnCFood;
+        private System.Windows.Forms.Button btnCDrink;
+        private System.Windows.Forms.Button btnClear;
     }
 }

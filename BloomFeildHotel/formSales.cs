@@ -24,7 +24,6 @@ namespace BloomFeildHotel
             this.Model = Model;
         }
 
-
         private void formSales_Load(object sender, EventArgs e)
         {
             Model.GetAllMeals();
@@ -37,6 +36,18 @@ namespace BloomFeildHotel
             {
                 listBox4.Items.Add(drink.DrinkName);
             }
+            foreach (IDrinks drink in Model.DrinksList)
+            {
+                if (drink.DrinkName == "Pint of Guinness")
+                    listBox1.Items.Add(drink.DrinkName);
+            }
+            foreach (IMeals meal in Model.MealsList)
+            {
+                
+                if (meal.DishName == "Fish and Chips")
+                    listBox2.Items.Add(meal.DishName);
+            }
+
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -72,6 +83,7 @@ namespace BloomFeildHotel
 
         private void btnSale_Click(object sender, EventArgs e)
         {
+           
             DateTime date = DateTime.Now;
             decimal total = 0.0m;
             int madeBy = Model.CurrentUser.UserID;
@@ -164,6 +176,44 @@ namespace BloomFeildHotel
             form.Dock = DockStyle.Fill;
 
             form.Show();
+        }
+
+        private void btnCFood_Click(object sender, EventArgs e)
+        {
+            if (listBox2.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please select an item to add!");
+            }
+            else
+            {
+                listBox3.Items.Add(listBox2.SelectedItem);
+            }
+        }
+
+        private void btnCDrink_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please select an item to add!");
+            }
+            else
+            {
+                listBox3.Items.Add(listBox1.SelectedItem);
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            FormCashOrCard form = new FormCashOrCard(fc, Model);
+            //form.Show();
+            form.Dock = DockStyle.Fill;
+
+            form.Show();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            listBox3.Items.Clear();
         }
     }
 }
