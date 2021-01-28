@@ -79,7 +79,48 @@ namespace DataAccessLayer
             return con;
         }
 
+        public List <ICleaner> getAllCleaner()
+        {
+            List<ICleaner> cleanerList = new List<ICleaner>();
 
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Users";
+                da = new SqlDataAdapter(sql, con);
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "UsersData");
+                maxRows = ds.Tables["UsersData"].Rows.Count;
+                for (int i = 0; i < maxRows; i++)
+                {
+                    DataRow dRow = ds.Tables["UsersData"].Rows[i];
+                    ICleaner cleaner = CleanerHotel.GetCleaner(dRow.ItemArray.GetValue(0).ToString(),
+                                                        dRow.ItemArray.GetValue(1).ToString(),
+                                                        dRow.ItemArray.GetValue(2).ToString(),
+                                                        dRow.ItemArray.GetValue(3).ToString(),
+                                                        dRow.ItemArray.GetValue(4).ToString(),
+                                                       Convert.ToInt16((dRow.ItemArray.GetValue(5))));
+                    cleanerList.Add(cleaner);
+                    //MessageBox.Show(user.Username + user.Password);
+
+                    //textBoxName.Select();
+                }
+
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+
+
+
+            return cleanerList;
+
+        }
 
         public ArrayList GetAllUsers()
         {

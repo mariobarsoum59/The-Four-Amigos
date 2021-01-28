@@ -20,7 +20,7 @@ namespace DataAccessLayer
         bool deleteReservationFromDB(BusinessEntities.IReservation reservation);
 
 
-        
+        List<ICleaner> getAllCleaner();
 
         List<IRoom> getAllRooms();
 
@@ -50,8 +50,6 @@ namespace DataAccessLayer
 
         bool updateCompletedOrders(BusinessEntities.IOrders completed);
 
-
-        //-------------------------- rebecca ----------------------------------------------------
         List<IIngredients> getAllIngredients();
 
         List<IMeals> getAllMealsDB();
@@ -59,7 +57,6 @@ namespace DataAccessLayer
         List<IWaste> getAllWasteDB();
 
         bool changeOrderStatus(BusinessEntities.IOrders status);
-        //--------------------------------------------------------------------------------------
 
         List<IStockItem> getAllStockItems();
         List<IStockOrder> getAllStockOrders();

@@ -29,5 +29,12 @@ namespace BloomFeildHotel
             form.Dock = DockStyle.Fill;
             form.Show();
         }
+
+        private void btnCleaner_Click(object sender, EventArgs e)
+        {
+            formViewCleaner form = new formViewCleaner(fc, Model);
+            form.Dock = DockStyle.Fill;
+            form.Show();
+        }
     }
 }

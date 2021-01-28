@@ -310,6 +310,12 @@
     <Compile Include="formStockManager.Designer.cs">
       <DependentUpon>formStockManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="formViewCleaner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formViewCleaner.Designer.cs">
+      <DependentUpon>formViewCleaner.cs</DependentUpon>
+    </Compile>
     <Compile Include="formViewFutureGuests.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -506,6 +512,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formStockManager.resx">
       <DependentUpon>formStockManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formViewCleaner.resx">
+      <DependentUpon>formViewCleaner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formViewFutureGuests.resx">
       <DependentUpon>formViewFutureGuests.cs</DependentUpon>

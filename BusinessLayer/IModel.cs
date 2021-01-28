@@ -40,6 +40,8 @@ namespace BusinessLayer
         List<IGuest> GuestsList { get; set; }
         void GetAllGuests();
 
+        List<ICleaner> CleanerList { get; set; }
+        void GetAllCleaner();
 
         List<IRoomCleaningRecord> RoomCleaningRecordsList { get; set; }
 

@@ -63,7 +63,12 @@ namespace BloomFeildHotel
                     f5.Dock = DockStyle.Fill;
                     f5.Show();
                     break;
-
+                case "Cleaner":
+                    formCleaner f6 = new formCleaner(this, Model);
+                    this.Text = this.Text + "-Cleaner";
+                    f6.Dock = DockStyle.Fill;
+                    f6.Show();
+                    break;
 
             }
 

@@ -45,12 +45,15 @@
     <Compile Include="BarItemsHotel.cs" />
     <Compile Include="BistroOrders.cs" />
     <Compile Include="BistroOrdersHotel.cs" />
+    <Compile Include="Cleaner.cs" />
+    <Compile Include="CleanerHotel.cs" />
     <Compile Include="Drinks.cs" />
     <Compile Include="DrinksHotel.cs" />
     <Compile Include="Guest.cs" />
     <Compile Include="GuestHotel.cs" />
     <Compile Include="IBarItems.cs" />
     <Compile Include="IBistroOrders.cs" />
+    <Compile Include="ICleaner.cs" />
     <Compile Include="IDrinks.cs" />
     <Compile Include="IGuest.cs" />
     <Compile Include="IIngredients.cs" />

@@ -39,6 +39,7 @@ namespace BusinessLayer
         private List<IDrinks> drinksList;
         private List<IOrder_has_Drinks> orderDrinksList;
         private List<IOrder_has_Meals> orderMealsList;
+        private List<ICleaner> cleanerList;
         #endregion
 
         #region Instance Properties
@@ -71,6 +72,18 @@ namespace BusinessLayer
             //}
         }
 
+
+        public List<ICleaner> CleanerList
+        {
+            get
+            {
+                return cleanerList;
+            }
+            set
+            {
+                cleanerList = value;
+            }
+        }
 
         public List<IRoom> RoomsList
         {
@@ -518,6 +531,10 @@ namespace BusinessLayer
             ReservationsList = dataLayer.getAllReservations();
         }
 
+        public void GetAllCleaner()
+        {
+            CleanerList = dataLayer.getAllCleaner();
+        }
 
         public void GetRoomsForDates(string CheckIn, string CheckOut)
         {
