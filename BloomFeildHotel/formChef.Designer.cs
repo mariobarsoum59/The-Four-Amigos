@@ -40,6 +40,7 @@
             this.btnRequestIngredients = new System.Windows.Forms.Button();
             this.btnChangePassword = new System.Windows.Forms.Button();
             this.btnChangeStatus = new System.Windows.Forms.Button();
+            this.btnPrepMeal = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -122,7 +123,7 @@
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExit.Location = new System.Drawing.Point(1156, 342);
+            this.btnExit.Location = new System.Drawing.Point(1158, 511);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(242, 160);
@@ -187,12 +188,27 @@
             this.btnChangeStatus.UseVisualStyleBackColor = false;
             this.btnChangeStatus.Click += new System.EventHandler(this.btnChangeStatus_Click);
             // 
+            // btnPrepMeal
+            // 
+            this.btnPrepMeal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnPrepMeal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrepMeal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnPrepMeal.Location = new System.Drawing.Point(1158, 341);
+            this.btnPrepMeal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnPrepMeal.Name = "btnPrepMeal";
+            this.btnPrepMeal.Size = new System.Drawing.Size(242, 160);
+            this.btnPrepMeal.TabIndex = 39;
+            this.btnPrepMeal.Text = "Add Prepared Meal";
+            this.btnPrepMeal.UseVisualStyleBackColor = false;
+            this.btnPrepMeal.Click += new System.EventHandler(this.btnPrepMeal_Click);
+            // 
             // formChef
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(1892, 942);
+            this.Controls.Add(this.btnPrepMeal);
             this.Controls.Add(this.btnChangeStatus);
             this.Controls.Add(this.btnChangePassword);
             this.Controls.Add(this.btnRequestIngredients);
@@ -230,5 +246,6 @@
         private System.Windows.Forms.Button btnRequestIngredients;
         private System.Windows.Forms.Button btnChangePassword;
         private System.Windows.Forms.Button btnChangeStatus;
+        private System.Windows.Forms.Button btnPrepMeal;
     }
 }

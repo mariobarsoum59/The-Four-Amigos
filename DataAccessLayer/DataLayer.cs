@@ -1613,6 +1613,37 @@ namespace DataAccessLayer
                 //Environment.Exit(0); //Force the application to close
             }
         }
+
+        public virtual void addPrepMeal(IMeals aPrepMeal)
+        {
+            try
+            {
+                DataSet ds = new DataSet();
+                string sql = "SELECT * From Meals";
+                SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                SqlCommandBuilder cb = new SqlCommandBuilder(da); 
+                da.Fill(ds, "MealsData");
+                maxRows = ds.Tables["MealsData"].Rows.Count;
+                DataRow dRow = ds.Tables["MealsData"].NewRow();
+                dRow[0] = aPrepMeal.DishID;
+                dRow[1] = aPrepMeal.DishName;
+                dRow[2] = aPrepMeal.Price;
+                dRow[3] = aPrepMeal.Quantity;
+
+
+
+                ds.Tables["MealsData"].Rows.Add(dRow);
+                da.Update(ds, "MealsData");
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+            }
+        }
+
         public virtual void addNewOrderMeal(IOrder_has_Meals anOrderMeal)
         {
             try
@@ -1707,6 +1738,11 @@ namespace DataAccessLayer
             }
             return true;
         }
+
+        
+
+
+
         public virtual bool editOrderMeal(IOrder_has_Meals anOrderMeal)
         {
             try

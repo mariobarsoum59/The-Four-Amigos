@@ -36,5 +36,15 @@ namespace BloomFeildHotel
             form.Dock = DockStyle.Fill;
             form.Show();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

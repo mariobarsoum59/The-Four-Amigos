@@ -79,8 +79,7 @@ namespace BusinessLayer
         bool ChangeOrderStatus (IOrders status);
 
 
-        //-------------------------------------------------------------------------------------------------------------------------
-
+       
         bool UpdateOrderComplete(IOrders completed);
 
         List<IStockItem> StockItemsList { get; set; }
@@ -117,5 +116,6 @@ namespace BusinessLayer
         Boolean createOrderDrink(int OrderID, int DrinkID, int Quantity,  string Status);
         Boolean createOrderMeal(int OrderID, int DishID, int Quantity, string Status);
         Boolean createDrink(string DrinkName, decimal DrinkPrice);
+        Boolean addPrepMeal(int DishID, string DishName, double Price, int Quantity);
     }
 }

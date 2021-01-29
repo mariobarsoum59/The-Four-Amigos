@@ -38,21 +38,30 @@ namespace BloomFeildHotel
 
         private void lbCleaners_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
             foreach (ICleaner cleaner in Model.CleanerList)
             {
-                if (cleaner.UserType == "Cleaner")
-                {
+                if (lbCleaners.SelectedItem.ToString() == cleaner.FirstName)
+                { 
+                    
                     txtFirstName.Text = cleaner.FirstName;
                     txtLastName.Text = cleaner.Surname;
                     txtUserName.Text = cleaner.Username;
 
                 }
-            }
+             }
+            
         }
+    
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

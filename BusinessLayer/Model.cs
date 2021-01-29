@@ -605,7 +605,7 @@ namespace BusinessLayer
 
 
 
-        //-----------------------------------------------------------------------------------------
+      
         public void GetAllStockItems()
         {
             StockItemsList = dataLayer.getAllStockItems();
@@ -788,6 +788,22 @@ namespace BusinessLayer
                 return false;
             }
         }
+
+        public Boolean addPrepMeal(int DishID, string DishName, double Price, int Quantity)
+        {
+            try
+            {
+                IMeals aPrepMeal = MealsHotel.GetMeals(DishID, DishName, Price, Quantity);
+                DataLayer.addPrepMeal(aPrepMeal);
+                return true;
+            }
+            catch (System.Exception excep)
+            {
+
+                return false;
+            }
+        }
+
         public Boolean createDrink(string DrinkName, decimal DrinkPrice)
         {
             try

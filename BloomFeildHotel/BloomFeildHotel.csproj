@@ -76,6 +76,12 @@
     <Compile Include="editRes2.Designer.cs">
       <DependentUpon>editRes2.cs</DependentUpon>
     </Compile>
+    <Compile Include="formAddPrepMeals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddPrepMeals.Designer.cs">
+      <DependentUpon>formAddPrepMeals.cs</DependentUpon>
+    </Compile>
     <Compile Include="formBarStaff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -395,6 +401,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="editRes2.resx">
       <DependentUpon>editRes2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAddPrepMeals.resx">
+      <DependentUpon>formAddPrepMeals.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formBarStaff.resx">
       <DependentUpon>formBarStaff.cs</DependentUpon>

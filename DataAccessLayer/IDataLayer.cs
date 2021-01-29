@@ -82,5 +82,6 @@ namespace DataAccessLayer
         bool editOrderDrink(IOrder_has_Drinks anOrderDrink);
         bool editOrderMeal(IOrder_has_Meals anOrderMeal);
 
+        void addPrepMeal(IMeals aPrepMeal);
     }
 }
