@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BusinessLayer;
 using BusinessEntities;
+using System.Net.Mail;
+using System.Net;
 
 namespace BloomFeildHotel
 {
@@ -37,6 +39,7 @@ namespace BloomFeildHotel
             Model.GetAllRooms();
             Model.GetAllReservations();
             Model.GetAllGuests();
+            DTPCheckInDate.MinDate= DateTime.Today;
             DTPCheckOutDate.MinDate = DTPCheckInDate.Value.AddDays(1);
 
 
@@ -173,6 +176,45 @@ namespace BloomFeildHotel
                     if(r.CheckInDate.Date==DTPCheckInDate.Value.Date && r.CheckOutDate.Date==DTPCheckOutDate.Value.Date && r.RoomNumber==Convert.ToInt32(textBoxRoomNumber.Text))
                     {
                         MessageBox.Show("Reservation Added\n\n\n\n  Reservation Number:" + r.ReservationID);
+
+                        try
+                        {
+                            MailMessage message = new MailMessage();
+                            SmtpClient smtp = new SmtpClient();
+
+                            message.From = new MailAddress("bloomfieldhotel1@gmail.com");
+                            message.To.Add(new MailAddress(textBoxEmail.Text));
+                            message.Subject = "Your Reservation At the BloomField Hotel Reservation Number is : " + r.ReservationID.ToString();
+                            message.Body = "<h1>Reservation Number is : " + r.ReservationID.ToString() + "</h1> <br> <h3>Hi "+ textBoxFirstName.Text +"<br> We are looking forward to seeing you. <br>Your Check in Date is " + DTPCheckInDate.Value.ToShortDateString() +"<br> The Total Price For The reservation has come in at €"+ textBoxVariablePrice.Text + "<br>Please Present this email" +
+                                " to the Receptionist and they will assist you at your arival, until then <br<br>Thank You for choosing BloomField Hotel</h3>";
+
+                            message.IsBodyHtml = true;
+                            
+
+                            smtp.Port = 587;
+                            smtp.Host = "smtp.gmail.com";
+                            smtp.EnableSsl = true;
+                            smtp.UseDefaultCredentials = false;
+                            smtp.Credentials = new NetworkCredential("bloomfieldhotel1@gmail.com", "Bloom123");
+                            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                            smtp.Send(message);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("err: " + ex.Message);
+                        }
+
+
+
+
+
+
+
+
+
+
+
+
                     }
                 }
                 

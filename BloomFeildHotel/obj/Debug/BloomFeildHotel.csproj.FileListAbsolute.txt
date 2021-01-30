@@ -496,3 +496,11 @@ C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\DataAccessLayer.
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.csproj.CopyComplete
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewReceipt.resources
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddUpdateMenu.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddPrepMeals.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddUpdateMenu.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.FormCashOrCard.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formChangeOrderStatus.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formMakePaymentCard.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.FormMakePaymentCash.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewCleaner.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewReceipt.resources
