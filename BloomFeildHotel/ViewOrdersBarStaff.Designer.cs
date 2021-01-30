@@ -43,6 +43,7 @@ namespace BloomFeildHotel
             this.btnNote = new System.Windows.Forms.Button();
             this.btn = new System.Windows.Forms.Button();
             this.textBoxNoteArea = new System.Windows.Forms.TextBox();
+            this.btnReceipt = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -189,7 +190,7 @@ namespace BloomFeildHotel
             this.btnNote.Location = new System.Drawing.Point(1235, 520);
             this.btnNote.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnNote.Name = "btnNote";
-            this.btnNote.Size = new System.Drawing.Size(586, 135);
+            this.btnNote.Size = new System.Drawing.Size(259, 135);
             this.btnNote.TabIndex = 53;
             this.btnNote.Text = "Submit Note";
             this.btnNote.UseVisualStyleBackColor = false;
@@ -219,12 +220,27 @@ namespace BloomFeildHotel
             this.textBoxNoteArea.Size = new System.Drawing.Size(586, 304);
             this.textBoxNoteArea.TabIndex = 51;
             // 
+            // btnReceipt
+            // 
+            this.btnReceipt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnReceipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReceipt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnReceipt.Location = new System.Drawing.Point(1562, 520);
+            this.btnReceipt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnReceipt.Name = "btnReceipt";
+            this.btnReceipt.Size = new System.Drawing.Size(259, 135);
+            this.btnReceipt.TabIndex = 55;
+            this.btnReceipt.Text = "Order Receipts";
+            this.btnReceipt.UseVisualStyleBackColor = false;
+            this.btnReceipt.Click += new System.EventHandler(this.btnReceipt_Click);
+            // 
             // ViewOrdersBarStaff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(1868, 840);
+            this.Controls.Add(this.btnReceipt);
             this.Controls.Add(this.btn);
             this.Controls.Add(this.btnNote);
             this.Controls.Add(this.lblLeaveANote);
@@ -266,5 +282,6 @@ namespace BloomFeildHotel
         private System.Windows.Forms.Button btnNote;
         private System.Windows.Forms.Button btn;
         private System.Windows.Forms.TextBox textBoxNoteArea;
+        private System.Windows.Forms.Button btnReceipt;
     }
 }

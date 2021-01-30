@@ -63,11 +63,6 @@ namespace BloomFeildHotel
             vs.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            formSaleTest form = new formSaleTest(fc, Model);
-            form.Show();
-            form.Dock = DockStyle.Fill;
-        }
+       
     }
 }

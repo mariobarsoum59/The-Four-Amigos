@@ -54,5 +54,12 @@ namespace BloomFeildHotel
             f9.Dock = DockStyle.Fill;
             f9.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            formAddUpdateMenu form = new formAddUpdateMenu(fc, Model);
+            form.Dock = DockStyle.Fill;
+            form.Show();
+        }
     }
 }

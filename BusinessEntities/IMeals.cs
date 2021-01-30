@@ -12,6 +12,7 @@ namespace BusinessEntities
         string DishName { get; set; }
         double Price { get; set; }
         int Quantity { get; set; }
+
     }
 }
 

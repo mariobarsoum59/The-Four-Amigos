@@ -53,7 +53,6 @@ namespace BusinessEntities
                 price = value;
             }
         }
-
         public int Quantity
         {
             get
@@ -66,7 +65,6 @@ namespace BusinessEntities
             }
         }
 
-
         public Meals()
         {
             throw new System.NotImplementedException();
@@ -78,6 +76,7 @@ namespace BusinessEntities
             this.dishName = DishName;
             this.price = Price;
             this.quantity = Quantity;
+
         }
 
     }

@@ -82,6 +82,12 @@
     <Compile Include="formAddPrepMeals.Designer.cs">
       <DependentUpon>formAddPrepMeals.cs</DependentUpon>
     </Compile>
+    <Compile Include="formAddUpdateMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddUpdateMenu.Designer.cs">
+      <DependentUpon>formAddUpdateMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="formBarStaff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -292,12 +298,6 @@
     <Compile Include="formSales.Designer.cs">
       <DependentUpon>formSales.cs</DependentUpon>
     </Compile>
-    <Compile Include="formSaleTest.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formSaleTest.Designer.cs">
-      <DependentUpon>formSaleTest.cs</DependentUpon>
-    </Compile>
     <Compile Include="formSavedGuests.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -345,6 +345,12 @@
     </Compile>
     <Compile Include="formViewOrdersChef.Designer.cs">
       <DependentUpon>formViewOrdersChef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formViewReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formViewReceipt.Designer.cs">
+      <DependentUpon>formViewReceipt.cs</DependentUpon>
     </Compile>
     <Compile Include="formViewReservations.cs">
       <SubType>Form</SubType>
@@ -404,6 +410,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formAddPrepMeals.resx">
       <DependentUpon>formAddPrepMeals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAddUpdateMenu.resx">
+      <DependentUpon>formAddUpdateMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formBarStaff.resx">
       <DependentUpon>formBarStaff.cs</DependentUpon>
@@ -510,9 +519,6 @@
     <EmbeddedResource Include="formSales.resx">
       <DependentUpon>formSales.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formSaleTest.resx">
-      <DependentUpon>formSaleTest.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="formSavedGuests.resx">
       <DependentUpon>formSavedGuests.cs</DependentUpon>
     </EmbeddedResource>
@@ -536,6 +542,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formViewOrdersChef.resx">
       <DependentUpon>formViewOrdersChef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formViewReceipt.resx">
+      <DependentUpon>formViewReceipt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formViewReservations.resx">
       <DependentUpon>formViewReservations.cs</DependentUpon>

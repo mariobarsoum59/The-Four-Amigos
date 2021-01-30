@@ -10,7 +10,7 @@ namespace BusinessEntities
     {
         private static IMeals meals = null;
 
-        public static IMeals GetMeals(int DishID, string DishName, double Price, int Quantity)
+        public static IMeals GetMeals(int DishID, string DishName, double Price,int Quantity)
         {
             if (meals != null)
                 return meals;

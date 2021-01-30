@@ -33,6 +33,7 @@ namespace BloomFeildHotel
         private void ViewOrdersBarStaff_Load(object sender, EventArgs e)
         {
             listBox3.Items.Clear();
+            listBox1.Items.Clear();
             Model.GetAllMeals();
             Model.GetAllDrinks();
             Model.GetAllBistroOrders();
@@ -42,69 +43,11 @@ namespace BloomFeildHotel
             {
                 if (orders.OrderCompleted == false)
                 {
-                    foreach (IOrder_has_Meals mealorders in Model.OrderMealsList)
-                    {
-                        if (orders.OrderID == mealorders.OrderID)
-                        {
-                            foreach (IMeals meal in Model.MealsList)
-                            {
-                                if (mealorders.DishID == meal.DishID)
-                                {
-                                    listBox3.Items.Add(string.Format("{0} | Quantity: {1} | Price: €{2} | Status: {3}", meal.DishName, mealorders.Quantity, meal.Price, mealorders.Status));
-                                }
-                            }
-                        }
-
-                    }
-
-                    foreach (IOrder_has_Drinks drinkorders in Model.OrderDrinksList)
-                    {
-                        if (orders.OrderID == drinkorders.OrderID)
-                        {
-                            foreach (IDrinks drink in Model.DrinksList)
-                            {
-                                if (drinkorders.DrinkID == drink.DrinkID)
-                                {
-                                    listBox3.Items.Add(string.Format("{0} | Quantity: {1} | Price: €{2} | Status: {3}", drink.DrinkName, drinkorders.Quantity, drink.DrinkPrice, drinkorders.Status));
-                                }
-                            }
-
-                        }
-
-                    }
+                    listBox3.Items.Add(string.Format("Order ID: {0} | Order Date: {1} | Order Made By User ID: {2}", orders.OrderID, orders.OrderDate,orders.OrderMadeBy));
                 }
                 if (orders.OrderCompleted == true)
                 {
-                    foreach (IOrder_has_Meals mealorders in Model.OrderMealsList)
-                    {
-                        if (orders.OrderID == mealorders.OrderID)
-                        {
-                            foreach (IMeals meal in Model.MealsList)
-                            {
-                                if (mealorders.DishID == meal.DishID)
-                                {
-                                    listBox1.Items.Add(string.Format("{0} | Quantity: {1} | Price: €{2} | Status: {3}", meal.DishName, mealorders.Quantity, meal.Price, mealorders.Status));
-                                }
-                            }
-                            
-                        }
-
-                    }
-                    foreach (IOrder_has_Drinks drinkorders in Model.OrderDrinksList)
-                    {
-                        if (orders.OrderID == drinkorders.OrderID)
-                        {
-                            foreach (IDrinks drink in Model.DrinksList)
-                            {
-                                if (drinkorders.DrinkID == drink.DrinkID)
-                                {
-                                    listBox1.Items.Add(string.Format("{0} | Quantity: {1} | Price: €{2} | Status: {3}", drink.DrinkName, drinkorders.Quantity, drink.DrinkPrice, drinkorders.Status));
-                                }
-                            }
-
-                        }
-
-                    }
+                    listBox1.Items.Add(string.Format("Order ID: {0} | Order Date: {1} | Order Made By User ID: {2}", orders.OrderID, orders.OrderDate, orders.OrderMadeBy));
                 }
             }
         }
@@ -124,47 +67,13 @@ namespace BloomFeildHotel
 
                 foreach (IBistroOrders orders in Model.BistroOrdersList)
                 {
-                    foreach (IOrder_has_Meals mealorders in Model.OrderMealsList)
-                    {
-                        if (orders.OrderID == mealorders.OrderID)
+                        string std = string.Format("Order ID: {0} | Order Date: {1} | Order Made By User ID: {2}", orders.OrderID, orders.OrderDate, orders.OrderMadeBy);
+                        if (listBox3.SelectedItem.ToString() == std)
                         {
-                            foreach (IMeals meal in Model.MealsList)
-                            {
-                                if (mealorders.DishID == meal.DishID)
-                                {
-                                    string std = string.Format("{0} | Quantity: {1} | Price: €{2} | Status: {3}", meal.DishName, mealorders.Quantity, meal.Price, mealorders.Status);
-
-                                    if (listBox3.SelectedItem.ToString() == std)
-                                    {
-                                        orders.OrderCompleted = true;
-                                        Model.editBistroOrder(orders);
-                                    }
-                                }
-                            }
+                            orders.OrderCompleted = true;
+                            Model.editBistroOrder(orders);
                         }
 
-                    }
-
-                    foreach (IOrder_has_Drinks drinkorders in Model.OrderDrinksList)
-                    {
-                        if (orders.OrderID == drinkorders.OrderID)
-                        {
-                            foreach (IDrinks drink in Model.DrinksList)
-                            {
-                                if (drinkorders.DrinkID == drink.DrinkID)
-                                {
-                                    string std = string.Format("{0} | Quantity: {1} | Price: €{2} | Status: {3}", drink.DrinkName, drinkorders.Quantity, drink.DrinkPrice, drinkorders.Status);
-                                    if (listBox3.SelectedItem.ToString() == std)
-                                    {
-                                        orders.OrderCompleted = true;
-                                        Model.editBistroOrder(orders);
-                                    }
-                                }
-                            }
-
-                        }
-
-                    }
                 }
 
                 selectedItemText = listBox3.SelectedItem.ToString();
@@ -202,49 +111,13 @@ namespace BloomFeildHotel
                 listBox3.Items.Add(selectedItemText);
                 foreach (IBistroOrders orders in Model.BistroOrdersList)
                 {
-
-                    foreach (IOrder_has_Meals mealorders in Model.OrderMealsList)
+                    string std = string.Format("Order ID: {0} | Order Date: {1} | Order Made By User ID: {2}", orders.OrderID, orders.OrderDate, orders.OrderMadeBy);
+                    if (listBox1.SelectedItem.ToString() == std)
                     {
-                        if (orders.OrderID == mealorders.OrderID)
-                        {
-                            foreach (IMeals meal in Model.MealsList)
-                            {
-                                if (mealorders.DishID == meal.DishID)
-                                {
-                                    string std = string.Format("{0} | Quantity: {1} | Price: €{2} | Status: {3}", meal.DishName, mealorders.Quantity, meal.Price, mealorders.Status);
-                                    if (listBox1.SelectedItem.ToString() == std)
-                                    {
-                                        orders.OrderCompleted = false;
-
-                                        Model.editBistroOrder(orders);
-                                    }
-                                }
-                            }
-                        }
-
+                        orders.OrderCompleted = false;
+                        Model.editBistroOrder(orders);
                     }
 
-                    foreach (IOrder_has_Drinks drinkorders in Model.OrderDrinksList)
-                    {
-                        if (orders.OrderID == drinkorders.OrderID)
-                        {
-                            foreach (IDrinks drink in Model.DrinksList)
-                            {
-                                if (drinkorders.DrinkID == drink.DrinkID)
-                                {
-                                    string std = string.Format("{0} | Quantity: {1} | Price: €{2} | Status: {3}", drink.DrinkName, drinkorders.Quantity, drink.DrinkPrice, drinkorders.Status);
-                                    if (listBox1.SelectedItem.ToString() == std)
-                                    {
-                                        orders.OrderCompleted = false;
-
-                                        Model.editBistroOrder(orders);
-                                    }
-                                }
-                            }
-
-                        }
-
-                    }
                 }
                 selectedItemText = listBox1.SelectedItem.ToString();
                 listBox1.Items.Remove(selectedItemText);
@@ -265,44 +138,10 @@ namespace BloomFeildHotel
                 foreach (IBistroOrders orders in Model.BistroOrdersList)
                 {
 
-                    foreach (IOrder_has_Meals mealorders in Model.OrderMealsList)
+                  string std = string.Format("Order ID: {0} | Order Date: {1} | Order Made By User ID: {2}", orders.OrderID, orders.OrderDate, orders.OrderMadeBy);
+                   if (listBox3.SelectedItem.ToString() == std)
                     {
-                        if (orders.OrderID == mealorders.OrderID)
-                        {
-                            foreach (IMeals meal in Model.MealsList)
-                            {
-                                if (mealorders.DishID == meal.DishID)
-                                {
-                                    string std = string.Format("{0} | Quantity: {1} | Price: €{2} | Status: {3}", meal.DishName, mealorders.Quantity, meal.Price, mealorders.Status);
-                                    if (listBox3.SelectedItem.ToString() == std)
-                                    {
-                                        textBoxNoteArea.Text = orders.OrderNote;
-
-                                    }
-                                }
-                            }
-                        }
-
-                    }
-
-                    foreach (IOrder_has_Drinks drinkorders in Model.OrderDrinksList)
-                    {
-                        if (orders.OrderID == drinkorders.OrderID)
-                        {
-                            foreach (IDrinks drink in Model.DrinksList)
-                            {
-                                if (drinkorders.DrinkID == drink.DrinkID)
-                                {
-                                    string std = string.Format("{0} | Quantity: {1} | Price: €{2} | Status: {3}", drink.DrinkName, drinkorders.Quantity, drink.DrinkPrice, drinkorders.Status);
-                                    if (listBox3.SelectedItem.ToString() == std)
-                                    {
-                                        textBoxNoteArea.Text = orders.OrderNote;
-
-                                    }
-                                }
-                            }
-
-                        }
+                        textBoxNoteArea.Text = orders.OrderNote;
 
                     }
                 }
@@ -315,54 +154,29 @@ namespace BloomFeildHotel
             foreach (IBistroOrders orders in Model.BistroOrdersList)
             {
 
-                foreach (IOrder_has_Meals mealorders in Model.OrderMealsList)
+               string std = string.Format("Order ID: {0} | Order Date: {1} | Order Made By User ID: {2}", orders.OrderID, orders.OrderDate, orders.OrderMadeBy);
+               if (listBox3.SelectedItem.ToString() == std)
                 {
-                    if (orders.OrderID == mealorders.OrderID)
-                    {
-                        foreach (IMeals meal in Model.MealsList)
-                        {
-                            if (mealorders.DishID == meal.DishID)
-                            {
-                                string std = string.Format("{0} | Quantity: {1} | Price: €{2} | Status: {3}", meal.DishName, mealorders.Quantity, meal.Price, mealorders.Status);
-                                if (listBox3.SelectedItem.ToString() == std)
-                                {
-                                    orders.OrderNote = Convert.ToString(textBoxNoteArea.Text);
-                                    Model.editBistroOrder(orders);
-
-                                }
-                            }
-                        }
-                    }
+                  orders.OrderNote = Convert.ToString(textBoxNoteArea.Text);
+                  Model.editBistroOrder(orders);
 
                 }
 
-                foreach (IOrder_has_Drinks drinkorders in Model.OrderDrinksList)
-                {
-                    if (orders.OrderID == drinkorders.OrderID)
-                    {
-                        foreach (IDrinks drink in Model.DrinksList)
-                        {
-                            if (drinkorders.DrinkID == drink.DrinkID)
-                            {
-                                string std = string.Format("{0} | Quantity: {1} | Price: €{2} | Status: {3}", drink.DrinkName, drinkorders.Quantity, drink.DrinkPrice, drinkorders.Status);
-                                if (listBox3.SelectedItem.ToString() == std)
-                                {
-                                    orders.OrderNote = Convert.ToString(textBoxNoteArea.Text);
-                                    Model.editBistroOrder(orders);
-
-                                }
-                            }
-                        }
-
-                    }
-
-                }
             }
         }
 
         private void btn_Click(object sender, EventArgs e)
         {
             formManageOrder form = new formManageOrder(fc, Model);
+            //form.Show();
+            form.Dock = DockStyle.Fill;
+
+            form.Show();
+        }
+
+        private void btnReceipt_Click(object sender, EventArgs e)
+        {
+            formViewReceipt form = new formViewReceipt(fc, Model);
             //form.Show();
             form.Dock = DockStyle.Fill;
 
