@@ -39,17 +39,18 @@ namespace BloomFeildHotel
         private void btnSubmitDrink_Click(object sender, EventArgs e)
         {
             
-                if (textDrinkName.Text == null)
+                if (textDrinkName.Text == String.Empty)
                 {
                     MessageBox.Show("Please Enter a drink name!");
                 }
-                if (textDrinkPrice.Text == null)
+                else if (textDrinkPrice.Text == String.Empty)
                 {
                     MessageBox.Show("Please enter a drink price!");
                 }
 
-                if (Model.createDrink(textDrinkName.Text, Convert.ToDecimal(textDrinkPrice.Text)))
+                else
                 {
+                    Model.createDrink(textDrinkName.Text, Convert.ToDecimal(textDrinkPrice.Text));
                     MessageBox.Show("Drink created");
                 }
 
@@ -57,25 +58,36 @@ namespace BloomFeildHotel
 
         private void btnNewMeal_Click(object sender, EventArgs e)
         {
-            if (textBoxMeal.Text == null)
+            
+
+            if (textBoxMeal.Text == String.Empty)
             {
                 MessageBox.Show("Please Enter a Meal name!");
             }
-            if (textBoxMealPrice.Text == null)
+            else if (textBoxMealPrice.Text == String.Empty)
             {
                 MessageBox.Show("Please enter a Meal price!");
             }
-            if (textBoxQuantity.Text == null)
+            else if(textBoxQuantity.Text == String.Empty)
             {
                 MessageBox.Show("Please enter a Quantity!");
             }
-
-            int id = 0;
-            double price = Convert.ToDouble(textBoxMealPrice.Text);
-            if (Model.addPrepMeal(id, textBoxMeal.Text, price, Convert.ToInt32(textBoxQuantity.Text)))
+            else
             {
+                int id = 0;
+                double price = Convert.ToDouble(textBoxMealPrice.Text);
+                Model.addPrepMeal(id, textBoxMeal.Text, price, Convert.ToInt32(textBoxQuantity.Text));
                 MessageBox.Show("Meal Added");
             }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            textDrinkName.Clear();
+            textDrinkPrice.Clear();
+            textBoxMeal.Clear();
+            textBoxMealPrice.Clear();
+            textBoxQuantity.Clear();
         }
     }
 }

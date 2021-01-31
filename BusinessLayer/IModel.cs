@@ -121,7 +121,7 @@ namespace BusinessLayer
         Boolean createDrink(string DrinkName, decimal DrinkPrice);
         Boolean addPrepMeal(int DishID, string DishName, double Price, int Quantity);
         //Boolean wasteToDB(int DishID, string DishName, int NumWasted, double LossFromWaste, DateTime Date);
-
+        Boolean addNewPayment(int PaymentID, Boolean CashPayment, Boolean CardPayment, string NameOnCard, decimal Amount);
 
     }
 }
