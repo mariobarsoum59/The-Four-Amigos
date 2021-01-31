@@ -49,11 +49,7 @@ namespace BloomFeildHotel
 
         private void btnChangeOrderStatus_Click(object sender, EventArgs e)
         {
-            formManageOrder form = new formManageOrder(fc, Model);
-            //form.Show();
-            form.Dock = DockStyle.Fill;
-
-            form.Show();
+            
         }
 
         private void btnMangeWaste_Click(object sender, EventArgs e)

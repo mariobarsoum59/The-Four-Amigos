@@ -81,7 +81,9 @@ namespace DataAccessLayer
         bool editBistroOrder(IBistroOrders aBistroOrder);
         bool editOrderDrink(IOrder_has_Drinks anOrderDrink);
         bool editOrderMeal(IOrder_has_Meals anOrderMeal);
-
+        bool deleteBistroOrder(IBistroOrders aBistroOrder);
+        bool deleteOrderDrink(IOrder_has_Drinks anOrderDrink);
+        bool deleteOrderMeal(IOrder_has_Meals anOrderMeal);
         void addPrepMeal(IMeals aPrepMeal);
 
         void wasteToDB(IWaste waste);

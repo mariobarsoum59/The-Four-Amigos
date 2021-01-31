@@ -1815,5 +1815,91 @@ namespace DataAccessLayer
             }
             return true;
         }
+
+
+        public bool deleteBistroOrder(IBistroOrders aBistroOrder)
+        {
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From BistroOrders";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "BistroOrdersData");
+                DataRow findRow = ds.Tables["BistroOrdersData"].Rows.Find(aBistroOrder.OrderID);
+                if (findRow != null)
+                {
+                    findRow.Delete();
+                }
+                da.Update(ds, "BistroOrdersData");
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
+                Application.Exit();
+            }
+            return true;
+        }
+        public bool deleteOrderDrink(IOrder_has_Drinks anOrderDrink)
+        {
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Order_has_Drinks";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "OrderDrinksData");
+                object[] findItem = new object[2];
+                findItem[0] = anOrderDrink.OrderID;
+                findItem[1] = anOrderDrink.DrinkID;
+                DataRow findRow = ds.Tables["OrderDrinksData"].Rows.Find(findItem);
+                if (findRow != null)
+                {
+                    findRow.Delete();
+                }
+                da.Update(ds, "OrderDrinksData");
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
+                Application.Exit();
+            }
+            return true;
+        }
+        public bool deleteOrderMeal(IOrder_has_Meals anOrderMeal)
+        {
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Order_has_Meals";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "OrderMealsData");
+                object[] findItem = new object[2];
+                findItem[0] = anOrderMeal.OrderID;
+                findItem[1] = anOrderMeal.DishID;
+                DataRow findRow = ds.Tables["OrderMealsData"].Rows.Find(findItem);
+                if (findRow != null)
+                {
+                    findRow.Delete();
+                }
+                da.Update(ds, "OrderMealsData");
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
+                Application.Exit();
+            }
+            return true;
+        }
     }
 }

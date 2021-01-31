@@ -42,7 +42,7 @@ namespace BloomFeildHotel
                         {
                             if(mealorders.DishID == meal.DishID)
                             {
-                                listBoxOrders.Items.Add(string.Format("{0} | Quantity: {1} | Order Time: {2} | Status: {3}", meal.DishName, mealorders.Quantity, orders.OrderDate, mealorders.Status));
+                                listBoxOrders.Items.Add(string.Format("{0} | Order ID: {1} | Dish ID: {2} | Quantity: {3} | Order Time: {4} | Status: {5}", mealorders.OrderID, mealorders.DishID, meal.DishName, mealorders.Quantity, orders.OrderDate, mealorders.Status));
                             }
                         }
                     }
@@ -72,11 +72,40 @@ namespace BloomFeildHotel
 
         private void btnChangeOrderStatus_Click(object sender, EventArgs e)
         {
-            formChangeOrderStatus form = new formChangeOrderStatus(fc, Model);
-            //form.Show();
-            form.Dock = DockStyle.Fill;
+            if(listBoxOrders.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please select an order!");
+            }
+            else
+            {
+                Model.GetAllMeals();
+                Model.GetAllBistroOrders();
+                Model.GetAllOrderMeals();
+                IBistroOrders order = new BistroOrders();
+                foreach (IBistroOrders orders in Model.BistroOrdersList)
+                {
+                    foreach (IOrder_has_Meals mealorders in Model.OrderMealsList)
+                    {
+                        if (orders.OrderID == mealorders.OrderID)
+                        {
+                            foreach (IMeals meal in Model.MealsList)
+                            {
+                                if (mealorders.DishID == meal.DishID)
+                                {
+                                    if(listBoxOrders.SelectedItem.ToString() == string.Format("{0} | Order ID: {1} | Dish ID: {2} | Quantity: {3} | Order Time: {4} | Status: {5}", mealorders.OrderID, mealorders.DishID, meal.DishName, mealorders.Quantity, orders.OrderDate, mealorders.Status))
+                                    {
+                                        order = orders;
+                                    }
+                                }
+                            }
+                        }
 
-            form.Show();
+                    }
+                }
+                formManageOrder f1 = new formManageOrder(fc, Model, order);
+                f1.Dock = DockStyle.Fill;
+                f1.Show();
+            }
         }
 
         private void listBoxOrders_SelectedIndexChanged(object sender, EventArgs e)

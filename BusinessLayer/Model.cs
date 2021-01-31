@@ -751,6 +751,40 @@ namespace BusinessLayer
                 return false;
             }
         }
+
+        public bool deleteBistroOrder(IBistroOrders aBistroOrder)
+        {
+            if (dataLayer.deleteBistroOrder(aBistroOrder))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool deleteOrderDrink(IOrder_has_Drinks anOrderDrink)
+        {
+            if (dataLayer.deleteOrderDrink(anOrderDrink))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        public bool deleteOrderMeal(IOrder_has_Meals anOrderMeal)
+        {
+            if (dataLayer.deleteOrderMeal(anOrderMeal))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         public Boolean createBistroOrder(DateTime OrderDate, decimal OrderTotal, int OrderMadeBy, string OrderNote, Boolean OrderCompleted)
         {
             try

@@ -115,6 +115,9 @@ namespace BusinessLayer
         bool editBistroOrder(IBistroOrders aBistroOrder);
         bool editOrderDrink(IOrder_has_Drinks anOrderDrink);
         bool editOrderMeal(IOrder_has_Meals anOrderMeal);
+        bool deleteBistroOrder(IBistroOrders aBistroOrder);
+        bool deleteOrderDrink(IOrder_has_Drinks anOrderDrink);
+        bool deleteOrderMeal(IOrder_has_Meals anOrderMeal);
         Boolean createBistroOrder(DateTime OrderDate, decimal OrderTotal, int OrderMadeBy, string OrderNote, Boolean OrderCompleted);
         Boolean createOrderDrink(int OrderID, int DrinkID, int Quantity,  string Status);
         Boolean createOrderMeal(int OrderID, int DishID, int Quantity, string Status);

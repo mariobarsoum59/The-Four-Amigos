@@ -167,10 +167,18 @@ namespace BloomFeildHotel
 
         private void btn_Click(object sender, EventArgs e)
         {
-            formManageOrder form = new formManageOrder(fc, Model);
-            //form.Show();
+            IBistroOrders bistroOrder = new BistroOrders();
+            Model.GetAllBistroOrders();
+            foreach (IBistroOrders orders in Model.BistroOrdersList)
+            {
+                string std = string.Format("Order ID: {0} | Order Date: {1} | Order Made By User ID: {2}", orders.OrderID, orders.OrderDate, orders.OrderMadeBy);
+                if (listBox3.SelectedItem.ToString() == std)
+                {
+                    bistroOrder = orders;
+                }
+            }
+            formManageOrder form = new formManageOrder(fc, Model, bistroOrder);
             form.Dock = DockStyle.Fill;
-
             form.Show();
         }
 
