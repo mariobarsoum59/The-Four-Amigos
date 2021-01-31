@@ -83,5 +83,7 @@ namespace DataAccessLayer
         bool editOrderMeal(IOrder_has_Meals anOrderMeal);
 
         void addPrepMeal(IMeals aPrepMeal);
+
+        void wasteToDB(IWaste waste);
     }
 }

@@ -597,6 +597,40 @@ namespace DataAccessLayer
             return true;
         }
 
+        public virtual void wasteToDB(IWaste waste)
+        {
+
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Waste";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "WasteData");
+                DataRow findRow = ds.Tables["WasteData"].Rows.Find(waste.DishID);
+
+                if (findRow != null)
+                {
+                    findRow[0] = waste.DishID;
+                    findRow[1] = waste.DishName;
+                    findRow[2] = waste.NumWasted;
+                    findRow[3] = waste.LossFromWaste;
+                    findRow[4] = waste.Date;
+
+                }
+                da.Update(ds, "WasteData"); 
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+            }
+        }
+
+
 
         public virtual List<IRoomCleaningRecord> getAllRoomCleaningRecords()
         {
@@ -837,7 +871,7 @@ namespace DataAccessLayer
             return Orders;
         }
 
-        //------------------------------rebecca i1 manage waste-----------------------------------------------
+        
         public virtual List<IIngredients> getAllIngredients()
         {
             List<IIngredients> Ingredients = new List<IIngredients>();
@@ -1644,6 +1678,9 @@ namespace DataAccessLayer
             }
         }
 
+     
+
+
         public virtual void addNewOrderMeal(IOrder_has_Meals anOrderMeal)
         {
             try
@@ -1739,7 +1776,9 @@ namespace DataAccessLayer
             return true;
         }
 
-        
+       
+
+
 
 
 

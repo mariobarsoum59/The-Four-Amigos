@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 
 namespace BloomFeildHotel
@@ -435,6 +436,30 @@ namespace BloomFeildHotel
             Model.GetAllIngredients();
             Model.GetAllMeals();
             Model.GetAllWaste();
+        }
+
+        private void btnUpdateWaste_Click(object sender, EventArgs e)
+        {
+            var path = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+            var fullFileName = Path.Combine(path, "Meal Report.txt");
+
+            //string[] = "Meals", "for", "today";
+            foreach (var item in foodList.Items)
+            {
+                foreach (Waste waste in Model.WasteList)
+                {
+                    
+                    
+                    System.IO.File.WriteAllLines(fullFileName,  foodList.Items.Cast<string>().ToArray());
+
+                }
+            }
+
+        }
+
+        private void totalPrep_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -505,6 +505,14 @@ namespace BusinessLayer
             return true;
         }
 
+        public bool wasteToDB(IWaste waste)
+        {
+            DataLayer.wasteToDB(waste);
+            return true;
+        }
+
+
+
         public bool PasswordCheck(string password)
         {
             if (password.Length >= 8 && password.Any(char.IsUpper) && password.Any(char.IsLower))
@@ -579,8 +587,6 @@ namespace BusinessLayer
 
         }
 
-
-        //-------------------Rebecca ---------------------------------------------- 
 
         public void GetAllIngredients()
         {
@@ -803,6 +809,8 @@ namespace BusinessLayer
                 return false;
             }
         }
+
+
 
         public Boolean createDrink(string DrinkName, decimal DrinkPrice)
         {

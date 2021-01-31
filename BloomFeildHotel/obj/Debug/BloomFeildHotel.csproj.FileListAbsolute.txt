@@ -421,7 +421,6 @@ C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debu
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.FormCashOrCard.resources
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formMakePaymentCard.resources
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.FormMakePaymentCash.resources
-C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formSaleTest.resources
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewCleaner.resources
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddPrepMeals.resources
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.csprojAssemblyReference.cache
@@ -504,3 +503,5 @@ D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHote
 D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.FormMakePaymentCash.resources
 D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewCleaner.resources
 D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewReceipt.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddUpdateMenu.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewReceipt.resources

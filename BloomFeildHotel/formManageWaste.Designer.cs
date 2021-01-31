@@ -53,6 +53,7 @@
             this.btnUpdateWaste = new System.Windows.Forms.Button();
             this.btnEdit1 = new System.Windows.Forms.Button();
             this.btnEdit2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,6 +108,7 @@
             this.totalPrep.Name = "totalPrep";
             this.totalPrep.Size = new System.Drawing.Size(100, 26);
             this.totalPrep.TabIndex = 4;
+            this.totalPrep.TextChanged += new System.EventHandler(this.totalPrep_TextChanged);
             // 
             // totalRemain
             // 
@@ -269,12 +271,13 @@
             this.btnUpdateWaste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
             this.btnUpdateWaste.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateWaste.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnUpdateWaste.Location = new System.Drawing.Point(662, 461);
+            this.btnUpdateWaste.Location = new System.Drawing.Point(613, 461);
             this.btnUpdateWaste.Name = "btnUpdateWaste";
             this.btnUpdateWaste.Size = new System.Drawing.Size(160, 49);
             this.btnUpdateWaste.TabIndex = 22;
-            this.btnUpdateWaste.Text = "Update Waste";
+            this.btnUpdateWaste.Text = "Export Food";
             this.btnUpdateWaste.UseVisualStyleBackColor = false;
+            this.btnUpdateWaste.Click += new System.EventHandler(this.btnUpdateWaste_Click);
             // 
             // btnEdit1
             // 
@@ -300,12 +303,25 @@
             this.btnEdit2.Text = "Edit";
             this.btnEdit2.UseVisualStyleBackColor = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(779, 461);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 49);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Update ";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // formManageWaste
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(960, 573);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEdit2);
             this.Controls.Add(this.btnEdit1);
             this.Controls.Add(this.btnUpdateWaste);
@@ -368,5 +384,6 @@
         private System.Windows.Forms.Button btnUpdateWaste;
         private System.Windows.Forms.Button btnEdit1;
         private System.Windows.Forms.Button btnEdit2;
+        private System.Windows.Forms.Button button1;
     }
 }

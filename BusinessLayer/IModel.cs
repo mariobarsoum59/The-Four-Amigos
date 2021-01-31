@@ -66,7 +66,7 @@ namespace BusinessLayer
         List<IOrders> OrdersList { get; set; }
         void GetAllOrders();
 
-        //----------------------------Rebecca i1 manage waste -----------------------------------------------------------
+      
         List<IIngredients> IngredientsList { get; set; }
         void GetAllIngredients();
 
@@ -75,6 +75,9 @@ namespace BusinessLayer
 
         List<IWaste> WasteList { get; set; }
         void GetAllWaste();
+
+        bool wasteToDB(IWaste waste);
+
 
         bool ChangeOrderStatus (IOrders status);
 
@@ -117,5 +120,8 @@ namespace BusinessLayer
         Boolean createOrderMeal(int OrderID, int DishID, int Quantity, string Status);
         Boolean createDrink(string DrinkName, decimal DrinkPrice);
         Boolean addPrepMeal(int DishID, string DishName, double Price, int Quantity);
+        //Boolean wasteToDB(int DishID, string DishName, int NumWasted, double LossFromWaste, DateTime Date);
+
+
     }
 }
