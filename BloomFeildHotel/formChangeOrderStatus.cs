@@ -39,11 +39,14 @@ namespace BloomFeildHotel
             {
                 foreach (IOrder_has_Meals mealorders in Model.OrderMealsList)
                 {
-                    foreach (IMeals meal in Model.MealsList)
+                    if (orders.OrderID == mealorders.OrderID)
                     {
-                        if (mealorders.DishID == meal.DishID)
+                        foreach (IMeals meal in Model.MealsList)
                         {
-                            lbOrders.Items.Add(string.Format("{0} | Quantity: {1} | Order Time: {2} | Status: {3}", meal.DishName, mealorders.Quantity, orders.OrderDate, mealorders.Status));
+                            if (mealorders.DishID == meal.DishID)
+                            {
+                                lbOrders.Items.Add(string.Format("{0} | Quantity: {1} | Order Time: {2} | Status: {3}", meal.DishName, mealorders.Quantity, orders.OrderDate, mealorders.Status));
+                            }
                         }
                     }
 
@@ -53,7 +56,11 @@ namespace BloomFeildHotel
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            Close();
+            formViewOrdersChef form = new formViewOrdersChef(fc, Model);
+            //form.Show();
+            form.Dock = DockStyle.Fill;
+
+            form.Show();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -67,24 +74,33 @@ namespace BloomFeildHotel
             {
                 foreach (IOrder_has_Meals mealorders in Model.OrderMealsList)
                 {
-                    foreach (IMeals meal in Model.MealsList)
+                    if (orders.OrderID == mealorders.OrderID)
                     {
-
-                        string std = string.Format("{0} | Quantity: {1} | Order Time: {2} | Status: {3}", meal.DishName, mealorders.Quantity, orders.OrderDate, mealorders.Status);
-                        if (lbOrders.SelectedIndex == -1)
+                        foreach (IMeals meal in Model.MealsList)
                         {
-                            MessageBox.Show("Please select an item to change Status!");
-                        }
-                        else if (lbOrders.SelectedItem.ToString() == std)
-                        {
-                            mealorders.Status = Convert.ToString(txtStatus.Text);
-                            Model.editOrderMeal(mealorders);
+
+                            string std = string.Format("{0} | Quantity: {1} | Order Time: {2} | Status: {3}", meal.DishName, mealorders.Quantity, orders.OrderDate, mealorders.Status);
+                            if (lbOrders.SelectedIndex == -1)
+                            {
+                                MessageBox.Show("Please select an item to change Status!");
+                            }
+                            else if (lbOrders.SelectedItem.ToString() == std)
+                            {
+                                mealorders.Status = Convert.ToString(txtStatus.Text);
+                                Model.editOrderMeal(mealorders);
+
+                            }
 
                         }
-
                     }
                 }
             }
+            formChangeOrderStatus form = new formChangeOrderStatus(fc, Model);
+            //form.Show();
+            form.Dock = DockStyle.Fill;
+
+            form.Show();
+
         }
 
         private void lbOrders_SelectedIndexChanged(object sender, EventArgs e)
@@ -95,15 +111,18 @@ namespace BloomFeildHotel
                 {
                     foreach (IOrder_has_Meals mealorders in Model.OrderMealsList)
                     {
-                        foreach (IMeals meal in Model.MealsList)
+                        if (orders.OrderID == mealorders.OrderID)
                         {
-                            if (mealorders.DishID == meal.DishID)
+                            foreach (IMeals meal in Model.MealsList)
                             {
-                                string std = string.Format("{0} | Quantity: {1} | Order Time: {2} | Status: {3}", meal.DishName, mealorders.Quantity, orders.OrderDate, mealorders.Status);
-                                if (lbOrders.SelectedItem.ToString() == std)
+                                if (mealorders.DishID == meal.DishID)
                                 {
-                                    txtStatus.Text = mealorders.Status;
+                                    string std = string.Format("{0} | Quantity: {1} | Order Time: {2} | Status: {3}", meal.DishName, mealorders.Quantity, orders.OrderDate, mealorders.Status);
+                                    if (lbOrders.SelectedItem.ToString() == std)
+                                    {
+                                        txtStatus.Text = mealorders.Status;
 
+                                    }
                                 }
                             }
                         }

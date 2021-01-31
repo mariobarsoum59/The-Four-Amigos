@@ -127,5 +127,14 @@ namespace BloomFeildHotel
         {
             listBoxSubtotal.Items.Clear();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormCashOrCard form = new FormCashOrCard(fc, Model);
+            //form.Show();
+            form.Dock = DockStyle.Fill;
+
+            form.Show();
+        }
     }
 }
