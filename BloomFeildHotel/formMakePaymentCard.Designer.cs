@@ -126,6 +126,7 @@ namespace BloomFeildHotel
             this.textBoxNumber.Name = "textBoxNumber";
             this.textBoxNumber.Size = new System.Drawing.Size(488, 35);
             this.textBoxNumber.TabIndex = 33;
+            
             // 
             // lbExpiry
             // 
@@ -167,6 +168,7 @@ namespace BloomFeildHotel
             this.btnSubmit.TabIndex = 57;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // btnClear
             // 
@@ -180,6 +182,7 @@ namespace BloomFeildHotel
             this.btnClear.TabIndex = 56;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnBack
             // 

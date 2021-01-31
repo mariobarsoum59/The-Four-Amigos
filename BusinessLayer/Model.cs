@@ -860,5 +860,18 @@ namespace BusinessLayer
                 return false;
             }
         }
+        public Boolean addNewPayment(int PaymentID, Boolean CashPayment, Boolean CardPayment, string NameOnCard, decimal Amount)
+        {
+            try
+            {
+                IPayments aPayment = PaymentsHotel.GetPayments(PaymentID, CashPayment, CardPayment, NameOnCard, Amount);
+                DataLayer.addNewPayment(aPayment);
+                return true;
+            }
+            catch (System.Exception excep)
+            {
+                return false;
+            }
+        }
     }
 }

@@ -213,7 +213,7 @@ namespace BloomFeildHotel
             this.btnReceipt.Name = "btnReceipt";
             this.btnReceipt.Size = new System.Drawing.Size(173, 88);
             this.btnReceipt.TabIndex = 55;
-            this.btnReceipt.Text = "Order Receipts";
+            this.btnReceipt.Text = "Receipts and Payments";
             this.btnReceipt.UseVisualStyleBackColor = false;
             this.btnReceipt.Click += new System.EventHandler(this.btnReceipt_Click);
             // 

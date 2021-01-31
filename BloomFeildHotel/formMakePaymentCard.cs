@@ -1,4 +1,5 @@
-﻿using BusinessLayer;
+﻿using BusinessEntities;
+using BusinessLayer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,5 +37,57 @@ namespace BloomFeildHotel
 
             form.Show();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            
+            if (textBoxAmount.Text == String.Empty)
+            {
+                MessageBox.Show("Please Enter an Amount!");
+            }
+            else if (textBoxName.Text == String.Empty)
+            {
+                MessageBox.Show("Please enter a Name!");
+            }
+            else if (textBoxNumber.Text == String.Empty)
+            {
+                MessageBox.Show("Please enter Card Number!");
+            }
+            else if (monthComboBox.Text == String.Empty)
+            {
+                MessageBox.Show("Please enter a Month!");
+            }
+            else if (yearComboBox.Text == String.Empty)
+            {
+                MessageBox.Show("Please enter a Year!");
+            }
+            else if (textBoxCCV.Text == String.Empty)
+            {
+                MessageBox.Show("Please enter CVV/CVVD!");
+            }
+            else
+            {
+                int id = 0;
+                bool cardPayment = true;
+                bool cashPayment = false;
+                decimal amount = Convert.ToDecimal(textBoxAmount.Text);
+                Model.addNewPayment(id,cashPayment, cardPayment, textBoxName.Text, amount);
+                MessageBox.Show("Payment Made");
+
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            textBoxAmount.Clear();
+            textBoxName.Clear();
+            textBoxNumber.Clear();
+            monthComboBox.SelectedIndex = -1;
+            yearComboBox.SelectedIndex = -1;
+            textBoxCCV.Clear();
+        }
+
+      
     }
+    
 }

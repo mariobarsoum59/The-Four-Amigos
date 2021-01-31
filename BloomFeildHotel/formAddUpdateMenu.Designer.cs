@@ -46,6 +46,7 @@ namespace BloomFeildHotel
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxQuantity = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnClear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -224,12 +225,27 @@ namespace BloomFeildHotel
             this.label5.TabIndex = 90;
             this.label5.Text = "Quantity:";
             // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnClear.Location = new System.Drawing.Point(37, 688);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(296, 48);
+            this.btnClear.TabIndex = 92;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // formAddUpdateMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(731, 762);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.textBoxQuantity);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnNewMeal);
@@ -275,5 +291,6 @@ namespace BloomFeildHotel
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxQuantity;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnClear;
     }
 }

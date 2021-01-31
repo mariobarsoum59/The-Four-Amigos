@@ -413,6 +413,7 @@ C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debu
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formRoomCleaningRecords.resources
 C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formChangeOrderStatus.resources
 C:\Users\Saoir\Source\Repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formChangeOrderStatus.resources
+C:\Users\Saoir\Source\Repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formSaleTest.resources
 C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formSaleTest.resources
 C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.FormCashOrCard.resources
 C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formMakePaymentCard.resources
@@ -422,10 +423,30 @@ C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debu
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.FormMakePaymentCash.resources
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewCleaner.resources
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddPrepMeals.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddPrepMeals.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddUpdateMenu.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.FormCashOrCard.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formChangeOrderStatus.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formMakePaymentCard.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.FormMakePaymentCash.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewCleaner.resources
+D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewReceipt.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddUpdateMenu.resources
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewReceipt.resources
+C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\BloomFeildHotel.exe.config
+C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\BloomFeildHotel.exe
+C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\BloomFeildHotel.pdb
+C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\BusinessEntities.dll
+C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\BusinessLayer.dll
+C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\DataAccessLayer.dll
+C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\BusinessEntities.pdb
+C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\BusinessLayer.pdb
+C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\DataAccessLayer.pdb
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.csprojAssemblyReference.cache
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.Editres1.resources
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.editRes2.resources
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddPrepMeals.resources
+C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddUpdateMenu.resources
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formBarStaff.resources
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.FormCashOrCard.resources
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formChangeOrderStatus.resources
@@ -469,6 +490,7 @@ C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewGuests.resources
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewMonthlyReports.resources
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewOrdersChef.resources
+C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewReceipt.resources
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewReservations.resources
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewRoomBookings.resources
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewStock.resources
@@ -480,34 +502,6 @@ C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.ViewOrdersBarStaff.resources
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.csproj.GenerateResource.cache
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.csproj.CoreCompileInputs.cache
+C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.csproj.CopyComplete
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.exe
 C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.pdb
-C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\BloomFeildHotel.exe.config
-C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\BloomFeildHotel.exe
-C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\BloomFeildHotel.pdb
-C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\BusinessEntities.dll
-C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\BusinessLayer.dll
-C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\DataAccessLayer.dll
-C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\BusinessEntities.pdb
-C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\BusinessLayer.pdb
-C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\bin\Debug\DataAccessLayer.pdb
-C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.csproj.CopyComplete
-C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewReceipt.resources
-C:\Users\jack\Desktop\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddUpdateMenu.resources
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddPrepMeals.resources
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddUpdateMenu.resources
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.FormCashOrCard.resources
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formChangeOrderStatus.resources
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formMakePaymentCard.resources
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.FormMakePaymentCash.resources
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewCleaner.resources
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewReceipt.resources
-C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddUpdateMenu.resources
-C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewReceipt.resources
-C:\Users\Saoir\Source\Repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddPrepMeals.resources
-C:\Users\Saoir\Source\Repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formAddUpdateMenu.resources
-C:\Users\Saoir\Source\Repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.FormCashOrCard.resources
-C:\Users\Saoir\Source\Repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formMakePaymentCard.resources
-C:\Users\Saoir\Source\Repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.FormMakePaymentCash.resources
-C:\Users\Saoir\Source\Repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewCleaner.resources
-C:\Users\Saoir\Source\Repos\The-Four-Amigos\BloomFeildHotel\obj\Debug\BloomFeildHotel.formViewReceipt.resources

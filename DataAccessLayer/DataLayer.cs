@@ -1816,6 +1816,37 @@ namespace DataAccessLayer
             return true;
         }
 
+        public virtual void addNewPayment(IPayments aPayment)
+        {
+            try
+            {
+                DataSet ds = new DataSet();
+                string sql = "SELECT * From Payments";
+                SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                SqlCommandBuilder cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "paymentsData");
+                maxRows = ds.Tables["paymentsData"].Rows.Count;
+                DataRow dRow = ds.Tables["paymentsData"].NewRow();
+                dRow[0] = aPayment.PaymentID;
+                dRow[1] = aPayment.CashPayment;
+                dRow[2] = aPayment.CardPayment;
+                dRow[3] = aPayment.NameOnCard;
+                dRow[4] = aPayment.Amount;
+
+                ds.Tables["paymentsData"].Rows.Add(dRow);
+                da.Update(ds, "paymentsData");
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+        }
+
+
 
         public bool deleteBistroOrder(IBistroOrders aBistroOrder)
         {

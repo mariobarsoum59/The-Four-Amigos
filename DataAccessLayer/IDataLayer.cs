@@ -87,5 +87,7 @@ namespace DataAccessLayer
         void addPrepMeal(IMeals aPrepMeal);
 
         void wasteToDB(IWaste waste);
+
+        void addNewPayment(IPayments aPayment);
     }
 }

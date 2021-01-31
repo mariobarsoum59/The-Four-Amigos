@@ -36,5 +36,43 @@ namespace BloomFeildHotel
 
             form.Show();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+           
+            if (textBoxName.Text == String.Empty)
+            {
+                MessageBox.Show("Please enter a Name!");
+            }
+            if (textBoxAmount.Text == String.Empty)
+            {
+                MessageBox.Show("Please Enter an Amount!");
+            }
+            else if (textBoxRecieved.Text == String.Empty)
+            {
+                MessageBox.Show("Please enter Amount Recived!");
+            }
+            else
+            {
+                decimal change = (Convert.ToDecimal(textBoxRecieved.Text) - Convert.ToDecimal(textBoxAmount.Text));
+
+                int id = 0;
+                bool cardPayment = false;
+                bool cashPayment = true;
+                decimal amount = Convert.ToDecimal(textBoxAmount.Text);
+                Model.addNewPayment(id, cashPayment, cardPayment, textBoxName.Text, amount);
+                MessageBox.Show("Chnage for Customer = " + change.ToString());
+                MessageBox.Show("Payment Made");
+
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            textBoxName.Clear();
+            textBoxAmount.Clear();
+            textBoxRecieved.Clear();
+            
+        }
     }
 }

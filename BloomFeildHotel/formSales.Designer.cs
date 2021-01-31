@@ -42,7 +42,6 @@
             this.listBox5 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.viewOrdersBTN = new System.Windows.Forms.Button();
             this.btnAddFood = new System.Windows.Forms.Button();
             this.btnAddDrink = new System.Windows.Forms.Button();
@@ -51,6 +50,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btnReceipt = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -212,20 +212,6 @@
             this.label2.TabIndex = 50;
             this.label2.Text = "All Drinks";
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(977, 786);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(216, 135);
-            this.button3.TabIndex = 51;
-            this.button3.Text = "Make Payment";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // viewOrdersBTN
             // 
             this.viewOrdersBTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
@@ -330,19 +316,33 @@
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // btnReceipt
+            // 
+            this.btnReceipt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnReceipt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReceipt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnReceipt.Location = new System.Drawing.Point(977, 786);
+            this.btnReceipt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnReceipt.Name = "btnReceipt";
+            this.btnReceipt.Size = new System.Drawing.Size(216, 135);
+            this.btnReceipt.TabIndex = 58;
+            this.btnReceipt.Text = "Receipt and Payments";
+            this.btnReceipt.UseVisualStyleBackColor = false;
+            this.btnReceipt.Click += new System.EventHandler(this.btnReceipt_Click);
+            // 
             // formSales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(2222, 960);
+            this.Controls.Add(this.btnReceipt);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnCDrink);
             this.Controls.Add(this.btnCFood);
             this.Controls.Add(this.btnAddDrink);
             this.Controls.Add(this.btnAddFood);
             this.Controls.Add(this.viewOrdersBTN);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox5);
@@ -389,12 +389,12 @@
         private System.Windows.Forms.ListBox listBox5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button viewOrdersBTN;
         private System.Windows.Forms.Button btnAddFood;
         private System.Windows.Forms.Button btnAddDrink;
         private System.Windows.Forms.Button btnCFood;
         private System.Windows.Forms.Button btnCDrink;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnReceipt;
     }
 }

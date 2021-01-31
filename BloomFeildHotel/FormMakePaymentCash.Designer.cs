@@ -38,6 +38,8 @@ namespace BloomFeildHotel
             this.textBoxAmount = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblCreateReservation = new System.Windows.Forms.Label();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +48,7 @@ namespace BloomFeildHotel
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBack.Location = new System.Drawing.Point(18, 342);
+            this.btnBack.Location = new System.Drawing.Point(13, 417);
             this.btnBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(296, 48);
@@ -60,31 +62,33 @@ namespace BloomFeildHotel
             this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSubmit.Location = new System.Drawing.Point(18, 284);
+            this.btnSubmit.Location = new System.Drawing.Point(13, 359);
             this.btnSubmit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(296, 48);
             this.btnSubmit.TabIndex = 75;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnClear.Location = new System.Drawing.Point(418, 284);
+            this.btnClear.Location = new System.Drawing.Point(418, 359);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(296, 48);
             this.btnClear.TabIndex = 74;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // textBoxRecieved
             // 
             this.textBoxRecieved.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBoxRecieved.Location = new System.Drawing.Point(226, 211);
+            this.textBoxRecieved.Location = new System.Drawing.Point(226, 298);
             this.textBoxRecieved.Name = "textBoxRecieved";
             this.textBoxRecieved.Size = new System.Drawing.Size(488, 35);
             this.textBoxRecieved.TabIndex = 69;
@@ -93,7 +97,7 @@ namespace BloomFeildHotel
             // 
             this.lbName.AutoSize = true;
             this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.Location = new System.Drawing.Point(12, 211);
+            this.lbName.Location = new System.Drawing.Point(13, 301);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(208, 29);
             this.lbName.TabIndex = 67;
@@ -103,7 +107,7 @@ namespace BloomFeildHotel
             // 
             this.Amount.AutoSize = true;
             this.Amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Amount.Location = new System.Drawing.Point(13, 137);
+            this.Amount.Location = new System.Drawing.Point(13, 224);
             this.Amount.Name = "Amount";
             this.Amount.Size = new System.Drawing.Size(100, 29);
             this.Amount.TabIndex = 66;
@@ -112,7 +116,7 @@ namespace BloomFeildHotel
             // textBoxAmount
             // 
             this.textBoxAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBoxAmount.Location = new System.Drawing.Point(226, 137);
+            this.textBoxAmount.Location = new System.Drawing.Point(226, 221);
             this.textBoxAmount.Name = "textBoxAmount";
             this.textBoxAmount.Size = new System.Drawing.Size(488, 35);
             this.textBoxAmount.TabIndex = 65;
@@ -140,12 +144,32 @@ namespace BloomFeildHotel
             this.lblCreateReservation.TabIndex = 0;
             this.lblCreateReservation.Text = "Cash Payment";
             // 
+            // textBoxName
+            // 
+            this.textBoxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.textBoxName.Location = new System.Drawing.Point(226, 146);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(488, 35);
+            this.textBoxName.TabIndex = 78;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(8, 149);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 29);
+            this.label1.TabIndex = 77;
+            this.label1.Text = "Name:";
+            // 
             // FormMakePaymentCash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(799, 430);
+            this.ClientSize = new System.Drawing.Size(799, 522);
+            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.btnClear);
@@ -175,5 +199,7 @@ namespace BloomFeildHotel
         private System.Windows.Forms.TextBox textBoxAmount;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblCreateReservation;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.Label label1;
     }
 }

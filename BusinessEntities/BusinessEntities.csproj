@@ -65,6 +65,7 @@
     <Compile Include="IOrders.cs" />
     <Compile Include="IOrder_has_Drinks.cs" />
     <Compile Include="IOrder_has_Meals.cs" />
+    <Compile Include="IPayments.cs" />
     <Compile Include="IReservation.cs" />
     <Compile Include="IRoom.cs" />
     <Compile Include="IRoomCleaningRecord.cs" />
@@ -83,6 +84,8 @@
     <Compile Include="Order_has_DrinksHotel.cs" />
     <Compile Include="Order_has_Meals.cs" />
     <Compile Include="Order_has_MealsHotel.cs" />
+    <Compile Include="Payments.cs" />
+    <Compile Include="PaymentsHotel.cs" />
     <Compile Include="Reservation.cs" />
     <Compile Include="ReservationHotel.cs" />
     <Compile Include="Room.cs" />

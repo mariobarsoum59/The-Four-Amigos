@@ -26,6 +26,7 @@ namespace BloomFeildHotel
 
         private void formSales_Load(object sender, EventArgs e)
         {
+            listBox3.Items.Clear();
             Model.GetAllMeals();
             Model.GetAllDrinks();
             foreach (IMeals meal in Model.MealsList)
@@ -40,11 +41,19 @@ namespace BloomFeildHotel
             {
                 if (drink.DrinkName == "Pint of Guinness")
                     listBox1.Items.Add(drink.DrinkName);
+                if (drink.DrinkName == "Pint of Heinekin")
+                    listBox1.Items.Add(drink.DrinkName);
+                if (drink.DrinkName == "Pint of Budweiser")
+                    listBox1.Items.Add(drink.DrinkName);
             }
             foreach (IMeals meal in Model.MealsList)
             {
                 
                 if (meal.DishName == "Fish and Chips")
+                    listBox2.Items.Add(meal.DishName);
+                if (meal.DishName == "Chicken Curry and Chips")
+                    listBox2.Items.Add(meal.DishName);
+                if (meal.DishName == "10oz Sirloin Steak")
                     listBox2.Items.Add(meal.DishName);
             }
 
@@ -167,6 +176,7 @@ namespace BloomFeildHotel
             {
                 MessageBox.Show("Sale was unsuccessful");
             }
+           
         }
 
         private void viewOrdersBTN_Click(object sender, EventArgs e)
@@ -202,18 +212,20 @@ namespace BloomFeildHotel
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            FormCashOrCard form = new FormCashOrCard(fc, Model);
-            //form.Show();
-            form.Dock = DockStyle.Fill;
-
-            form.Show();
-        }
+        
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             listBox3.Items.Clear();
+        }
+
+        private void btnReceipt_Click(object sender, EventArgs e)
+        {
+            formViewReceipt form = new formViewReceipt(fc, Model);
+            //form.Show();
+            form.Dock = DockStyle.Fill;
+
+            form.Show();
         }
     }
 }
