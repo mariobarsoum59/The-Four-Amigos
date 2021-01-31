@@ -47,6 +47,7 @@ namespace BloomFeildHotel
             this.monthComboBox = new System.Windows.Forms.ComboBox();
             this.yearLabel = new System.Windows.Forms.Label();
             this.monthLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,7 +77,7 @@ namespace BloomFeildHotel
             // textBoxAmount
             // 
             this.textBoxAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBoxAmount.Location = new System.Drawing.Point(196, 146);
+            this.textBoxAmount.Location = new System.Drawing.Point(196, 202);
             this.textBoxAmount.Name = "textBoxAmount";
             this.textBoxAmount.Size = new System.Drawing.Size(488, 35);
             this.textBoxAmount.TabIndex = 26;
@@ -85,7 +86,7 @@ namespace BloomFeildHotel
             // 
             this.Amount.AutoSize = true;
             this.Amount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Amount.Location = new System.Drawing.Point(32, 146);
+            this.Amount.Location = new System.Drawing.Point(26, 205);
             this.Amount.Name = "Amount";
             this.Amount.Size = new System.Drawing.Size(100, 29);
             this.Amount.TabIndex = 29;
@@ -95,7 +96,7 @@ namespace BloomFeildHotel
             // 
             this.lbName.AutoSize = true;
             this.lbName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.Location = new System.Drawing.Point(32, 202);
+            this.lbName.Location = new System.Drawing.Point(26, 278);
             this.lbName.Name = "lbName";
             this.lbName.Size = new System.Drawing.Size(84, 29);
             this.lbName.TabIndex = 30;
@@ -105,7 +106,7 @@ namespace BloomFeildHotel
             // 
             this.lbNumber.AutoSize = true;
             this.lbNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNumber.Location = new System.Drawing.Point(32, 265);
+            this.lbNumber.Location = new System.Drawing.Point(26, 348);
             this.lbNumber.Name = "lbNumber";
             this.lbNumber.Size = new System.Drawing.Size(164, 29);
             this.lbNumber.TabIndex = 31;
@@ -114,7 +115,7 @@ namespace BloomFeildHotel
             // textBoxName
             // 
             this.textBoxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBoxName.Location = new System.Drawing.Point(196, 202);
+            this.textBoxName.Location = new System.Drawing.Point(196, 275);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(488, 35);
             this.textBoxName.TabIndex = 32;
@@ -122,17 +123,16 @@ namespace BloomFeildHotel
             // textBoxNumber
             // 
             this.textBoxNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBoxNumber.Location = new System.Drawing.Point(196, 259);
+            this.textBoxNumber.Location = new System.Drawing.Point(196, 345);
             this.textBoxNumber.Name = "textBoxNumber";
             this.textBoxNumber.Size = new System.Drawing.Size(488, 35);
             this.textBoxNumber.TabIndex = 33;
-            
             // 
             // lbExpiry
             // 
             this.lbExpiry.AutoSize = true;
             this.lbExpiry.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbExpiry.Location = new System.Drawing.Point(32, 322);
+            this.lbExpiry.Location = new System.Drawing.Point(26, 408);
             this.lbExpiry.Name = "lbExpiry";
             this.lbExpiry.Size = new System.Drawing.Size(141, 29);
             this.lbExpiry.TabIndex = 34;
@@ -142,7 +142,7 @@ namespace BloomFeildHotel
             // 
             this.lbCCV.AutoSize = true;
             this.lbCCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCCV.Location = new System.Drawing.Point(32, 375);
+            this.lbCCV.Location = new System.Drawing.Point(26, 461);
             this.lbCCV.Name = "lbCCV";
             this.lbCCV.Size = new System.Drawing.Size(139, 29);
             this.lbCCV.TabIndex = 35;
@@ -151,7 +151,7 @@ namespace BloomFeildHotel
             // textBoxCCV
             // 
             this.textBoxCCV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBoxCCV.Location = new System.Drawing.Point(196, 369);
+            this.textBoxCCV.Location = new System.Drawing.Point(222, 458);
             this.textBoxCCV.Name = "textBoxCCV";
             this.textBoxCCV.Size = new System.Drawing.Size(111, 35);
             this.textBoxCCV.TabIndex = 36;
@@ -161,7 +161,7 @@ namespace BloomFeildHotel
             this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSubmit.Location = new System.Drawing.Point(37, 463);
+            this.btnSubmit.Location = new System.Drawing.Point(37, 516);
             this.btnSubmit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(296, 48);
@@ -175,7 +175,7 @@ namespace BloomFeildHotel
             this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnClear.Location = new System.Drawing.Point(375, 463);
+            this.btnClear.Location = new System.Drawing.Point(388, 516);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(296, 48);
@@ -189,7 +189,7 @@ namespace BloomFeildHotel
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBack.Location = new System.Drawing.Point(37, 521);
+            this.btnBack.Location = new System.Drawing.Point(37, 574);
             this.btnBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(296, 48);
@@ -214,7 +214,7 @@ namespace BloomFeildHotel
             "23",
             "24",
             "25"});
-            this.yearComboBox.Location = new System.Drawing.Point(487, 319);
+            this.yearComboBox.Location = new System.Drawing.Point(576, 405);
             this.yearComboBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.yearComboBox.Name = "yearComboBox";
             this.yearComboBox.Size = new System.Drawing.Size(108, 37);
@@ -238,7 +238,7 @@ namespace BloomFeildHotel
             "10",
             "11",
             "12"});
-            this.monthComboBox.Location = new System.Drawing.Point(272, 319);
+            this.monthComboBox.Location = new System.Drawing.Point(305, 405);
             this.monthComboBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.monthComboBox.Name = "monthComboBox";
             this.monthComboBox.Size = new System.Drawing.Size(108, 37);
@@ -248,7 +248,7 @@ namespace BloomFeildHotel
             // 
             this.yearLabel.AutoSize = true;
             this.yearLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.yearLabel.Location = new System.Drawing.Point(415, 322);
+            this.yearLabel.Location = new System.Drawing.Point(484, 408);
             this.yearLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.yearLabel.Name = "yearLabel";
             this.yearLabel.Size = new System.Drawing.Size(64, 29);
@@ -259,19 +259,30 @@ namespace BloomFeildHotel
             // 
             this.monthLabel.AutoSize = true;
             this.monthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.monthLabel.Location = new System.Drawing.Point(180, 322);
+            this.monthLabel.Location = new System.Drawing.Point(191, 408);
             this.monthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.monthLabel.Name = "monthLabel";
             this.monthLabel.Size = new System.Drawing.Size(79, 29);
             this.monthLabel.TabIndex = 62;
             this.monthLabel.Text = "Month";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(26, 134);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(522, 29);
+            this.label1.TabIndex = 64;
+            this.label1.Text = "Note Card number format is 1234123412341234";
+            // 
             // formMakePaymentCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(795, 638);
+            this.ClientSize = new System.Drawing.Size(795, 652);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.yearComboBox);
             this.Controls.Add(this.monthComboBox);
             this.Controls.Add(this.yearLabel);
@@ -320,5 +331,6 @@ namespace BloomFeildHotel
         private System.Windows.Forms.ComboBox monthComboBox;
         private System.Windows.Forms.Label yearLabel;
         private System.Windows.Forms.Label monthLabel;
+        private System.Windows.Forms.Label label1;
     }
 }
