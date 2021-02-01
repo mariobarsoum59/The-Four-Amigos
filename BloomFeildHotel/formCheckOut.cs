@@ -60,22 +60,32 @@ namespace BloomFeildHotel
         {
             foreach (IReservation reservation in Model.ReservationsList)
             {
-                if (reservation.ReservationID == this.ReservationID)
+                if (this.ReservationID == reservation.ReservationID)
                 {
-                    if (Model.deleteReservation(reservation))
+                    foreach (IGuest guest in Model.GuestsList)
                     {
-                        MessageBox.Show("The reservation has been deleted");
-                        Close();
-                    }
-                    else
-                    {
-                        MessageBox.Show("There was an error deleting the reservation");
-                        Close();
+                        if (reservation.GuestID == guest.GuestID)
+                        {
+                            foreach (IRoom room in Model.RoomsList)
+                            {
+                                if (reservation.RoomNumber == room.RoomNumber)
+                                {
+                                    reservation.CheckIn = false;
+                                    if(Model.CheckGuestOut(reservation))
+                                    {
+                                        MessageBox.Show("Guest checked out successfully" );
+                                    }
+                                }
+
+                            }
+                        }
                     }
                 }
             }
-            
         }
+
+
+        
 
         private void btnExit_Click(object sender, EventArgs e)
         {

@@ -46,3 +46,4 @@ C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\bin\Deb
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.dll
 C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.pdb
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache

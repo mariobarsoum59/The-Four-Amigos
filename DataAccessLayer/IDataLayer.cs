@@ -49,6 +49,8 @@ namespace DataAccessLayer
 
         bool checkGusetInDB(BusinessEntities.IReservation reservation);
 
+        bool checkGuestOut(BusinessEntities.IReservation reservation);
+
         bool updateCompletedOrders(BusinessEntities.IOrders completed);
 
         List<IIngredients> getAllIngredients();

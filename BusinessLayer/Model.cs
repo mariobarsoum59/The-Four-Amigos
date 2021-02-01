@@ -590,6 +590,12 @@ namespace BusinessLayer
             return true;
         }
 
+        public bool CheckGuestOut(IReservation reservation)
+        {
+            dataLayer.checkGuestOut(reservation);
+            return true;
+        }
+
         public void GetAllOrders()
         {
             OrdersList = dataLayer.getAllOrders();

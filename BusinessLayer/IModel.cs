@@ -65,6 +65,8 @@ namespace BusinessLayer
 
         bool CheckGuestIn(IReservation reservation);
 
+        bool CheckGuestOut(IReservation reservation);
+
         List<IOrders> OrdersList { get; set; }
         void GetAllOrders();
 

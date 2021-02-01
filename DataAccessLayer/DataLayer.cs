@@ -813,6 +813,51 @@ namespace DataAccessLayer
         }
 
 
+        public virtual bool checkGuestOut(IReservation reservation)
+        {
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Reservations";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "ReservationData");
+                DataRow findRow = ds.Tables["ReservationData"].Rows.Find(reservation.ReservationID);
+                if (findRow != null)
+                {
+                    //findRow[0] = reservation.ReservationID;
+                    findRow[1] = reservation.CheckInDate.Date;
+                    findRow[2] = reservation.CheckOutDate.Date;
+                    findRow[3] = reservation.Adults;
+                    findRow[4] = reservation.Children;
+                    findRow[5] = reservation.ReservationPrice;
+                    findRow[6] = reservation.PayedDeposit;
+                    findRow[7] = reservation.PayedInFull;
+                    findRow[8] = reservation.GuestID;
+                    findRow[9] = reservation.RoomNumber;
+                    findRow[10] = reservation.CheckIn;
+
+
+                }
+                da.Update(ds, "ReservationData"); //remove row from database table
+
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+                //Environment.Exit(0); //Force the application to close
+            }
+
+
+            return true;
+        }
+
+
         public virtual bool checkGusetInDB(IReservation reservation)
         {
             try
