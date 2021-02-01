@@ -236,7 +236,7 @@
             this.Controls.Add(this.foodList);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(858, 632);
             this.Name = "formManageWaste";
             this.Text = "ViewWaste";
             this.Load += new System.EventHandler(this.formManageWaste_Load);
