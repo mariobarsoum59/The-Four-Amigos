@@ -307,6 +307,34 @@ namespace DataAccessLayer
             return true;
         }
 
+
+        public bool deleteWaste(BusinessEntities.IWaste waste)
+        {
+            try
+            {
+                ds = new DataSet();
+                string sql = "SELECT * From Waste";
+                da = new SqlDataAdapter(sql, con);
+                da.MissingSchemaAction = MissingSchemaAction.AddWithKey;
+                cb = new SqlCommandBuilder(da);  //Generates
+                da.Fill(ds, "WasteData");
+                DataRow findRow = ds.Tables["WasteData"].Rows.Find(waste.DishID);
+                if (findRow != null)
+                {
+                    findRow.Delete(); //mark row as deleted
+                }
+                da.Update(ds, "WasteData"); //remove row from database table
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (getConnection().ToString() == "Open")
+                    closeConnection();
+                Application.Exit();
+            }
+            return true;
+        }
+
         public bool deleteReservationFromDB(BusinessEntities.IReservation reservation)
         {
             try
@@ -1678,7 +1706,39 @@ namespace DataAccessLayer
             }
         }
 
-     
+
+        public virtual void addWaste(IWaste waste)
+        {
+            try
+            {
+                DataSet ds = new DataSet();
+                string sql = "SELECT * From Waste";
+                SqlDataAdapter da = new SqlDataAdapter(sql, con);
+                SqlCommandBuilder cb = new SqlCommandBuilder(da);
+                da.Fill(ds, "WasteData");
+                maxRows = ds.Tables["WasteData"].Rows.Count;
+                DataRow dRow = ds.Tables["WasteData"].NewRow();
+                dRow[0] = waste.DishID;
+                dRow[1] = waste.DishName;
+                dRow[2] = waste.NumWasted;
+                dRow[3] = waste.LossFromWaste;
+                dRow[4] = waste.Date;
+
+
+
+                ds.Tables["WasteData"].Rows.Add(dRow);
+                da.Update(ds, "WasteData");
+            }
+            catch (System.Exception excep)
+            {
+                MessageBox.Show(excep.Message);
+                if (con.State.ToString() == "Open")
+                    con.Close();
+                Application.Exit();
+            }
+        }
+
+
 
 
         public virtual void addNewOrderMeal(IOrder_has_Meals anOrderMeal)

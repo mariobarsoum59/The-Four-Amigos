@@ -41,12 +41,13 @@
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(94)))), ((int)(((byte)(84)))));
             this.panel1.Controls.Add(this.lblCheckout);
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Name = "panel1";
@@ -157,10 +158,10 @@
             // 
             // btnConfirm
             // 
-            this.btnConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
+            this.btnConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(94)))), ((int)(((byte)(84)))));
             this.btnConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnConfirm.Location = new System.Drawing.Point(143, 433);
+            this.btnConfirm.Location = new System.Drawing.Point(62, 432);
             this.btnConfirm.Name = "btnConfirm";
             this.btnConfirm.Size = new System.Drawing.Size(117, 50);
             this.btnConfirm.TabIndex = 22;
@@ -170,10 +171,10 @@
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(66)))), ((int)(((byte)(37)))));
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(94)))), ((int)(((byte)(84)))));
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExit.Location = new System.Drawing.Point(283, 433);
+            this.btnExit.Location = new System.Drawing.Point(353, 432);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(117, 49);
             this.btnExit.TabIndex = 23;
@@ -181,12 +182,26 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(94)))), ((int)(((byte)(84)))));
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBack.Location = new System.Drawing.Point(203, 433);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(117, 49);
+            this.btnBack.TabIndex = 24;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
             // formCheckOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(553, 577);
+            this.ClientSize = new System.Drawing.Size(541, 557);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.txtPhone);
@@ -224,5 +239,6 @@
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnBack;
     }
 }

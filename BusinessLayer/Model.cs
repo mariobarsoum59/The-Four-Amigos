@@ -484,6 +484,15 @@ namespace BusinessLayer
 
         }
 
+        public bool deleteWaste(IWaste waste)
+        {
+
+            DataLayer.deleteWaste(waste);
+            WasteList.Remove(waste); //remove object from collection
+            return true;
+
+        }
+
         public bool deleteReservation(IReservation reservation)
         {
 
@@ -835,6 +844,21 @@ namespace BusinessLayer
             {
                 IMeals aPrepMeal = MealsHotel.GetMeals(DishID, DishName, Price, Quantity);
                 DataLayer.addPrepMeal(aPrepMeal);
+                return true;
+            }
+            catch (System.Exception excep)
+            {
+
+                return false;
+            }
+        }
+
+        public Boolean addWaste(int DishID, string DishName, int NumWasted, double LossFromWaste, DateTime Date)
+        {
+            try
+            {
+                IWaste waste = WasteHotel.GetWaste(DishID, DishName, NumWasted, LossFromWaste, Date);
+                DataLayer.addWaste(waste);
                 return true;
             }
             catch (System.Exception excep)
