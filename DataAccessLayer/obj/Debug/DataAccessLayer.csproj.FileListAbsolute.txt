@@ -16,15 +16,6 @@ C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\DataAccessLayer\bin\Debug\
 C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\DataAccessLayer\bin\Debug\BusinessEntities.dll
 C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\DataAccessLayer\bin\Debug\BusinessEntities.pdb
 C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\DataAccessLayer\bin\Debug\DataAccessLayer.dll
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\DataAccessLayer\bin\Debug\BusinessEntities.dll
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\DataAccessLayer\bin\Debug\BusinessEntities.pdb
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\DataAccessLayer\obj\Debug\DataAccessLayer.dll
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
 C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-09ddd585ab57c59ae20c48f21610eb059f87f6e8\DataAccessLayer\bin\Debug\DataAccessLayer.dll
 C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-09ddd585ab57c59ae20c48f21610eb059f87f6e8\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
 C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-09ddd585ab57c59ae20c48f21610eb059f87f6e8\DataAccessLayer\bin\Debug\BusinessEntities.dll
