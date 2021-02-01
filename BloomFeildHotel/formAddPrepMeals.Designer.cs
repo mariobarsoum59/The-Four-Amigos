@@ -143,7 +143,7 @@
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
             this.btnSubmit.Location = new System.Drawing.Point(515, 251);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(76, 38);
+            this.btnSubmit.Size = new System.Drawing.Size(96, 38);
             this.btnSubmit.TabIndex = 33;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
@@ -184,6 +184,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtMealName);
             this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(703, 543);
             this.Name = "formAddPrepMeals";
             this.Text = "formAddPrepMeals";
             this.panel1.ResumeLayout(false);

@@ -43,10 +43,7 @@ namespace BloomFeildHotel
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            formManager f1 = new formManager(fc, Model);
-            f1.Dock = DockStyle.Fill;
-
-            f1.Show();
+            Close();
         }
 
         private void listBoxGuests_SelectedIndexChanged(object sender, EventArgs e)

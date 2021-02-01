@@ -319,6 +319,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(1078, 696);
             this.Name = "formViewGuests";
             this.Text = "formViewGuests";
             this.Load += new System.EventHandler(this.formViewGuests_Load);

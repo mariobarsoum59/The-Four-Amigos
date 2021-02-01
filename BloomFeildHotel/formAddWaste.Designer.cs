@@ -123,6 +123,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtAmtWasted);
             this.Controls.Add(this.txtDishName);
+            this.MaximumSize = new System.Drawing.Size(293, 452);
             this.Name = "formAddWaste";
             this.Text = "Add Waste";
             this.Load += new System.EventHandler(this.formAddWaste_Load);
