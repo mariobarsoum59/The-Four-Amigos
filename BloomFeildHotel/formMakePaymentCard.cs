@@ -66,11 +66,11 @@ namespace BloomFeildHotel
             {
                 MessageBox.Show("Please enter CVV/CVVD!");
             }
-            else if (textBoxCCV.Text.Length < 3)
+            else if (textBoxCCV.Text.Length < 3 || textBoxCCV.Text.Length > 3)
             {
                 MessageBox.Show("Please enter CVV/CVVD that is 3 characters long");
             }
-            else if (textBoxNumber.Text.Length < 16)
+            else if (textBoxNumber.Text.Length < 16 || textBoxNumber.Text.Length > 16)
             {
                 MessageBox.Show("Please enter a card number that is 16 characters long");
             }
