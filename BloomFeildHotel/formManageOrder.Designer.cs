@@ -38,6 +38,8 @@
             this.btnDrinkSearch = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.gbOrder = new System.Windows.Forms.GroupBox();
+            this.tbNotes = new System.Windows.Forms.RichTextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.rbNo = new System.Windows.Forms.RadioButton();
             this.rbYes = new System.Windows.Forms.RadioButton();
@@ -60,8 +62,6 @@
             this.txtMealSearch = new System.Windows.Forms.TextBox();
             this.btnAddMeal = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.tbNotes = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.gbOrder.SuspendLayout();
@@ -75,7 +75,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1021, 88);
+            this.panel1.Size = new System.Drawing.Size(1260, 88);
             this.panel1.TabIndex = 38;
             // 
             // label1
@@ -98,7 +98,7 @@
             this.groupBox1.Controls.Add(this.btnDrinkSearch);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(624, 335);
+            this.groupBox1.Location = new System.Drawing.Point(759, 339);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(382, 226);
             this.groupBox1.TabIndex = 44;
@@ -194,12 +194,31 @@
             this.gbOrder.Controls.Add(this.tbOrderID);
             this.gbOrder.Controls.Add(this.label2);
             this.gbOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbOrder.Location = new System.Drawing.Point(19, 103);
+            this.gbOrder.Location = new System.Drawing.Point(127, 107);
             this.gbOrder.Name = "gbOrder";
             this.gbOrder.Size = new System.Drawing.Size(585, 458);
             this.gbOrder.TabIndex = 42;
             this.gbOrder.TabStop = false;
             this.gbOrder.Text = "Order Details";
+            // 
+            // tbNotes
+            // 
+            this.tbNotes.Location = new System.Drawing.Point(426, 130);
+            this.tbNotes.Name = "tbNotes";
+            this.tbNotes.Size = new System.Drawing.Size(137, 96);
+            this.tbNotes.TabIndex = 43;
+            this.tbNotes.Text = "";
+            this.tbNotes.TextChanged += new System.EventHandler(this.tbNotes_TextChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(336, 130);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(84, 16);
+            this.label8.TabIndex = 42;
+            this.label8.Text = "Order Notes:";
             // 
             // label4
             // 
@@ -364,7 +383,7 @@
             this.bdAddItem.Controls.Add(this.btnAddMeal);
             this.bdAddItem.Controls.Add(this.label7);
             this.bdAddItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bdAddItem.Location = new System.Drawing.Point(624, 103);
+            this.bdAddItem.Location = new System.Drawing.Point(759, 107);
             this.bdAddItem.Name = "bdAddItem";
             this.bdAddItem.Size = new System.Drawing.Size(382, 226);
             this.bdAddItem.TabIndex = 43;
@@ -441,31 +460,12 @@
             this.label7.TabIndex = 26;
             this.label7.Text = "Dish Name:";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(336, 130);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 16);
-            this.label8.TabIndex = 42;
-            this.label8.Text = "Order Notes:";
-            // 
-            // tbNotes
-            // 
-            this.tbNotes.Location = new System.Drawing.Point(426, 130);
-            this.tbNotes.Name = "tbNotes";
-            this.tbNotes.Size = new System.Drawing.Size(137, 96);
-            this.tbNotes.TabIndex = 43;
-            this.tbNotes.Text = "";
-            this.tbNotes.TextChanged += new System.EventHandler(this.tbNotes_TextChanged);
-            // 
             // formManageOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(1020, 608);
+            this.ClientSize = new System.Drawing.Size(1261, 625);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gbOrder);
             this.Controls.Add(this.btnBack);

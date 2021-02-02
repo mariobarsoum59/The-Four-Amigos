@@ -65,7 +65,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(786, 111);
+            this.panel1.Size = new System.Drawing.Size(1262, 111);
             this.panel1.TabIndex = 6;
             // 
             // label1
@@ -83,16 +83,15 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnSave);
-            this.groupBox1.Controls.Add(this.btnBack);
             this.groupBox1.Controls.Add(this.btnViewAll);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.lbReports);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Location = new System.Drawing.Point(16, 122);
+            this.groupBox1.Location = new System.Drawing.Point(221, 122);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(753, 473);
+            this.groupBox1.Size = new System.Drawing.Size(811, 473);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Select a Monthly Report";
@@ -105,7 +104,7 @@
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(641, 429);
+            this.btnSave.Location = new System.Drawing.Point(686, 432);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(97, 33);
@@ -117,7 +116,7 @@
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(15, 428);
+            this.btnBack.Location = new System.Drawing.Point(30, 576);
             this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(85, 33);
@@ -156,7 +155,7 @@
             this.lbReports.ItemHeight = 16;
             this.lbReports.Location = new System.Drawing.Point(15, 83);
             this.lbReports.Name = "lbReports";
-            this.lbReports.Size = new System.Drawing.Size(323, 340);
+            this.lbReports.Size = new System.Drawing.Size(346, 372);
             this.lbReports.TabIndex = 26;
             this.lbReports.SelectedIndexChanged += new System.EventHandler(this.lbReports_SelectedIndexChanged);
             // 
@@ -178,7 +177,7 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(379, 39);
+            this.groupBox2.Location = new System.Drawing.Point(424, 35);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(359, 384);
             this.groupBox2.TabIndex = 10;
@@ -328,14 +327,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(787, 605);
+            this.ClientSize = new System.Drawing.Size(1262, 622);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "formViewMonthlyReports";
-            this.Text = "formViewMonthlyReports";
+            this.Text = "0";
             this.Load += new System.EventHandler(this.formViewMonthlyReports_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -42,7 +42,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(35, 145);
+            this.label2.Location = new System.Drawing.Point(473, 221);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(316, 20);
             this.label2.TabIndex = 15;
@@ -51,7 +51,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::BloomFeildHotel.Properties.Resources.system_update;
-            this.pictureBox1.Location = new System.Drawing.Point(117, 196);
+            this.pictureBox1.Location = new System.Drawing.Point(555, 272);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(131, 128);
             this.pictureBox1.TabIndex = 14;
@@ -64,7 +64,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(270, 263);
+            this.btnUpdate.Location = new System.Drawing.Point(709, 423);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(96, 41);
@@ -75,7 +75,7 @@
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(11, 263);
+            this.btnBack.Location = new System.Drawing.Point(440, 423);
             this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(96, 41);
@@ -91,18 +91,18 @@
             this.panel1.Location = new System.Drawing.Point(3, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(378, 61);
+            this.panel1.Size = new System.Drawing.Size(1253, 98);
             this.panel1.TabIndex = 11;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(118, 18);
+            this.label1.Location = new System.Drawing.Point(10, 30);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 25);
+            this.label1.Size = new System.Drawing.Size(178, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Update Order";
             // 
@@ -111,7 +111,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(382, 339);
+            this.ClientSize = new System.Drawing.Size(1254, 622);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnUpdate);

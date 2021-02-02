@@ -56,14 +56,26 @@ namespace BloomFeildHotel
                         {
                             foreach(IRoom room in Model.RoomsList)
                             {
+                                if (room.Available)
+                                {
+                                    cbRoomNum.Items.Add(room.RoomNumber);
+                                }
                                 if(reservation.RoomNumber == room.RoomNumber)
                                 {
                                     tbReservationID.Text = reservation.ReservationID.ToString();
-                                    tbRoomNumber.Text = reservation.RoomNumber.ToString();
+                                    cbRoomNum.SelectedItem = reservation.RoomNumber;
                                     tbRoomType.Text = room.RoomType;
+                                    if(room.Smoking)
+                                    {
+                                        txtSmoking.Text = "Smoking";
+                                    }
+                                    else
+                                    {
+                                        txtSmoking.Text = "Non - Smoking";
+                                    }
                                     dtpCheckIn.Value = reservation.CheckInDate;
                                     dtpCheckOut.Value = reservation.CheckOutDate;
-                                    numNights.Value = (reservation.CheckOutDate - reservation.CheckInDate).Days;
+                                    numNights.Text = (reservation.CheckOutDate - reservation.CheckInDate).Days.ToString();
                                     numAdults.Value = reservation.Adults;
                                     numChildren.Value = reservation.Children;
                                     tbRoomPrice.Text = reservation.ReservationPrice.ToString();
@@ -114,20 +126,70 @@ namespace BloomFeildHotel
 
         private void dtpCheckIn_ValueChanged(object sender, EventArgs e)
         {
-            //if (dtpCheckIn.Value >= dtpCheckOut.Value)
-            //{
-            //    MessageBox.Show("Check-in date must be before check-out date");
-            //    dtpCheckIn.Value = dtpCheckOut.Value.AddDays(1);
-            //}
+            if (dtpCheckIn.Value >= dtpCheckOut.Value)
+            {
+                DateTime date = dtpCheckOut.Value;
+                date = date.AddDays(-1);
+                dtpCheckIn.Value = date.Date;
+            }
+            Model.GetAllReservations();
+            Model.GetAllRooms();
+            foreach (IReservation reservation in Model.ReservationsList)
+            {
+                if (reservation.ReservationID == ReservationID)
+                {
+                    foreach (IRoom room in Model.RoomsList)
+                    {
+                        if (room.RoomNumber == reservation.RoomNumber)
+                        {
+                            int numNights = (dtpCheckOut.Value - dtpCheckIn.Value).Days;
+                            tbRoomPrice.Text = (room.BasePrice * numNights).ToString();
+                            if (rbDepositYes.Checked)
+                            {
+                                tbDeposit.Text = (Convert.ToInt32(tbRoomPrice.Text) * 0.1).ToString();
+                            }
+                            else
+                            {
+                                tbDeposit.Text = "0.00";
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         private void dtpCheckOut_ValueChanged(object sender, EventArgs e)
         {
-            //if(dtpCheckIn.Value <= dtpCheckOut.Value)
-            //{
-            //    MessageBox.Show("Check-out date must be after check-in date");
-            //    dtpCheckIn.Value = dtpCheckOut.Value.AddDays(1);
-           // }
+            if (dtpCheckIn.Value >= dtpCheckOut.Value)
+            {
+                DateTime date = dtpCheckIn.Value;
+                date = date.AddDays(1);
+                dtpCheckOut.Value = date.Date;
+            }
+            Model.GetAllReservations();
+            Model.GetAllRooms();
+            foreach (IReservation reservation in Model.ReservationsList)
+            {
+                if (reservation.ReservationID == ReservationID)
+                {
+                    foreach (IRoom room in Model.RoomsList)
+                    {
+                        if (room.RoomNumber == reservation.RoomNumber)
+                        {
+                            int numNights = (dtpCheckOut.Value - dtpCheckIn.Value).Days;
+                            tbRoomPrice.Text = (room.BasePrice * numNights).ToString();
+                            if (rbDepositYes.Checked)
+                            {
+                                tbDeposit.Text = (Convert.ToInt32(tbRoomPrice.Text) * 0.1).ToString();
+                            }
+                            else
+                            {
+                                tbDeposit.Text = "0.00";
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         private void numGuests_ValueChanged(object sender, EventArgs e)
@@ -149,71 +211,227 @@ namespace BloomFeildHotel
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            int GuestID = 0;
-            foreach(IReservation reservation in Model.ReservationsList)
+            if(numAdults.Value < 1)
             {
-                if (reservation.ReservationID == this.ReservationID)
+                MessageBox.Show("Number of Adults must be at least 1");
+            }
+            else if(tbFName.Text == "" || tbSName.Text == "" || tbPhone.Text == "" || tbEmail.Text == "" || rtbAddress.Text == "")
+            {
+                MessageBox.Show("Please fill in all guest details");
+                Model.GetAllReservations();
+                Model.GetAllGuests();
+                foreach (IReservation r in Model.ReservationsList)
                 {
-                    foreach (IGuest guest in Model.GuestsList)
+                    if (r.ReservationID == ReservationID)
                     {
-
-                        if (reservation.GuestID == guest.GuestID)
+                        foreach (IGuest g in Model.GuestsList)
                         {
-                            GuestID = reservation.GuestID;
-                            foreach (IRoom room in Model.RoomsList)
+                            if (g.GuestID == r.GuestID)
                             {
-                                if (reservation.RoomNumber == room.RoomNumber)
+                                tbFName.Text = g.FirstName;
+                                tbSName.Text = g.Surname;
+                                tbPhone.Text = g.ContactNumber;
+                                tbEmail.Text = g.Email;
+                                rtbAddress.Text = g.Address;
+                                if (g.SendMarketingInfo)
                                 {
-                                    reservation.RoomNumber = Int32.Parse(tbRoomNumber.Text);
-                                    reservation.CheckInDate = dtpCheckIn.Value;
-                                    reservation.CheckOutDate = dtpCheckOut.Value;
-                                    reservation.Adults = Convert.ToInt32(numAdults.Value);
-                                    reservation.Children = Convert.ToInt32(numChildren.Value);
-                                    reservation.ReservationPrice = Convert.ToDouble(tbRoomPrice.Text);
-                                    if (rbPaidYes.Checked)
-                                    {
-                                        reservation.PayedInFull = true;
-                                    }
-                                    else
-                                    {
-                                        reservation.PayedInFull = false;
-                                    }
-                                    if (rbDepositYes.Checked)
-                                    {
-                                        reservation.PayedDeposit = true;
-                                    }
-                                    else
-                                    {
-                                        reservation.PayedDeposit = false;
-                                    }
-                                    guest.FirstName = tbFName.Text;
-                                    guest.Surname = tbSName.Text;
-                                    guest.ContactNumber = tbPhone.Text;
-                                    guest.Email = tbEmail.Text;
-                                    guest.Address = rtbAddress.Text;
-                                    if (rbMarketingYes.Checked == true)
-                                    {
-                                        guest.SendMarketingInfo = true;
-                                    }
-                                    else
-                                    {
-                                        guest.SendMarketingInfo = false;
-                                    }
+                                    rbMarketingYes.Checked = true;
+                                }
+                                else
+                                {
+                                    rbMarketingNo.Checked = true;
                                 }
                             }
                         }
                     }
                 }
             }
-            formReservationUpdateConfirm form = new formReservationUpdateConfirm(this.fc, this.Model, this.ReservationID, GuestID);
-            form.Dock = DockStyle.Fill;
-            form.Show();
+            else
+            {
+                int GuestID = 0;
+                foreach (IReservation reservation in Model.ReservationsList)
+                {
+                    if (reservation.ReservationID == this.ReservationID)
+                    {
+                        foreach (IGuest guest in Model.GuestsList)
+                        {
+
+                            if (reservation.GuestID == guest.GuestID)
+                            {
+                                GuestID = reservation.GuestID;
+                                foreach (IRoom room in Model.RoomsList)
+                                {
+                                    if (room.RoomNumber == Convert.ToInt32(cbRoomNum.SelectedItem))
+                                    {
+                                        reservation.RoomNumber = room.RoomNumber;
+                                        reservation.CheckInDate = dtpCheckIn.Value;
+                                        reservation.CheckOutDate = dtpCheckOut.Value;
+                                        reservation.Adults = Convert.ToInt32(numAdults.Value);
+                                        reservation.Children = Convert.ToInt32(numChildren.Value);
+                                        reservation.ReservationPrice = Convert.ToDouble(tbRoomPrice.Text);
+                                        if (rbPaidYes.Checked)
+                                        {
+                                            reservation.PayedInFull = true;
+                                        }
+                                        else
+                                        {
+                                            reservation.PayedInFull = false;
+                                        }
+                                        if (rbDepositYes.Checked)
+                                        {
+                                            reservation.PayedDeposit = true;
+                                        }
+                                        else
+                                        {
+                                            reservation.PayedDeposit = false;
+                                        }
+                                        guest.FirstName = tbFName.Text;
+                                        guest.Surname = tbSName.Text;
+                                        guest.ContactNumber = tbPhone.Text;
+                                        guest.Email = tbEmail.Text;
+                                        guest.Address = rtbAddress.Text;
+                                        if (rbMarketingYes.Checked == true)
+                                        {
+                                            guest.SendMarketingInfo = true;
+                                        }
+                                        else
+                                        {
+                                            guest.SendMarketingInfo = false;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                formReservationUpdateConfirm form = new formReservationUpdateConfirm(this.fc, this.Model, this.ReservationID, GuestID);
+                form.Dock = DockStyle.Fill;
+                form.Show();
+            }
         }
 
         private void btnCheckOut_Click(object sender, EventArgs e)
         {
             formCheckOut form = new formCheckOut(this.fc, this.Model, this.ReservationID);
             form.Show();
+        }
+
+        private void cbRoomNum_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Model.GetAllReservations();
+            Model.GetAllRooms();
+            foreach (IRoom room in Model.RoomsList)
+            {
+                if(room.RoomNumber == Convert.ToInt32(cbRoomNum.SelectedItem))
+                {
+                    foreach(IReservation reservation in Model.ReservationsList)
+                    {
+                        if(reservation.ReservationID == ReservationID)
+                        {
+                            if (room.Smoking)
+                            {
+                                txtSmoking.Text = "Smoking";
+                            }
+                            else
+                            {
+                                txtSmoking.Text = "Non - Smoking";
+                            }
+                            tbRoomType.Text = room.RoomType;
+
+                            int numNights = (dtpCheckOut.Value - dtpCheckIn.Value).Days;
+                            tbRoomPrice.Text = (room.BasePrice * numNights).ToString();
+                            if (rbDepositYes.Checked)
+                            {
+                                tbDeposit.Text = (Convert.ToInt32(tbRoomPrice.Text) * 0.1).ToString();
+                            }
+                            else
+                            {
+                                tbDeposit.Text = "0.00";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbDepositYes_CheckedChanged(object sender, EventArgs e)
+        {
+            if(rbDepositYes.Checked)
+            {
+                Model.GetAllReservations();
+                Model.GetAllRooms();
+                foreach (IReservation reservation in Model.ReservationsList)
+                {
+                    if (reservation.ReservationID == ReservationID)
+                    {
+                        foreach (IRoom room in Model.RoomsList)
+                        {
+                            if (room.RoomNumber == Convert.ToInt32(cbRoomNum.SelectedItem))
+                            {
+                                int numNights = (dtpCheckOut.Value - dtpCheckIn.Value).Days;
+                                tbRoomPrice.Text = (room.BasePrice * numNights).ToString();
+                                if (rbDepositYes.Checked)
+                                {
+                                    tbDeposit.Text = (Convert.ToInt32(tbRoomPrice.Text) * 0.1).ToString();
+                                }
+                                else
+                                {
+                                    tbDeposit.Text = "0.00";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            else
+            {
+                tbDeposit.Text = "0.00";
+            }
+        }
+
+        private void rbDepositNo_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbDepositNo.Checked)
+            {
+                tbDeposit.Text = "0.00";
+            }
+            else
+            {
+                Model.GetAllReservations();
+                Model.GetAllRooms();
+                foreach (IReservation reservation in Model.ReservationsList)
+                {
+                    if (reservation.ReservationID == ReservationID)
+                    {
+                        foreach (IRoom room in Model.RoomsList)
+                        {
+                            if (room.RoomNumber == Convert.ToInt32(cbRoomNum.SelectedItem))
+                            {
+                                int numNights = (dtpCheckOut.Value - dtpCheckIn.Value).Days;
+                                tbRoomPrice.Text = (room.BasePrice * numNights).ToString();
+                                if (rbDepositYes.Checked)
+                                {
+                                    tbDeposit.Text = (Convert.ToInt32(tbRoomPrice.Text) * 0.1).ToString();
+                                }
+                                else
+                                {
+                                    tbDeposit.Text = "0.00";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private void gbGuest_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

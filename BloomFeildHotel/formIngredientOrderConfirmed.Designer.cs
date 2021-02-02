@@ -43,7 +43,7 @@
             this.panel1.Location = new System.Drawing.Point(-173, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(541, 83);
+            this.panel1.Size = new System.Drawing.Size(1431, 83);
             this.panel1.TabIndex = 2;
             // 
             // label1
@@ -51,7 +51,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(186, 26);
+            this.label1.Location = new System.Drawing.Point(186, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(343, 31);
@@ -63,7 +63,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(49, 191);
+            this.label2.Location = new System.Drawing.Point(481, 277);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(262, 24);
             this.label2.TabIndex = 3;
@@ -76,7 +76,7 @@
             this.btnAddNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNew.ForeColor = System.Drawing.Color.White;
-            this.btnAddNew.Location = new System.Drawing.Point(127, 266);
+            this.btnAddNew.Location = new System.Drawing.Point(559, 352);
             this.btnAddNew.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddNew.Name = "btnAddNew";
             this.btnAddNew.Size = new System.Drawing.Size(85, 46);
@@ -88,7 +88,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(68, 167);
+            this.label3.Location = new System.Drawing.Point(500, 253);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(224, 24);
             this.label3.TabIndex = 11;
@@ -99,14 +99,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(368, 342);
+            this.ClientSize = new System.Drawing.Size(1261, 627);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnAddNew);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "formIngredientOrderConfirmed";
             this.Text = "formIngredientOrderConfirmed";
             this.panel1.ResumeLayout(false);

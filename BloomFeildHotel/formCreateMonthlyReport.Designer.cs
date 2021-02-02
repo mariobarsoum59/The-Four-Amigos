@@ -34,14 +34,16 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(136, 272);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBack.Location = new System.Drawing.Point(13, 575);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(84, 37);
             this.btnBack.TabIndex = 17;
@@ -56,8 +58,8 @@
             this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.ForeColor = System.Drawing.Color.White;
-            this.btnCreate.Location = new System.Drawing.Point(296, 272);
-            this.btnCreate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCreate.Location = new System.Drawing.Point(278, 190);
+            this.btnCreate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(84, 37);
             this.btnCreate.TabIndex = 16;
@@ -69,16 +71,16 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(133, 170);
+            this.label2.Location = new System.Drawing.Point(109, 143);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(256, 16);
+            this.label2.Size = new System.Drawing.Size(134, 16);
             this.label2.TabIndex = 15;
-            this.label2.Text = "Please select a date to create a report for:";
+            this.label2.Text = "Please select a date:";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(136, 211);
+            this.dateTimePicker1.Location = new System.Drawing.Point(249, 143);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(244, 22);
             this.dateTimePicker1.TabIndex = 14;
@@ -90,7 +92,7 @@
             this.panel1.Location = new System.Drawing.Point(2, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(525, 111);
+            this.panel1.Size = new System.Drawing.Size(1257, 111);
             this.panel1.TabIndex = 13;
             // 
             // label1
@@ -105,16 +107,27 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Create Monthly Financial Report";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.btnCreate);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(275, 179);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(638, 340);
+            this.groupBox1.TabIndex = 18;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Financial Report";
+            // 
             // formCreateMonthlyReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(528, 382);
+            this.ClientSize = new System.Drawing.Size(1260, 625);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.btnCreate);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "formCreateMonthlyReport";
@@ -122,8 +135,9 @@
             this.Load += new System.EventHandler(this.formCreateMonthlyReport_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -135,5 +149,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

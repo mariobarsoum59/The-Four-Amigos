@@ -55,10 +55,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(94)))), ((int)(((byte)(84)))));
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(3, 4);
+            this.panel1.Location = new System.Drawing.Point(3, -1);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1063, 78);
+            this.panel1.Size = new System.Drawing.Size(1264, 83);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -69,14 +69,14 @@
             this.label1.Location = new System.Drawing.Point(4, 17);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(499, 61);
+            this.label1.Size = new System.Drawing.Size(326, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Request Ingredients";
             // 
             // btnBack
             // 
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(746, 737);
+            this.btnBack.Location = new System.Drawing.Point(839, 562);
             this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(96, 41);
@@ -92,7 +92,7 @@
             this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(952, 737);
+            this.btnSubmit.Location = new System.Drawing.Point(1129, 562);
             this.btnSubmit.Margin = new System.Windows.Forms.Padding(4);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(96, 41);
@@ -114,7 +114,7 @@
             this.gbAvailableIngredients.Margin = new System.Windows.Forms.Padding(4);
             this.gbAvailableIngredients.Name = "gbAvailableIngredients";
             this.gbAvailableIngredients.Padding = new System.Windows.Forms.Padding(4);
-            this.gbAvailableIngredients.Size = new System.Drawing.Size(716, 335);
+            this.gbAvailableIngredients.Size = new System.Drawing.Size(767, 252);
             this.gbAvailableIngredients.TabIndex = 5;
             this.gbAvailableIngredients.TabStop = false;
             this.gbAvailableIngredients.Text = "Available Ingredients";
@@ -126,7 +126,7 @@
             this.btnViewAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewAll.ForeColor = System.Drawing.Color.White;
-            this.btnViewAll.Location = new System.Drawing.Point(233, 36);
+            this.btnViewAll.Location = new System.Drawing.Point(238, 20);
             this.btnViewAll.Margin = new System.Windows.Forms.Padding(4);
             this.btnViewAll.Name = "btnViewAll";
             this.btnViewAll.Size = new System.Drawing.Size(86, 29);
@@ -147,10 +147,10 @@
             "Vegetables",
             "Dry Grocery",
             "Miscellaneous"});
-            this.cbCategories.Location = new System.Drawing.Point(21, 39);
+            this.cbCategories.Location = new System.Drawing.Point(26, 23);
             this.cbCategories.Margin = new System.Windows.Forms.Padding(4);
             this.cbCategories.Name = "cbCategories";
-            this.cbCategories.Size = new System.Drawing.Size(184, 33);
+            this.cbCategories.Size = new System.Drawing.Size(184, 24);
             this.cbCategories.TabIndex = 13;
             this.cbCategories.Text = "Please Select a Category";
             this.cbCategories.SelectedIndexChanged += new System.EventHandler(this.cbCategories_SelectedIndexChanged);
@@ -158,10 +158,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(436, 41);
+            this.label4.Location = new System.Drawing.Point(534, 22);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 25);
+            this.label4.Size = new System.Drawing.Size(59, 16);
             this.label4.TabIndex = 2;
             this.label4.Text = "Quantity:";
             // 
@@ -172,7 +172,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(587, 34);
+            this.btnAdd.Location = new System.Drawing.Point(656, 16);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(103, 31);
@@ -183,20 +183,20 @@
             // 
             // numQty
             // 
-            this.numQty.Location = new System.Drawing.Point(503, 39);
+            this.numQty.Location = new System.Drawing.Point(601, 20);
             this.numQty.Margin = new System.Windows.Forms.Padding(4);
             this.numQty.Name = "numQty";
-            this.numQty.Size = new System.Drawing.Size(47, 30);
+            this.numQty.Size = new System.Drawing.Size(47, 22);
             this.numQty.TabIndex = 12;
             // 
             // lbAvailableIngredients
             // 
             this.lbAvailableIngredients.FormattingEnabled = true;
-            this.lbAvailableIngredients.ItemHeight = 25;
-            this.lbAvailableIngredients.Location = new System.Drawing.Point(8, 80);
+            this.lbAvailableIngredients.ItemHeight = 16;
+            this.lbAvailableIngredients.Location = new System.Drawing.Point(8, 55);
             this.lbAvailableIngredients.Margin = new System.Windows.Forms.Padding(4);
             this.lbAvailableIngredients.Name = "lbAvailableIngredients";
-            this.lbAvailableIngredients.Size = new System.Drawing.Size(700, 229);
+            this.lbAvailableIngredients.Size = new System.Drawing.Size(751, 180);
             this.lbAvailableIngredients.TabIndex = 4;
             // 
             // gbIngredientsOrder
@@ -205,11 +205,11 @@
             this.gbIngredientsOrder.Controls.Add(this.btnClear);
             this.gbIngredientsOrder.Controls.Add(this.lbIngredientsOrder);
             this.gbIngredientsOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbIngredientsOrder.Location = new System.Drawing.Point(14, 443);
+            this.gbIngredientsOrder.Location = new System.Drawing.Point(13, 360);
             this.gbIngredientsOrder.Margin = new System.Windows.Forms.Padding(4);
             this.gbIngredientsOrder.Name = "gbIngredientsOrder";
             this.gbIngredientsOrder.Padding = new System.Windows.Forms.Padding(4);
-            this.gbIngredientsOrder.Size = new System.Drawing.Size(716, 344);
+            this.gbIngredientsOrder.Size = new System.Drawing.Size(768, 260);
             this.gbIngredientsOrder.TabIndex = 6;
             this.gbIngredientsOrder.TabStop = false;
             this.gbIngredientsOrder.Text = "Ingredients Order";
@@ -217,7 +217,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(587, 23);
+            this.button1.Location = new System.Drawing.Point(639, 23);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 32);
@@ -241,17 +241,17 @@
             // lbIngredientsOrder
             // 
             this.lbIngredientsOrder.FormattingEnabled = true;
-            this.lbIngredientsOrder.ItemHeight = 25;
+            this.lbIngredientsOrder.ItemHeight = 16;
             this.lbIngredientsOrder.Location = new System.Drawing.Point(8, 63);
             this.lbIngredientsOrder.Margin = new System.Windows.Forms.Padding(4);
             this.lbIngredientsOrder.Name = "lbIngredientsOrder";
-            this.lbIngredientsOrder.Size = new System.Drawing.Size(700, 254);
+            this.lbIngredientsOrder.Size = new System.Drawing.Size(752, 180);
             this.lbIngredientsOrder.TabIndex = 6;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::BloomFeildHotel.Properties.Resources.grocery;
-            this.pictureBox1.Location = new System.Drawing.Point(746, 293);
+            this.pictureBox1.Location = new System.Drawing.Point(882, 182);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(302, 259);
             this.pictureBox1.TabIndex = 7;
@@ -259,10 +259,10 @@
             // 
             // formRequestIngredients
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(1552, 939);
+            this.ClientSize = new System.Drawing.Size(1266, 634);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.gbIngredientsOrder);

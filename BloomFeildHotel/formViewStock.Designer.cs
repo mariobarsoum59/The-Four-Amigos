@@ -32,11 +32,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbDepartment = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnViewAll = new System.Windows.Forms.Button();
+            this.cbCategory = new System.Windows.Forms.ComboBox();
             this.lbDepartmentStock = new System.Windows.Forms.ListBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.cbCategory = new System.Windows.Forms.ComboBox();
-            this.btnViewAll = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,7 +49,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1225, 90);
+            this.panel1.Size = new System.Drawing.Size(1268, 90);
             this.panel1.TabIndex = 5;
             // 
             // label1
@@ -84,16 +84,43 @@
             this.groupBox1.Controls.Add(this.cbDepartment);
             this.groupBox1.Location = new System.Drawing.Point(12, 99);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(952, 483);
+            this.groupBox1.Size = new System.Drawing.Size(972, 507);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "View Stock by Department";
+            // 
+            // btnViewAll
+            // 
+            this.btnViewAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnViewAll.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.btnViewAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewAll.ForeColor = System.Drawing.Color.White;
+            this.btnViewAll.Location = new System.Drawing.Point(838, 19);
+            this.btnViewAll.Margin = new System.Windows.Forms.Padding(4);
+            this.btnViewAll.Name = "btnViewAll";
+            this.btnViewAll.Size = new System.Drawing.Size(96, 41);
+            this.btnViewAll.TabIndex = 12;
+            this.btnViewAll.Text = "View All";
+            this.btnViewAll.UseVisualStyleBackColor = false;
+            this.btnViewAll.Click += new System.EventHandler(this.btnViewAll_Click);
+            // 
+            // cbCategory
+            // 
+            this.cbCategory.FormattingEnabled = true;
+            this.cbCategory.Location = new System.Drawing.Point(227, 36);
+            this.cbCategory.Margin = new System.Windows.Forms.Padding(5);
+            this.cbCategory.Name = "cbCategory";
+            this.cbCategory.Size = new System.Drawing.Size(199, 24);
+            this.cbCategory.TabIndex = 8;
+            this.cbCategory.Text = "Please Select a Category";
+            this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged);
             // 
             // lbDepartmentStock
             // 
             this.lbDepartmentStock.FormattingEnabled = true;
             this.lbDepartmentStock.ItemHeight = 16;
-            this.lbDepartmentStock.Location = new System.Drawing.Point(6, 68);
+            this.lbDepartmentStock.Location = new System.Drawing.Point(18, 85);
             this.lbDepartmentStock.Name = "lbDepartmentStock";
             this.lbDepartmentStock.Size = new System.Drawing.Size(940, 404);
             this.lbDepartmentStock.TabIndex = 7;
@@ -114,45 +141,18 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::BloomFeildHotel.Properties.Resources.boxes;
-            this.pictureBox1.Location = new System.Drawing.Point(970, 236);
+            this.pictureBox1.Location = new System.Drawing.Point(1001, 240);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(255, 249);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
-            // 
-            // cbCategory
-            // 
-            this.cbCategory.FormattingEnabled = true;
-            this.cbCategory.Location = new System.Drawing.Point(227, 36);
-            this.cbCategory.Margin = new System.Windows.Forms.Padding(5);
-            this.cbCategory.Name = "cbCategory";
-            this.cbCategory.Size = new System.Drawing.Size(199, 24);
-            this.cbCategory.TabIndex = 8;
-            this.cbCategory.Text = "Please Select a Category";
-            this.cbCategory.SelectedIndexChanged += new System.EventHandler(this.cbCategory_SelectedIndexChanged);
-            // 
-            // btnViewAll
-            // 
-            this.btnViewAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
-            this.btnViewAll.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
-            this.btnViewAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewAll.ForeColor = System.Drawing.Color.White;
-            this.btnViewAll.Location = new System.Drawing.Point(838, 19);
-            this.btnViewAll.Margin = new System.Windows.Forms.Padding(4);
-            this.btnViewAll.Name = "btnViewAll";
-            this.btnViewAll.Size = new System.Drawing.Size(96, 41);
-            this.btnViewAll.TabIndex = 12;
-            this.btnViewAll.Text = "View All";
-            this.btnViewAll.UseVisualStyleBackColor = false;
-            this.btnViewAll.Click += new System.EventHandler(this.btnViewAll_Click);
             // 
             // formViewStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(1231, 589);
+            this.ClientSize = new System.Drawing.Size(1268, 629);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
