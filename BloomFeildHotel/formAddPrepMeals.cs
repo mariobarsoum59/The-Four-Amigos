@@ -38,11 +38,18 @@ namespace BloomFeildHotel
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            int id = 0;
-            double price = Convert.ToDouble(txtPrice.Text);
-            if (Model.addPrepMeal(id, txtMealName.Text, price, Convert.ToInt32(txtMealAmt.Text)))
+            if (!String.IsNullOrEmpty(txtMealName.Text) && !String.IsNullOrEmpty(txtMealAmt.Text) && !String.IsNullOrEmpty(txtPrice.Text))
             {
-                MessageBox.Show("Meal Added");
+                int id = 0;
+                double price = Convert.ToDouble(txtPrice.Text);
+                if (Model.addPrepMeal(id, txtMealName.Text, price, Convert.ToInt32(txtMealAmt.Text)))
+                {
+                    MessageBox.Show("Meal Added");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please enter meal details");
             }
         }
     }
