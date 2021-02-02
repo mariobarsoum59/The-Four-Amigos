@@ -112,5 +112,14 @@ namespace BloomFeildHotel
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            formChangeOrderStatus form = new formChangeOrderStatus(fc, Model);
+            //form.Show();
+            form.Dock = DockStyle.Fill;
+
+            form.Show();
+        }
     }
 }

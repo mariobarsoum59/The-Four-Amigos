@@ -155,7 +155,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbOrders);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1205, 640);
             this.Name = "formChangeOrderStatus";
             this.Text = "formChangeOrderStatus";
             this.Load += new System.EventHandler(this.formChangeOrderStatus_Load);

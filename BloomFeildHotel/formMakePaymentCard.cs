@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -65,8 +66,17 @@ namespace BloomFeildHotel
             {
                 MessageBox.Show("Please enter CVV/CVVD!");
             }
+            else if (textBoxCCV.Text.Length < 3 || textBoxCCV.Text.Length > 3)
+            {
+                MessageBox.Show("Please enter CVV/CVVD that is 3 characters long");
+            }
+            else if (textBoxNumber.Text.Length < 16 || textBoxNumber.Text.Length > 16)
+            {
+                MessageBox.Show("Please enter a card number that is 16 characters long");
+            }
             else
             {
+                
                 int id = 0;
                 bool cardPayment = true;
                 bool cashPayment = false;
@@ -87,7 +97,7 @@ namespace BloomFeildHotel
             textBoxCCV.Clear();
         }
 
-      
+        
     }
     
 }

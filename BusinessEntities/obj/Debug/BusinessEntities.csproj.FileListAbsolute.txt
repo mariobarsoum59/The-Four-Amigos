@@ -10,17 +10,6 @@ C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessEntities\obj\Debug
 C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
 C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessEntities\obj\Debug\BusinessEntities.dll
 C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-master\BusinessEntities\obj\Debug\BusinessEntities.pdb
-C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\bin\Debug\BusinessEntities.dll
-C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\bin\Debug\BusinessEntities.pdb
-C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
-C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.dll
-C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.pdb
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BusinessEntities\bin\Debug\BusinessEntities.dll
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BusinessEntities\bin\Debug\BusinessEntities.pdb
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.dll
-D:\College\MARIO\Year 3\Group project\Github Repo\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.pdb
 C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-09ddd585ab57c59ae20c48f21610eb059f87f6e8\BusinessEntities\bin\Debug\BusinessEntities.dll
 C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-09ddd585ab57c59ae20c48f21610eb059f87f6e8\BusinessEntities\bin\Debug\BusinessEntities.pdb
 C:\Users\Mario Barsoum\Desktop\The-Four-Amigos-09ddd585ab57c59ae20c48f21610eb059f87f6e8\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
@@ -42,7 +31,6 @@ C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\bin\Deb
 C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
 C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.dll
 C:\Users\jackk\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.pdb
-C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BusinessEntities\bin\Debug\BusinessEntities.dll
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BusinessEntities\bin\Debug\BusinessEntities.pdb
 C:\Users\Saoir\Source\Repos\mariobarsoum59\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache
@@ -53,3 +41,9 @@ C:\Users\jack\Desktop\The-Four-Amigos\BusinessEntities\bin\Debug\BusinessEntitie
 C:\Users\jack\Desktop\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
 C:\Users\jack\Desktop\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.dll
 C:\Users\jack\Desktop\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.pdb
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.pdb
+C:\Users\rebec\OneDrive\Desktop\Project\The-Four-Amigos\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache

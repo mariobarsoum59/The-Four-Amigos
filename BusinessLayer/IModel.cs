@@ -25,6 +25,8 @@ namespace BusinessLayer
 
         bool deleteUser(IUser user);
 
+        bool deleteWaste(IWaste waste);
+
         bool deleteReservation(IReservation reservation);
 
         bool updateReservation(IReservation reservation);
@@ -62,6 +64,8 @@ namespace BusinessLayer
         bool UpdateRoomPrice(IRoom room);
 
         bool CheckGuestIn(IReservation reservation);
+
+        bool CheckGuestOut(IReservation reservation);
 
         List<IOrders> OrdersList { get; set; }
         void GetAllOrders();
@@ -123,6 +127,7 @@ namespace BusinessLayer
         Boolean createOrderMeal(int OrderID, int DishID, int Quantity, string Status);
         Boolean createDrink(string DrinkName, decimal DrinkPrice);
         Boolean addPrepMeal(int DishID, string DishName, double Price, int Quantity);
+        Boolean addWaste(int DishID, string DishName, int NumWasted, double LossFromWaste, DateTime Date);
         //Boolean wasteToDB(int DishID, string DishName, int NumWasted, double LossFromWaste, DateTime Date);
         Boolean addNewPayment(int PaymentID, Boolean CashPayment, Boolean CardPayment, string NameOnCard, decimal Amount);
 

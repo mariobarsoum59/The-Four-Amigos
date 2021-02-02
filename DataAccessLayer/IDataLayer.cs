@@ -16,6 +16,7 @@ namespace DataAccessLayer
         System.Data.SqlClient.SqlConnection getConnection();
         void openConnection();
         bool deleteUserFromDB(BusinessEntities.IUser user);
+        bool deleteWaste(BusinessEntities.IWaste waste);
 
         bool deleteReservationFromDB(BusinessEntities.IReservation reservation);
 
@@ -47,6 +48,8 @@ namespace DataAccessLayer
         bool updateRoomPriceInDB(BusinessEntities.IRoom room);
 
         bool checkGusetInDB(BusinessEntities.IReservation reservation);
+
+        bool checkGuestOut(BusinessEntities.IReservation reservation);
 
         bool updateCompletedOrders(BusinessEntities.IOrders completed);
 
@@ -85,6 +88,8 @@ namespace DataAccessLayer
         bool deleteOrderDrink(IOrder_has_Drinks anOrderDrink);
         bool deleteOrderMeal(IOrder_has_Meals anOrderMeal);
         void addPrepMeal(IMeals aPrepMeal);
+
+        void addWaste(IWaste waste);
 
         void wasteToDB(IWaste waste);
 

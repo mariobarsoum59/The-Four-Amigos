@@ -36,6 +36,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnChangeOrderStatus = new System.Windows.Forms.Button();
             this.btnOk = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,7 +51,7 @@
             this.listBoxOrders.Location = new System.Drawing.Point(16, 414);
             this.listBoxOrders.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBoxOrders.Name = "listBoxOrders";
-            this.listBoxOrders.Size = new System.Drawing.Size(959, 379);
+            this.listBoxOrders.Size = new System.Drawing.Size(1164, 379);
             this.listBoxOrders.TabIndex = 3;
             this.listBoxOrders.SelectedIndexChanged += new System.EventHandler(this.listBoxOrders_SelectedIndexChanged);
             // 
@@ -62,7 +63,7 @@
             this.panel1.Location = new System.Drawing.Point(1, 1);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(985, 109);
+            this.panel1.Size = new System.Drawing.Size(1233, 109);
             this.panel1.TabIndex = 25;
             // 
             // lblCreateReservation
@@ -106,12 +107,12 @@
             this.btnChangeOrderStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnChangeOrderStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChangeOrderStatus.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnChangeOrderStatus.Location = new System.Drawing.Point(498, 798);
+            this.btnChangeOrderStatus.Location = new System.Drawing.Point(433, 803);
             this.btnChangeOrderStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnChangeOrderStatus.Name = "btnChangeOrderStatus";
-            this.btnChangeOrderStatus.Size = new System.Drawing.Size(477, 135);
+            this.btnChangeOrderStatus.Size = new System.Drawing.Size(336, 135);
             this.btnChangeOrderStatus.TabIndex = 42;
-            this.btnChangeOrderStatus.Text = "Change Order Status";
+            this.btnChangeOrderStatus.Text = "Manage Order";
             this.btnChangeOrderStatus.UseVisualStyleBackColor = false;
             this.btnChangeOrderStatus.Click += new System.EventHandler(this.btnChangeOrderStatus_Click);
             // 
@@ -120,21 +121,36 @@
             this.btnOk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
             this.btnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOk.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnOk.Location = new System.Drawing.Point(13, 798);
+            this.btnOk.Location = new System.Drawing.Point(16, 803);
             this.btnOk.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(477, 135);
+            this.btnOk.Size = new System.Drawing.Size(336, 135);
             this.btnOk.TabIndex = 43;
             this.btnOk.Text = "Ok";
             this.btnOk.UseVisualStyleBackColor = false;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(140)))), ((int)(((byte)(126)))));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(844, 803);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(336, 135);
+            this.button2.TabIndex = 44;
+            this.button2.Text = "Change Order Status";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // formViewOrdersChef
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(229)))), ((int)(((byte)(221)))));
-            this.ClientSize = new System.Drawing.Size(987, 975);
+            this.ClientSize = new System.Drawing.Size(1234, 975);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.btnChangeOrderStatus);
             this.Controls.Add(this.button1);
@@ -163,5 +179,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnChangeOrderStatus;
         private System.Windows.Forms.Button btnOk;
+        private System.Windows.Forms.Button button2;
     }
 }
