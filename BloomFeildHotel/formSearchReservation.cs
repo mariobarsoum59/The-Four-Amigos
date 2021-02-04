@@ -32,9 +32,10 @@ namespace BloomFeildHotel
 
         private void formSearchReservation_Load(object sender, EventArgs e)
         {
+            Model.GetAllReservations();
             // TODO: This line of code loads data into the 'bloomFeildHotelDataSetRes.reservations' table. You can move, or remove it, as needed.
-            this.reservationsTableAdapter.Fill(this.bloomFeildHotelDataSetRes.reservations);
-
+            //this.reservationsTableAdapter.Fill(this.bloomFeildHotelDataSetRes.reservations);
+            dataGridView1.DataSource = Model.ReservationsList;
         }
 
 
