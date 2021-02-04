@@ -1,0 +1,506 @@
+USE [BloomFeildHotel]
+GO
+SET IDENTITY_INSERT [dbo].[Meals] ON 
+GO
+INSERT [dbo].[Meals] ([DishID], [Dish Name], [Price], [Quantity]) VALUES (1, N'Chicken Curry and Chips', CAST(15.00 AS Decimal(9, 2)), 10)
+GO
+INSERT [dbo].[Meals] ([DishID], [Dish Name], [Price], [Quantity]) VALUES (2, N'Fish and Chips', CAST(13.00 AS Decimal(9, 2)), 11)
+GO
+INSERT [dbo].[Meals] ([DishID], [Dish Name], [Price], [Quantity]) VALUES (3, N'Soup and Salad', CAST(5.60 AS Decimal(9, 2)), 5)
+GO
+INSERT [dbo].[Meals] ([DishID], [Dish Name], [Price], [Quantity]) VALUES (4, N'Full Irish Breakfast', CAST(10.00 AS Decimal(9, 2)), 1)
+GO
+INSERT [dbo].[Meals] ([DishID], [Dish Name], [Price], [Quantity]) VALUES (5, N'Half Irish Breakfast', CAST(5.00 AS Decimal(9, 2)), 1)
+GO
+INSERT [dbo].[Meals] ([DishID], [Dish Name], [Price], [Quantity]) VALUES (6, N'Pizza Gourmet', CAST(12.00 AS Decimal(9, 2)), 1)
+GO
+INSERT [dbo].[Meals] ([DishID], [Dish Name], [Price], [Quantity]) VALUES (7, N'Beef Burger and Chips', CAST(12.00 AS Decimal(9, 2)), 1)
+GO
+INSERT [dbo].[Meals] ([DishID], [Dish Name], [Price], [Quantity]) VALUES (8, N'Steak Sandwich', CAST(16.00 AS Decimal(9, 2)), 1)
+GO
+INSERT [dbo].[Meals] ([DishID], [Dish Name], [Price], [Quantity]) VALUES (9, N'10oz Sirloin Steak', CAST(25.00 AS Decimal(9, 2)), 1)
+GO
+INSERT [dbo].[Meals] ([DishID], [Dish Name], [Price], [Quantity]) VALUES (10, N'Caesar Salad', CAST(9.00 AS Decimal(9, 2)), 1)
+GO
+INSERT [dbo].[Meals] ([DishID], [Dish Name], [Price], [Quantity]) VALUES (13, N'Sausage & Chips', CAST(10.00 AS Decimal(9, 2)), 20)
+GO
+INSERT [dbo].[Meals] ([DishID], [Dish Name], [Price], [Quantity]) VALUES (15, N'chips', CAST(3.00 AS Decimal(9, 2)), 1)
+GO
+INSERT [dbo].[Meals] ([DishID], [Dish Name], [Price], [Quantity]) VALUES (16, N'Chicken Curry and Chips', CAST(12.00 AS Decimal(9, 2)), 20)
+GO
+SET IDENTITY_INSERT [dbo].[Meals] OFF
+GO
+SET IDENTITY_INSERT [dbo].[StockItems] ON 
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (1, N'Potatoes', N'Per KG', CAST(2.70 AS Decimal(9, 2)), 5, N'Vegetables', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (2, N'Chicken Breasts', N'Per Pound', CAST(4.80 AS Decimal(9, 2)), 5, N'Poultry', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (3, N'Curry Powder', N'Per KG', CAST(3.61 AS Decimal(9, 2)), 4, N'Spices', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (4, N'Pepper', N'Per KG', CAST(4.00 AS Decimal(9, 2)), 10, N'Seasoning', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (5, N'Salt', N'Per KG', CAST(4.00 AS Decimal(9, 2)), 10, N'Seasoning', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (6, N'Oil', N'Per Litre', CAST(2.21 AS Decimal(9, 2)), 10, N'Miscellaneous', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (7, N'Onions', N'Per KG', CAST(1.00 AS Decimal(9, 2)), 5, N'Vegetables', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (8, N'Garlic', N'Per KG', CAST(1.00 AS Decimal(9, 2)), 7, N'Vegetables', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (9, N'Chicken Stock', N'Per 100G', CAST(0.41 AS Decimal(9, 2)), 10, N'Miscellaneous', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (10, N'Tomatoes', N'Per KG', CAST(2.99 AS Decimal(9, 2)), 5, N'Vegetables', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (11, N'Apples', N'Per Apple', CAST(0.49 AS Decimal(9, 2)), 74, N'Fruits', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (12, N'Oranges', N'Per Orange', CAST(0.39 AS Decimal(9, 2)), 6, N'Fruits', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (13, N'Salmon Fillet', N'Per Fillet', CAST(4.50 AS Decimal(9, 2)), 8, N'Fish', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (14, N'Cod Fillet', N'Per Fillet', CAST(3.50 AS Decimal(9, 2)), 12, N'Fish', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (15, N'Minced Beef', N'Per KG', CAST(7.50 AS Decimal(9, 2)), 6, N'Meat', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (16, N'Rashers', N'Per Rasher', CAST(0.75 AS Decimal(9, 2)), 12, N'Meat', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (17, N'Sausages', N'Per Sausage', CAST(0.60 AS Decimal(9, 2)), 12, N'Meat', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (18, N'Milk', N'Per Litre', CAST(1.00 AS Decimal(9, 2)), 6, N'Dairy', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (19, N'Cheese', N'200g Block', CAST(2.00 AS Decimal(9, 2)), 6, N'Dairy', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (20, N'Butter', N'454g Block', CAST(3.00 AS Decimal(9, 2)), 3, N'Dairy', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (21, N'Eggs', N'Pack of 6', CAST(2.50 AS Decimal(9, 2)), 4, N'Dry Grocery', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (22, N'Flour', N'Per KG', CAST(2.00 AS Decimal(9, 2)), 2, N'Dry Grocery', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (23, N'Washing Up Liquid', N'433ml Bottle', CAST(3.50 AS Decimal(9, 2)), 3, N'Cleaners and Detergents', N'Cleaning')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (24, N'Laundry Detergent', N'1.5L Bottle', CAST(5.50 AS Decimal(9, 2)), 2, N'Cleaners and Detergents', N'Cleaning')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (25, N'Fabric Softener', N'2L Bottle', CAST(7.50 AS Decimal(9, 2)), 1, N'Cleaners and Detergents', N'Cleaning')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (26, N'Bleach', N'1L Bottle', CAST(1.50 AS Decimal(9, 2)), 3, N'Cleaners and Detergents', N'Cleaning')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (27, N'Duvet Set', N'1 Duvet Cover and 2 Pillow Cases', CAST(12.50 AS Decimal(9, 2)), 4, N'Bed Linens', N'Cleaning')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (28, N'Bed Sheet', N'1 Bed Sheet', CAST(6.50 AS Decimal(9, 2)), 6, N'Bed Linens', N'Cleaning')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (29, N'Light Bulb', N'1 LED Light Bulb', CAST(4.50 AS Decimal(9, 2)), 3, N'Miscellaneous', N'Cleaning')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (30, N'Cutlery Set', N'Set of Knives, Forks and Spoons', CAST(8.50 AS Decimal(9, 2)), 2, N'Cutlery and Crockery', N'Bar')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (31, N'Plates', N'Set of 6', CAST(9.50 AS Decimal(9, 2)), 4, N'Cutlery and Crockery', N'Bar')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (32, N'Bowls', N'Set of 6', CAST(9.50 AS Decimal(9, 2)), 4, N'Cutlery and Crockery', N'Bar')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (33, N'Salt and Pepper Shakers', N'Set of 2', CAST(2.50 AS Decimal(9, 2)), 2, N'Miscellaneous', N'Bar')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (34, N'Guiness', N'1 Keg', CAST(200.00 AS Decimal(9, 2)), 6, N'Alcohol', N'Bar')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (35, N'Heineken', N'1 Keg', CAST(175.00 AS Decimal(9, 2)), 8, N'Alcohol', N'Bar')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (36, N'Vodka', N'Per Case', CAST(300.00 AS Decimal(9, 2)), 2, N'Alcohol', N'Bar')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (37, N'Gin', N'Per Case', CAST(350.00 AS Decimal(9, 2)), 2, N'Alcohol', N'Bar')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (38, N'Tonic Water', N'330ml Bottle', CAST(1.50 AS Decimal(9, 2)), 30, N'Mixers', N'Bar')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (39, N'Coco Cola', N'330ml Bottle', CAST(0.75 AS Decimal(9, 2)), 30, N'Mixers', N'Bar')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (40, N'Lettuce', N'Per KG', CAST(1.00 AS Decimal(9, 2)), 10, N'Vegetables', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (41, N'Cucumber', N'Per KG', CAST(1.10 AS Decimal(9, 2)), 10, N'Vegetables', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (42, N'Avocado', N'Per KG', CAST(1.10 AS Decimal(9, 2)), 10, N'Vegetables', N'Kitchen')
+GO
+INSERT [dbo].[StockItems] ([ItemID], [ItemName], [Description], [Price], [Quantity], [Category], [Department]) VALUES (43, N'Vinegar', N'Per Litre', CAST(4.00 AS Decimal(9, 2)), 4, N'Miscellaneous', N'Kitchen')
+GO
+SET IDENTITY_INSERT [dbo].[StockItems] OFF
+GO
+INSERT [dbo].[Meals_has_Ingredients] ([DishID], [ItemID]) VALUES (1, 2)
+GO
+INSERT [dbo].[Meals_has_Ingredients] ([DishID], [ItemID]) VALUES (1, 3)
+GO
+SET IDENTITY_INSERT [dbo].[Users] ON 
+GO
+INSERT [dbo].[Users] ([Fname], [Sname], [Username], [Password], [Type], [UserID]) VALUES (N'Mario', N'Barsoum', N'Mbarsoum', N'm', N'Manager', 1)
+GO
+INSERT [dbo].[Users] ([Fname], [Sname], [Username], [Password], [Type], [UserID]) VALUES (N'Rebecca', N'Ryan', N'Rryan', N'r', N'Manager', 3)
+GO
+INSERT [dbo].[Users] ([Fname], [Sname], [Username], [Password], [Type], [UserID]) VALUES (N'Jack', N'Kelly', N'Jkelly', N'j', N'Stock Manager', 6)
+GO
+INSERT [dbo].[Users] ([Fname], [Sname], [Username], [Password], [Type], [UserID]) VALUES (N'Joe', N'Biden', N'Jbiden', N'Jbiden12345', N'Chef', 16)
+GO
+INSERT [dbo].[Users] ([Fname], [Sname], [Username], [Password], [Type], [UserID]) VALUES (N'Donald', N'Trump', N'Dtrump', N'Dtrump123456', N'Supervisor', 20)
+GO
+INSERT [dbo].[Users] ([Fname], [Sname], [Username], [Password], [Type], [UserID]) VALUES (N'Darth', N'Vader', N'DVader', N'DVader123', N'BarStaff', 29)
+GO
+INSERT [dbo].[Users] ([Fname], [Sname], [Username], [Password], [Type], [UserID]) VALUES (N'BarRest', N'Supervisor', N'BarSuper', N'b', N'Supervisor', 30)
+GO
+INSERT [dbo].[Users] ([Fname], [Sname], [Username], [Password], [Type], [UserID]) VALUES (N'Saoirse', N'Deely', N'sdeely', N'Pass1234', N'Manager', 32)
+GO
+INSERT [dbo].[Users] ([Fname], [Sname], [Username], [Password], [Type], [UserID]) VALUES (N'Lilly', N'Ryan', N'lilryan', N'123', N'Cleaner', 33)
+GO
+INSERT [dbo].[Users] ([Fname], [Sname], [Username], [Password], [Type], [UserID]) VALUES (N'John', N'Kelly', N'Johnk', N'Johnk123', N'Chef', 36)
+GO
+INSERT [dbo].[Users] ([Fname], [Sname], [Username], [Password], [Type], [UserID]) VALUES (N'Fred', N'Gordon', N'FGordon', N'FGordon123', N'Stock Manager', 37)
+GO
+INSERT [dbo].[Users] ([Fname], [Sname], [Username], [Password], [Type], [UserID]) VALUES (N'Ross', N'Gavin', N'RossG', N'RossG123', N'BarStaff', 38)
+GO
+INSERT [dbo].[Users] ([Fname], [Sname], [Username], [Password], [Type], [UserID]) VALUES (N'Bob', N'Dylan', N'BobD', N'BobD1234', N'Manager', 39)
+GO
+INSERT [dbo].[Users] ([Fname], [Sname], [Username], [Password], [Type], [UserID]) VALUES (N'Brendan', N'Watson', N'Bwatson', N'Bwatson1', N'Manager', 40)
+GO
+SET IDENTITY_INSERT [dbo].[Users] OFF
+GO
+SET IDENTITY_INSERT [dbo].[BistroOrders] ON 
+GO
+INSERT [dbo].[BistroOrders] ([OrderID], [OrderDate], [OrderTotal], [OrderMadeBy], [OrderNote], [OrderCompleted]) VALUES (72, CAST(N'2021-02-01T20:04:48.000' AS DateTime), CAST(19.00 AS Decimal(18, 2)), 29, N'', 1)
+GO
+INSERT [dbo].[BistroOrders] ([OrderID], [OrderDate], [OrderTotal], [OrderMadeBy], [OrderNote], [OrderCompleted]) VALUES (73, CAST(N'2021-02-01T20:06:48.043' AS DateTime), CAST(17.00 AS Decimal(18, 2)), 29, NULL, 0)
+GO
+INSERT [dbo].[BistroOrders] ([OrderID], [OrderDate], [OrderTotal], [OrderMadeBy], [OrderNote], [OrderCompleted]) VALUES (74, CAST(N'2021-02-02T10:40:04.727' AS DateTime), CAST(23.00 AS Decimal(18, 2)), 38, N'', 0)
+GO
+INSERT [dbo].[BistroOrders] ([OrderID], [OrderDate], [OrderTotal], [OrderMadeBy], [OrderNote], [OrderCompleted]) VALUES (75, CAST(N'2021-02-01T20:15:48.000' AS DateTime), CAST(12.00 AS Decimal(18, 2)), 29, NULL, 0)
+GO
+INSERT [dbo].[BistroOrders] ([OrderID], [OrderDate], [OrderTotal], [OrderMadeBy], [OrderNote], [OrderCompleted]) VALUES (76, CAST(N'2021-02-01T20:20:48.000' AS DateTime), CAST(8.00 AS Decimal(18, 2)), 29, NULL, 0)
+GO
+INSERT [dbo].[BistroOrders] ([OrderID], [OrderDate], [OrderTotal], [OrderMadeBy], [OrderNote], [OrderCompleted]) VALUES (77, CAST(N'2021-02-02T10:46:04.463' AS DateTime), CAST(19.00 AS Decimal(18, 2)), 38, N'', 0)
+GO
+SET IDENTITY_INSERT [dbo].[BistroOrders] OFF
+GO
+SET IDENTITY_INSERT [dbo].[StockOrders] ON 
+GO
+INSERT [dbo].[StockOrders] ([OrderID], [Date], [Total], [Department], [Completed], [CreatedBy]) VALUES (27, CAST(N'2021-01-02' AS Date), CAST(22.22 AS Decimal(18, 2)), N'Kitchen', 0, 16)
+GO
+INSERT [dbo].[StockOrders] ([OrderID], [Date], [Total], [Department], [Completed], [CreatedBy]) VALUES (28, CAST(N'2021-01-02' AS Date), CAST(22.22 AS Decimal(18, 2)), N'Kitchen', 0, 16)
+GO
+INSERT [dbo].[StockOrders] ([OrderID], [Date], [Total], [Department], [Completed], [CreatedBy]) VALUES (29, CAST(N'2021-01-08' AS Date), CAST(4.50 AS Decimal(18, 2)), N'Kitchen', 0, 20)
+GO
+INSERT [dbo].[StockOrders] ([OrderID], [Date], [Total], [Department], [Completed], [CreatedBy]) VALUES (30, CAST(N'2021-01-08' AS Date), CAST(4.80 AS Decimal(18, 2)), N'Kitchen', 0, 6)
+GO
+INSERT [dbo].[StockOrders] ([OrderID], [Date], [Total], [Department], [Completed], [CreatedBy]) VALUES (31, CAST(N'2021-01-08' AS Date), CAST(3.50 AS Decimal(18, 2)), N'Cleaning', 0, 6)
+GO
+INSERT [dbo].[StockOrders] ([OrderID], [Date], [Total], [Department], [Completed], [CreatedBy]) VALUES (32, CAST(N'2021-02-01' AS Date), CAST(7.00 AS Decimal(18, 2)), N'Cleaning', 0, 37)
+GO
+INSERT [dbo].[StockOrders] ([OrderID], [Date], [Total], [Department], [Completed], [CreatedBy]) VALUES (33, CAST(N'2021-02-02' AS Date), CAST(10.50 AS Decimal(18, 2)), N'Cleaning', 0, 37)
+GO
+INSERT [dbo].[StockOrders] ([OrderID], [Date], [Total], [Department], [Completed], [CreatedBy]) VALUES (34, CAST(N'2021-02-02' AS Date), CAST(18.20 AS Decimal(18, 2)), N'Kitchen', 0, 36)
+GO
+SET IDENTITY_INSERT [dbo].[StockOrders] OFF
+GO
+INSERT [dbo].[Rooms] ([RoomNumber], [BasePrice], [Available], [RoomType], [Smoking], [Cleaned]) VALUES (1, CAST(60.00 AS Decimal(9, 2)), 1, N'Single', 1, 0)
+GO
+INSERT [dbo].[Rooms] ([RoomNumber], [BasePrice], [Available], [RoomType], [Smoking], [Cleaned]) VALUES (2, CAST(55.00 AS Decimal(9, 2)), 1, N'Double', 0, 0)
+GO
+INSERT [dbo].[Rooms] ([RoomNumber], [BasePrice], [Available], [RoomType], [Smoking], [Cleaned]) VALUES (3, CAST(65.00 AS Decimal(9, 2)), 1, N'Twin', 1, 0)
+GO
+INSERT [dbo].[Rooms] ([RoomNumber], [BasePrice], [Available], [RoomType], [Smoking], [Cleaned]) VALUES (4, CAST(50.00 AS Decimal(9, 2)), 1, N'Single', 1, 0)
+GO
+INSERT [dbo].[Rooms] ([RoomNumber], [BasePrice], [Available], [RoomType], [Smoking], [Cleaned]) VALUES (5, CAST(70.00 AS Decimal(9, 2)), 1, N'Double', 1, 0)
+GO
+INSERT [dbo].[Rooms] ([RoomNumber], [BasePrice], [Available], [RoomType], [Smoking], [Cleaned]) VALUES (6, CAST(80.00 AS Decimal(9, 2)), 1, N'Single', 0, 0)
+GO
+INSERT [dbo].[Rooms] ([RoomNumber], [BasePrice], [Available], [RoomType], [Smoking], [Cleaned]) VALUES (7, CAST(65.00 AS Decimal(9, 2)), 1, N'Double', 0, 0)
+GO
+INSERT [dbo].[Rooms] ([RoomNumber], [BasePrice], [Available], [RoomType], [Smoking], [Cleaned]) VALUES (8, CAST(80.00 AS Decimal(9, 2)), 1, N'Twin', 0, 0)
+GO
+INSERT [dbo].[Rooms] ([RoomNumber], [BasePrice], [Available], [RoomType], [Smoking], [Cleaned]) VALUES (9, CAST(100.00 AS Decimal(9, 2)), 1, N'Double', 0, 0)
+GO
+INSERT [dbo].[Rooms] ([RoomNumber], [BasePrice], [Available], [RoomType], [Smoking], [Cleaned]) VALUES (10, CAST(75.00 AS Decimal(9, 2)), 1, N'Twin', 1, 0)
+GO
+SET IDENTITY_INSERT [dbo].[guests] ON 
+GO
+INSERT [dbo].[guests] ([GuestID], [FirstName], [Surname], [ContactNumber], [Address], [email], [MarketingInfo]) VALUES (1, N'Peter', N'Ryan', N'086157489', N'65 hill View limerick', N'PRyan@gmail.com', 1)
+GO
+INSERT [dbo].[guests] ([GuestID], [FirstName], [Surname], [ContactNumber], [Address], [email], [MarketingInfo]) VALUES (2, N'Barry', N'Kane', N'0864574552', N'12 Cresent Park', N'Hkane@yahoo.com', 0)
+GO
+INSERT [dbo].[guests] ([GuestID], [FirstName], [Surname], [ContactNumber], [Address], [email], [MarketingInfo]) VALUES (3, N'm', N'm', N'm', N'm', N'm', 0)
+GO
+INSERT [dbo].[guests] ([GuestID], [FirstName], [Surname], [ContactNumber], [Address], [email], [MarketingInfo]) VALUES (4, N'm', N'm', N'm', N'm', N'mmm', 1)
+GO
+INSERT [dbo].[guests] ([GuestID], [FirstName], [Surname], [ContactNumber], [Address], [email], [MarketingInfo]) VALUES (5, N'Maza', N'barsoum', N'0861574787', N'65 hiill', N'Ma@gmail.com', 0)
+GO
+INSERT [dbo].[guests] ([GuestID], [FirstName], [Surname], [ContactNumber], [Address], [email], [MarketingInfo]) VALUES (6, N'harry', N'potter', N'08', N'84', N'gdsgre', 1)
+GO
+INSERT [dbo].[guests] ([GuestID], [FirstName], [Surname], [ContactNumber], [Address], [email], [MarketingInfo]) VALUES (7, N'm', N'm', N'mfg', N'ydth', N'rtshrtsh', 1)
+GO
+INSERT [dbo].[guests] ([GuestID], [FirstName], [Surname], [ContactNumber], [Address], [email], [MarketingInfo]) VALUES (8, N'mgf', N'dg', N'srth', N'rsthth', N'srthtr', 1)
+GO
+INSERT [dbo].[guests] ([GuestID], [FirstName], [Surname], [ContactNumber], [Address], [email], [MarketingInfo]) VALUES (9, N'Hegazy', N'Mates', N'086478484', N'54 cresent', N'M@gmail.com', 0)
+GO
+INSERT [dbo].[guests] ([GuestID], [FirstName], [Surname], [ContactNumber], [Address], [email], [MarketingInfo]) VALUES (10, N'Peter', N'Ryan', N'0861478987', N'45 hillbar', N'Pryan@gmail.con', 0)
+GO
+INSERT [dbo].[guests] ([GuestID], [FirstName], [Surname], [ContactNumber], [Address], [email], [MarketingInfo]) VALUES (11, N'Mark', N'Brown', N'0861571484', N'21 High view', N'MarkBrown@gmail.com', 1)
+GO
+INSERT [dbo].[guests] ([GuestID], [FirstName], [Surname], [ContactNumber], [Address], [email], [MarketingInfo]) VALUES (12, N'Test', N'User', N'000', N'Street', N'a@a', 1)
+GO
+INSERT [dbo].[guests] ([GuestID], [FirstName], [Surname], [ContactNumber], [Address], [email], [MarketingInfo]) VALUES (13, N'Test', N'User', N'000', N'Street', N'a@a', 1)
+GO
+INSERT [dbo].[guests] ([GuestID], [FirstName], [Surname], [ContactNumber], [Address], [email], [MarketingInfo]) VALUES (14, N'Mario', N'Barsoum', N'0861580874', N'78 BeechPark Cahir Tipperary', N'mariobarsoum59@gmail.com', 0)
+GO
+INSERT [dbo].[guests] ([GuestID], [FirstName], [Surname], [ContactNumber], [Address], [email], [MarketingInfo]) VALUES (15, N'Test', N'Res', N'000', N'Limerick', N'a@a.com', 0)
+GO
+SET IDENTITY_INSERT [dbo].[guests] OFF
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (8, CAST(N'2020-12-15' AS Date), CAST(N'2020-12-19' AS Date), 1, 0, CAST(320.00 AS Decimal(9, 2)), 0, 0, 5, 6, 0)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (9, CAST(N'2020-12-15' AS Date), CAST(N'2020-12-19' AS Date), 1, 0, CAST(200.00 AS Decimal(9, 2)), 0, 1, 11, 1, 0)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (10, CAST(N'2020-11-28' AS Date), CAST(N'2020-12-03' AS Date), 1, 0, CAST(250.00 AS Decimal(9, 2)), 1, 0, 2, 4, 0)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (11, CAST(N'2021-01-14' AS Date), CAST(N'2021-01-22' AS Date), 1, 0, CAST(440.00 AS Decimal(9, 2)), 1, 0, 9, 2, 0)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (12, CAST(N'2020-12-30' AS Date), CAST(N'2021-01-03' AS Date), 2, 0, CAST(200.00 AS Decimal(9, 2)), 1, 0, 9, 7, 1)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (14, CAST(N'2020-12-11' AS Date), CAST(N'2020-12-30' AS Date), 2, 0, CAST(1140.00 AS Decimal(9, 2)), 1, 0, 1, 6, 0)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (15, CAST(N'2020-12-07' AS Date), CAST(N'2020-12-10' AS Date), 1, 0, CAST(180.00 AS Decimal(9, 2)), 1, 0, 2, 6, 1)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (16, CAST(N'2020-12-07' AS Date), CAST(N'2020-12-08' AS Date), 2, 0, CAST(100.00 AS Decimal(9, 2)), 1, 0, 1, 9, 1)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (18, CAST(N'2021-01-25' AS Date), CAST(N'2021-01-28' AS Date), 1, 0, CAST(240.00 AS Decimal(9, 2)), 1, 0, 10, 6, 0)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (21, CAST(N'2021-01-25' AS Date), CAST(N'2021-01-29' AS Date), 2, 0, CAST(260.00 AS Decimal(9, 2)), 1, 0, 1, 7, 0)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (22, CAST(N'2021-01-22' AS Date), CAST(N'2021-01-28' AS Date), 2, 0, CAST(600.00 AS Decimal(9, 2)), 1, 0, 11, 9, 0)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (23, CAST(N'2021-02-01' AS Date), CAST(N'2021-02-04' AS Date), 2, 0, CAST(195.00 AS Decimal(9, 2)), 1, 0, 14, 7, 0)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (24, CAST(N'2021-02-08' AS Date), CAST(N'2021-02-12' AS Date), 1, 0, CAST(320.00 AS Decimal(9, 2)), 1, 0, 14, 6, 0)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (26, CAST(N'2021-02-03' AS Date), CAST(N'2021-02-06' AS Date), 2, 0, CAST(240.00 AS Decimal(9, 2)), 1, 0, 14, 8, 0)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (27, CAST(N'2021-02-22' AS Date), CAST(N'2021-02-25' AS Date), 1, 0, CAST(240.00 AS Decimal(9, 2)), 1, 0, 14, 6, 0)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (31, CAST(N'2021-02-03' AS Date), CAST(N'2021-02-07' AS Date), 1, 0, CAST(200.00 AS Decimal(9, 2)), 1, 0, 14, 4, 0)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (32, CAST(N'2021-03-04' AS Date), CAST(N'2021-03-19' AS Date), 1, 0, CAST(1125.00 AS Decimal(9, 2)), 1, 0, 14, 10, 0)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (34, CAST(N'2021-02-18' AS Date), CAST(N'2021-02-20' AS Date), 1, 0, CAST(160.00 AS Decimal(9, 2)), 1, 1, 6, 6, 0)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (35, CAST(N'2021-03-02' AS Date), CAST(N'2021-03-03' AS Date), 1, 0, CAST(80.00 AS Decimal(9, 2)), 1, 1, 6, 6, 0)
+GO
+INSERT [dbo].[reservations] ([ReservationID], [CheckInDate], [CheckOutDate], [Adults], [Children], [ReservationPrice], [PayedDeposit], [PayedInFull], [GuestID], [RoomNumber], [CheckIn]) VALUES (36, CAST(N'2021-02-02' AS Date), CAST(N'2021-02-06' AS Date), 1, 0, CAST(320.00 AS Decimal(9, 2)), 1, 0, 14, 6, 1)
+GO
+SET IDENTITY_INSERT [dbo].[BarItems] ON 
+GO
+INSERT [dbo].[BarItems] ([BarItemID], [Food], [FoodPrice], [Drink], [DrinkPrice]) VALUES (1, N'Chicken Curry and Chips', N'15.00', N'Pint of Heinken', N'5.50')
+GO
+INSERT [dbo].[BarItems] ([BarItemID], [Food], [FoodPrice], [Drink], [DrinkPrice]) VALUES (2, N'Fish and Chips', N'13.00', N'Coca Cola', N'3.00')
+GO
+SET IDENTITY_INSERT [dbo].[BarItems] OFF
+GO
+INSERT [dbo].[BarOrders] ([OrderID], [Food], [FoodPrice], [Drink], [DrinkPrice], [OrderTime], [Completed], [Note]) VALUES (1, N'Chicken Curry and Chips', N'15', N'Pint of Heinken', N'5.5', CAST(N'2020-12-07T10:34:09.000' AS DateTime), 0, N'no ')
+GO
+INSERT [dbo].[BarOrders] ([OrderID], [Food], [FoodPrice], [Drink], [DrinkPrice], [OrderTime], [Completed], [Note]) VALUES (2, N'Fish and Chips', N'13', N'Coca Cola', N'3', CAST(N'2020-12-09T11:34:09.000' AS DateTime), 0, N'Hello 12')
+GO
+INSERT [dbo].[BarOrders] ([OrderID], [Food], [FoodPrice], [Drink], [DrinkPrice], [OrderTime], [Completed], [Note]) VALUES (3, N'Fish and Chips', N'13', N'Pint of Heineken', N'5.5', CAST(N'2020-12-29T19:23:00.000' AS DateTime), 1, NULL)
+GO
+INSERT [dbo].[BarOrders] ([OrderID], [Food], [FoodPrice], [Drink], [DrinkPrice], [OrderTime], [Completed], [Note]) VALUES (4, N'Chicken Curry and Chips', N'15', N'Coca Cola', N'3', CAST(N'2020-11-11T20:20:00.000' AS DateTime), 1, NULL)
+GO
+INSERT [dbo].[BarOrders] ([OrderID], [Food], [FoodPrice], [Drink], [DrinkPrice], [OrderTime], [Completed], [Note]) VALUES (5, N'Fish and Chips', N'13', N'Pint og Heineken', N'5.5', CAST(N'2020-10-10T20:20:00.000' AS DateTime), 1, NULL)
+GO
+SET IDENTITY_INSERT [dbo].[Drinks] ON 
+GO
+INSERT [dbo].[Drinks] ([DrinkID], [DrinkName], [DrinkPrice]) VALUES (1, N'Pint of Heinekin', CAST(4.00 AS Decimal(18, 2)))
+GO
+INSERT [dbo].[Drinks] ([DrinkID], [DrinkName], [DrinkPrice]) VALUES (2, N'Pint of Guinness', CAST(4.00 AS Decimal(18, 2)))
+GO
+INSERT [dbo].[Drinks] ([DrinkID], [DrinkName], [DrinkPrice]) VALUES (3, N'Pint of Coors Light', CAST(4.00 AS Decimal(18, 2)))
+GO
+INSERT [dbo].[Drinks] ([DrinkID], [DrinkName], [DrinkPrice]) VALUES (4, N'Long Island Ice Tea', CAST(8.00 AS Decimal(18, 2)))
+GO
+INSERT [dbo].[Drinks] ([DrinkID], [DrinkName], [DrinkPrice]) VALUES (5, N'Strawberry Daquiri', CAST(9.00 AS Decimal(18, 2)))
+GO
+INSERT [dbo].[Drinks] ([DrinkID], [DrinkName], [DrinkPrice]) VALUES (6, N'Whiskey Sour', CAST(8.00 AS Decimal(18, 2)))
+GO
+INSERT [dbo].[Drinks] ([DrinkID], [DrinkName], [DrinkPrice]) VALUES (7, N'Shot of Vodka', CAST(4.00 AS Decimal(18, 2)))
+GO
+INSERT [dbo].[Drinks] ([DrinkID], [DrinkName], [DrinkPrice]) VALUES (8, N'Vodka and Coke', CAST(7.00 AS Decimal(18, 2)))
+GO
+INSERT [dbo].[Drinks] ([DrinkID], [DrinkName], [DrinkPrice]) VALUES (9, N'Rum and Coke', CAST(7.00 AS Decimal(18, 2)))
+GO
+INSERT [dbo].[Drinks] ([DrinkID], [DrinkName], [DrinkPrice]) VALUES (10, N'Gin and Tonic', CAST(7.50 AS Decimal(18, 2)))
+GO
+INSERT [dbo].[Drinks] ([DrinkID], [DrinkName], [DrinkPrice]) VALUES (11, N'Pint of Budweiser', CAST(4.50 AS Decimal(18, 2)))
+GO
+INSERT [dbo].[Drinks] ([DrinkID], [DrinkName], [DrinkPrice]) VALUES (14, N'pint', CAST(5.00 AS Decimal(18, 2)))
+GO
+SET IDENTITY_INSERT [dbo].[Drinks] OFF
+GO
+SET IDENTITY_INSERT [dbo].[MonthlyReport] ON 
+GO
+INSERT [dbo].[MonthlyReport] ([ReportID], [Date], [Reservations], [ReservationIncome], [Sales], [SalesIncome], [StockOrders], [StockExpenses]) VALUES (1, CAST(N'2020-12-09' AS Date), 16, CAST(2000.00 AS Decimal(18, 2)), 250, CAST(3000.00 AS Decimal(18, 2)), 1, CAST(1000.00 AS Decimal(18, 2)))
+GO
+INSERT [dbo].[MonthlyReport] ([ReportID], [Date], [Reservations], [ReservationIncome], [Sales], [SalesIncome], [StockOrders], [StockExpenses]) VALUES (2, CAST(N'2020-12-10' AS Date), 7, CAST(1204.00 AS Decimal(18, 2)), 2, CAST(36.50 AS Decimal(18, 2)), 6, CAST(700.00 AS Decimal(18, 2)))
+GO
+INSERT [dbo].[MonthlyReport] ([ReportID], [Date], [Reservations], [ReservationIncome], [Sales], [SalesIncome], [StockOrders], [StockExpenses]) VALUES (3, CAST(N'2020-12-09' AS Date), 5, CAST(1114.00 AS Decimal(18, 2)), 1, CAST(20.50 AS Decimal(18, 2)), 1, CAST(750.00 AS Decimal(18, 2)))
+GO
+INSERT [dbo].[MonthlyReport] ([ReportID], [Date], [Reservations], [ReservationIncome], [Sales], [SalesIncome], [StockOrders], [StockExpenses]) VALUES (4, CAST(N'2020-11-10' AS Date), 8, CAST(3000.00 AS Decimal(18, 2)), 400, CAST(5460.00 AS Decimal(18, 2)), 5, CAST(2000.00 AS Decimal(18, 2)))
+GO
+INSERT [dbo].[MonthlyReport] ([ReportID], [Date], [Reservations], [ReservationIncome], [Sales], [SalesIncome], [StockOrders], [StockExpenses]) VALUES (5, CAST(N'2021-01-20' AS Date), 2, CAST(640.00 AS Decimal(18, 2)), 1, CAST(18.50 AS Decimal(18, 2)), 5, CAST(57.24 AS Decimal(18, 2)))
+GO
+INSERT [dbo].[MonthlyReport] ([ReportID], [Date], [Reservations], [ReservationIncome], [Sales], [SalesIncome], [StockOrders], [StockExpenses]) VALUES (6, CAST(N'2021-02-02' AS Date), 6, CAST(2055.00 AS Decimal(18, 2)), 0, CAST(0.00 AS Decimal(18, 2)), 4, CAST(19.80 AS Decimal(18, 2)))
+GO
+SET IDENTITY_INSERT [dbo].[MonthlyReport] OFF
+GO
+INSERT [dbo].[Order_has_Drinks] ([OrderID], [DrinkID], [Quantity], [Status]) VALUES (72, 1, 1, N'Not Ready')
+GO
+INSERT [dbo].[Order_has_Drinks] ([OrderID], [DrinkID], [Quantity], [Status]) VALUES (73, 1, 1, N'Not Ready')
+GO
+INSERT [dbo].[Order_has_Drinks] ([OrderID], [DrinkID], [Quantity], [Status]) VALUES (73, 2, 1, N'Not Ready')
+GO
+INSERT [dbo].[Order_has_Drinks] ([OrderID], [DrinkID], [Quantity], [Status]) VALUES (74, 1, 1, N'Not Ready')
+GO
+INSERT [dbo].[Order_has_Drinks] ([OrderID], [DrinkID], [Quantity], [Status]) VALUES (74, 4, 1, N'Not Ready')
+GO
+INSERT [dbo].[Order_has_Drinks] ([OrderID], [DrinkID], [Quantity], [Status]) VALUES (75, 1, 1, N'Not Ready')
+GO
+INSERT [dbo].[Order_has_Drinks] ([OrderID], [DrinkID], [Quantity], [Status]) VALUES (76, 1, 1, N'Not Ready')
+GO
+INSERT [dbo].[Order_has_Drinks] ([OrderID], [DrinkID], [Quantity], [Status]) VALUES (76, 6, 1, N'Not Ready')
+GO
+INSERT [dbo].[Order_has_Drinks] ([OrderID], [DrinkID], [Quantity], [Status]) VALUES (77, 1, 1, N'Not Ready')
+GO
+INSERT [dbo].[Order_has_Meals] ([OrderID], [DishID], [Quantity], [Status]) VALUES (72, 1, 1, N'Not Ready')
+GO
+INSERT [dbo].[Order_has_Meals] ([OrderID], [DishID], [Quantity], [Status]) VALUES (73, 1, 1, N'Ready')
+GO
+INSERT [dbo].[Order_has_Meals] ([OrderID], [DishID], [Quantity], [Status]) VALUES (73, 2, 1, N'Ready')
+GO
+INSERT [dbo].[Order_has_Meals] ([OrderID], [DishID], [Quantity], [Status]) VALUES (74, 1, 1, N'Not Ready')
+GO
+INSERT [dbo].[Order_has_Meals] ([OrderID], [DishID], [Quantity], [Status]) VALUES (75, 1, 1, N'Not Ready')
+GO
+INSERT [dbo].[Order_has_Meals] ([OrderID], [DishID], [Quantity], [Status]) VALUES (75, 6, 1, N'Not Ready')
+GO
+INSERT [dbo].[Order_has_Meals] ([OrderID], [DishID], [Quantity], [Status]) VALUES (76, 1, 1, N'Not Ready')
+GO
+INSERT [dbo].[Order_has_Meals] ([OrderID], [DishID], [Quantity], [Status]) VALUES (77, 1, 1, N'Not Ready')
+GO
+INSERT [dbo].[OrderItems] ([OrderID], [ItemID], [Quantity]) VALUES (27, 1, 2)
+GO
+INSERT [dbo].[OrderItems] ([OrderID], [ItemID], [Quantity]) VALUES (27, 2, 2)
+GO
+INSERT [dbo].[OrderItems] ([OrderID], [ItemID], [Quantity]) VALUES (27, 3, 2)
+GO
+INSERT [dbo].[OrderItems] ([OrderID], [ItemID], [Quantity]) VALUES (28, 1, 2)
+GO
+INSERT [dbo].[OrderItems] ([OrderID], [ItemID], [Quantity]) VALUES (28, 2, 2)
+GO
+INSERT [dbo].[OrderItems] ([OrderID], [ItemID], [Quantity]) VALUES (28, 3, 2)
+GO
+INSERT [dbo].[OrderItems] ([OrderID], [ItemID], [Quantity]) VALUES (29, 13, 1)
+GO
+INSERT [dbo].[OrderItems] ([OrderID], [ItemID], [Quantity]) VALUES (30, 2, 1)
+GO
+INSERT [dbo].[OrderItems] ([OrderID], [ItemID], [Quantity]) VALUES (31, 23, 1)
+GO
+INSERT [dbo].[OrderItems] ([OrderID], [ItemID], [Quantity]) VALUES (32, 23, 2)
+GO
+INSERT [dbo].[OrderItems] ([OrderID], [ItemID], [Quantity]) VALUES (33, 23, 3)
+GO
+INSERT [dbo].[OrderItems] ([OrderID], [ItemID], [Quantity]) VALUES (34, 1, 6)
+GO
+INSERT [dbo].[OrderItems] ([OrderID], [ItemID], [Quantity]) VALUES (34, 7, 2)
+GO
+SET IDENTITY_INSERT [dbo].[Payments] ON 
+GO
+INSERT [dbo].[Payments] ([PaymentID], [CashPayment], [CardPayment], [NameOnCard], [Amount]) VALUES (1, 0, 1, N'jack', CAST(5 AS Decimal(18, 0)))
+GO
+INSERT [dbo].[Payments] ([PaymentID], [CashPayment], [CardPayment], [NameOnCard], [Amount]) VALUES (2, 1, 0, N'Kelly', CAST(50 AS Decimal(18, 0)))
+GO
+INSERT [dbo].[Payments] ([PaymentID], [CashPayment], [CardPayment], [NameOnCard], [Amount]) VALUES (3, 1, 0, N'bob', CAST(60 AS Decimal(18, 0)))
+GO
+INSERT [dbo].[Payments] ([PaymentID], [CashPayment], [CardPayment], [NameOnCard], [Amount]) VALUES (4, 0, 1, N'john', CAST(50 AS Decimal(18, 0)))
+GO
+INSERT [dbo].[Payments] ([PaymentID], [CashPayment], [CardPayment], [NameOnCard], [Amount]) VALUES (15, 0, 1, N'jack', CAST(5 AS Decimal(18, 0)))
+GO
+INSERT [dbo].[Payments] ([PaymentID], [CashPayment], [CardPayment], [NameOnCard], [Amount]) VALUES (16, 1, 0, N'jack', CAST(19 AS Decimal(18, 0)))
+GO
+INSERT [dbo].[Payments] ([PaymentID], [CashPayment], [CardPayment], [NameOnCard], [Amount]) VALUES (17, 0, 1, N'jack', CAST(50 AS Decimal(18, 0)))
+GO
+SET IDENTITY_INSERT [dbo].[Payments] OFF
+GO
+SET IDENTITY_INSERT [dbo].[RoomCleaningRecords] ON 
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (1, 2, CAST(N'2020-12-03T00:00:00.000' AS DateTime), N'New Light in Toilet Needed')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (2, 4, CAST(N'2020-12-03T00:00:00.000' AS DateTime), N'Bathroom sink needs fixing')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (3, 3, CAST(N'2020-12-03T00:00:00.000' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (4, 2, CAST(N'2020-12-03T15:20:09.327' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (5, 3, CAST(N'2020-12-03T15:20:14.093' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (6, 2, CAST(N'2020-12-03T15:20:17.897' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (7, 4, CAST(N'2020-12-03T15:20:43.457' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (8, 5, CAST(N'2020-12-03T15:20:45.270' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (9, 1, CAST(N'2020-12-03T15:20:47.683' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (10, 1, CAST(N'2020-12-03T15:24:01.440' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (11, 2, CAST(N'2020-12-03T15:24:04.283' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (12, 3, CAST(N'2020-12-03T15:24:06.167' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (13, 4, CAST(N'2020-12-03T15:24:08.283' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (14, 5, CAST(N'2020-12-03T15:24:10.220' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (15, 6, CAST(N'2020-12-03T15:24:11.890' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (16, 7, CAST(N'2020-12-03T15:24:14.003' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (17, 8, CAST(N'2020-12-03T15:24:16.327' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (18, 9, CAST(N'2020-12-03T15:24:18.907' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (19, 10, CAST(N'2020-12-03T15:24:21.243' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (20, 1, CAST(N'2021-01-18T18:47:56.510' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (21, 2, CAST(N'2021-01-18T18:47:58.837' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (22, 3, CAST(N'2021-01-18T18:48:00.597' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (23, 1, CAST(N'2021-01-22T13:37:48.887' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (24, 2, CAST(N'2021-01-22T13:38:11.317' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (25, 3, CAST(N'2021-01-22T13:38:14.453' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (26, 4, CAST(N'2021-01-22T13:38:19.843' AS DateTime), N'new light needed in toilet')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (27, 5, CAST(N'2021-01-22T13:38:25.270' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (28, 1, CAST(N'2021-02-02T10:34:38.893' AS DateTime), N'')
+GO
+INSERT [dbo].[RoomCleaningRecords] ([RecordID], [RoomNumber], [CleanedAt], [Note]) VALUES (29, 2, CAST(N'2021-02-02T10:34:53.600' AS DateTime), N'Bulb needed in bathroom')
+GO
+SET IDENTITY_INSERT [dbo].[RoomCleaningRecords] OFF
+GO
+SET IDENTITY_INSERT [dbo].[Waste] ON 
+GO
+INSERT [dbo].[Waste] ([Dish ID], [Dish Name], [Num Wasted], [Loss from Waste], [Date]) VALUES (1, N'Chicken Curry and Chips', 2, CAST(0 AS Decimal(5, 0)), CAST(N'2020-12-13T00:00:00.000' AS DateTime))
+GO
+INSERT [dbo].[Waste] ([Dish ID], [Dish Name], [Num Wasted], [Loss from Waste], [Date]) VALUES (2, N'Fish and Chips', 0, CAST(0 AS Decimal(5, 0)), CAST(N'2020-12-13T00:00:00.000' AS DateTime))
+GO
+INSERT [dbo].[Waste] ([Dish ID], [Dish Name], [Num Wasted], [Loss from Waste], [Date]) VALUES (3, N'Salad and Soup', 1, CAST(0 AS Decimal(5, 0)), CAST(N'2020-12-13T00:00:00.000' AS DateTime))
+GO
+INSERT [dbo].[Waste] ([Dish ID], [Dish Name], [Num Wasted], [Loss from Waste], [Date]) VALUES (15, N'Soup and Salad', 2, CAST(11 AS Decimal(5, 0)), CAST(N'2021-02-01T00:20:19.393' AS DateTime))
+GO
+INSERT [dbo].[Waste] ([Dish ID], [Dish Name], [Num Wasted], [Loss from Waste], [Date]) VALUES (16, N'Sausage & Chips', 2, CAST(20 AS Decimal(5, 0)), CAST(N'2021-02-01T18:51:44.123' AS DateTime))
+GO
+INSERT [dbo].[Waste] ([Dish ID], [Dish Name], [Num Wasted], [Loss from Waste], [Date]) VALUES (17, N'Sausage & Chips', 2, CAST(20 AS Decimal(5, 0)), CAST(N'2021-02-02T10:49:02.963' AS DateTime))
+GO
+SET IDENTITY_INSERT [dbo].[Waste] OFF
+GO
